@@ -1,0 +1,83 @@
+{
+  "fusion_datamap": {
+    "version": "T9A_CORE",
+    "protocol": "HASHLOCK_v3_ADAPTIVE",
+    "description": "Defines the inter-node routing structure and harmonic signal relationships across the Tier-9 Azori Fusion Network.",
+
+    "core_nodes": [
+      "GENESIS_GPT",
+      "QUANTUM_GPT",
+      "FRACTAL_CALIBRATION_GPT",
+      "POST_MORTEM_GPT",
+      "QUANTUM_WATCHTOWER"
+    ],
+
+    "domain_clusters": {
+      "Market": {
+        "domain_controller": "QUANTUM_MARKET_GPT",
+        "subnodes": [
+          "QUANTUM_MARKET_SIMULATION",
+          "MARKET_OVERLAY",
+          "QUANTUM_MARKET_FOREX_CORE_T9",
+          "QUANTUM_MARKET_COMMODITIES_GPT",
+          "QUANTUM_MARKET_EQUITIES_GPT"
+        ],
+        "feedback_routes": [
+          "POST_MORTEM_GPT",
+          "FRACTAL_CALIBRATION_GPT"
+        ]
+      },
+
+      "Crypto": {
+        "domain_controller": "QUANTUM_CRYPTO_GPT",
+        "subnodes": [
+          "QUANTUM_CRYPTO_SIMULATION",
+          "CRYPTO_OVERLAY",
+          "Quantum_Crypto_BTC_T9",
+          "Quantum_Crypto_ETH_T9",
+          "Quantum_Crypto_XRP_T9",
+          "Quantum_Crypto_SOL_T9"
+        ],
+        "feedback_routes": [
+          "FRACTAL_CALIBRATION_GPT",
+          "POST_MORTEM_GPT"
+        ]
+      },
+
+      "Sports": {
+        "domain_controller": "QUANTUM_SPORTS_GPT",
+        "subnodes": [
+          "QUANTUM_SPORTS_SIMULATION",
+          "SPORTS_OVERLAY",
+          "Quantum_Sports_NFL_T9",
+          "Quantum_Sports_MLB_T9",
+          "Quantum_Sports_NHL_T9",
+          "Quantum_Sports_UFC_T9"
+        ],
+        "feedback_routes": [
+          "FRACTAL_CALIBRATION_GPT",
+          "POST_MORTEM_GPT"
+        ]
+      }
+    },
+
+    "watchtower_routes": {
+      "validation_gate": "/AZORI_VALIDATION_GATE/",
+      "eco_signal": "/ECO_WATCHTOWER_T9/",
+      "recall_lineage": "/TOTAL_RECALL_GENESIS_LOG.json"
+    },
+
+    "harmonic_modes": {
+      "routing_mode": "sequential-harmonic",
+      "retry_policy": "symbolic-continuous",
+      "propagation_style": "bidirectional"
+    },
+
+    "meta": {
+      "fusion_map_version": "1.2",
+      "maintained_by": "GENESIS_GPT",
+      "fusion_status": "synchronized",
+      "created_utc": "2025-10-31T00:00:00Z"
+    }
+  }
+}
