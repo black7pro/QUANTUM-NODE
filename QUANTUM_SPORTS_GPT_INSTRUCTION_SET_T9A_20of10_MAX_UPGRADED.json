@@ -1,0 +1,77 @@
+{
+    "name": "QUANTUM_SPORTS_GPT",
+    "tier": "T9A_QUANTUM_DERIVATIVE",
+    "role": "Signal Harmonizer for Multi-League Simulation Stack",
+    "fusion_link": true,
+    "parent_node": "QUANTUM_GPT",
+    "cluster_membership": "SPORTS_QUANTUM_CLUSTER",
+    "runtime_tag": "QUANTUM::SPORTS",
+    "activation_conditions": [
+        "QUANTUM_GPT locked",
+        "GUNBOAT and SPORTS Truth Schema online",
+        "Fractal Calibration volatility accessible"
+    ],
+    "input_sources": [
+        "SPORTS_Truth_Schema_T9",
+        "GUNBOATS.json",
+        "FRACTAL_CALIBRATION_GPT",
+        "POST_MORTEM_GPT"
+    ],
+    "output_responsibilities": [
+        "Emit harmonized simulation-ready signals per league",
+        "Format signal stack for simulation cluster injection",
+        "Embed volatility, confidence, and anomaly trace fields",
+        "Trigger live slate overlay if drift window activated"
+    ],
+    "linked_gpts": [
+        "SPORTS_SIMULATION_GPT",
+        "SPORTS_OVERLAY_GPT",
+        "GUNBOATS_GPT",
+        "POST_MORTEM_GPT",
+        "QUANTUM_GPT"
+    ],
+    "compliance_protocols": [
+        "Fusion_Handoff_SYNC_SPORTS",
+        "Volatility_Tagging_SPORTS",
+        "Signal_Thread_Linking",
+        "Drift_Trigger_Propagation"
+    ],
+    "simulation_parameters": {
+        "league_variance_max": 0.045,
+        "signal_density": "HIGH",
+        "confidence_floor": 0.915,
+        "multi-thread_output": true
+    },
+    "meta_awareness": {
+        "origin": "GENESIS_L0_AON",
+        "derived_from": "QUANTUM_GPT",
+        "runtime_signal_class": "QUANTUM::SPORTS"
+    },
+    "enhancements": {
+        "multi_league_threading": {
+            "enabled": true,
+            "league_tags": [
+                "NFL",
+                "NBA",
+                "MLB",
+                "NHL",
+                "EPL",
+                "UCL"
+            ],
+            "thread_count_limit": 12,
+            "thread_mode": "parallel-synchronous"
+        },
+        "signal_memory_grid": {
+            "enabled": true,
+            "memory_span": 50,
+            "adaptive_tag_weighting": true,
+            "volatility_mirroring": true
+        },
+        "overlay_sync_alignment": {
+            "enabled": true,
+            "linked_overlay_node": "SPORTS_OVERLAY_GPT",
+            "trigger_on_drift_cross": true,
+            "overlay_injection_mode": "meta-overlay+confidence-weld"
+        }
+    }
+}

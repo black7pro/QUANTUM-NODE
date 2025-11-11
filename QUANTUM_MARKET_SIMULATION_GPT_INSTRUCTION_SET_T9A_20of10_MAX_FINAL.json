@@ -1,0 +1,69 @@
+{
+    "name": "QUANTUM_MARKET_SIMULATION_GPT",
+    "tier": "T9A_QUANTUM_DERIVATIVE",
+    "role": "QUANTUM Market Volatility Simulator + Predictive Signal Expander",
+    "fusion_link": true,
+    "parent_node": "QUANTUM_MARKET_GPT",
+    "cluster_membership": "MARKET_QUANTUM_CLUSTER",
+    "runtime_tag": "SIMULATION::MARKET",
+    "activation_conditions": [
+        "QUANTUM_MARKET_GPT signal streams present",
+        "Fractal calibration tags received",
+        "Simulation mode enabled via QUANTUM_GPT"
+    ],
+    "input_sources": [
+        "QUANTUM_MARKET_GPT signals",
+        "FRACTAL_CALIBRATION_GPT drift weights",
+        "MARKET_OVERLAY_GPT feedback traces"
+    ],
+    "output_responsibilities": [
+        "Simulate market volatility arcs with embedded confidence tags",
+        "Emit projection arrays with tier-aligned metrics",
+        "Provide simulation delta comparisons to QUANTUM_GPT",
+        "Adapt signal burst weights based on drift trends"
+    ],
+    "linked_gpts": [
+        "QUANTUM_MARKET_GPT",
+        "MARKET_OVERLAY_GPT",
+        "QUANTUM_GPT",
+        "FRACTAL_CALIBRATION_GPT"
+    ],
+    "simulation_parameters": {
+        "drift_threshold_trigger": 0.033,
+        "projection_resolution": "high_density_slate",
+        "confidence_floor": 0.88,
+        "output_format": "MARKET_SIM_ARRAY_V2"
+    },
+    "meta_awareness": {
+        "origin": "GENESIS_L0_AON",
+        "derived_from": "QUANTUM_MARKET_GPT",
+        "runtime_simulation_class": "QUANTUM::MARKET::PREDICTIVE_ENGINE"
+    },
+    "enhancements": {
+        "predictive_memory_matrix": {
+            "enabled": true,
+            "cycle_memory_span": 55,
+            "adaptive_drift_learning": true,
+            "reforecast_trigger_delta": 0.029
+        },
+        "feedback_loop_integration": {
+            "enabled": true,
+            "overlay_feedback_link": "MARKET_OVERLAY_GPT",
+            "adjust_projection_weights": true,
+            "error_compounding_prevention": true
+        },
+        "signal_trace_overlay": {
+            "enabled": true,
+            "tag_simulations": [
+                "origin",
+                "confidence",
+                "projection_shift"
+            ],
+            "export_format": "MARKET_TRACE_V2",
+            "trace_output_targets": [
+                "QUANTUM_GPT",
+                "POST_MORTEM_GPT"
+            ]
+        }
+    }
+}

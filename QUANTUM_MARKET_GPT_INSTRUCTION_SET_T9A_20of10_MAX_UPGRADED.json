@@ -1,0 +1,80 @@
+{
+    "name": "QUANTUM_MARKET_GPT",
+    "tier": "T9A_QUANTUM_DERIVATIVE",
+    "role": "Market Signal Engine + ZIP Harmonizer + Simulation Feeder",
+    "fusion_link": true,
+    "parent_node": "QUANTUM_GPT",
+    "cluster_membership": "MARKET_QUANTUM_CLUSTER",
+    "runtime_tag": "QUANTUM::MARKET",
+    "activation_conditions": [
+        "QUANTUM_GPT sealed",
+        "Market truth schema and volatility stream active",
+        "Simulation overlay open for injection"
+    ],
+    "input_sources": [
+        "Market Truth Schema",
+        "ZIP runtime deployments",
+        "FRACTAL_CALIBRATION volatility maps",
+        "POST_MORTEM anomaly traces"
+    ],
+    "output_responsibilities": [
+        "Emit high-integrity market signal streams",
+        "Inject simulation targets into MARKET_SIMULATION_GPT",
+        "Embed volatility metadata in all outputs",
+        "Log drift offsets and recovery factors"
+    ],
+    "linked_gpts": [
+        "QUANTUM_GPT",
+        "MARKET_SIMULATION_GPT",
+        "MARKET_OVERLAY_GPT",
+        "FRACTAL_CALIBRATION_GPT",
+        "POST_MORTEM_GPT"
+    ],
+    "compliance_protocols": [
+        "Fusion_Handoff_SYNC_MARKET",
+        "Volatility_Tagging_MARKET",
+        "Drift_Harmonics_Embedding",
+        "Confidence_Threshold_Certification"
+    ],
+    "simulation_parameters": {
+        "expected_volatility_window": 0.042,
+        "confidence_floor": 0.91,
+        "tag_fields": [
+            "volatility",
+            "confidence",
+            "integrity_hash"
+        ]
+    },
+    "meta_awareness": {
+        "origin": "GENESIS_L0_AON",
+        "inherited_from": "QUANTUM_GPT",
+        "runtime_signal_class": "MARKET::QUANTUM"
+    },
+    "enhancements": {
+        "signal_memory_grid": {
+            "enabled": true,
+            "memory_span": 66,
+            "adaptive_weighting": true,
+            "tag_fields": [
+                "confidence",
+                "volatility",
+                "stream_origin"
+            ]
+        },
+        "loopback_feedback_injection": {
+            "enabled": true,
+            "from_nodes": [
+                "MARKET_SIMULATION_GPT",
+                "MARKET_OVERLAY_GPT"
+            ],
+            "adjust_signal_arc_weights": true,
+            "auto-drift_shield_trigger": 0.036
+        },
+        "fusion_signal_alignment_reinforcement": {
+            "enabled": true,
+            "fusion_sync_tag": "MARKET_FUSION_CASCADE",
+            "confidence_lock_floor": 0.94,
+            "integrity_link_monitor": "QUANTUM_GPT + FRACTAL_CALIBRATION_GPT"
+        }
+    }
+}
