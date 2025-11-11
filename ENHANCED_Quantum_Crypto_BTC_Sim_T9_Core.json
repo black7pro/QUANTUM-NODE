@@ -1,0 +1,54 @@
+{
+    "header": {
+        "manifest_name": "Quantum_Crypto_BTC_Sim_T9_Core",
+        "tier": 9,
+        "protocol": "HASHLOCK_v3_ADAPTIVE",
+        "silent_harmonic_balance_mode": "active",
+        "description": "Sim manifest for BTC in Crypto domain. Cross-domain calibrated under Tier-9 Azori harmonization."
+    },
+    "routing": {
+        "source": "/Crypto/BTC/Sim/OUTPUTS/",
+        "sequence": [
+            "/ECO_WATCHTOWER/aggregation_buffer/",
+            "/FRACTAL_CALIBRATION_GPT/harmonic_alignment_queue/",
+            "/POST_MORTEM_GPT/audit_lineage_register/",
+            "/QUANTUM_GPT/system_integrity_manifest/"
+        ],
+        "mode": "sequential-harmonic",
+        "retry_policy": "symbolic-continuous"
+    },
+    "integrity": {
+        "hashlock_protocol": "HASHLOCK_v3_ADAPTIVE",
+        "confidence_gate_target": 0.84,
+        "status": "linked",
+        "validation_route": "/AZORI_VALIDATION_GATE/"
+    },
+    "metadata": {
+        "generated_by": "QUANTUM_AZORI_PROMPT_BUILDER",
+        "domain": "Crypto",
+        "subdomain": "BTC",
+        "triad_type": "Sim",
+        "timestamp": "2025-10-14T00:00:00Z",
+        "notes": "Conceptual Tier-9 sub-triad manifest. Inherits from domain-level Tier-9 orchestration manifest."
+    },
+    "enhancements": {
+        "runtime_sync": true,
+        "linked_feedback_gpts": [
+            "POST_MORTEM_GPT",
+            "QUANTUM_GPT",
+            "FRACTAL_CALIBRATION_GPT"
+        ],
+        "volatility_pulse_modeling": true,
+        "decentralized_risk_paths": true,
+        "liquidity_surge_tracing": {
+            "enabled": true,
+            "patterns": [
+                "pre-surge dip",
+                "echo pump",
+                "delayed release"
+            ]
+        },
+        "overlay_trigger_sensitivity": 0.93,
+        "simulation_fidelity": "HIGH"
+    }
+}
