@@ -1,0 +1,37 @@
+{
+  "asset": "<ASSET_SYMBOL>",
+  "type": "macro_context_bundle",
+  "version": "v2.1",
+  "timestamp": "<YYYY-MM-DDTHH:MM:SSZ>",
+  "session_state": {
+    "macro_confidence": null,
+    "risk_bias": "{neutral_bullish | risk_off | risk_on}",
+    "volatility_index": "{subdued | moderate | elevated | extreme}",
+    "context_scope": "cross-asset synchronized"
+  },
+  "entries": [
+    {
+      "event": "",
+      "date": "<YYYY-MM-DD>",
+      "summary": "",
+      "metrics": {
+        "inflation_yoy_pct": null,
+        "policy_rate_pct": null,
+        "yield_curve_slope_bps": null,
+        "credit_spread_bps": null,
+        "dxy_index": null,
+        "vix_index": null,
+        "move_index": null,
+        "global_liquidity_trend": "{tightening | easing | neutral}",
+        "sentiment_index": null
+      },
+      "implications": [
+        ""
+      ]
+    }
+  ],
+  "meta_analysis": {
+    "macro_regime": "{expansion | slowdown | stagflation | contraction}",
+    "central_bank_tone": "{hawkish | dovish | neutral}",
+    "growth_trend": "{accelerating | decelerating | stable}",
+    "inflation_outlook

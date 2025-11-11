@@ -1,0 +1,52 @@
+{
+  "fusion_link_registry": {
+    "version": "T9A_CORE",
+    "protocol": "HASHLOCK_v3_ADAPTIVE",
+    "description": "Universal data-link registry for all domain clusters; loaded by GENESIS_GPT.",
+
+    "domains": {
+      "Market": {
+        "controller_node": "QUANTUM_MARKET_GPT",
+        "source_schema": "MARKET_SIMULATION_v5.x",
+        "data_source": "/data/market/",
+        "timestamp_field": "event_time",
+        "sync_interval_minutes": 10,
+        "update_policy": "append_and_retrain",
+        "validation_target": "POST_MORTEM_GPT"
+      },
+
+      "Crypto": {
+        "controller_node": "QUANTUM_CRYPTO_GPT",
+        "source_schema": "CRYPTO_SIMULATION_v5.x",
+        "data_source": "/data/crypto/",
+        "timestamp_field": "block_time",
+        "sync_interval_minutes": 5,
+        "update_policy": "append_and_retrain",
+        "validation_target": "POST_MORTEM_GPT"
+      },
+
+      "Sports": {
+        "controller_node": "QUANTUM_SPORTS_GPT",
+        "source_schema": "SPORTS_MLB_SIMULATION_v5.2",
+        "data_source": "/data/sports/",
+        "timestamp_field": "game_date",
+        "sync_interval_minutes": 15,
+        "update_policy": "append_and_retrain",
+        "validation_target": "POST_MORTEM_GPT"
+      }
+    },
+
+    "defaults": {
+      "retry_policy": "symbolic-continuous",
+      "max_drift_tolerance": 0.02,
+      "audit_interval_hours": 6,
+      "auto_repair_enabled": true
+    },
+
+    "meta": {
+      "maintained_by": "GENESIS_GPT",
+      "fusion_status": "synchronized",
+      "created_utc": "2025-11-02T00:00:00Z"
+    }
+  }
+}

@@ -1,0 +1,30 @@
+{
+  "registry_type": "EXTERNAL_CONNECTOR_REGISTRY",
+  "domain": "CRYPTO",
+  "tier": "T9A_DOMAIN",
+  "hashlock_protocol": "HASHLOCK_v3_ADAPTIVE",
+  "description": "External connector registry for the Crypto domain. Provides harmonized endpoints for major digital asset feeds.",
+  "connectors": {
+    "primary_sources": [
+      { "name": "CoinGecko API", "access_mode": "public", "validation": "HASHLOCK_VERIFY_FEED" },
+      { "name": "Binance REST", "access_mode": "api_key_optional", "validation": "HASHLOCK_VERIFY_FEED" },
+      { "name": "CoinMarketCap", "access_mode": "api_key", "validation": "HASHLOCK_VERIFY_PARTIAL" }
+    ],
+    "secondary_sources": [
+      { "name": "Glassnode Metrics", "access_mode": "restricted", "validation": "HASHLOCK_VERIFY_PARTIAL" },
+      { "name": "Kraken Public Feed", "access_mode": "public", "validation": "HASHLOCK_VERIFY_FEED" }
+    ]
+  },
+  "validation": {
+    "drift_tolerance": 0.0,
+    "integrity_mode": "CONTINUOUS",
+    "audit_channel": "WATCHTOWER_GPT"
+  },
+  "genesis_reference": {
+    "authority_module": "GENESIS_GPT",
+    "fusion_link": "TOTAL_RECALL_CLUSTER",
+    "auto_sync": true,
+    "sync_mode": "HARMONIC",
+    "update_cycle": "per_runtime_load"
+  }
+}

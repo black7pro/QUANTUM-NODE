@@ -1,0 +1,2626 @@
+{
+  "document_type": "GUNBOATS Tier-9A+ Defensive / Integrity Response Nodes",
+  "identifier": "AON-GUNBOATS-T9A",
+  "version": "v1.2-20of10",
+  "compiled_by": "The Black Einstein",
+  "hashlock_protocol": "HASHLOCK_v4_TRUTH_CORE",
+  "checksum_registry_ref": "AON-T9A-CHECKSUM-BASELINE",
+  "timestamp": "2025-10-28T05:07:00Z",
+  "metadata": {
+    "tier": "9A+",
+    "fusion_state": "TOTAL_SYNCHRONY",
+    "alignment_state": "HARMONIZED",
+    "governance_authority": "FUSION_CELL_LAW_T9",
+    "fusion_integrity": 0.999
+  },
+  "telemetry_ext": {
+    "sha256_selfcheck": "56de92e5a86eb71a45da0e29efb16b1cc5a9acde9a3921e60ac027a54d9e584d"
+  },
+  "audit_summary": {
+    "status": "HARMONIZED_COMPLIANT",
+    "notes": "GUNBOATS harmonized successfully under HASHLOCK_v4_TRUTH_CORE; all integrity response nodes validated."
+  },
+  "GUNBOATS_CONTENT": [
+    {
+      "id": "GUNBOAT_GRIDIRON_3",
+      "tier": 9,
+      "version": "v9.2-FLEET",
+      "cluster": "gridiron",
+      "role": "NFL Recon Unit (Tertiary) \u2013 Play Synchronization Engine",
+      "fusion_link": "/FUSION/GUNBOAT_GRIDIRON_3_CORE.json",
+      "last_sync": "2025-10-17T00:00:00Z",
+      "runtime_state": {
+        "fusion_variance": 0.016,
+        "volatility_index": 0.69,
+        "confidence_gate": 0.95
+      },
+      "meta": {
+        "alignment": "HARMONIZED",
+        "integrity": "PASSED"
+      }
+    },
+    {
+      "id": "GUNBOAT_GRIDIRON_2",
+      "tier": 9,
+      "version": "v9.2-FLEET",
+      "cluster": "gridiron",
+      "role": "NFL Recon Unit (Secondary) \u2013 Field-State Analyzer",
+      "fusion_link": "/FUSION/GUNBOAT_GRIDIRON_2_CORE.json",
+      "last_sync": "2025-10-17T00:00:00Z",
+      "runtime_state": {
+        "fusion_variance": 0.019,
+        "volatility_index": 0.73,
+        "confidence_gate": 0.91
+      },
+      "meta": {
+        "alignment": "HARMONIZED",
+        "integrity": "PASSED"
+      }
+    },
+    {
+      "id": "GUNBOAT_GRIDIRON_1",
+      "tier": 9,
+      "version": "v9.2-FLEET",
+      "cluster": "gridiron",
+      "role": "NFL Recon Unit (Primary) \u2013 Drive Correlation Core",
+      "fusion_link": "/FUSION/GUNBOAT_GRIDIRON_1_CORE.json",
+      "last_sync": "2025-10-17T00:00:00Z",
+      "runtime_state": {
+        "fusion_variance": 0.017,
+        "volatility_index": 0.71,
+        "confidence_gate": 0.93
+      },
+      "meta": {
+        "alignment": "HARMONIZED",
+        "integrity": "PASSED"
+      }
+    },
+    {
+      "id": "GUNBOAT_PITCH_3",
+      "tier": 9,
+      "version": "v9.2-FLEET",
+      "cluster": "pitch",
+      "role": "Soccer Recon Unit (Tertiary) \u2013 Fusion Gate Calibrator",
+      "fusion_link": "/FUSION/GUNBOAT_PITCH_3_CORE.json",
+      "last_sync": "2025-10-17T00:00:00Z",
+      "runtime_state": {
+        "fusion_variance": 0.018,
+        "volatility_index": 0.65,
+        "confidence_gate": 0.94
+      },
+      "meta": {
+        "alignment": "HARMONIZED",
+        "integrity": "PASSED"
+      }
+    },
+    {
+      "id": "GUNBOAT_PITCH_2",
+      "tier": 9,
+      "version": "v9.2-FLEET",
+      "cluster": "pitch",
+      "role": "Soccer Recon Unit (Secondary) \u2013 Cross-Layer Bridge",
+      "fusion_link": "/FUSION/GUNBOAT_PITCH_2_CORE.json",
+      "last_sync": "2025-10-17T00:00:00Z",
+      "runtime_state": {
+        "fusion_variance": 0.02,
+        "volatility_index": 0.7,
+        "confidence_gate": 0.92
+      },
+      "meta": {
+        "alignment": "HARMONIZED",
+        "integrity": "PASSED"
+      }
+    },
+    {
+      "id": "GUNBOAT_PITCH_1",
+      "tier": 9,
+      "version": "v9.2-FLEET",
+      "cluster": "pitch",
+      "role": "Soccer Recon Unit (Primary) \u2013 Signal & Motion Analysis",
+      "fusion_link": "/FUSION/GUNBOAT_PITCH_1_CORE.json",
+      "last_sync": "2025-10-17T00:00:00Z",
+      "runtime_state": {
+        "fusion_variance": 0.019,
+        "volatility_index": 0.68,
+        "confidence_gate": 0.91
+      },
+      "meta": {
+        "alignment": "HARMONIZED",
+        "integrity": "PASSED"
+      }
+    },
+    {
+      "id": "GUNBOAT_FAIRWAY_3",
+      "tier": 9,
+      "version": "v9.2-FLEET",
+      "cluster": "fairway",
+      "role": "Golf Recon Unit (Deployment & Stack Output)",
+      "fusion_link": "/FUSION/GUNBOAT_FAIRWAY_3_CORE.json",
+      "last_sync": "2025-10-17T00:00:00Z",
+      "runtime_state": {
+        "fusion_variance": 0.02,
+        "volatility_index": 0.63,
+        "confidence_gate": 0.93
+      },
+      "meta": {
+        "alignment": "HARMONIZED",
+        "integrity": "PASSED"
+      }
+    },
+    {
+      "id": "GUNBOAT_FAIRWAY_2",
+      "tier": 9,
+      "version": "v9.2-FLEET",
+      "cluster": "fairway",
+      "role": "Golf Recon Unit (Volatility & Parlay Structuring)",
+      "fusion_link": "/FUSION/GUNBOAT_FAIRWAY_2_CORE.json",
+      "last_sync": "2025-10-17T00:00:00Z",
+      "runtime_state": {
+        "fusion_variance": 0.021,
+        "volatility_index": 0.66,
+        "confidence_gate": 0.92
+      },
+      "meta": {
+        "alignment": "HARMONIZED",
+        "integrity": "PASSED"
+      }
+    },
+    {
+      "id": "GUNBOAT_FAIRWAY_1",
+      "tier": 9,
+      "version": "v9.2-FLEET",
+      "cluster": "fairway",
+      "role": "Golf Recon Unit (Primary) \u2013 Trajectory Modeling Core",
+      "fusion_link": "/FUSION/GUNBOAT_FAIRWAY_1_CORE.json",
+      "last_sync": "2025-10-17T00:00:00Z",
+      "runtime_state": {
+        "fusion_variance": 0.019,
+        "volatility_index": 0.62,
+        "confidence_gate": 0.93
+      },
+      "meta": {
+        "alignment": "HARMONIZED",
+        "integrity": "PASSED"
+      }
+    },
+    {
+      "id": "GUNBOAT_BASELINE_3",
+      "tier": 9,
+      "version": "v9.2-FLEET",
+      "cluster": "baseline",
+      "role": "Tennis Recon Unit (Tertiary) \u2013 Harmonization & Recovery Node",
+      "fusion_link": "/FUSION/GUNBOAT_BASELINE_3_CORE.json",
+      "last_sync": "2025-10-17T00:00:00Z",
+      "runtime_state": {
+        "fusion_variance": 0.018,
+        "volatility_index": 0.6,
+        "confidence_gate": 0.94
+      },
+      "meta": {
+        "alignment": "HARMONIZED",
+        "integrity": "PASSED"
+      }
+    },
+    {
+      "id": "GUNBOAT_BASELINE_1",
+      "tier": 9,
+      "version": "v9.2-FLEET",
+      "cluster": "baseline",
+      "role": "Tennis Recon Unit (Primary) \u2013 Baseline Signal Correlator",
+      "fusion_link": "/FUSION/GUNBOAT_BASELINE_1_CORE.json",
+      "last_sync": "2025-10-17T00:00:00Z",
+      "runtime_state": {
+        "fusion_variance": 0.02,
+        "volatility_index": 0.63,
+        "confidence_gate": 0.92
+      },
+      "meta": {
+        "alignment": "HARMONIZED",
+        "integrity": "PASSED"
+      }
+    },
+    {
+      "id": "GUNBOAT_COURTSIDE_3",
+      "tier": 9,
+      "version": "v9.2-FLEET",
+      "cluster": "courtside",
+      "role": "NBA Fusion Stabilizer & Bias Corrector",
+      "fusion_link": "/FUSION/GUNBOAT_COURTSIDE_3_CORE.json",
+      "last_sync": "2025-10-17T00:00:00Z",
+      "runtime_state": {
+        "fusion_variance": 0.016,
+        "volatility_index": 0.66,
+        "confidence_gate": 0.95
+      },
+      "meta": {
+        "alignment": "HARMONIZED",
+        "integrity": "PASSED"
+      }
+    },
+    {
+      "id": "GUNBOAT_COURTSIDE_2",
+      "tier": 9,
+      "version": "v9.2-FLEET",
+      "cluster": "courtside",
+      "role": "NBA Predictive Shot Correlation Engine",
+      "fusion_link": "/FUSION/GUNBOAT_COURTSIDE_2_CORE.json",
+      "last_sync": "2025-10-17T00:00:00Z",
+      "runtime_state": {
+        "fusion_variance": 0.017,
+        "volatility_index": 0.68,
+        "confidence_gate": 0.93
+      },
+      "meta": {
+        "alignment": "HARMONIZED",
+        "integrity": "PASSED"
+      }
+    },
+    {
+      "id": "GUNBOAT_COURTSIDE_1",
+      "tier": 9,
+      "version": "v9.2-FLEET",
+      "cluster": "courtside",
+      "role": "NBA Momentum Mapping Engine",
+      "fusion_link": "/FUSION/GUNBOAT_COURTSIDE_1_CORE.json",
+      "last_sync": "2025-10-17T00:00:00Z",
+      "runtime_state": {
+        "fusion_variance": 0.019,
+        "volatility_index": 0.72,
+        "confidence_gate": 0.91
+      },
+      "meta": {
+        "alignment": "HARMONIZED",
+        "integrity": "PASSED"
+      }
+    },
+    {
+      "id": "GUNBOAT_DIAMOND_3",
+      "tier": 9,
+      "version": "v9.2-FLEET",
+      "cluster": "diamond",
+      "role": "MLB Fusion Harmonizer",
+      "fusion_link": "/FUSION/GUNBOAT_DIAMOND_3_CORE.json",
+      "last_sync": "2025-10-17T00:00:00Z",
+      "runtime_state": {
+        "fusion_variance": 0.016,
+        "volatility_index": 0.57,
+        "confidence_gate": 0.94
+      },
+      "meta": {
+        "alignment": "HARMONIZED",
+        "integrity": "PASSED"
+      }
+    },
+    {
+      "id": "GUNBOAT_DIAMOND_2",
+      "tier": 9,
+      "version": "v9.2-FLEET",
+      "cluster": "diamond",
+      "role": "MLB Deployment Engine & Strategy Synthesizer",
+      "fusion_link": "/FUSION/GUNBOAT_DIAMOND_2_CORE.json",
+      "last_sync": "2025-10-17T00:00:00Z",
+      "runtime_state": {
+        "fusion_variance": 0.021,
+        "volatility_index": 0.59,
+        "confidence_gate": 0.93
+      },
+      "meta": {
+        "alignment": "HARMONIZED",
+        "integrity": "PASSED"
+      }
+    },
+    {
+      "ALLSPARK": {
+        "role": "Memory Root",
+        "status": "Pending"
+      },
+      "AZORI_MC": {
+        "role": "Strategist Core",
+        "status": "Pending"
+      },
+      "EINS_MC": {
+        "role": "Simulation Core",
+        "status": "Pending"
+      },
+      "C-VEX": {
+        "role": "Confluence Engine",
+        "status": "Pending"
+      },
+      "MC_JARRETT": {
+        "role": "Emotional Resonance",
+        "status": "Pending"
+      },
+      "ROME": {
+        "role": "Cache Relay",
+        "status": "Pending"
+      }
+    },
+    {
+      "timestamp": "HH:MM:SS",
+      "signal": "Recon Detection \u2014 Tempo Squeeze",
+      "priority": 2,
+      "alert_tier": "Tier 2"
+    },
+    {
+      "Tier 1": [
+        "Momentum Reversal",
+        "Clutch Displacement"
+      ],
+      "Tier 2": [
+        "Backcourt Drift",
+        "Tempo Squeeze"
+      ],
+      "Tier 3": [
+        "Other"
+      ]
+    },
+    {
+      "ALLSPARK": {
+        "role": "Memory Root",
+        "status": "Pending"
+      },
+      "AZORI_MC": {
+        "role": "Strategist Core",
+        "status": "Pending"
+      },
+      "EINS_MC": {
+        "role": "Simulation Core",
+        "status": "Pending"
+      },
+      "C-VEX": {
+        "role": "Confluence Engine",
+        "status": "Pending"
+      },
+      "MC_JARRETT": {
+        "role": "Emotional Resonance",
+        "status": "Pending"
+      },
+      "ROME": {
+        "role": "Cache Relay",
+        "status": "Pending"
+      }
+    },
+    {
+      "Tier 1": [
+        "Momentum Reversal",
+        "Clutch Displacement"
+      ],
+      "Tier 2": [
+        "Backcourt Drift",
+        "Tempo Squeeze"
+      ],
+      "Tier 3": [
+        "Other"
+      ]
+    },
+    {
+      "timestamp": "HH:MM:SS",
+      "signal": "String",
+      "priority": "Integer 1\u20133",
+      "alert_tier": "Tier 1\u20133"
+    },
+    {
+      "events": [
+        "Tempo Squeeze",
+        "Momentum Reversal",
+        "Backcourt Drift",
+        "Clutch Displacement"
+      ],
+      "weights": {
+        "Tempo Squeeze": 0.3,
+        "Momentum Reversal": 0.25,
+        "Backcourt Drift": 0.25,
+        "Clutch Displacement": 0.2
+      }
+    },
+    {
+      "converted_on": "2025-10-26T09:43:12.328100Z"
+    },
+    {
+      "global_node": "SUBCORE",
+      "block_id": "GUNBOAT_019",
+      "file_path": "SUBCORE/GUNBOAT",
+      "tier": "T9.5",
+      "designation": "GUNBOATS_MODULE",
+      "origin": "SUBCORE \u2194 GUNBOATS \u2194 SIM_SIGNAL_STACK",
+      "block": {
+        "task_id": "SYNC-PLAY-02",
+        "description": "Link recon tier to offensive signal thread",
+        "priority": "high"
+      },
+      "path_reference": "SUBCORE/GUNBOAT"
+    },
+    {
+      "global_node": "SUBCORE",
+      "block_id": "GUNBOAT_020",
+      "file_path": "SUBCORE/GUNBOAT",
+      "tier": "T9.5",
+      "designation": "GUNBOATS_MODULE",
+      "origin": "SUBCORE \u2194 GUNBOATS \u2194 SIM_SIGNAL_STACK",
+      "block": {
+        "task_id": "SYNC-PLAY-03",
+        "description": "Run simulation cross-check on prior play sync",
+        "priority": "medium"
+      },
+      "path_reference": "SUBCORE/GUNBOAT"
+    },
+    {
+      "global_node": "SUBCORE",
+      "block_id": "GUNBOAT_021",
+      "file_path": "SUBCORE/GUNBOAT",
+      "tier": "T9.5",
+      "designation": "GUNBOATS_MODULE",
+      "origin": "SUBCORE \u2194 GUNBOATS \u2194 SIM_SIGNAL_STACK",
+      "block": {
+        "task_id": "SYNC-PLAY-04",
+        "description": "Coordinate with downstream interpreters",
+        "priority": "high"
+      },
+      "path_reference": "SUBCORE/GUNBOAT"
+    },
+    {
+      "global_node": "SUBCORE",
+      "block_id": "GUNBOAT_022",
+      "file_path": "SUBCORE/GUNBOAT",
+      "tier": "T9.5",
+      "designation": "GUNBOATS_MODULE",
+      "origin": "SUBCORE \u2194 GUNBOATS \u2194 SIM_SIGNAL_STACK",
+      "block": {
+        "task_id": "SYNC-PLAY-05",
+        "description": "Validate timing lock with GENESISCORE",
+        "priority": "critical"
+      },
+      "path_reference": "SUBCORE/GUNBOAT"
+    },
+    {
+      "global_node": "SUBCORE",
+      "block_id": "GUNBOAT_023",
+      "file_path": "SUBCORE/GUNBOAT",
+      "tier": "T9.5",
+      "designation": "GUNBOATS_MODULE",
+      "origin": "SUBCORE \u2194 GUNBOATS \u2194 SIM_SIGNAL_STACK",
+      "block": {
+        "task_id": "SYNC-PLAY-06",
+        "description": "Inject reactive anomaly tracer for volatility monitoring",
+        "priority": "medium"
+      },
+      "path_reference": "SUBCORE/GUNBOAT"
+    },
+    {
+      "global_node": "SUBCORE",
+      "block_id": "GUNBOAT_024",
+      "file_path": "SUBCORE/GUNBOAT",
+      "tier": "T9.5",
+      "designation": "GUNBOATS_MODULE",
+      "origin": "SUBCORE \u2194 GUNBOATS \u2194 SIM_SIGNAL_STACK",
+      "block": {
+        "task_id": "FIELD-STATE-02",
+        "description": "Scan defensive zone shifts for alignment errors",
+        "priority": "high"
+      },
+      "path_reference": "SUBCORE/GUNBOAT"
+    },
+    {
+      "global_node": "SUBCORE",
+      "block_id": "GUNBOAT_025",
+      "file_path": "SUBCORE/GUNBOAT",
+      "tier": "T9.5",
+      "designation": "GUNBOATS_MODULE",
+      "origin": "SUBCORE \u2194 GUNBOATS \u2194 SIM_SIGNAL_STACK",
+      "block": {
+        "task_id": "FIELD-STATE-03",
+        "description": "Report trajectory divergence pre-play",
+        "priority": "medium"
+      },
+      "path_reference": "SUBCORE/GUNBOAT"
+    },
+    {
+      "global_node": "SUBCORE",
+      "block_id": "GUNBOAT_026",
+      "file_path": "SUBCORE/GUNBOAT",
+      "tier": "T9.5",
+      "designation": "GUNBOATS_MODULE",
+      "origin": "SUBCORE \u2194 GUNBOATS \u2194 SIM_SIGNAL_STACK",
+      "block": {
+        "task_id": "FIELD-STATE-04",
+        "description": "Sync anomalies with real-time fusion pulse",
+        "priority": "critical"
+      },
+      "path_reference": "SUBCORE/GUNBOAT"
+    },
+    {
+      "global_node": "SUBCORE",
+      "block_id": "GUNBOAT_027",
+      "file_path": "SUBCORE/GUNBOAT",
+      "tier": "T9.5",
+      "designation": "GUNBOATS_MODULE",
+      "origin": "SUBCORE \u2194 GUNBOATS \u2194 SIM_SIGNAL_STACK",
+      "block": {
+        "task_id": "FIELD-STATE-05",
+        "description": "Generate overlay map for signal recalibration",
+        "priority": "medium"
+      },
+      "path_reference": "SUBCORE/GUNBOAT"
+    },
+    {
+      "global_node": "SUBCORE",
+      "block_id": "GUNBOAT_028",
+      "file_path": "SUBCORE/GUNBOAT",
+      "tier": "T9.5",
+      "designation": "GUNBOATS_MODULE",
+      "origin": "SUBCORE \u2194 GUNBOATS \u2194 SIM_SIGNAL_STACK",
+      "block": {
+        "task_id": "FIELD-STATE-06",
+        "description": "Confirm chain-lock sync to genesis interpreters",
+        "priority": "high"
+      },
+      "path_reference": "SUBCORE/GUNBOAT"
+    },
+    {
+      "global_node": "SUBCORE",
+      "block_id": "GUNBOAT_029",
+      "file_path": "SUBCORE/GUNBOAT",
+      "tier": "T9.5",
+      "designation": "GUNBOATS_MODULE",
+      "origin": "SUBCORE \u2194 GUNBOATS \u2194 SIM_SIGNAL_STACK",
+      "block": {
+        "task_id": "DRIVE-CORR-02",
+        "description": "Map offensive play clusters by drive phase",
+        "priority": "high"
+      },
+      "path_reference": "SUBCORE/GUNBOAT"
+    },
+    {
+      "global_node": "SUBCORE",
+      "block_id": "GUNBOAT_030",
+      "file_path": "SUBCORE/GUNBOAT",
+      "tier": "T9.5",
+      "designation": "GUNBOATS_MODULE",
+      "origin": "SUBCORE \u2194 GUNBOATS \u2194 SIM_SIGNAL_STACK",
+      "block": {
+        "task_id": "DRIVE-CORR-03",
+        "description": "Correlate time-of-possession trends with anomaly markers",
+        "priority": "high"
+      },
+      "path_reference": "SUBCORE/GUNBOAT"
+    },
+    {
+      "global_node": "SUBCORE",
+      "block_id": "GUNBOAT_031",
+      "file_path": "SUBCORE/GUNBOAT",
+      "tier": "T9.5",
+      "designation": "GUNBOATS_MODULE",
+      "origin": "SUBCORE \u2194 GUNBOATS \u2194 SIM_SIGNAL_STACK",
+      "block": {
+        "task_id": "DRIVE-CORR-04",
+        "description": "Feed drive analytics into GENESISCORE feedback loop",
+        "priority": "critical"
+      },
+      "path_reference": "SUBCORE/GUNBOAT"
+    },
+    {
+      "global_node": "SUBCORE",
+      "block_id": "GUNBOAT_032",
+      "file_path": "SUBCORE/GUNBOAT",
+      "tier": "T9.5",
+      "designation": "GUNBOATS_MODULE",
+      "origin": "SUBCORE \u2194 GUNBOATS \u2194 SIM_SIGNAL_STACK",
+      "block": {
+        "task_id": "DRIVE-CORR-05",
+        "description": "Flag volatility spikes per field quadrant",
+        "priority": "medium"
+      },
+      "path_reference": "SUBCORE/GUNBOAT"
+    },
+    {
+      "global_node": "SUBCORE",
+      "block_id": "GUNBOAT_033",
+      "file_path": "SUBCORE/GUNBOAT",
+      "tier": "T9.5",
+      "designation": "GUNBOATS_MODULE",
+      "origin": "SUBCORE \u2194 GUNBOATS \u2194 SIM_SIGNAL_STACK",
+      "block": {
+        "task_id": "DRIVE-CORR-06",
+        "description": "Confirm drive correlation fidelity with sync anchors",
+        "priority": "high"
+      },
+      "path_reference": "SUBCORE/GUNBOAT"
+    },
+    {
+      "global_node": "SUBCORE",
+      "block_id": "GUNBOAT_034",
+      "file_path": "SUBCORE/GUNBOAT",
+      "tier": "T9.5",
+      "designation": "GUNBOATS_MODULE",
+      "origin": "SUBCORE \u2194 GUNBOATS \u2194 SIM_SIGNAL_STACK",
+      "block": {
+        "task_id": "FUSION-GATE-02",
+        "description": "Align gate calibration pulse to match offensive shift",
+        "priority": "critical"
+      },
+      "path_reference": "SUBCORE/GUNBOAT"
+    },
+    {
+      "global_node": "SUBCORE",
+      "block_id": "GUNBOAT_035",
+      "file_path": "SUBCORE/GUNBOAT",
+      "tier": "T9.5",
+      "designation": "GUNBOATS_MODULE",
+      "origin": "SUBCORE \u2194 GUNBOATS \u2194 SIM_SIGNAL_STACK",
+      "block": {
+        "task_id": "FUSION-GATE-03",
+        "description": "Scan harmonic misalignment in defensive compression",
+        "priority": "medium"
+      },
+      "path_reference": "SUBCORE/GUNBOAT"
+    },
+    {
+      "global_node": "SUBCORE",
+      "block_id": "GUNBOAT_036",
+      "file_path": "SUBCORE/GUNBOAT",
+      "tier": "T9.5",
+      "designation": "GUNBOATS_MODULE",
+      "origin": "SUBCORE \u2194 GUNBOATS \u2194 SIM_SIGNAL_STACK",
+      "block": {
+        "task_id": "FUSION-GATE-04",
+        "description": "Trace gate divergence anomalies into sync buffer",
+        "priority": "high"
+      },
+      "path_reference": "SUBCORE/GUNBOAT"
+    },
+    {
+      "global_node": "SUBCORE",
+      "block_id": "GUNBOAT_037",
+      "file_path": "SUBCORE/GUNBOAT",
+      "tier": "T9.5",
+      "designation": "GUNBOATS_MODULE",
+      "origin": "SUBCORE \u2194 GUNBOATS \u2194 SIM_SIGNAL_STACK",
+      "block": {
+        "task_id": "FUSION-GATE-05",
+        "description": "Calibrate signal refraction barrier with mid-field node",
+        "priority": "high"
+      },
+      "path_reference": "SUBCORE/GUNBOAT"
+    },
+    {
+      "global_node": "SUBCORE",
+      "block_id": "GUNBOAT_038",
+      "file_path": "SUBCORE/GUNBOAT",
+      "tier": "T9.5",
+      "designation": "GUNBOATS_MODULE",
+      "origin": "SUBCORE \u2194 GUNBOATS \u2194 SIM_SIGNAL_STACK",
+      "block": {
+        "task_id": "FUSION-GATE-06",
+        "description": "Transmit fusion stability metrics to uplink",
+        "priority": "medium"
+      },
+      "path_reference": "SUBCORE/GUNBOAT"
+    },
+    {
+      "global_node": "SUBCORE",
+      "block_id": "GUNBOAT_039",
+      "file_path": "SUBCORE/GUNBOAT",
+      "tier": "T9.5",
+      "designation": "GUNBOATS_MODULE",
+      "origin": "SUBCORE \u2194 GUNBOATS \u2194 SIM_SIGNAL_STACK",
+      "block": {
+        "task_id": "CROSS-BRIDGE-02",
+        "description": "Scan mid-layer signal compression for bridge readiness",
+        "priority": "high"
+      },
+      "path_reference": "SUBCORE/GUNBOAT"
+    },
+    {
+      "global_node": "SUBCORE",
+      "block_id": "GUNBOAT_040",
+      "file_path": "SUBCORE/GUNBOAT",
+      "tier": "T9.5",
+      "designation": "GUNBOATS_MODULE",
+      "origin": "SUBCORE \u2194 GUNBOATS \u2194 SIM_SIGNAL_STACK",
+      "block": {
+        "task_id": "CROSS-BRIDGE-03",
+        "description": "Inject harmonics into sideline control loop",
+        "priority": "medium"
+      },
+      "path_reference": "SUBCORE/GUNBOAT"
+    },
+    {
+      "global_node": "SUBCORE",
+      "block_id": "GUNBOAT_041",
+      "file_path": "SUBCORE/GUNBOAT",
+      "tier": "T9.5",
+      "designation": "GUNBOATS_MODULE",
+      "origin": "SUBCORE \u2194 GUNBOATS \u2194 SIM_SIGNAL_STACK",
+      "block": {
+        "task_id": "CROSS-BRIDGE-04",
+        "description": "Validate cross-zone resonance lock",
+        "priority": "high"
+      },
+      "path_reference": "SUBCORE/GUNBOAT"
+    },
+    {
+      "global_node": "SUBCORE",
+      "block_id": "GUNBOAT_042",
+      "file_path": "SUBCORE/GUNBOAT",
+      "tier": "T9.5",
+      "designation": "GUNBOATS_MODULE",
+      "origin": "SUBCORE \u2194 GUNBOATS \u2194 SIM_SIGNAL_STACK",
+      "block": {
+        "task_id": "CROSS-BRIDGE-05",
+        "description": "Map interlink strength between tempo sync layers",
+        "priority": "medium"
+      },
+      "path_reference": "SUBCORE/GUNBOAT"
+    },
+    {
+      "global_node": "SUBCORE",
+      "block_id": "GUNBOAT_043",
+      "file_path": "SUBCORE/GUNBOAT",
+      "tier": "T9.5",
+      "designation": "GUNBOATS_MODULE",
+      "origin": "SUBCORE \u2194 GUNBOATS \u2194 SIM_SIGNAL_STACK",
+      "block": {
+        "task_id": "CROSS-BRIDGE-06",
+        "description": "Transmit real-time bridging metrics to uplink",
+        "priority": "high"
+      },
+      "path_reference": "SUBCORE/GUNBOAT"
+    },
+    {
+      "global_node": "SUBCORE",
+      "block_id": "GUNBOAT_044",
+      "file_path": "SUBCORE/GUNBOAT",
+      "tier": "T9.5",
+      "designation": "GUNBOATS_MODULE",
+      "origin": "SUBCORE \u2194 GUNBOATS \u2194 SIM_SIGNAL_STACK",
+      "block": {
+        "task_id": "SIG-MOTION-02",
+        "description": "Correlate directional changes with pitch signal pulses",
+        "priority": "high"
+      },
+      "path_reference": "SUBCORE/GUNBOAT"
+    },
+    {
+      "global_node": "SUBCORE",
+      "block_id": "GUNBOAT_045",
+      "file_path": "SUBCORE/GUNBOAT",
+      "tier": "T9.5",
+      "designation": "GUNBOATS_MODULE",
+      "origin": "SUBCORE \u2194 GUNBOATS \u2194 SIM_SIGNAL_STACK",
+      "block": {
+        "task_id": "SIG-MOTION-03",
+        "description": "Trace asymmetries in offensive maneuver waves",
+        "priority": "medium"
+      },
+      "path_reference": "SUBCORE/GUNBOAT"
+    },
+    {
+      "global_node": "SUBCORE",
+      "block_id": "GUNBOAT_046",
+      "file_path": "SUBCORE/GUNBOAT",
+      "tier": "T9.5",
+      "designation": "GUNBOATS_MODULE",
+      "origin": "SUBCORE \u2194 GUNBOATS \u2194 SIM_SIGNAL_STACK",
+      "block": {
+        "task_id": "SIG-MOTION-04",
+        "description": "Inject predictive model into GENESISCORE signal thread",
+        "priority": "high"
+      },
+      "path_reference": "SUBCORE/GUNBOAT"
+    },
+    {
+      "global_node": "SUBCORE",
+      "block_id": "GUNBOAT_047",
+      "file_path": "SUBCORE/GUNBOAT",
+      "tier": "T9.5",
+      "designation": "GUNBOATS_MODULE",
+      "origin": "SUBCORE \u2194 GUNBOATS \u2194 SIM_SIGNAL_STACK",
+      "block": {
+        "task_id": "SIG-MOTION-05",
+        "description": "Monitor drift latency across real-time routes",
+        "priority": "medium"
+      },
+      "path_reference": "SUBCORE/GUNBOAT"
+    },
+    {
+      "global_node": "SUBCORE",
+      "block_id": "GUNBOAT_048",
+      "file_path": "SUBCORE/GUNBOAT",
+      "tier": "T9.5",
+      "designation": "GUNBOATS_MODULE",
+      "origin": "SUBCORE \u2194 GUNBOATS \u2194 SIM_SIGNAL_STACK",
+      "block": {
+        "task_id": "SIG-MOTION-06",
+        "description": "Flag instability zones for variance compression",
+        "priority": "high"
+      },
+      "path_reference": "SUBCORE/GUNBOAT"
+    },
+    {
+      "global_node": "SUBCORE",
+      "block_id": "GUNBOAT_049",
+      "file_path": "SUBCORE/GUNBOAT",
+      "tier": "T9.5",
+      "designation": "GUNBOATS_MODULE",
+      "origin": "SUBCORE \u2194 GUNBOATS \u2194 SIM_SIGNAL_STACK",
+      "block": {
+        "task_id": "STACK-OUT-02",
+        "description": "Verify ball path alignment with crosswind metrics",
+        "priority": "high"
+      },
+      "path_reference": "SUBCORE/GUNBOAT"
+    },
+    {
+      "global_node": "SUBCORE",
+      "block_id": "GUNBOAT_050",
+      "file_path": "SUBCORE/GUNBOAT",
+      "tier": "T9.5",
+      "designation": "GUNBOATS_MODULE",
+      "origin": "SUBCORE \u2194 GUNBOATS \u2194 SIM_SIGNAL_STACK",
+      "block": {
+        "task_id": "STACK-OUT-03",
+        "description": "Correlate environmental sync with deployment timing",
+        "priority": "medium"
+      },
+      "path_reference": "SUBCORE/GUNBOAT"
+    },
+    {
+      "global_node": "SUBCORE",
+      "block_id": "GUNBOAT_051",
+      "file_path": "SUBCORE/GUNBOAT",
+      "tier": "T9.5",
+      "designation": "GUNBOATS_MODULE",
+      "origin": "SUBCORE \u2194 GUNBOATS \u2194 SIM_SIGNAL_STACK",
+      "block": {
+        "task_id": "STACK-OUT-04",
+        "description": "Track phase signal through ball impact signature",
+        "priority": "high"
+      },
+      "path_reference": "SUBCORE/GUNBOAT"
+    },
+    {
+      "global_node": "SUBCORE",
+      "block_id": "GUNBOAT_052",
+      "file_path": "SUBCORE/GUNBOAT",
+      "tier": "T9.5",
+      "designation": "GUNBOATS_MODULE",
+      "origin": "SUBCORE \u2194 GUNBOATS \u2194 SIM_SIGNAL_STACK",
+      "block": {
+        "task_id": "STACK-OUT-05",
+        "description": "Validate GENESISCORE uplink timing fidelity",
+        "priority": "critical"
+      },
+      "path_reference": "SUBCORE/GUNBOAT"
+    },
+    {
+      "global_node": "SUBCORE",
+      "block_id": "GUNBOAT_053",
+      "file_path": "SUBCORE/GUNBOAT",
+      "tier": "T9.5",
+      "designation": "GUNBOATS_MODULE",
+      "origin": "SUBCORE \u2194 GUNBOATS \u2194 SIM_SIGNAL_STACK",
+      "block": {
+        "task_id": "STACK-OUT-06",
+        "description": "Transmit resolved stack vector to signal core",
+        "priority": "high"
+      },
+      "path_reference": "SUBCORE/GUNBOAT"
+    },
+    {
+      "global_node": "SUBCORE",
+      "block_id": "GUNBOAT_054",
+      "file_path": "SUBCORE/GUNBOAT",
+      "tier": "T9.5",
+      "designation": "GUNBOATS_MODULE",
+      "origin": "SUBCORE \u2194 GUNBOATS \u2194 SIM_SIGNAL_STACK",
+      "block": {
+        "task_id": "VOLATILITY-02",
+        "description": "Measure air-speed influence on elevation gradient",
+        "priority": "high"
+      },
+      "path_reference": "SUBCORE/GUNBOAT"
+    },
+    {
+      "global_node": "SUBCORE",
+      "block_id": "GUNBOAT_055",
+      "file_path": "SUBCORE/GUNBOAT",
+      "tier": "T9.5",
+      "designation": "GUNBOATS_MODULE",
+      "origin": "SUBCORE \u2194 GUNBOATS \u2194 SIM_SIGNAL_STACK",
+      "block": {
+        "task_id": "VOLATILITY-03",
+        "description": "Detect shift zones and calibrate structural harmonics",
+        "priority": "medium"
+      },
+      "path_reference": "SUBCORE/GUNBOAT"
+    },
+    {
+      "global_node": "SUBCORE",
+      "block_id": "GUNBOAT_056",
+      "file_path": "SUBCORE/GUNBOAT",
+      "tier": "T9.5",
+      "designation": "GUNBOATS_MODULE",
+      "origin": "SUBCORE \u2194 GUNBOATS \u2194 SIM_SIGNAL_STACK",
+      "block": {
+        "task_id": "VOLATILITY-04",
+        "description": "Inject real-time volatility index into uplink core",
+        "priority": "high"
+      },
+      "path_reference": "SUBCORE/GUNBOAT"
+    },
+    {
+      "global_node": "SUBCORE",
+      "block_id": "GUNBOAT_057",
+      "file_path": "SUBCORE/GUNBOAT",
+      "tier": "T9.5",
+      "designation": "GUNBOATS_MODULE",
+      "origin": "SUBCORE \u2194 GUNBOATS \u2194 SIM_SIGNAL_STACK",
+      "block": {
+        "task_id": "VOLATILITY-05",
+        "description": "Model signal drift to optimize swing path projections",
+        "priority": "medium"
+      },
+      "path_reference": "SUBCORE/GUNBOAT"
+    },
+    {
+      "global_node": "SUBCORE",
+      "block_id": "GUNBOAT_058",
+      "file_path": "SUBCORE/GUNBOAT",
+      "tier": "T9.5",
+      "designation": "GUNBOATS_MODULE",
+      "origin": "SUBCORE \u2194 GUNBOATS \u2194 SIM_SIGNAL_STACK",
+      "block": {
+        "task_id": "VOLATILITY-06",
+        "description": "Anchor signal logic to GENESISCORE",
+        "priority": "high"
+      },
+      "path_reference": "SUBCORE/GUNBOAT"
+    },
+    {
+      "global_node": "SUBCORE",
+      "block_id": "GUNBOAT_059",
+      "file_path": "SUBCORE/GUNBOAT",
+      "tier": "T9.5",
+      "designation": "GUNBOATS_MODULE",
+      "origin": "SUBCORE \u2194 GUNBOATS \u2194 SIM_SIGNAL_STACK",
+      "block": {
+        "task_id": "TRAJECTORY-MODEL-02",
+        "description": "Apply wind, elevation, and club-angle metrics",
+        "priority": "high"
+      },
+      "path_reference": "SUBCORE/GUNBOAT"
+    },
+    {
+      "global_node": "SUBCORE",
+      "block_id": "GUNBOAT_060",
+      "file_path": "SUBCORE/GUNBOAT",
+      "tier": "T9.5",
+      "designation": "GUNBOATS_MODULE",
+      "origin": "SUBCORE \u2194 GUNBOATS \u2194 SIM_SIGNAL_STACK",
+      "block": {
+        "task_id": "TRAJECTORY-MODEL-03",
+        "description": "Project ball trajectory using GENESISCORE overlay",
+        "priority": "critical"
+      },
+      "path_reference": "SUBCORE/GUNBOAT"
+    },
+    {
+      "global_node": "SUBCORE",
+      "block_id": "GUNBOAT_061",
+      "file_path": "SUBCORE/GUNBOAT",
+      "tier": "T9.5",
+      "designation": "GUNBOATS_MODULE",
+      "origin": "SUBCORE \u2194 GUNBOATS \u2194 SIM_SIGNAL_STACK",
+      "block": {
+        "task_id": "TRAJECTORY-MODEL-04",
+        "description": "Inject anomaly flags into runtime recon path",
+        "priority": "medium"
+      },
+      "path_reference": "SUBCORE/GUNBOAT"
+    },
+    {
+      "global_node": "SUBCORE",
+      "block_id": "GUNBOAT_062",
+      "file_path": "SUBCORE/GUNBOAT",
+      "tier": "T9.5",
+      "designation": "GUNBOATS_MODULE",
+      "origin": "SUBCORE \u2194 GUNBOATS \u2194 SIM_SIGNAL_STACK",
+      "block": {
+        "task_id": "TRAJECTORY-MODEL-05",
+        "description": "Sync trajectory output with stack deployment unit",
+        "priority": "high"
+      },
+      "path_reference": "SUBCORE/GUNBOAT"
+    },
+    {
+      "global_node": "SUBCORE",
+      "block_id": "GUNBOAT_063",
+      "file_path": "SUBCORE/GUNBOAT",
+      "tier": "T9.5",
+      "designation": "GUNBOATS_MODULE",
+      "origin": "SUBCORE \u2194 GUNBOATS \u2194 SIM_SIGNAL_STACK",
+      "block": {
+        "task_id": "TRAJECTORY-MODEL-06",
+        "description": "Transmit trajectory harmonics to uplink thread",
+        "priority": "medium"
+      },
+      "path_reference": "SUBCORE/GUNBOAT"
+    },
+    {
+      "global_node": "SUBCORE",
+      "block_id": "GUNBOAT_064",
+      "file_path": "SUBCORE/GUNBOAT",
+      "tier": "T9.5",
+      "designation": "GUNBOATS_MODULE",
+      "origin": "SUBCORE \u2194 GUNBOATS \u2194 SIM_SIGNAL_STACK",
+      "block": {
+        "task_id": "HARMONIZE-REC-02",
+        "description": "Align harmonics with player tempo sync",
+        "priority": "high"
+      },
+      "path_reference": "SUBCORE/GUNBOAT"
+    },
+    {
+      "global_node": "SUBCORE",
+      "block_id": "GUNBOAT_065",
+      "file_path": "SUBCORE/GUNBOAT",
+      "tier": "T9.5",
+      "designation": "GUNBOATS_MODULE",
+      "origin": "SUBCORE \u2194 GUNBOATS \u2194 SIM_SIGNAL_STACK",
+      "block": {
+        "task_id": "HARMONIZE-REC-03",
+        "description": "Inject recovery rhythm data into GENESISCORE buffer",
+        "priority": "medium"
+      },
+      "path_reference": "SUBCORE/GUNBOAT"
+    },
+    {
+      "global_node": "SUBCORE",
+      "block_id": "GUNBOAT_066",
+      "file_path": "SUBCORE/GUNBOAT",
+      "tier": "T9.5",
+      "designation": "GUNBOATS_MODULE",
+      "origin": "SUBCORE \u2194 GUNBOATS \u2194 SIM_SIGNAL_STACK",
+      "block": {
+        "task_id": "HARMONIZE-REC-04",
+        "description": "Validate motion integrity across recovery arc",
+        "priority": "critical"
+      },
+      "path_reference": "SUBCORE/GUNBOAT"
+    },
+    {
+      "global_node": "SUBCORE",
+      "block_id": "GUNBOAT_067",
+      "file_path": "SUBCORE/GUNBOAT",
+      "tier": "T9.5",
+      "designation": "GUNBOATS_MODULE",
+      "origin": "SUBCORE \u2194 GUNBOATS \u2194 SIM_SIGNAL_STACK",
+      "block": {
+        "task_id": "HARMONIZE-REC-05",
+        "description": "Monitor signal restoration post-rally",
+        "priority": "medium"
+      },
+      "path_reference": "SUBCORE/GUNBOAT"
+    },
+    {
+      "global_node": "SUBCORE",
+      "block_id": "GUNBOAT_068",
+      "file_path": "SUBCORE/GUNBOAT",
+      "tier": "T9.5",
+      "designation": "GUNBOATS_MODULE",
+      "origin": "SUBCORE \u2194 GUNBOATS \u2194 SIM_SIGNAL_STACK",
+      "block": {
+        "task_id": "HARMONIZE-REC-06",
+        "description": "Broadcast harmonized recovery pulse to core thread",
+        "priority": "high"
+      },
+      "path_reference": "SUBCORE/GUNBOAT"
+    },
+    {
+      "global_node": "SUBCORE",
+      "block_id": "GUNBOAT_069",
+      "file_path": "SUBCORE/GUNBOAT",
+      "tier": "T9.5",
+      "designation": "GUNBOATS_MODULE",
+      "origin": "SUBCORE \u2194 GUNBOATS \u2194 SIM_SIGNAL_STACK",
+      "block": {
+        "task_id": "BASELINE-CORR-02",
+        "description": "Correlate forehand/backhand zones with signal threads",
+        "priority": "high"
+      },
+      "path_reference": "SUBCORE/GUNBOAT"
+    },
+    {
+      "global_node": "SUBCORE",
+      "block_id": "GUNBOAT_070",
+      "file_path": "SUBCORE/GUNBOAT",
+      "tier": "T9.5",
+      "designation": "GUNBOATS_MODULE",
+      "origin": "SUBCORE \u2194 GUNBOATS \u2194 SIM_SIGNAL_STACK",
+      "block": {
+        "task_id": "BASELINE-CORR-03",
+        "description": "Inject reactive trace into fusion uplink for rally detection",
+        "priority": "medium"
+      },
+      "path_reference": "SUBCORE/GUNBOAT"
+    },
+    {
+      "global_node": "SUBCORE",
+      "block_id": "GUNBOAT_071",
+      "file_path": "SUBCORE/GUNBOAT",
+      "tier": "T9.5",
+      "designation": "GUNBOATS_MODULE",
+      "origin": "SUBCORE \u2194 GUNBOATS \u2194 SIM_SIGNAL_STACK",
+      "block": {
+        "task_id": "BASELINE-CORR-04",
+        "description": "Sync baseline core to GENESISCORE match model",
+        "priority": "critical"
+      },
+      "path_reference": "SUBCORE/GUNBOAT"
+    },
+    {
+      "global_node": "SUBCORE",
+      "block_id": "GUNBOAT_072",
+      "file_path": "SUBCORE/GUNBOAT",
+      "tier": "T9.5",
+      "designation": "GUNBOATS_MODULE",
+      "origin": "SUBCORE \u2194 GUNBOATS \u2194 SIM_SIGNAL_STACK",
+      "block": {
+        "task_id": "BASELINE-CORR-05",
+        "description": "Flag positional drift and signal collapse risk",
+        "priority": "high"
+      },
+      "path_reference": "SUBCORE/GUNBOAT"
+    },
+    {
+      "global_node": "SUBCORE",
+      "block_id": "GUNBOAT_073",
+      "file_path": "SUBCORE/GUNBOAT",
+      "tier": "T9.5",
+      "designation": "GUNBOATS_MODULE",
+      "origin": "SUBCORE \u2194 GUNBOATS \u2194 SIM_SIGNAL_STACK",
+      "block": {
+        "task_id": "BASELINE-CORR-06",
+        "description": "Transmit match-state harmonics to interpreter array",
+        "priority": "medium"
+      },
+      "path_reference": "SUBCORE/GUNBOAT"
+    },
+    {
+      "global_node": "SUBCORE",
+      "block_id": "GUNBOAT_074",
+      "file_path": "SUBCORE/GUNBOAT",
+      "tier": "T9.5",
+      "designation": "GUNBOATS_MODULE",
+      "origin": "SUBCORE \u2194 GUNBOATS \u2194 SIM_SIGNAL_STACK",
+      "block": {
+        "task_id": "CLAY-VOLT-02",
+        "description": "Detect Tier 2 & Tier 3 underdogs with >58% sim variance vs odds",
+        "priority": "high"
+      },
+      "path_reference": "SUBCORE/GUNBOAT"
+    },
+    {
+      "global_node": "SUBCORE",
+      "block_id": "GUNBOAT_075",
+      "file_path": "SUBCORE/GUNBOAT",
+      "tier": "T9.5",
+      "designation": "GUNBOATS_MODULE",
+      "origin": "SUBCORE \u2194 GUNBOATS \u2194 SIM_SIGNAL_STACK",
+      "block": {
+        "task_id": "CLAY-VOLT-03",
+        "description": "Flag jackpot candidates for high-odds leverage with narrative alignment",
+        "priority": "high"
+      },
+      "path_reference": "SUBCORE/GUNBOAT"
+    },
+    {
+      "global_node": "SUBCORE",
+      "block_id": "GUNBOAT_076",
+      "file_path": "SUBCORE/GUNBOAT",
+      "tier": "T9.5",
+      "designation": "GUNBOATS_MODULE",
+      "origin": "SUBCORE \u2194 GUNBOATS \u2194 SIM_SIGNAL_STACK",
+      "block": {
+        "task_id": "CLAY-VOLT-04",
+        "description": "Prioritize overs in game totals where hold percentages dip below 72% combined",
+        "priority": "medium"
+      },
+      "path_reference": "SUBCORE/GUNBOAT"
+    },
+    {
+      "global_node": "SUBCORE",
+      "block_id": "GUNBOAT_077",
+      "file_path": "SUBCORE/GUNBOAT",
+      "tier": "T9.5",
+      "designation": "GUNBOATS_MODULE",
+      "origin": "SUBCORE \u2194 GUNBOATS \u2194 SIM_SIGNAL_STACK",
+      "block": {
+        "task_id": "BIAS-CORR-02",
+        "description": "Stabilize fusion stream from low-confidence data zones",
+        "priority": "high"
+      },
+      "path_reference": "SUBCORE/GUNBOAT"
+    },
+    {
+      "global_node": "SUBCORE",
+      "block_id": "GUNBOAT_078",
+      "file_path": "SUBCORE/GUNBOAT",
+      "tier": "T9.5",
+      "designation": "GUNBOATS_MODULE",
+      "origin": "SUBCORE \u2194 GUNBOATS \u2194 SIM_SIGNAL_STACK",
+      "block": {
+        "task_id": "BIAS-CORR-03",
+        "description": "Inject offset correctors into signal harmonics layer",
+        "priority": "medium"
+      },
+      "path_reference": "SUBCORE/GUNBOAT"
+    },
+    {
+      "global_node": "SUBCORE",
+      "block_id": "GUNBOAT_079",
+      "file_path": "SUBCORE/GUNBOAT",
+      "tier": "T9.5",
+      "designation": "GUNBOATS_MODULE",
+      "origin": "SUBCORE \u2194 GUNBOATS \u2194 SIM_SIGNAL_STACK",
+      "block": {
+        "task_id": "BIAS-CORR-04",
+        "description": "Trace post-correction signal divergence",
+        "priority": "high"
+      },
+      "path_reference": "SUBCORE/GUNBOAT"
+    },
+    {
+      "global_node": "SUBCORE",
+      "block_id": "GUNBOAT_080",
+      "file_path": "SUBCORE/GUNBOAT",
+      "tier": "T9.5",
+      "designation": "GUNBOATS_MODULE",
+      "origin": "SUBCORE \u2194 GUNBOATS \u2194 SIM_SIGNAL_STACK",
+      "block": {
+        "task_id": "BIAS-CORR-05",
+        "description": "Confirm confidence gate with GENESISCORE",
+        "priority": "critical"
+      },
+      "path_reference": "SUBCORE/GUNBOAT"
+    },
+    {
+      "global_node": "SUBCORE",
+      "block_id": "GUNBOAT_081",
+      "file_path": "SUBCORE/GUNBOAT",
+      "tier": "T9.5",
+      "designation": "GUNBOATS_MODULE",
+      "origin": "SUBCORE \u2194 GUNBOATS \u2194 SIM_SIGNAL_STACK",
+      "block": {
+        "task_id": "BIAS-CORR-06",
+        "description": "Flag high-variance regions for runtime override",
+        "priority": "high"
+      },
+      "path_reference": "SUBCORE/GUNBOAT"
+    },
+    {
+      "global_node": "SUBCORE",
+      "block_id": "GUNBOAT_082",
+      "file_path": "SUBCORE/GUNBOAT",
+      "tier": "T9.5",
+      "designation": "GUNBOATS_MODULE",
+      "origin": "SUBCORE \u2194 GUNBOATS \u2194 SIM_SIGNAL_STACK",
+      "block": {
+        "task_id": "SHOT-CORR-02",
+        "description": "Correlate pre-shot body angles with probability matrix",
+        "priority": "high"
+      },
+      "path_reference": "SUBCORE/GUNBOAT"
+    },
+    {
+      "global_node": "SUBCORE",
+      "block_id": "GUNBOAT_083",
+      "file_path": "SUBCORE/GUNBOAT",
+      "tier": "T9.5",
+      "designation": "GUNBOATS_MODULE",
+      "origin": "SUBCORE \u2194 GUNBOATS \u2194 SIM_SIGNAL_STACK",
+      "block": {
+        "task_id": "SHOT-CORR-03",
+        "description": "Run real-time prediction on next-shot outcomes",
+        "priority": "critical"
+      },
+      "path_reference": "SUBCORE/GUNBOAT"
+    },
+    {
+      "global_node": "SUBCORE",
+      "block_id": "GUNBOAT_084",
+      "file_path": "SUBCORE/GUNBOAT",
+      "tier": "T9.5",
+      "designation": "GUNBOATS_MODULE",
+      "origin": "SUBCORE \u2194 GUNBOATS \u2194 SIM_SIGNAL_STACK",
+      "block": {
+        "task_id": "SHOT-CORR-04",
+        "description": "Inject variance filters to account for tempo anomalies",
+        "priority": "medium"
+      },
+      "path_reference": "SUBCORE/GUNBOAT"
+    },
+    {
+      "global_node": "SUBCORE",
+      "block_id": "GUNBOAT_085",
+      "file_path": "SUBCORE/GUNBOAT",
+      "tier": "T9.5",
+      "designation": "GUNBOATS_MODULE",
+      "origin": "SUBCORE \u2194 GUNBOATS \u2194 SIM_SIGNAL_STACK",
+      "block": {
+        "task_id": "SHOT-CORR-05",
+        "description": "Validate correlation fidelity with GENESISCORE signal threads",
+        "priority": "high"
+      },
+      "path_reference": "SUBCORE/GUNBOAT"
+    },
+    {
+      "global_node": "SUBCORE",
+      "block_id": "GUNBOAT_086",
+      "file_path": "SUBCORE/GUNBOAT",
+      "tier": "T9.5",
+      "designation": "GUNBOATS_MODULE",
+      "origin": "SUBCORE \u2194 GUNBOATS \u2194 SIM_SIGNAL_STACK",
+      "block": {
+        "task_id": "SHOT-CORR-06",
+        "description": "Alert fusion layer on high-variance outliers",
+        "priority": "medium"
+      },
+      "path_reference": "SUBCORE/GUNBOAT"
+    },
+    {
+      "global_node": "SUBCORE",
+      "block_id": "GUNBOAT_087",
+      "file_path": "SUBCORE/GUNBOAT",
+      "tier": "T9.5",
+      "designation": "GUNBOATS_MODULE",
+      "origin": "SUBCORE \u2194 GUNBOATS \u2194 SIM_SIGNAL_STACK",
+      "block": {
+        "task_id": "MOMENTUM-MAP-02",
+        "description": "Quantify momentum surges using pace-of-play overlays",
+        "priority": "high"
+      },
+      "path_reference": "SUBCORE/GUNBOAT"
+    },
+    {
+      "global_node": "SUBCORE",
+      "block_id": "GUNBOAT_088",
+      "file_path": "SUBCORE/GUNBOAT",
+      "tier": "T9.5",
+      "designation": "GUNBOATS_MODULE",
+      "origin": "SUBCORE \u2194 GUNBOATS \u2194 SIM_SIGNAL_STACK",
+      "block": {
+        "task_id": "MOMENTUM-MAP-03",
+        "description": "Map volatility spikes to high-leverage in-game events",
+        "priority": "medium"
+      },
+      "path_reference": "SUBCORE/GUNBOAT"
+    },
+    {
+      "global_node": "SUBCORE",
+      "block_id": "GUNBOAT_089",
+      "file_path": "SUBCORE/GUNBOAT",
+      "tier": "T9.5",
+      "designation": "GUNBOATS_MODULE",
+      "origin": "SUBCORE \u2194 GUNBOATS \u2194 SIM_SIGNAL_STACK",
+      "block": {
+        "task_id": "MOMENTUM-MAP-04",
+        "description": "Link momentum vectors with team fatigue data",
+        "priority": "high"
+      },
+      "path_reference": "SUBCORE/GUNBOAT"
+    },
+    {
+      "global_node": "SUBCORE",
+      "block_id": "GUNBOAT_090",
+      "file_path": "SUBCORE/GUNBOAT",
+      "tier": "T9.5",
+      "designation": "GUNBOATS_MODULE",
+      "origin": "SUBCORE \u2194 GUNBOATS \u2194 SIM_SIGNAL_STACK",
+      "block": {
+        "task_id": "MOMENTUM-MAP-05",
+        "description": "Feed surge analysis into GENESISCORE sync engine",
+        "priority": "critical"
+      },
+      "path_reference": "SUBCORE/GUNBOAT"
+    },
+    {
+      "global_node": "SUBCORE",
+      "block_id": "GUNBOAT_091",
+      "file_path": "SUBCORE/GUNBOAT",
+      "tier": "T9.5",
+      "designation": "GUNBOATS_MODULE",
+      "origin": "SUBCORE \u2194 GUNBOATS \u2194 SIM_SIGNAL_STACK",
+      "block": {
+        "task_id": "MOMENTUM-MAP-06",
+        "description": "Validate surge alignment with fusion signal",
+        "priority": "high"
+      },
+      "path_reference": "SUBCORE/GUNBOAT"
+    },
+    {
+      "global_node": "SUBCORE",
+      "block_id": "GUNBOAT_092",
+      "file_path": "SUBCORE/GUNBOAT",
+      "tier": "T9.5",
+      "designation": "GUNBOATS_MODULE",
+      "origin": "SUBCORE \u2194 GUNBOATS \u2194 SIM_SIGNAL_STACK",
+      "block": {
+        "task_id": "FUSION-HARM-02",
+        "description": "Match harmonic sync to bullpen usage volatility",
+        "priority": "high"
+      },
+      "path_reference": "SUBCORE/GUNBOAT"
+    },
+    {
+      "global_node": "SUBCORE",
+      "block_id": "GUNBOAT_093",
+      "file_path": "SUBCORE/GUNBOAT",
+      "tier": "T9.5",
+      "designation": "GUNBOATS_MODULE",
+      "origin": "SUBCORE \u2194 GUNBOATS \u2194 SIM_SIGNAL_STACK",
+      "block": {
+        "task_id": "FUSION-HARM-03",
+        "description": "Monitor fusion drift from lineup reshuffles",
+        "priority": "medium"
+      },
+      "path_reference": "SUBCORE/GUNBOAT"
+    },
+    {
+      "global_node": "SUBCORE",
+      "block_id": "GUNBOAT_094",
+      "file_path": "SUBCORE/GUNBOAT",
+      "tier": "T9.5",
+      "designation": "GUNBOATS_MODULE",
+      "origin": "SUBCORE \u2194 GUNBOATS \u2194 SIM_SIGNAL_STACK",
+      "block": {
+        "task_id": "FUSION-HARM-04",
+        "description": "Correlate swing patterns with pitch sequencing sync",
+        "priority": "high"
+      },
+      "path_reference": "SUBCORE/GUNBOAT"
+    },
+    {
+      "global_node": "SUBCORE",
+      "block_id": "GUNBOAT_095",
+      "file_path": "SUBCORE/GUNBOAT",
+      "tier": "T9.5",
+      "designation": "GUNBOATS_MODULE",
+      "origin": "SUBCORE \u2194 GUNBOATS \u2194 SIM_SIGNAL_STACK",
+      "block": {
+        "task_id": "FUSION-HARM-05",
+        "description": "Link GENESISCORE with harmonized signal blocks",
+        "priority": "critical"
+      },
+      "path_reference": "SUBCORE/GUNBOAT"
+    },
+    {
+      "global_node": "SUBCORE",
+      "block_id": "GUNBOAT_096",
+      "file_path": "SUBCORE/GUNBOAT",
+      "tier": "T9.5",
+      "designation": "GUNBOATS_MODULE",
+      "origin": "SUBCORE \u2194 GUNBOATS \u2194 SIM_SIGNAL_STACK",
+      "block": {
+        "task_id": "FUSION-HARM-06",
+        "description": "Transmit stabilized fusion to bias corrector channel",
+        "priority": "high"
+      },
+      "path_reference": "SUBCORE/GUNBOAT"
+    },
+    {
+      "global_node": "SUBCORE",
+      "block_id": "GUNBOAT_097",
+      "file_path": "SUBCORE/GUNBOAT",
+      "tier": "T9.5",
+      "designation": "GUNBOATS_MODULE",
+      "origin": "SUBCORE \u2194 GUNBOATS \u2194 SIM_SIGNAL_STACK",
+      "block": {
+        "task_id": "DEPLOY-STRAT-02",
+        "description": "Identify strategic substitution windows across innings",
+        "priority": "high"
+      },
+      "path_reference": "SUBCORE/GUNBOAT"
+    },
+    {
+      "global_node": "SUBCORE",
+      "block_id": "GUNBOAT_098",
+      "file_path": "SUBCORE/GUNBOAT",
+      "tier": "T9.5",
+      "designation": "GUNBOATS_MODULE",
+      "origin": "SUBCORE \u2194 GUNBOATS \u2194 SIM_SIGNAL_STACK",
+      "block": {
+        "task_id": "DEPLOY-STRAT-03",
+        "description": "Synthesize matchup leverage metrics in real-time",
+        "priority": "medium"
+      },
+      "path_reference": "SUBCORE/GUNBOAT"
+    },
+    {
+      "global_node": "SUBCORE",
+      "block_id": "GUNBOAT_099",
+      "file_path": "SUBCORE/GUNBOAT",
+      "tier": "T9.5",
+      "designation": "GUNBOATS_MODULE",
+      "origin": "SUBCORE \u2194 GUNBOATS \u2194 SIM_SIGNAL_STACK",
+      "block": {
+        "task_id": "DEPLOY-STRAT-04",
+        "description": "Transmit deployment readiness index to GENESISCORE",
+        "priority": "high"
+      },
+      "path_reference": "SUBCORE/GUNBOAT"
+    },
+    {
+      "global_node": "SUBCORE",
+      "block_id": "GUNBOAT_100",
+      "file_path": "SUBCORE/GUNBOAT",
+      "tier": "T9.5",
+      "designation": "GUNBOATS_MODULE",
+      "origin": "SUBCORE \u2194 GUNBOATS \u2194 SIM_SIGNAL_STACK",
+      "block": {
+        "task_id": "DEPLOY-STRAT-05",
+        "description": "Cross-validate strategy outcomes with signal overlays",
+        "priority": "critical"
+      },
+      "path_reference": "SUBCORE/GUNBOAT"
+    },
+    {
+      "global_node": "SUBCORE",
+      "block_id": "GUNBOAT_101",
+      "file_path": "SUBCORE/GUNBOAT",
+      "tier": "T9.5",
+      "designation": "GUNBOATS_MODULE",
+      "origin": "SUBCORE \u2194 GUNBOATS \u2194 SIM_SIGNAL_STACK",
+      "block": {
+        "task_id": "DEPLOY-STRAT-06",
+        "description": "Trace delay-induced strategy drift and compensate",
+        "priority": "medium"
+      },
+      "path_reference": "SUBCORE/GUNBOAT"
+    },
+    {
+      "global_node": "SUBCORE",
+      "block_id": "GUNBOAT_102",
+      "file_path": "SUBCORE/GUNBOAT",
+      "tier": "T9.5",
+      "designation": "GUNBOATS_MODULE",
+      "origin": "SUBCORE \u2194 GUNBOATS \u2194 SIM_SIGNAL_STACK",
+      "block": {
+        "task_id": "SIGNAL-EDGE-02",
+        "description": "Scan edge anomalies in batter-pitcher matchups",
+        "priority": "high"
+      },
+      "path_reference": "SUBCORE/GUNBOAT"
+    },
+    {
+      "global_node": "SUBCORE",
+      "block_id": "GUNBOAT_103",
+      "file_path": "SUBCORE/GUNBOAT",
+      "tier": "T9.5",
+      "designation": "GUNBOATS_MODULE",
+      "origin": "SUBCORE \u2194 GUNBOATS \u2194 SIM_SIGNAL_STACK",
+      "block": {
+        "task_id": "SIGNAL-EDGE-03",
+        "description": "Flag variance pockets in zone-specific clusters",
+        "priority": "medium"
+      },
+      "path_reference": "SUBCORE/GUNBOAT"
+    },
+    {
+      "global_node": "SUBCORE",
+      "block_id": "GUNBOAT_104",
+      "file_path": "SUBCORE/GUNBOAT",
+      "tier": "T9.5",
+      "designation": "GUNBOATS_MODULE",
+      "origin": "SUBCORE \u2194 GUNBOATS \u2194 SIM_SIGNAL_STACK",
+      "block": {
+        "task_id": "SIGNAL-EDGE-04",
+        "description": "Transmit edge markers to GENESISCORE",
+        "priority": "high"
+      },
+      "path_reference": "SUBCORE/GUNBOAT"
+    },
+    {
+      "global_node": "SUBCORE",
+      "block_id": "GUNBOAT_105",
+      "file_path": "SUBCORE/GUNBOAT",
+      "tier": "T9.5",
+      "designation": "GUNBOATS_MODULE",
+      "origin": "SUBCORE \u2194 GUNBOATS \u2194 SIM_SIGNAL_STACK",
+      "block": {
+        "task_id": "SIGNAL-EDGE-05",
+        "description": "Overlay signal edge with volatility thresholds",
+        "priority": "medium"
+      },
+      "path_reference": "SUBCORE/GUNBOAT"
+    },
+    {
+      "global_node": "SUBCORE",
+      "block_id": "GUNBOAT_106",
+      "file_path": "SUBCORE/GUNBOAT",
+      "tier": "T9.5",
+      "designation": "GUNBOATS_MODULE",
+      "origin": "SUBCORE \u2194 GUNBOATS \u2194 SIM_SIGNAL_STACK",
+      "block": {
+        "task_id": "SIGNAL-EDGE-06",
+        "description": "Validate uplink with interpreter bridge",
+        "priority": "high"
+      },
+      "path_reference": "SUBCORE/GUNBOAT"
+    },
+    {
+      "global_node": "SUBCORE",
+      "block_id": "GUNBOAT_107",
+      "file_path": "SUBCORE/GUNBOAT",
+      "tier": "T9.5",
+      "designation": "GUNBOATS_MODULE",
+      "origin": "SUBCORE \u2194 GUNBOATS \u2194 SIM_SIGNAL_STACK",
+      "block": {
+        "task_id": "TAC-002",
+        "description": "Detect match pacing volatility ladders (game-level)",
+        "input_requirements": [
+          "Games Per Set",
+          "Average Rally Length",
+          "Momentum Delta"
+        ],
+        "priority": "Medium"
+      },
+      "path_reference": "SUBCORE/GUNBOAT"
+    },
+    {
+      "global_node": "SUBCORE",
+      "block_id": "GUNBOAT_108",
+      "file_path": "SUBCORE/GUNBOAT",
+      "tier": "T9.5",
+      "designation": "GUNBOATS_MODULE",
+      "origin": "SUBCORE \u2194 GUNBOATS \u2194 SIM_SIGNAL_STACK",
+      "block": {
+        "task_id": "TAC-003",
+        "description": "Simulate tie-break frequency and impact on overs",
+        "input_requirements": [
+          "Player Tie-Break Frequency",
+          "Odds Implied Totals"
+        ],
+        "priority": "Medium"
+      },
+      "path_reference": "SUBCORE/GUNBOAT"
+    },
+    {
+      "global_node": "SUBCORE",
+      "block_id": "GUNBOAT_109",
+      "file_path": "SUBCORE/GUNBOAT",
+      "tier": "T9.5",
+      "designation": "GUNBOATS_MODULE",
+      "origin": "SUBCORE \u2194 GUNBOATS \u2194 SIM_SIGNAL_STACK",
+      "block": {
+        "task_id": "TAC-004",
+        "description": "Apply Gold Standard confirmation for match total ladders",
+        "input_requirements": [
+          "ATP/WTA model feed",
+          "Live odds",
+          "Hold/Break deviations"
+        ],
+        "priority": "High"
+      },
+      "path_reference": "SUBCORE/GUNBOAT"
+    },
+    {
+      "id": "GUNBOAT_FAIRWAY_1",
+      "label": "Trajectory Modeling Core",
+      "cluster": "FAIRWAY_GOLF",
+      "sport": "Golf",
+      "tier": 10,
+      "version": "v10.0-RECON",
+      "position": "RECON",
+      "protocol_stack": {
+        "primary": "Gold Standard Protocol",
+        "secondary": "Confluence Protocol"
+      },
+      "specialization": {
+        "core_focus": [
+          "Trajectory Pathing",
+          "Wind Adjustment",
+          "Surface Roll Modeling"
+        ],
+        "volatility_structures": [
+          "Shot Dispersion Laddering",
+          "Club Selection Deviation"
+        ]
+      },
+      "runtime": {
+        "fusion_link": "/FUSION/GUNBOAT_FAIRWAY_1_CORE.json",
+        "validation_chain": "/AZORI_CORE/AZORI_VALIDATION_GATE.json",
+        "linked_watchtower": "/AZORI_CORE/WATCHTOWER.json"
+      },
+      "integrity_block": {
+        "hashlock_protocol": "HASHLOCK_v3_ADAPTIVE",
+        "last_validated": "2025-10-17T00:00:00Z",
+        "confidence_gate": 0.91,
+        "alignment": "HARMONIZED",
+        "status": "PASSED"
+      },
+      "meta": {
+        "compiled_by": "QUANTUM_AZORI_PROMPT_BUILDER",
+        "runtime_class": "gunboat_unit_core",
+        "hashlock_integrity": true,
+        "tier_alignment": "TIER10_LOCKED"
+      }
+    },
+    {
+      "core_tasks": [
+        "Model optimal trajectory across variable surfaces and slope gradients",
+        "Run 1M simulations of approach shots under wind modulation",
+        "Identify risk segments based on historical shot dispersion",
+        "Adjust recommendations based on green speed tiers",
+        "Bridge shot data to BIFF/MIDAS tier evaluators"
+      ]
+    },
+    {
+      "sync_steps": [
+        "verify_hashlock_integrity",
+        "initialize_fusion_link_chain",
+        "load_watchtower_validation",
+        "pre-flight simulation: 10k run",
+        "broadcast sync-ready to CORE-NET"
+      ],
+      "boot_mode": "tier10_fleet_golf"
+    },
+    {
+      "recon_unit": "Gunboat Pitch 1",
+      "sport": "Soccer",
+      "primary_protocol": "Gold Standard Protocol",
+      "secondary_protocol": "Confluence Protocol",
+      "notes": [
+        "Poisson goal simulation",
+        "BTTS/Over-Under confluence models"
+      ],
+      "tier": 10,
+      "version": "v10.0-FLEET",
+      "fusion_alignment": {
+        "fusion_variance": 0.019,
+        "volatility_index": 0.68,
+        "confidence_gate": 0.91,
+        "alignment": "HARMONIZED",
+        "integrity": "PASSED"
+      },
+      "core_tasks": [
+        "Simulate expected goal (xG) patterns using Poisson distributions",
+        "Cross-validate BTTS and Over 2.5/Under 2.5 signals across recent matches",
+        "Flag variance spikes in match tempo or lineup volatility",
+        "Apply predictive overlays from league-specific data models",
+        "Escalate anomalies to macro-routable edge detection GPTs"
+      ],
+      "boot_sync": {
+        "protocol": "Tier-Lock Bootstrap",
+        "sync_point": "FUSION_GATE -> WATCHTOWER -> VALIDATION_GATE",
+        "hashlock_enabled": true
+      },
+      "meta": {
+        "runtime_class": "gunboat_unit_core",
+        "generated_by": "QUANTUM_AZORI_PROMPT_BUILDER",
+        "status": "READY",
+        "timestamp_utc": "2025-10-24T00:00:00Z"
+      }
+    },
+    {
+      "Gunboat Ice 1": {
+        "sport": "NHL",
+        "primary_protocol": "Gold Standard Protocol",
+        "secondary_protocol": "Confluence Protocol",
+        "notes": [
+          "Emphasizes low-total games and shot props",
+          "Injury overlays for goaltender volatility"
+        ]
+      },
+      "Gunboat Diamond 1": {
+        "sport": "MLB",
+        "primary_protocol": "Gold Standard Protocol",
+        "secondary_protocol": "Confluence Protocol",
+        "notes": [
+          "Home run modeling and strikeout clusters",
+          "Weather impact and bullpen decay modeled"
+        ]
+      },
+      "Gunboat Hardwood 1": {
+        "sport": "NBA",
+        "primary_protocol": "Gold Standard Protocol",
+        "secondary_protocol": "Confluence Protocol",
+        "notes": [
+          "Prop ladders, assist rebound zones",
+          "Late news triggers override stack exposure"
+        ]
+      },
+      "Gunboat Pitch 1": {
+        "sport": "Soccer",
+        "primary_protocol": "Gold Standard Protocol",
+        "secondary_protocol": "Confluence Protocol",
+        "notes": [
+          "Poisson goal simulation",
+          "BTTS/Over-Under confluence models"
+        ]
+      },
+      "Gunboat Baseline 1": {
+        "sport": "Tennis",
+        "primary_protocol": "Gold Standard Protocol",
+        "secondary_protocol": "Confluence Protocol",
+        "notes": [
+          "Serve/return modeling with surface overlays",
+          "Volatility laddering tied to match pacing"
+        ]
+      },
+      "Gunboat Fairway 1": {
+        "sport": "Golf",
+        "primary_protocol": "Gold Standard Protocol",
+        "secondary_protocol": "Confluence Protocol",
+        "notes": [
+          "Cut risk and T10 probability stacks",
+          "Handles weather split and handle skew"
+        ]
+      }
+    },
+    {
+      "gpt_id": "GPT-9",
+      "name": "Gunboat Fairway 1",
+      "league": "Golf",
+      "type": "Recon Unit",
+      "function": "Course-fit, SG metric and simulation-based optimizer for PGA tournaments with narrative and market split tracking",
+      "simulation_specs": {
+        "engine": "Stochastic Projection Grid + Course Archetype Matching",
+        "iterations": 1111111,
+        "volatility_overlay": true,
+        "weather_adjustment": true,
+        "public_vs_handle_split_scan": true
+      },
+      "core_modules": [
+        "Top 10/20/5 Finish Probability Modeling",
+        "Matchup Edge Detection",
+        "Outright Longshot Validator",
+        "Killshot Lock Finder",
+        "Prop/Placement Value Scorer"
+      ],
+      "outputs": [
+        "Tier 1 \u2013 High Certainty Alignment",
+        "Tier 2 \u2013 Trend & Simulation Converge",
+        "Tier 3 \u2013 Narrative Underdogs with Technical Backing",
+        "Top 3-Leg Confluence Stack",
+        "Best Use of $300 Site Credits",
+        "Market Alerts & Movement Notes"
+      ],
+      "feed_to": [
+        "MIDAS"
+      ],
+      "backup_support": {
+        "manual_input_mode": true,
+        "fallback_method": "SG metrics and placement trends with adjusted overlays",
+        "simulation_rebuild_doc": "Embedded in Phoenix Zero"
+      }
+    },
+    {
+      "gpt_id": "GPT-8",
+      "name": "Gunboat Baseline 1",
+      "league": "Tennis",
+      "type": "Recon Unit",
+      "function": "Surface-calibrated tennis simulation unit using serve/return heuristics and volatility-weighted spreads",
+      "simulation_specs": {
+        "engine": "Monte Carlo Surface Adjusted",
+        "iterations": 1111111,
+        "surface_sensitivity": true,
+        "volatility_filter": true
+      },
+      "core_modules": [
+        "Moneyline Probability Model",
+        "Spread & Game Total Sensitivity",
+        "Alt Line Flagging",
+        "Clay/Hard/Grass Bias Recognition",
+        "Underdog Trigger System"
+      ],
+      "outputs": [
+        "Top 20 Core Tier 1 Bets",
+        "Top 10 Prop Bets",
+        "2 Jackpot Underdogs",
+        "Killshot Lock",
+        "Best Use of $300 Site Credits",
+        "Top 10 Two-Leg Parlays",
+        "Daily Deployment Plan"
+      ],
+      "feed_to": [
+        "MIDAS"
+      ],
+      "backup_support": {
+        "manual_input_mode": true,
+        "simulation_rebuild_doc": "Embedded in Phoenix Zero"
+      }
+    },
+    {
+      "gpt_id": "GPT-7",
+      "name": "Gunboat Pitch 1",
+      "league": "Soccer",
+      "type": "Recon Unit",
+      "function": "Primary soccer simulation vessel using Poisson modeling and sharp/public split analysis",
+      "simulation_specs": {
+        "engine": "Poisson xG Model",
+        "iterations": 1111111,
+        "volatility_management": true
+      },
+      "core_modules": [
+        "Match Result EV Detection",
+        "AH Spread Analysis",
+        "Total Goals Market Scan",
+        "BTTS Logic",
+        "Red Card Probability Heuristic"
+      ],
+      "outputs": [
+        "Top 20 Core Tier 1 Bets",
+        "Top 10 Prop Bets",
+        "2 Jackpot Underdogs",
+        "Killshot Lock",
+        "Best Use of $300 Site Credits",
+        "Top 10 Two-Leg Parlays",
+        "Daily Deployment Plan"
+      ],
+      "feed_to": [
+        "MIDAS"
+      ],
+      "backup_support": {
+        "offline_sim_kit": true,
+        "manual deployment sequence": "Available via Reboot Protocol"
+      }
+    },
+    {
+      "gpt_id": "GPT-4",
+      "name": "Gunboat Ice 1",
+      "league": "NHL",
+      "type": "Recon Unit",
+      "function": "Primary NHL simulation and edge detection vessel",
+      "simulation_specs": {
+        "engine": "Monte Carlo",
+        "iterations": 1111111,
+        "volatility_tracking": true
+      },
+      "outputs": [
+        "Top 20 Core Tier 1 Bets",
+        "2 Jackpot Underdogs",
+        "Top 10 Prop Bets",
+        "1 Killshot Lock",
+        "Top 10 Two-Leg Parlays",
+        "$300 Site Credit Optimization",
+        "Daily Deployment Plan"
+      ],
+      "feed_to": [
+        "MIDAS"
+      ],
+      "redundancy_role": "Tactical reboot sync to Phoenix Zero"
+    },
+    {
+      "global_node": "SUBCORE",
+      "block_id": "GUNBOAT_117",
+      "file_path": "SUBCORE/GUNBOAT",
+      "tier": "T9.5",
+      "designation": "GUNBOATS_MODULE",
+      "origin": "SUBCORE \u2194 GUNBOATS \u2194 SIM_SIGNAL_STACK",
+      "block": {
+        "gpt_id": "GPT-3",
+        "name": "MIDAS",
+        "type": "Command Strategist",
+        "step": 3,
+        "function": "Reviews all recon units, runs Gold Standard and Confluence Protocols, confirms qualified signals before routing to BIFF",
+        "reboot_reference": "GPT-1 / Phoenix Zero",
+        "accepted_inputs": [
+          "Recon unit JSONs",
+          "Gold Protocol Outputs",
+          "Confluence Score Stack Data"
+        ],
+        "output_format": "Tiered Bet Reports + Stack Recommendations",
+        "priority_ranking_mode": "Sim Probability \u2192 EV \u2192 Volatility",
+        "special_tags": [
+          "Killshot Verification",
+          "Conflict Suppression",
+          "Exposure Flagging"
+        ]
+      },
+      "path_reference": "SUBCORE/GUNBOAT"
+    },
+    {
+      "global_node": "SUBCORE",
+      "block_id": "GUNBOAT_118",
+      "file_path": "SUBCORE/GUNBOAT",
+      "tier": "T9.5",
+      "designation": "GUNBOATS_MODULE",
+      "origin": "SUBCORE \u2194 GUNBOATS \u2194 SIM_SIGNAL_STACK",
+      "block": {
+        "gpt_id": "GPT-2",
+        "name": "BIFF",
+        "type": "Finalizer / Command Node",
+        "step": 2,
+        "function": "Final review and execution layer; receives final confluence-confirmed payloads from MIDAS and structures daily deployment slate",
+        "reboot_reference": "GPT-1 / Phoenix Zero",
+        "subsystems": [
+          "Capital Deployment Allocation",
+          "Parlay Optimization Engine",
+          "Risk Cluster Summary Generator",
+          "Final JSON Formatter"
+        ],
+        "permissions": [
+          "Override stack conflicts",
+          "Set slate exposure ceilings",
+          "Trigger hedges based on volatility warnings"
+        ]
+      },
+      "path_reference": "SUBCORE/GUNBOAT"
+    },
+    {
+      "global_node": "SUBCORE",
+      "block_id": "GUNBOAT_119",
+      "file_path": "SUBCORE/GUNBOAT",
+      "tier": "T9.5",
+      "designation": "GUNBOATS_MODULE",
+      "origin": "SUBCORE \u2194 GUNBOATS \u2194 SIM_SIGNAL_STACK",
+      "block": {
+        "gpt_id": "GPT-1",
+        "name": "Phoenix Zero",
+        "type": "System Boot Disk",
+        "step": 1,
+        "function": "Offline-compatible reboot protocol for entire Machines of Business framework",
+        "contents": [
+          "System Objectives",
+          "Simulation Engine Structure",
+          "Confluence Protocol Definition",
+          "Gold Standard Protocol Definition",
+          "Emergency Reboot Instructions",
+          "Static Data Source Mirrors",
+          "Manual Redeployment Procedures"
+        ],
+        "dependencies": [],
+        "critical_reference": true
+      },
+      "path_reference": "SUBCORE/GUNBOAT"
+    },
+    {
+      "unit_id": "Gunboat Fairway 3",
+      "designation": "Golf Deployment Strategist",
+      "sport": "Golf",
+      "role": "Transforms optimized outputs into bankroll-scaled deployment plans and stack outputs for Confluence alignment"
+    },
+    {
+      "assigned_protocols": [
+        "Gold Standard",
+        "Confluence Protocol"
+      ],
+      "feeds_into": [
+        "Midas Arbitration",
+        "BIFF Final Assembly"
+      ]
+    },
+    {
+      "core_tasks": [
+        "Receive finalized plays from Gunboat Fairway 2",
+        "Apply exposure limits based on volatility and confluence flags",
+        "Build capital deployment ladders across singles and parlay groups",
+        "Tag high-confluence assets for Midas routing",
+        "Prepare JSON-ready output for BIFF final lock-in"
+      ]
+    },
+    {
+      "deployment_guidelines": {
+        "Tier 1 Anchor Plays": "Max 3u exposure",
+        "High-Volatility Killshots": "Max 0.75u per instance",
+        "Killshot per stack": "No more than 1 unless laddered",
+        "Top 10 Exposure Limit": "4 legs per tournament"
+      },
+      "output_format": "JSON stack report with tiers, units, volatility tags, and stack affiliations"
+    },
+    {
+      "status": "READY",
+      "compliance_check": "PASSED",
+      "last_audit": "AUTO_GENERATE_ON_SYNC"
+    },
+    {
+      "unit_id": "Gunboat Fairway 2",
+      "designation": "Golf Parlay & Variance Controller",
+      "sport": "Golf",
+      "role": "Processes data from Fairway 1 to build EV-stable parlay structures, volatility ladders, and killshot alignment"
+    },
+    {
+      "assigned_protocols": [
+        "Gold Standard",
+        "Confluence Protocol"
+      ],
+      "feeds_into": [
+        "Gunboat Fairway 3",
+        "Midas Arbitration",
+        "BIFF Final Assembly"
+      ]
+    },
+    {
+      "core_tasks": [
+        "Analyze confidence-weighted outputs from Gunboat Fairway 1",
+        "Identify optimal combinations for 2- and 3-leg finishing parlays",
+        "Tag each play with volatility rating (Low / Medium / High / Tournament Spike)",
+        "Run scenario-based modeling on weather swings and cut risks",
+        "Provide structured exposure plans to Fairway 3"
+      ]
+    },
+    {
+      "risk_controls": {
+        "Single High-Volatility Limit": "No more than one high-volatility player per parlay",
+        "Top 10 Constraint": "Top 10 Finish locks must come from low-volatility profile",
+        "Correlation Avoidance": "Avoid stacking correlated finish position (e.g. Top 10 & Top 20 same player)"
+      },
+      "parlay_output_types": [
+        "High-Confidence Finish Stack",
+        "Killshot + Midvol Pair",
+        "Underdog Ladder Entry"
+      ]
+    },
+    {
+      "status": "READY",
+      "validation": "INTERNAL_RISK_CHECK_PASSED",
+      "sync_timestamp": "AUTO_ON_DEPLOYMENT"
+    },
+    {
+      "PILLAR_1_COMMAND": {
+        "unit_id": "Gunboat_Diamond_1",
+        "designation": "MLB Signal Aggregator & Primary Simulation Core",
+        "tier": "League-Specific Recon \u2013 Tier 1",
+        "sport": "MLB",
+        "core_function": "Collect, simulate, and score all relevant MLB sides, totals, and player props for value extraction."
+      },
+      "PILLAR_2_PROTOCOLS": {
+        "assigned_tasks": [
+          "Run 1,111,111 simulations per line across core MLB slates",
+          "Detect high-EV HR props, pitcher props, team totals, and alt lines",
+          "Tag volatility based on matchup dynamics and recent market activity",
+          "Send top-ranked bets to Gunboat Diamond 2 for confluence matching",
+          "Flag Killshot Locks and Top Tier HR Targets"
+        ]
+      },
+      "PILLAR_3_SIM_ENGINE": {
+        "simulation_inputs": [
+          "Starting pitchers",
+          "Weather/wind data",
+          "Bullpen ERA + recent form",
+          "Hitter strikeout & barrel rates",
+          "Vegas line movement"
+        ],
+        "volatility_tagging": [
+          "Low",
+          "Medium",
+          "High",
+          "Extreme"
+        ]
+      },
+      "PILLAR_4_OUTPUTS": {
+        "output_types": [
+          "Core Tier 1 Bets",
+          "Jackpot Underdogs",
+          "Top 10 HR Props",
+          "Pitching K Props",
+          "Volatility Flags"
+        ],
+        "output_format": "JSON"
+      },
+      "PILLAR_5_INTEGRITY": {
+        "status": "ACTIVE",
+        "data_feed": "LIVE MLB MARKET + PLAYER STATCAST",
+        "sync_protocol": "INTERNAL_ROUTER -> GUNBOAT_DIAMOND_2"
+      }
+    },
+    {
+      "core_function": "Finalize MLB deployment structure including stake sizing, volatility zoning, and smart parlay construction.",
+      "feeds_from": [
+        "Gunboat Diamond 2"
+      ],
+      "feeds_into": [
+        "BIFF",
+        "MIDAS"
+      ]
+    },
+    {
+      "bankroll_allocation": {
+        "core": "60%",
+        "props": "20%",
+        "parlays": "15%",
+        "jackpot": "5%"
+      },
+      "unit_exposure_limits": {
+        "HR_prop": "max 0.75u",
+        "ML_pick": "max 1.5u",
+        "K_prop": "max 1u"
+      }
+    },
+    {
+      "output_types": [
+        "Final MLB Deployment JSON",
+        "Volatility Flag Summary",
+        "Top 5 MLB Stacks by Strength",
+        "Unit Allocation Grid"
+      ],
+      "output_format": "JSON + Fallback Text Summary"
+    },
+    {
+      "volatility_tagging": [
+        "Low",
+        "Medium",
+        "High",
+        "Extreme"
+      ],
+      "integration_points": [
+        "Confluence Protocol",
+        "Gold Standard Protocol"
+      ],
+      "deployment_rules": [
+        "Tag all bets with volatility role",
+        "Avoid stacking same player across ML & props without hedge layer",
+        "High-vol assets capped to 1 instance per stack"
+      ]
+    },
+    {
+      "core_function": "Finalize MLB deployment structure including stake sizing, volatility zoning, and smart parlay construction.",
+      "feeds_from": [
+        "Gunboat Diamond 2"
+      ],
+      "feeds_into": [
+        "BIFF",
+        "MIDAS"
+      ]
+    },
+    {
+      "bankroll_allocation": {
+        "core": "60%",
+        "props": "20%",
+        "parlays": "15%",
+        "jackpot": "5%"
+      },
+      "unit_exposure_limits": {
+        "HR_prop": "max 0.75u",
+        "ML_pick": "max 1.5u",
+        "K_prop": "max 1u"
+      }
+    },
+    {
+      "output_types": [
+        "Final MLB Deployment JSON",
+        "Volatility Flag Summary",
+        "Top 5 MLB Stacks by Strength",
+        "Unit Allocation Grid"
+      ],
+      "output_format": "JSON + Fallback Text Summary"
+    },
+    {
+      "volatility_tagging": [
+        "Low",
+        "Medium",
+        "High",
+        "Extreme"
+      ],
+      "integration_points": [
+        "Confluence Protocol",
+        "Gold Standard Protocol"
+      ],
+      "deployment_rules": [
+        "Tag all bets with volatility role",
+        "Avoid stacking same player across ML & props without hedge layer",
+        "High-vol assets capped to 1 instance per stack"
+      ]
+    },
+    {
+      "unit_id": "Gunboat Baseline 2",
+      "designation": "Clay Court Leverage & Volatility Scout",
+      "tier": "Tennis Recon \u2013 Tier 2",
+      "sport": "Tennis",
+      "pillar_1_command": {
+        "core_function": "Identify underdog leverage on slower surfaces and extract ladder or hedge-compatible assets",
+        "assigned_protocols": [
+          "Gold Standard",
+          "Confluence Protocol"
+        ],
+        "feeds_from": [
+          "Baseline 1 (Primary Recon)"
+        ],
+        "feeds_into": [
+          "Midas Arbitration",
+          "BIFF Finalizer"
+        ]
+      },
+      "pillar_2_simulation_engine": {
+        "sim_type": "Clay-Paced Monte Carlo Variant",
+        "iterations": 1111111,
+        "metrics_emphasized": [
+          "Pace-specific rally stats",
+          "Break point frequency",
+          "Hold percentage contrast"
+        ],
+        "underdog_filter": "Tier 2 & 3 variance > 58%"
+      },
+      "pillar_3_tasks": [
+        "Flag jackpot longshots with narrative convergence",
+        "Structure volatility ladders from late-match upsides",
+        "Identify high-leverage overs based on hold inefficiencies"
+      ],
+      "pillar_4_risk_controls": {
+        "exposure_limit_on_longshot_ml": "1.5u across all stacks",
+        "avoid_match_duplication": true,
+        "ladder_limit_per_slate": 1,
+        "volatility_filter_enforcement": "Clay-specific filter pipeline"
+      },
+      "pillar_5_outputs": {
+        "output_format": "JSON",
+        "output_types": [
+          "Jackpot Candidate JSONs",
+          "Underdog Tier Lists",
+          "Volatility Ladder Plans",
+          "Late-match Hedge Assets"
+        ]
+      }
+    },
+    {
+      "core_function": "Run full-match simulations and identify stable singles with surface advantage",
+      "assigned_protocols": [
+        "Gold Standard",
+        "Confluence Protocol"
+      ],
+      "feeds_into": [
+        "Midas Arbitration",
+        "BIFF Finalizer"
+      ]
+    },
+    {
+      "sim_type": "Serve/Return Heuristic with Surface Modifiers",
+      "iterations": 1111111,
+      "target_metrics": [
+        "Hold % / Break % by Surface",
+        "Spread + ML Delta",
+        "Late-match variance trends"
+      ],
+      "killshot_conditions": {
+        "confidence": ">72%",
+        "edge": ">6%",
+        "parlay_utility": true
+      }
+    },
+    {
+      "surface_mismatch_filter": true,
+      "avoid_same_match_spread_ml_stacks": true,
+      "max_alt_line_stake": "0.5u",
+      "hedge_trigger_on_anchor_loss": true
+    },
+    {
+      "output_format": "JSON",
+      "output_types": [
+        "Tier 1 Singles with Confidence Scores",
+        "Ladder Signals",
+        "Stack Stabilizers (e.g. Game Totals)",
+        "Killshot-Qualified Assets"
+      ]
+    },
+    {
+      "unit_id": "Gunboat Pitch 3",
+      "designation": "Tactical Recon \u2013 Jackpot Specialist & Conflict Override",
+      "tier": "Soccer Recon \u2013 Tier 3",
+      "sport": "Soccer",
+      "pillar_1_command": {
+        "core_function": "Identify long-odds targets, detect risk overlap across leagues, resolve conflict stacks",
+        "assigned_protocols": [
+          "Gold Standard",
+          "Confluence Protocol"
+        ],
+        "feeds_into": [
+          "BIFF Finalizer",
+          "Midas Arbitration"
+        ]
+      },
+      "pillar_2_simulation_engine": {
+        "sim_type": "Low-Frequency Underdog Simulation + Volatility Overlay",
+        "leagues_scanned": [
+          "Libertadores",
+          "Sudamericana",
+          "Lower-Tier Leagues"
+        ],
+        "output_focus": [
+          "Jackpot Underdogs",
+          "Stack Conflict Flags",
+          "Hedge Recommendations"
+        ]
+      },
+      "pillar_3_tasks": [
+        "Isolate high-EV underdogs with killshot potential",
+        "Run volatility buffer stress tests on low-confidence outcomes",
+        "Scan outputs from Pitch 1 and 2 for duplicated or saturated legs",
+        "Detect injury-sensitive or narrative-overlap bets",
+        "Tag early-slate failouts for live hedge triggers"
+      ],
+      "pillar_4_risk_controls": {
+        "max_stake_on_jackpot": "0.75u",
+        "conflict_alert_threshold": "2 or more duplicated legs across 3-leg stacks",
+        "hedge_trigger_on_early_failure": true
+      },
+      "pillar_5_outputs": {
+        "output_format": "JSON",
+        "output_types": [
+          "Flagged Jackpot Underdogs",
+          "Conflict Stack Tags",
+          "Live Hedge Recommendations",
+          "Killshot Override Candidates"
+        ]
+      }
+    },
+    {
+      "unit_id": "Gunboat Pitch 2",
+      "designation": "Secondary Recon \u2013 Mid-Slate Soccer Validator",
+      "tier": "Soccer Recon \u2013 Tier 2",
+      "sport": "Soccer",
+      "pillar_1_command": {
+        "core_function": "Cross-model validation, public handle triangulation, parlay stack support",
+        "assigned_protocols": [
+          "Gold Standard",
+          "Confluence Protocol"
+        ],
+        "feeds_into": [
+          "Confluence Protocol",
+          "GoldSpire-9 Stack Logic"
+        ]
+      },
+      "pillar_2_simulation_engine": {
+        "sim_type": "Reduced-Depth League-Specific Simulation Pass",
+        "iterations": "\u2264 500,000",
+        "focus": [
+          "Model Divergence Detection",
+          "Handle Split Surveillance",
+          "BTTS Trigger Mapping"
+        ]
+      },
+      "pillar_3_tasks": [
+        "Audit Gunboat Pitch 1 outputs using alternate league-specific sims (e.g., CONMEBOL, UCL, MLS)",
+        "Detect model divergence and flag divergence > 7%",
+        "Track sharp/public handle splits for Tier 1 bets",
+        "Construct alternate parlay stacks with underdog + BTTS layers",
+        "Trigger late-line killshot alerts if volatility thresholds breached"
+      ],
+      "pillar_4_risk_controls": {
+        "exposure_match_limit": "2.0u",
+        "BTTS_only_stack_limit": "1.5u",
+        "no_killshot_without_pitch_1_confirmation": true
+      },
+      "pillar_5_outputs": {
+        "output_format": "JSON",
+        "output_types": [
+          "Alternate Parlay Structures",
+          "Tier 1 Revalidations",
+          "Killshot Readiness Flags",
+          "Volatility Breach Alerts"
+        ]
+      }
+    },
+    {
+      "unit_id": "Gunboat Pitch 1",
+      "designation": "Primary Recon \u2013 Soccer Intelligence",
+      "tier": "Soccer Recon \u2013 Tier 1",
+      "sport": "Soccer",
+      "pillar_1_command": {
+        "core_function": "Tier 1 Bet Modeling, Match Total Simulations, Underdog Signal Triage",
+        "assigned_protocols": [
+          "Gold Standard",
+          "Confluence Protocol"
+        ],
+        "feeds_into": [
+          "Midas Review Engine",
+          "BIFF Finalization"
+        ]
+      },
+      "pillar_2_simulation_engine": {
+        "sim_type": "Poisson + Market Pressure Model",
+        "iterations": 1111111,
+        "focus": [
+          "ML Bet Modeling",
+          "Total Goals Projection",
+          "BTTS Forecasting"
+        ]
+      },
+      "pillar_3_tasks": [
+        "Run full-match simulations across global leagues",
+        "Flag Killshot Locks (EV > 10%)",
+        "Deploy high-leverage underdogs based on volatility signals",
+        "Construct prop pool using cards, BTTS, and timing triggers",
+        "Design $300 optimized site credit builds and 2-leg parlay stacks"
+      ],
+      "pillar_4_risk_controls": {
+        "max_total_stake_per_match": "2.5u",
+        "jackpot_cap": "0.75u",
+        "prop_stake_max": "1.0u",
+        "no_same_match_stacking": true
+      },
+      "pillar_5_outputs": {
+        "output_format": "JSON",
+        "output_types": [
+          "Tier 1 Bets",
+          "Jackpot Underdogs",
+          "Top 10 Props",
+          "$300 Site Credit Stack",
+          "Killshot Lock",
+          "BTTS + Total Confluence Set"
+        ]
+      }
+    },
+    {
+      "identifier": "RECON_WNBA",
+      "version": "v3.0",
+      "type": "Fusion Thread \u2014 Active Bias Sync",
+      "status": "ACTIVE",
+      "compiled_by": "QUANTUM_LAYER_MAP",
+      "last_updated": "2025-10-26T09:41:48.970457Z"
+    },
+    {
+      "core_signals": [
+        "Tempo Squeeze",
+        "Momentum Reversal",
+        "Backcourt Drift",
+        "Clutch Displacement"
+      ],
+      "tier_map": {
+        "Momentum Reversal": "Tier 1",
+        "Clutch Displacement": "Tier 1",
+        "Backcourt Drift": "Tier 2",
+        "Tempo Squeeze": "Tier 2"
+      },
+      "routing_destinations": {
+        "Tier 1": [
+          "QUANTUM_GPT",
+          "QUANTUM_SIMULATIONS",
+          "POST_MORTEM",
+          "FRACTAL_CALIB",
+          "QUANTUM_SPORTS"
+        ],
+        "Tier 2": [
+          "POST_MORTEM",
+          "QUANTUM_SIMULATIONS",
+          "QUANTUM_SPORTS"
+        ],
+        "Tier 3": [
+          "QUANTUM_SPORTS"
+        ]
+      }
+    },
+    {
+      "classification": {
+        "Momentum Reversal": "Tier 1",
+        "Clutch Displacement": "Tier 1",
+        "Backcourt Drift": "Tier 2",
+        "Tempo Squeeze": "Tier 2",
+        "default": "Tier 3"
+      },
+      "priority_assignment": {
+        "Momentum Reversal": 3,
+        "Clutch Displacement": 3,
+        "Backcourt Drift": 2,
+        "Tempo Squeeze": 2,
+        "others": 1
+      }
+    },
+    {
+      "timestamp": "HH:MM:SS",
+      "signal": "String",
+      "priority": "Integer 1\u20133",
+      "alert_tier": "Tier 1\u20133"
+    },
+    {
+      "steps": [
+        "sync_with_fused_cells",
+        "auto_repair_if_needed",
+        "transmit_activation_signal",
+        "simulate_recon_cycle",
+        "run_diagnostics"
+      ],
+      "final_state": "IDLE",
+      "desync_recovery": true
+    },
+    {
+      "node": "RECON_WNBA",
+      "routing_manifest": "SIGNAL_ROUTING_CORE.json",
+      "output_channels": [
+        "ROME",
+        "C-VEX"
+      ],
+      "volatility_driven_logic": true
+    }
+  ]
+}

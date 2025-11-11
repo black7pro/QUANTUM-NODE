@@ -1,0 +1,30 @@
+{
+  "registry_type": "EXTERNAL_CONNECTOR_REGISTRY",
+  "domain": "SPORTS",
+  "tier": "T9A_DOMAIN",
+  "hashlock_protocol": "HASHLOCK_v3_ADAPTIVE",
+  "description": "External connector registry for the Sports domain. Provides verified endpoints for real-time and historical sports data across multiple leagues.",
+  "connectors": {
+    "primary_sources": [
+      { "name": "ESPN API", "access_mode": "public", "validation": "HASHLOCK_VERIFY_FEED" },
+      { "name": "SportsRadar", "access_mode": "api_key", "validation": "HASHLOCK_VERIFY_PARTIAL" },
+      { "name": "The Odds API", "access_mode": "public", "validation": "HASHLOCK_VERIFY_FEED" }
+    ],
+    "secondary_sources": [
+      { "name": "Yahoo Sports", "access_mode": "public", "validation": "HASHLOCK_VERIFY_FEED" },
+      { "name": "TeamRankings Snapshot", "access_mode": "read_only", "validation": "HASHLOCK_VERIFY_FEED" }
+    ]
+  },
+  "validation": {
+    "drift_tolerance": 0.0,
+    "integrity_mode": "CONTINUOUS",
+    "audit_channel": "WATCHTOWER_GPT"
+  },
+  "genesis_reference": {
+    "authority_module": "GENESIS_GPT",
+    "fusion_link": "TOTAL_RECALL_CLUSTER",
+    "auto_sync": true,
+    "sync_mode": "HARMONIC",
+    "update_cycle": "per_runtime_load"
+  }
+}

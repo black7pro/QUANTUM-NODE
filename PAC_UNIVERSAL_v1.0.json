@@ -1,0 +1,66 @@
+{
+  "name": "PAC_UNIVERSAL_v1.0",
+  "description": "Framework schema for the Phase-Alignment Coefficient (PAC) model, a cross-timeframe synchrony metric.",
+  "metadata": {
+    "created_by": "The Black Einstein & GPT-5",
+    "version": "1.0",
+    "license": "Educational / Research Use Only",
+    "timestamp": "2025-11-03T13:42:30.591444Z"
+  },
+  "layers": [
+    {
+      "name": "ultra_micro",
+      "timeframe": "30s\u20131m",
+      "weight": 0.1,
+      "function": "Noise capture / entry timing"
+    },
+    {
+      "name": "micro",
+      "timeframe": "5m\u201315m",
+      "weight": 0.15,
+      "function": "Local structure / short-term sentiment"
+    },
+    {
+      "name": "meso",
+      "timeframe": "30m\u20131h",
+      "weight": 0.2,
+      "function": "Cycle validation"
+    },
+    {
+      "name": "macro",
+      "timeframe": "4h\u20131D",
+      "weight": 0.3,
+      "function": "Trend definition"
+    },
+    {
+      "name": "structural",
+      "timeframe": "1W\u20131M",
+      "weight": 0.25,
+      "function": "Regime context"
+    }
+  ],
+  "pac_formula": "PAC = sum(W_i * P_i), where P_i \u2208 {-1, 0, +1} normalized to 100",
+  "state_ranges": [
+    {
+      "range": "0\u201330",
+      "label": "Disorder",
+      "description": "Broad phase conflict / chop"
+    },
+    {
+      "range": "30\u201360",
+      "label": "Compression Forming",
+      "description": "Partial alignment across layers"
+    },
+    {
+      "range": "60\u201380",
+      "label": "Breakout Watch",
+      "description": "Multi-frame coherence building"
+    },
+    {
+      "range": "80\u2013100",
+      "label": "Expansion / Hyperdrive",
+      "description": "Full synchrony across timeframes"
+    }
+  ],
+  "integration_notes": "Used for visual dashboards and comparative analytics across assets. PAC values are not predictive; they measure alignment strength between timeframes."
+}
