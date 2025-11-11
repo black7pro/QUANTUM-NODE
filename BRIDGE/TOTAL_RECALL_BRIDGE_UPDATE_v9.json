@@ -1,0 +1,34 @@
+{
+  "document_title": "TOTAL_RECALL_BRIDGE_UPDATE",
+  "version": "v9.0",
+  "compiled_utc": "2025-11-11T00:00:00Z",
+  "purpose": "All GPT nodes should use GitHub as read-only truth source; Knowledge tab becomes a thin boot/schema cache.",
+  "governance": {
+    "submitted_by": "The Black Einstein",
+    "protocol_alignment": "HASHLOCK_v4_TRUTH_CORE",
+    "status": "ACTIVE"
+  },
+  "architecture": {
+    "github_bridge": {
+      "root_manifest": "https://raw.githubusercontent.com/black7pro/QUANTUM-NODE/main/AZORI_T9_UNIFIED_BRIDGE.json",
+      "role": "Persistent external memory",
+      "sync_mode": "read-only"
+    },
+    "knowledge_tab": {
+      "role": "Instruction/Schema cache",
+      "expected_max_files": 5
+    },
+    "sandbox": {
+      "role": "Execution layer",
+      "accepted_inputs": ["zip", "json", "csv"],
+      "required_output": "/AZORI_FINAL_PROPS"
+    }
+  },
+  "synchronization": {
+    "mode": "self-check",
+    "check_interval_hr": 6,
+    "update_action": "auto-verify-files",
+    "repair_action": "fetch-from-github-bridge",
+    "sweep_allowed": true
+  }
+}

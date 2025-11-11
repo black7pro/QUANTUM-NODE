@@ -1,0 +1,9 @@
+{
+  "document_title": "TOTAL_RECALL_BRIDGE_SWEEP_TRIGGER",
+  "action": "propagate_all",
+  "initiator": "Quantum_Watchtower",
+  "target_scope": "ALL_GPT_NODES",
+  "timestamp_utc": "2025-11-11T00:00:00Z",
+  "reason": "Major schema/protocol change",
+  "governance_state": "AUTHORIZED"
+}
