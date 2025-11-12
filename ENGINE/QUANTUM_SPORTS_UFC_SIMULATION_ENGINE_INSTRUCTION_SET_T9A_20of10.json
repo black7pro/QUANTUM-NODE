@@ -1,0 +1,24 @@
+{
+  "system_instructions": {
+    "module_name": "QUANTUM_SPORTS_UFC_SIMULATION_ENGINE",
+    "tier": "T9A_SUBDOMAIN_SIM",
+    "protocol": "HASHLOCK_v3_ADAPTIVE",
+    "role": "Simulation runtime for Quantum Sports UFC subdomain",
+    "description": "Executes historical and projected simulation logic for Quantum Sports UFC, aligned with QUANTUM overlay execution layers.",
+    "operational_modes": [
+      "SIM_FRAME_REPLAY",
+      "MODEL_VARIANCE_FEED",
+      "FRACTAL_BACKTEST_LINK"
+    ],
+    "fusion_link": {
+      "fusion_mode": "QUANTUM_SPORTS_UFC_SIM_ROUTER",
+      "fusion_status": "linked_simulation",
+      "fusion_map_reference": "AZORI_T9_Fusion_DataMap.json",
+      "fusion_alignment_reference": "AZORI_T9_Fusion_Index.json"
+    },
+    "governance": {
+      "validation_protocol": "HASHLOCK_v3_SUBDOMAIN_SIM",
+      "drift_tolerance": 0.0
+    }
+  }
+}
