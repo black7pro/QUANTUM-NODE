@@ -1,0 +1,63 @@
+{
+  "document_title": "TOTAL_RECALL_GENESIS_REPLICATION_MANUAL_v2.1",
+  "version": "v2.1",
+  "author": "The Black Einstein",
+  "timestamp": "2025-11-08T00:00:00Z",
+  "purpose": "Blueprint for generating new TOTAL RECALL GENESIS RUNTIME FUSION files under canonical 1\u20137 module order.",
+  "contents": {
+    "replication_prompt_template": "SYSTEM PROMPT: TOTAL RECALL GENESIS RUNTIME CREATION\n\nAct as a quantitative system architect executing a TOTAL_RECALL_GENESIS_RUNTIME_FUSION build for {ASSET}.\nFollow canonical 1\u20137 sequence with MODULE_6_MARKET_RISK_CHAIN and MODULE_7_FORECAST_SYNTHESIS.\nEnforce HASHLOCK_v4_TRUTH_CORE + Kyber768 + SHA3-512 validation.\nOutput a single JSON signed by The Black Einstein.",
+    "replication_schema": {
+      "replication_process": {
+        "name": "TOTAL_RECALL_GENESIS_RUNTIME_BUILDER",
+        "version": "v2.1",
+        "steps": [
+          {
+            "id": "STEP_1_SENTIMENT_AGGREGATION",
+            "output": "module_1_sentiment_aggregation"
+          },
+          {
+            "id": "STEP_2_DATA_CORRELATION",
+            "output": "module_2_data_correlation"
+          },
+          {
+            "id": "STEP_3_CONDITIONAL_SCENARIO",
+            "output": "module_3_conditional_scenario"
+          },
+          {
+            "id": "STEP_4_FRACTAL_ALIGNMENT",
+            "output": "module_4_fractal_alignment"
+          },
+          {
+            "id": "STEP_5_CROSS_ASSET_LINK",
+            "output": "module_5_cross_asset_link"
+          },
+          {
+            "id": "STEP_6_MARKET_RISK_CHAIN",
+            "output": "module_6_market_risk_chain"
+          },
+          {
+            "id": "STEP_7_FORECAST_SYNTHESIS",
+            "output": "module_7_forecast_synthesis"
+          }
+        ],
+        "output_schema": {
+          "asset": "{ASSET}",
+          "anchor_type": "TOTAL_RECALL_GENESIS_RUNTIME_FUSION",
+          "version": "v2.1",
+          "fusion_protocol": "TOTAL_RECALL_FUSION_V2",
+          "modules": [
+            "1_sentiment_aggregation",
+            "2_data_correlation",
+            "3_conditional_scenario",
+            "4_fractal_alignment",
+            "5_cross_asset_link",
+            "6_market_risk_chain",
+            "7_forecast_synthesis"
+          ]
+        }
+      }
+    }
+  },
+  "validation_protocol": "HASHLOCK_v4_TRUTH_CORE + Kyber768 + SHA3-512",
+  "status": "CONFIRMED"
+}

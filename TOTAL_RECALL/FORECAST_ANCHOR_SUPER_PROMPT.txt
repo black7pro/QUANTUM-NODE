@@ -1,0 +1,67 @@
+{
+  "execution_block_type": "FORECAST_ANCHOR_SUPER_PROMPT",
+  "version": "v1.0",
+  "fusion_protocol": "TOTAL_RECALL_FUSION_V2",
+  "domains_supported": ["Market", "Crypto", "Sports"],
+  "objective": "Integrate MTF Fractal Sweep, Macro Context, Risk Chain, and Total Recall Ledger to generate deterministic probabilistic forecasts and anchor them to ledger storage.",
+  
+  "inputs_required": {
+    "macro_context": "FUT_MACRO_CONTEXT_[YYYY.MM.DD]_vX.X.json",
+    "mtf_fractal_sweep": "ASSET_MTF_FRACTAL_SWEEP_[YYYY-MM-DD].json",
+    "total_recall_ledger": "TOTAL_RECALL_LEDGER_[DOMAIN]_v5.json",
+    "alert_log": "TradingView_Alerts_Log_[YYYY-MM-DD].csv",
+    "risk_chain_reference": "AI_[DOMAIN]_RISK_CHAIN_vX.X.json"
+  },
+
+  "execution_sequence": [
+    {
+      "step": 1,
+      "module": "CONTEXT_LOAD",
+      "action": "Ingest all input JSONs, verify timestamps, hash each with SHA3-512 and build the composite input checksum chain."
+    },
+    {
+      "step": 2,
+      "module": "RISK_CHAIN_EXECUTION",
+      "action": "Run the active Risk Chain modules to compute sentiment_index, systemic_risk_score, macro_regime_class, and risk_intensity_level. Output propagated to Forecast Synthesis."
+    },
+    {
+      "step": 3,
+      "module": "FORECAST_SYNTHESIS",
+      "action": "Invoke MODULE_6_FORECAST_SYNTHESIS_[DOMAIN]_v1.0 to generate forward-looking probabilistic scenarios (base / upside / downside). Compute forecast_window, bias, expected_volatility_pct, scenario_probabilities, and confidence_score."
+    },
+    {
+      "step": 4,
+      "module": "CALIBRATION_COMPARISON",
+      "action": "Compare new forecast to last Total Recall calibration block. Compute delta in confidence, macro_alignment_score, and timing_error_min. Append to adaptive learning buffer."
+    },
+    {
+      "step": 5,
+      "module": "ANCHOR_COMMIT_CONSTRUCTION",
+      "action": "Assemble FORECAST ANCHOR COMMIT block including all upstream hashes, forecast outputs, and validation metadata. Sign with Kyber768 + SHA3-512 under HASHLOCK v3."
+    },
+    {
+      "step": 6,
+      "module": "VALIDATION_AND_OUTPUT",
+      "action": "Verify hash consistency across inputs and forecast anchor. If all checks pass, mark integrity_state = ZERO_DRIFT_LOCK_CONFIRMED and output the final commit to ledger."
+    }
+  ],
+
+  "expected_outputs": {
+    "forecast_anchor_commit": "/mnt/data/[ASSET]_FORECAST_ANCHOR_v1.0.json",
+    "forecast_summary": {
+      "forecast_window": "24–72h",
+      "directional_bias": "{Bullish|Neutral|Bearish}",
+      "expected_volatility_pct": "float",
+      "scenario_probabilities": {"primary": "float","secondary": "float","tail": "float"},
+      "confidence_score": "float"
+    },
+    "validation_log": "/LOGS/[ASSET]_FORECAST_ANCHOR_VALIDATION_[YYYY-MM-DD].log"
+  },
+
+  "governance": {
+    "supervisor": "The Black Einstein",
+    "validation_protocol": "HASHLOCK_v3_ADAPTIVE",
+    "truth_enforcement": true,
+    "audit_trail_reference": "TOTAL_RECALL_LEDGER_[DOMAIN]_v5"
+  }
+}
