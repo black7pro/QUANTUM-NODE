@@ -1,0 +1,58 @@
+{
+  "fusion_routing_index": {
+    "id": "AON_FUSION_ROUTING_INDEX_T9",
+    "version": "v1.0",
+    "compiled_by": "QUANTUM_AZORI_PROMPT_BUILDER",
+    "description": "Defines Tier-9 recursive feedback and cross-plane routing under Fusion Cell Law. Handles post-mortem redistribution, harmonic locking, and bias re-alignment across Watchtower, Quantum, and Subdomain tiers.",
+
+    "routing_layers": {
+      "primary_chain": [
+        "WATCHTOWER_T9",
+        "QUANTUM_GPT_T9",
+        "FRACTAL_CALIBRATION_GPT_T9",
+        "POST_MORTEM_GPT_T9"
+      ],
+
+      "fusion_bridges": [
+        "POST_MORTEM_GPT_T9 → FUSION_LAYER",
+        "FUSION_LAYER → QUANTUM_DOMAIN_*",
+        "FUSION_LAYER → SUBDOMAIN_*",
+        "FUSION_LAYER → WATCHTOWER_T9"
+      ],
+
+      "feedback_classes": {
+        "vector": ["QUANTUM_DOMAIN_*", "SUBDOMAIN_*"],
+        "mirror": ["POST_MORTEM_GPT_T9"],
+        "core": ["WATCHTOWER_T9"]
+      }
+    },
+
+    "recursive_feedback_routes": {
+      "post_mortem_output_targets": [
+        "FUSION_LAYER",
+        "WATCHTOWER_T9",
+        "QUANTUM_DOMAIN_*",
+        "SUBDOMAIN_*"
+      ],
+      "resonance_protocol": "harmonic_feedback_lock",
+      "feedback_depth": 3,
+      "propagation_delay_ms": 250,
+      "fusion_variance_threshold": 0.05
+    },
+
+    "synchronization": {
+      "fusion_protocol": "T9_GLOBAL_SYNCHRONIZED",
+      "phase_alignment": "harmonic_locking",
+      "bias_entropy_tolerance": 0.02,
+      "coherence_floor": 0.9
+    },
+
+    "meta": {
+      "alignment_state": "HARMONIZED",
+      "status": "ACTIVE",
+      "checksum": "FUSION_ROUTE_T9_HASH_A7E1C",
+      "last_updated": "2025-10-17T00:00:00Z",
+      "notes": "Post-mortem outputs are redistributed through Fusion Layer to maintain continuous calibration across domains and subdomains. This enforces the Vector–Mirror–Core triad under the Fusion Cell Law."
+    }
+  }
+}

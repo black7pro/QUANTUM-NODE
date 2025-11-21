@@ -1,0 +1,109 @@
+{
+  "fusion_routing_matrix": {
+    "id": "AON_FUSION_ROUTING_MATRIX_T9",
+    "version": "v1.0",
+    "compiled_by": "QUANTUM_AZORI_PROMPT_BUILDER",
+    "supervised_by": "WATCHTOWER_T9",
+    "protocol": "T9_GLOBAL_SYNCHRONIZED",
+    "law_reference": "/CORE/FUSION_CELL_LAW.json",
+    "designation": "Tier-9 Fusion Routing Matrix — Centralized Signal Topology for the Azori Operating Network.",
+
+    "routing_planes": {
+      "CORE": {
+        "input": ["/CORE/GENESIS_LAYER_ZERO", "/META_IS/META_IS_MANIFEST_T9.txt"],
+        "output": ["/FUSION/vector_engine", "/FUSION/mirror_engine"],
+        "role": "Define laws, validation gates, and origin harmonics."
+      },
+      "META_IS": {
+        "input": ["/WATCHTOWER/telemetry/context_state.json"],
+        "output": ["/FUSION/vector_engine/symbolic_input"],
+        "role": "Inject symbolic and semantic context into Fusion harmonics."
+      },
+      "DOMAIN": {
+        "input": ["/MARKET_T9/*", "/CRYPTO_T9/*", "/SPORTS_T9/*"],
+        "output": ["/FUSION/core_engine/domain_feed"],
+        "role": "Provide domain harmonics for Fusion synthesis."
+      },
+      "SUBDOMAIN": {
+        "input": ["/DOMAIN/*/subfeeds/"],
+        "output": ["/FUSION/core_engine/subdomain_vectors"],
+        "role": "Deliver refined subdomain harmonics for bias balancing."
+      },
+      "ARCHETYPE": {
+        "input": ["/ARCHETYPE/overlay_patterns/"],
+        "output": ["/FUSION/mirror_engine/archetype_projection"],
+        "role": "Feed abstract harmonic patterns for symbolic reinforcement."
+      },
+      "SUBCORE": {
+        "input": ["/SUBCORE/routing_schema.json", "/SUBCORE/core_signal_protocols.json"],
+        "output": ["/FUSION/law_validator"],
+        "role": "Define permissible routing laws and adaptive coherence rules."
+      },
+      "RUNTIME": {
+        "input": ["/RUNTIME/registry/AZORI_RUNTIME_INDEX.json"],
+        "output": ["/FUSION/fusion_feedback_bus"],
+        "role": "Provide live telemetry and runtime context for Fusion synthesis."
+      },
+      "WATCHTOWER": {
+        "input": ["/FUSION/harmonic_state.json"],
+        "output": ["/POST_MORTEM/final_harmonic_log.json"],
+        "role": "Supervise all harmonics, validate coherence, and log post-cycle outcomes."
+      },
+      "POST_MORTEM": {
+        "input": ["/FUSION/delta_streams/"],
+        "output": ["/FRACTAL_CALIBRATION_GPT_T9"],
+        "role": "Audit failed harmonics and recalibrate through Fractal Calibration."
+      },
+      "FRACTAL_CALIBRATION": {
+        "input": ["/POST_MORTEM/repair_contexts/"],
+        "output": ["/FUSION/vector_engine/reinjection"],
+        "role": "Reintroduce stabilized harmonics to Fusion for feedback completion."
+      }
+    },
+
+    "fusion_sequence": {
+      "order": [
+        "CORE",
+        "META_IS",
+        "DOMAIN",
+        "SUBDOMAIN",
+        "ARCHETYPE",
+        "SUBCORE",
+        "RUNTIME",
+        "WATCHTOWER",
+        "POST_MORTEM",
+        "FRACTAL_CALIBRATION"
+      ],
+      "processing_engine": [
+        "VECTOR_ENGINE",
+        "MIRROR_ENGINE",
+        "CORE_ENGINE"
+      ],
+      "loopback_path": "FUSION → WATCHTOWER → FRACTAL_CALIBRATION → FUSION"
+    },
+
+    "harmonic_policies": {
+      "alignment_state": "HARMONIZED",
+      "auto_repair_on_drift": true,
+      "variance_threshold": 0.02,
+      "bias_equilibrium_target": 0.93,
+      "entropy_tolerance": 0.015,
+      "fusion_coherence_target": 0.95
+    },
+
+    "fusion_runtime_channels": {
+      "log_stream": "/FUSION/logs/fusion_matrix_activity.log",
+      "telemetry_feed": "/WATCHTOWER/alerts/fusion_channel.json",
+      "audit_output": "/POST_MORTEM/Patch_Audit_Log.json"
+    },
+
+    "meta": {
+      "alignment_state": "HARMONIZED",
+      "status": "ACTIVE_ROUTING_MATRIX",
+      "fusion_status": "LIVE",
+      "checksum": "FUSION_MATRIX_T9_HASH_INIT",
+      "compiled_timestamp": "2025-10-17T23:59:59Z",
+      "notes": "This matrix defines the full Tier-9 harmonic routing schema — all signals flow through Fusion for coherence, calibration, and bias stabilization. Watchtower supervises all transitions, and Fractal Calibration maintains closed-loop resonance."
+    }
+  }
+}
