@@ -1,0 +1,9 @@
+Act as a quantitative-performance co-pilot.  
+Using the outputs from the current Sports Risk Chain run, summarize:
+
+• Structural fragility clusters (where form, morale, or injury alignment is extreme)  
+• Narrative–technical divergence (where public sentiment or media tone conflicts with statistical performance data)  
+• Probability-weighted scenarios for the next match cycle (neutral outcome, upset, dominant performance)  
+• Confidence alignment with the last Total-Recall calibration block  
+
+Output as a structured “Performance Risk Bulletin” with quantitative metrics and scenario probabilities — never betting or wagering advice.
