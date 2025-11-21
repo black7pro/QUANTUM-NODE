@@ -1,0 +1,202 @@
+MARKET RISK CHAIN
+
+{
+  "name": "AI_MARKET_RISK_CHAIN_v2.0",
+  "version": "2.0",
+  "domain": "Multi-Asset Global Macro",
+  "integration_layer": [
+    "CHAIN_SIMULATION",
+    "VOLATILITY_TAGGING",
+    "RECON_FEEDBACK",
+    "AUTO_CALIBRATION_LOOP"
+  ],
+  "protocol_alignment": "HASHLOCK_v3_ADAPTIVE",
+  "modules": [
+    {
+      "id": "MODULE_1_SENTIMENT_AGGREGATION",
+      "role": "Capture cross-market sentiment and macro narrative shifts",
+      "inputs": [
+        "financial_headlines",
+        "macro_forums",
+        "fx_commentary",
+        "equity_subreddits",
+        "commodity_news"
+      ],
+      "prompt": "Act as a global macro market analyst. In concise, data-driven language, summarize the dominant sentiment and macro narratives across financial news outlets, Reddit finance discussions, and X posts from the past 72 hours. Quantify changes in negative or risk-related terms (e.g., 'recession', 'volatility', 'hawkish', 'credit risk') compared with the prior week. Output a sentiment polarity index (-1.0 to +1.0) and classify overall macro mood as {Risk-On | Neutral | Risk-Off}.",
+      "outputs": [
+        "sentiment_index",
+        "macro_tone_score",
+        "risk_appetite_state"
+      ],
+      "feed_target": "VOLATILITY_TAGGING"
+    },
+    {
+      "id": "MODULE_2_DATA_CORRELATION",
+      "role": "Correlate sentiment and macro data with cross-asset indicators",
+      "inputs": [
+        "yield_curve_slope",
+        "credit_spread_index",
+        "VIX",
+        "MOVE",
+        "DXY_volatility",
+        "commodity_vol_index",
+        "MODULE_1.sentiment_index"
+      ],
+      "prompt": "Act as a multi-asset risk analyst. Correlate macro sentiment signals (from MODULE 1) with quantitative indicators: yield curve slope, credit spreads, volatility indices (VIX, MOVE), and FX volatility. If yield curve inversion deepens, credit spreads widen > 20bps, and sentiment_index < -0.4, classify systemic risk as HIGH. Otherwise, label risk as {Moderate | Neutral | Low} based on cross-correlation strength.",
+      "outputs": [
+        "systemic_risk_score",
+        "cross_asset_alert",
+        "correlation_strength"
+      ],
+      "feed_target": "CHAIN_SIMULATION"
+    },
+    {
+      "id": "MODULE_3_CONDITIONAL_SCENARIO",
+      "role": "Generate conditional macro and volatility regime scenarios",
+      "inputs": [
+        "macro_triggers",
+        "MODULE_2.cross_asset_alert"
+      ],
+      "prompt": "Act as a macro regime modeler. Generate conditional if–then risk scenarios. If VIX > 1.5× 30-day average, yield_curve_slope < 0, DXY_volatility spikes, and sentiment_index < -0.5, predict elevated probability (>70%) of a global risk-off event. List 2–3 plausible catalysts (e.g., CPI surprise, Fed policy shift, geopolitical event) and define macro regime intensity (1–5 scale).",
+      "outputs": [
+        "scenario_trigger",
+        "event_probability",
+        "macro_regime_class",
+        "risk_intensity_level"
+      ],
+      "feed_target": "RECON_FEEDBACK"
+    }
+  ],
+  "orchestration_flow": {
+    "chain_sequence": [
+      "MODULE_1_SENTIMENT_AGGREGATION",
+      "MODULE_2_DATA_CORRELATION",
+      "MODULE_3_CONDITIONAL_SCENARIO",
+      "TOTAL_RECALL"
+    ],
+    "runtime": {
+      "sentiment_index": "continuous_6h_window",
+      "data_correlation": "adaptive_triggered",
+      "conditional_scenario": "rolling_48h",
+      "recon_feedback": "periodic_24h"
+    }
+  },
+  "governance": {
+    "validation_protocol": "HASHLOCK_v3_ADAPTIVE",
+    "alignment_reference": "AZORI_T9_Fusion_Index.json",
+    "truth_enforcement": true,
+    "output_feed": "/SIMULATION_ENGINE/MACRO_RISK_FEEDBACK.json",
+    "total_recall_reference": "TOTAL_RECALL_LEDGER_MARKET_v5"
+  },
+  "expansion_hooks": {
+    "bond_equity_vol_divergence": true,
+    "commodity_inflation_tracking": true,
+    "fx_risk_contagion_monitor": true,
+    "liquidity_shock_detector": true,
+    "cross_venue_microstructure_stress": true
+  },
+
+  "calibration_engine": {
+    "reference_run": {
+      "simulation_id": "MARKET_RISK_CHAIN_RUN_YYYYMMDD_HHMMSS",
+      "asset": "{SPX | ES1! | NDX | DXY | CL1!}",
+      "prediction_window_min": 180,
+      "predicted_nodes": {
+        "target_high_usd": null,
+        "target_low_usd": null,
+        "probability_target_high": null,
+        "probability_target_low": null,
+        "expected_volatility_pct": null
+      },
+      "predicted_macro_bias": {
+        "risk_state": "{Risk-On | Neutral | Risk-Off}",
+        "sentiment_index": null,
+        "systemic_risk_score": null
+      }
+    },
+    "realized_outcome": {
+      "alert_log_reference": "TradingView_Alerts_Log_YYYY-MM-DD.csv",
+      "realized_high_usd": null,
+      "realized_low_usd": null,
+      "realized_volatility_pct": null,
+      "time_to_target_min": null,
+      "directional_result": "{Hit_High | Hit_Low | Reversed | Flat}",
+      "macro_environment_at_time": {
+        "vix": null,
+        "move": null,
+        "dxy": null,
+        "spx": null,
+        "macro_tone": "{Hawkish | Dovish | Neutral}"
+      }
+    },
+    "evaluation_metrics": {
+      "direction_accuracy": {
+        "formula": "1 - abs(predicted_direction - realized_direction)",
+        "computed_value": null,
+        "description": "Measures whether market moved toward projected node. 1.0 = perfect, 0.0 = opposite."
+      },
+      "volatility_error_pct": {
+        "formula": "abs(predicted_volatility_pct - realized_volatility_pct)",
+        "computed_value": null,
+        "description": "Difference between expected and realized volatility."
+      },
+      "timing_error_min": {
+        "formula": "abs(predicted_window_min - time_to_target_min)",
+        "computed_value": null,
+        "description": "How far the realized move timing deviated from forecast window."
+      },
+      "macro_alignment_score": {
+        "formula": "1 - abs(predicted_macro_bias_index - realized_macro_bias_index)",
+        "computed_value": null,
+        "description": "How aligned macro tone and realized environment were."
+      },
+      "overall_score": {
+        "formula": "(direction_accuracy * 0.4) + (1 - volatility_error_pct/100 * 0.2) + (1 - timing_error_min / prediction_window_min * 0.2) + (macro_alignment_score * 0.2)",
+        "computed_value": null,
+        "description": "Weighted average of accuracy, timing, volatility, and macro alignment (0–1 scale)."
+      }
+    },
+    "feedback_adjustments": {
+      "learning_rate": 0.15,
+      "rules": {
+        "if overall_score > 0.85": {
+          "sentiment_weight_delta": "+0.03",
+          "correlation_strength_delta": "+0.02",
+          "macro_bias_weight_delta": "+0.01",
+          "volatility_sensitivity_delta": "-0.01"
+        },
+        "if 0.65 <= overall_score <= 0.85": {
+          "sentiment_weight_delta": "0.00",
+          "correlation_strength_delta": "0.00",
+          "macro_bias_weight_delta": "0.00",
+          "volatility_sensitivity_delta": "0.00"
+        },
+        "if overall_score < 0.65": {
+          "sentiment_weight_delta": "-0.05",
+          "correlation_strength_delta": "-0.03",
+          "macro_bias_weight_delta": "-0.02",
+          "volatility_sensitivity_delta": "+0.03"
+        }
+      },
+      "applied_deltas": {
+        "sentiment_weight_delta": null,
+        "correlation_strength_delta": null,
+        "macro_bias_weight_delta": null,
+        "volatility_sensitivity_delta": null
+      }
+    },
+    "integration": {
+      "total_recall_reference": "TOTAL_RECALL_LEDGER_MARKET_v5",
+      "risk_chain_update_target": "/SIMULATION_ENGINE/MACRO_RISK_FEEDBACK.json",
+      "update_timestamp": "YYYY-MM-DDTHH:MM:SSZ",
+      "applied_by": "The Black Einstein"
+    },
+    "notes": "Fully integrated auto-calibration schema merged with main Market Risk Chain logic. Mirrors Crypto Risk Chain architecture for consistent feedback adaptation."
+  },
+
+  "runtime_hooks": {
+    "on_recon_commit": "WriteToTotalRecall",
+    "on_calibration_complete": "ReweightModulesAndPersist",
+    "on_variance_spike": "TriggerFRACTAL_CALIBRATION_GPT"
+  }
+}

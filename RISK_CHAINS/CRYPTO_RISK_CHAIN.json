@@ -1,0 +1,144 @@
+CRYPTO RISK CHAIN
+
+{
+  "name": "AI_RISK_DETECTION_PROMPT_CHAIN_v2.0",
+  "version": "2.0",
+  "domain": "Crypto Cross-Asset Macro",
+  "integration_layer": [
+    "CHAIN_SIMULATION",
+    "VOLATILITY_TAGGING",
+    "RECON_FEEDBACK",
+    "CONSENSUS_GATE",
+    "PROB_CALIBRATION"
+  ],
+  "protocol_alignment": "HASHLOCK_v3_ADAPTIVE",
+  "modules": [
+    {
+      "id": "MODULE_1_SENTIMENT_AGGREGATION",
+      "role": "Detect narrative shift and tonal volatility",
+      "inputs": [
+        "reddit_crypto",
+        "twitter_X",
+        "crypto_headlines"
+      ],
+      "prompt": "Act as a crypto market analyst. In concise, data-driven language, summarize the dominant sentiment themes across crypto-related Reddit discussions, X posts, and top headlines from the past 72 hours. Quantify changes in negative or risk-related terms (e.g., 'sell-off', 'liquidation', 'volatility', 'regulation') compared to the previous week. Output a sentiment polarity index (range: -1.0 to +1.0) and classify overall mood as {Greed | Neutral | Fear}.",
+      "outputs": [
+        "sentiment_index",
+        "risk_terms_frequency",
+        "community_mood_state"
+      ],
+      "feed_target": "VOLATILITY_TAGGING"
+    },
+    {
+      "id": "MODULE_2_DATA_CORRELATION",
+      "role": "Correlate sentiment shifts with derivative and on-chain indicators",
+      "inputs": [
+        "funding_rate",
+        "open_interest",
+        "implied_volatility",
+        "MODULE_1.sentiment_index"
+      ],
+      "prompt": "Act as a crypto risk analyst. Correlate sentiment signals (from MODULE 1) with quantitative indicators: Funding rate (positive/negative shift), open interest percentile, and Bitcoin/ETH implied volatility index (IV). If open interest > 90th percentile, funding turns negative, and sentiment_index < -0.4, classify market risk as HIGH. Otherwise, label as {Moderate | Neutral | Low} based on cross-correlation strength.",
+      "outputs": [
+        "risk_classification",
+        "correlation_strength",
+        "trigger_conditions_met"
+      ],
+      "feed_target": "CHAIN_SIMULATION"
+    },
+    {
+      "id": "MODULE_3_CONDITIONAL_SCENARIO",
+      "role": "Generate if–then macro and volatility stress paths",
+      "inputs": [
+        "macro_triggers",
+        "MODULE_2.correlated_signals"
+      ],
+      "prompt": "Act as a macro-crypto correlation analyst. Generate conditional if–then risk scenarios: If implied volatility > 1.5× 30-day average, sentiment_index < -0.5, and funding turns negative, predict elevated probability (>70%) of forced liquidation events or major volatility breakout within 48 hours. List 2–3 plausible catalysts and define risk intensity (1–5 scale).",
+      "outputs": [
+        "scenario_trigger",
+        "event_probability",
+        "risk_intensity_level"
+      ],
+      "feed_target": "CONSENSUS_GATE"
+    },
+    {
+      "id": "MODULE_4_CONSENSUS_GATE",
+      "role": "Fuse MTF sweeps, macro context, alert data, and risk chain signals into unified confidence",
+      "inputs": [
+        "risk_chain.regime_score",
+        "mtf_sweep.bias_agree_30s_5m_15m",
+        "macro_bundle.policy_risk",
+        "alerts.reversal_density",
+        "ledger.cross_asset_sync",
+        "MODULE_3.event_probability"
+      ],
+      "parameters": {
+        "min_consensus": 0.70,
+        "max_policy_risk": 0.60,
+        "allow_neutral_regime": false,
+        "max_divergent_bars_30s_vs_15m": 6
+      },
+      "prompt": "Act as a meta-risk filter. Aggregate all input modules and compute a unified consensus probability that the current regime (risk-on/off) and microstructure alignment (30s–15m) support a valid directional action. Output consensus probability and recommend 'enter' or 'skip'.",
+      "outputs": [
+        "consensus_score",
+        "eligible_signal",
+        "action_recommendation"
+      ],
+      "feed_target": "PROB_CALIBRATION"
+    },
+    {
+      "id": "MODULE_5_PROB_CALIBRATION",
+      "role": "Calibrate prediction probabilities using real-world outcomes from Feedback Loop",
+      "inputs": [
+        "MODULE_4.consensus_score",
+        "feedback_log.trade_outcome"
+      ],
+      "parameters": {
+        "method": "isotonic",
+        "window_days": 14,
+        "min_samples": 150,
+        "retrain_freq_days": 7,
+        "export": "PROB_CAL_MAP_v1.json"
+      },
+      "prompt": "Act as a calibration agent. Using recent trade outcomes, calibrate probability estimates (isotonic regression) so that predicted probabilities match observed frequencies. Return calibrated confidence and recalibrated bias classification.",
+      "outputs": [
+        "calibrated_confidence",
+        "bias_reaffirmed",
+        "signal_certainty"
+      ],
+      "feed_target": "RECON_FEEDBACK"
+    }
+  ],
+  "orchestration_flow": {
+    "chain_sequence": [
+      "MODULE_1_SENTIMENT_AGGREGATION",
+      "MODULE_2_DATA_CORRELATION",
+      "MODULE_3_CONDITIONAL_SCENARIO",
+      "MODULE_4_CONSENSUS_GATE",
+      "MODULE_5_PROB_CALIBRATION",
+      "TOTAL_RECALL"
+    ],
+    "runtime": {
+      "sentiment_index": "continuous_6h_window",
+      "data_correlation": "adaptive_triggered",
+      "conditional_scenario": "rolling_48h",
+      "consensus_gate": "event_driven",
+      "prob_calibration": "rolling_14d",
+      "recon_feedback": "periodic_24h"
+    }
+  },
+  "governance": {
+    "validation_protocol": "HASHLOCK_v3_CRYPTO_DOMAIN",
+    "alignment_reference": "TOTAL_RECALL_LEDGER_CRYPTO_v5",
+    "supervisor": "The Black Einstein",
+    "truth_enforcement": true,
+    "output_feed": "/SIMULATION_ENGINE/RISK_FEEDBACK_v2.json"
+  },
+  "expansion_hooks": {
+    "whale_wallet_tracking": true,
+    "cex_dex_oi_divergence": true,
+    "sentiment_velocity_tracking": true,
+    "fractal_phase_alignment": true,
+    "macro_liquidity_monitor": true
+  }
+}
