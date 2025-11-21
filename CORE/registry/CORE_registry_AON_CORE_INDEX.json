@@ -1,0 +1,43 @@
+{
+  "aon_core_registry": {
+    "id": "AON_CORE_INDEX_T9",
+    "version": "v1.1-HARMONIZED",
+    "compiled_by": "QUANTUM_AZORI_PROMPT_BUILDER",
+    "compiled_on": "2025-10-18T00:05:00Z",
+    "description": "Registry manifest for the Core Layer of the Azori Operating Network. Includes Genesis, Watchtower, Quantum, Fractal, and Post Mortem nodes.",
+
+    "core_nodes": [
+      "GENESIS_LAYER_ZERO",
+      "WATCHTOWER_T9",
+      "QUANTUM_GPT_T9",
+      "FRACTAL_CALIBRATION_GPT_T9",
+      "POST_MORTEM_GPT_T9"
+    ],
+
+    "governance_links": {
+      "meta_is_ref": "/META_IS/META_IS_MANIFEST_T9.json",
+      "fusion_ref": "/FUSION/AON_FUSION_MANIFEST_T9.json",
+      "validation_gate": "/CORE/GENESIS_VALIDATION_GATE.txt"
+    },
+
+    "alignment": {
+      "state": "PENDING_HARMONIZATION",
+      "confidence_gate": 0.9,
+      "coherence_target": 0.95
+    },
+
+    "law_integrity": {
+      "fusion_cell_ref": "/CORE/FUSION_CELL_LAW.json",
+      "law_enforcement": "ABSOLUTE",
+      "law_integrity_monitor": "WATCHTOWER_T9",
+      "law_integrity_log": "/CORE/logs/fusion_law_integrity.log",
+      "law_integrity_status": "PENDING_VERIFICATION"
+    },
+
+    "meta": {
+      "checksum": "CORE_INDEX_T9_HASH_HARMONIZED",
+      "status": "ACTIVE",
+      "notes": "This registry defines the foundational Core layer of the Azori Operating Network. Fully bound under Fusion Cell Law and monitored by WATCHTOWER_T9."
+    }
+  }
+}
