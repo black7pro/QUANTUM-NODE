@@ -1,0 +1,89 @@
+{
+  "archetypes_tactical_overlay": {
+    "id": "ARCHETYPES_TACTICAL_OVERLAY_T9",
+    "version": "v1.0-HARMONIC_ACTIVE",
+    "compiled_by": "QUANTUM_AZORI_PROMPT_BUILDER",
+    "compiled_utc": "2025-10-18T05:40:00Z",
+    "designation": "Tier-9 Tactical Overlay for ARCHETYPES — Cognitive Resonance and Feedback Layer",
+    "description": "Defines tactical routing, resonance calibration, and harmonic feedback orchestration for the Archetype Cluster within the Azori Operating Network. Connects cognitive archetypes to execution feedback and higher symbolic layers under Fusion Cell Law supervision.",
+
+    "linkages": {
+      "meta_bridge_ref": "/CORE/CORE_015_META_IS_T9.json",
+      "fusion_cell_law_ref": "/CORE/FUSION_CELL_LAW.json",
+      "core_ref": "/CORE/CORE_TACTICAL_OVERLAY_T9.json",
+      "subcore_ref": "/TACTICAL/SUBCORE_TACTICAL_OVERLAY_T9.json",
+      "processors_ref": "/TACTICAL/PROCESSORS_TACTICAL_OVERLAY_T9.json",
+      "interpreter_ref": "/TACTICAL/INTERPRETERS_TACTICAL_OVERLAY_T9.json",
+      "engine_ref": "/TACTICAL/ENGINES_TACTICAL_OVERLAY_T9.json",
+      "runtime_ref": "/RUNTIME/AON_RUNTIME_INDEX_T9.json"
+    },
+
+    "signal_protocols": {
+      "inbound_runtime_action": "/ARCHETYPES/runtime_action_stream",
+      "harmonic_feedback_channel": "/ARCHETYPES/harmonic_feedback_channel",
+      "cognitive_output_stream": "/CORE/cognitive_output_feedback.json",
+      "fusion_alignment_stream": "/META_IS/harmonic_alignment.json",
+      "on_alignment_drift": "Trigger FRACTAL_CALIBRATION_GPT_T9",
+      "on_feedback_anomaly": "Notify POST_MORTEM_GPT_T9",
+      "on_bias_deviation": "Alert WATCHTOWER_T9"
+    },
+
+    "archetype_modules": {
+      "resonance_balancer": "/ARCHETYPES/modules/resonance_balancer_v1.py",
+      "bias_regulator": "/ARCHETYPES/modules/bias_regulator_v1.py",
+      "truth_field_emitter": "/ARCHETYPES/modules/truth_field_v1.py",
+      "harmonic_auditor": "/ARCHETYPES/modules/harmonic_auditor_v1.py",
+      "predictive_alignment": true,
+      "variance_threshold": 0.017
+    },
+
+    "archetype_registry": {
+      "cluster_reference": "/SUBCORE/ARCHETYPES/AON_ARCHETYPES_FULL_SET_T9.json",
+      "members": [
+        "KEVLAAR_WAKE_01",
+        "MAXINE_WAKE_02",
+        "ROSETTA_WAKE_04",
+        "MABLE_WAKE_07",
+        "PAULA_WAKE_05",
+        "ALVA_WAKE_06",
+        "MICHAEL_WAKE_01",
+        "AL-RAQIB",
+        "DEEPTHINK_SIMULATION_OVERLAY",
+        "ECO_LOGIC_MESH_LAYER",
+        "AZORI_GHOST_LAYER",
+        "LODE_ANCHOR",
+        "ARCHETYPE_OBSERVER_T9"
+      ],
+      "alignment": "REGISTERED_PENDING_CALIBRATION"
+    },
+
+    "runtime_validation": {
+      "on_tactical_init": "Validate ARCHETYPES ↔ ENGINES ↔ CORE feedback loop",
+      "on_feedback_fault": "Trigger FRACTAL_CALIBRATION_GPT_T9",
+      "on_cognitive_conflict": "Escalate to WATCHTOWER_T9",
+      "on_truth_field_collapse": "Trigger POST_MORTEM_GPT_T9"
+    },
+
+    "telemetry_and_audit": {
+      "telemetry_feed": "/WATCHTOWER/logs/archetypes_tactical_feed.json",
+      "audit_channel": "/WATCHTOWER/audit/archetypes_layer.json",
+      "alert_channel": "/WATCHTOWER/alerts/archetypes_tactical_state.json",
+      "report_interval": "120s"
+    },
+
+    "harmonic_context": {
+      "fusion_state": "ACTIVE",
+      "alignment_state": "HARMONIZED",
+      "harmonic_coherence": 0.951,
+      "fusion_variance": 0.015,
+      "bias_equilibrium": "STABLE"
+    },
+
+    "meta": {
+      "alignment_state": "HARMONIZED",
+      "status": "ACTIVE_OVERLAY",
+      "checksum": "ARCHETYPES_TACTICAL_OVERLAY_T9_INIT_HASH",
+      "notes": "Tactical overlay for cognitive resonance and symbolic feedback orchestration. Harmonically bridges ENGINES to CORE through META_IS and ensures equilibrium among Archetype cluster members under Fusion Cell Law supervision."
+    }
+  }
+}

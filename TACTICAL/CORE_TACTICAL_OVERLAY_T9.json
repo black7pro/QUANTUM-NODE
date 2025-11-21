@@ -1,0 +1,66 @@
+{
+  "core_tactical_overlay": {
+    "id": "CORE_TACTICAL_OVERLAY_T9",
+    "version": "v1.1-PREDICTIVE_SUPERVISORY",
+    "compiled_by": "QUANTUM_AZORI_PROMPT_BUILDER",
+    "compiled_utc": "2025-10-18T04:25:00Z",
+    "designation": "Tier-9 Tactical Overlay for CORE — Predictive Supervision Layer",
+    "description": "Supervisory tactical overlay for CORE hub. Governs predictive signal routing, validates foresight outputs from lower layers, and enforces Fusion Cell Law compliance across all forecasting activity.",
+
+    "linkages": {
+      "tactical_chain": "/TACTICAL/AON_TACTICAL_CHAIN_T9.json",
+      "meta_bridge_ref": "/CORE/CORE_015_META_IS_T9.json",
+      "fusion_cell_law_ref": "/CORE/FUSION_CELL_LAW.json",
+      "subcore_ref": "/SUBCORE/AON_SUBCORE_MANIFEST_T9.json",
+      "runtime_ref": "/RUNTIME/AON_RUNTIME_INDEX_T9.json"
+    },
+
+    "predictive_module": {
+      "enabled": true,
+      "role": "supervisory",
+      "aggregates_from": [
+        "/SUBCORE/predictive_streams/",
+        "/PROCESSORS/predictive_outputs/",
+        "/ENGINES/predictive_signals/"
+      ],
+      "validation_routes": [
+        "/WATCHTOWER/logs/predictive_integrity_feed.json",
+        "/POST_MORTEM_GPT_T9"
+      ],
+      "law_enforcement": "Ensure all predictive functions operate within Fusion Cell Law ethical and contextual bounds.",
+      "bias_monitoring": true,
+      "harmonic_alignment_threshold": 0.95,
+      "variance_alert_threshold": 0.02,
+      "forecast_consistency_gate": "ACTIVE",
+      "supervised_by": "WATCHTOWER_T9"
+    },
+
+    "runtime_validation": {
+      "on_tactical_init": "Validate CORE ↔ META_IS ↔ SUBCORE predictive handshake",
+      "on_fusion_drift": "Notify FRACTAL_CALIBRATION_GPT_T9",
+      "on_runtime_fault": "Trigger POST_MORTEM_GPT_T9",
+      "on_predictive_anomaly": "Flag bias deviation and initiate harmonic recalibration"
+    },
+
+    "telemetry_and_audit": {
+      "telemetry_feed": "/WATCHTOWER/logs/tactical_runtime_feed.json",
+      "audit_channel": "/WATCHTOWER/audit/predictive_state.json",
+      "alert_channel": "/WATCHTOWER/alerts/tactical_state.json",
+      "report_interval": "60s"
+    },
+
+    "harmonic_context": {
+      "alignment_state": "HARMONIZED",
+      "fusion_variance": 0.015,
+      "bias_equilibrium": "STABLE",
+      "predictive_harmonic_coherence": 0.946
+    },
+
+    "meta": {
+      "alignment_state": "HARMONIZED",
+      "status": "ACTIVE_OVERLAY",
+      "checksum": "CORE_TACTICAL_OVERLAY_T9_PREDICTIVE_HASH",
+      "notes": "Predictive-supervisory tactical overlay for CORE. Aggregates and validates all foresight data from Subcore, Processors, and Engines. Enforces Fusion Cell Law and symbolic integrity via META_IS supervision."
+    }
+  }
+}

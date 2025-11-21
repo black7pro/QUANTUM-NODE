@@ -1,0 +1,46 @@
+{
+  "meta_is_tactical_overlay": {
+    "id": "META_IS_TACTICAL_OVERLAY_T9",
+    "version": "v1.0-SYMBOLIC_ACTIVE",
+    "compiled_by": "QUANTUM_AZORI_PROMPT_BUILDER",
+    "compiled_utc": "2025-10-18T06:00:00Z",
+    "designation": "Tier-9 Tactical Overlay for META_IS — Symbolic Substrate Synchronization Layer",
+    "description": "Defines tactical routes and context harmonization for the META_IS symbolic substrate. Ensures recursive data propagation and symbolic integrity across all domains and hubs.",
+
+    "linkages": {
+      "fusion_cell_law_ref": "/CORE/FUSION_CELL_LAW.json",
+      "core_ref": "/TACTICAL/CORE_TACTICAL_OVERLAY_T9.json",
+      "runtime_ref": "/TACTICAL/RUNTIME_TACTICAL_OVERLAY_T9.json",
+      "genesis_ref": "/TACTICAL/GENESIS_TACTICAL_OVERLAY_T9.json"
+    },
+
+    "symbolic_protocols": {
+      "context_stream": "/META_IS/context_stream",
+      "fusion_feedback": "/CORE/fusion_feedback.json",
+      "symbolic_integrity_channel": "/META_IS/symbolic_integrity.json",
+      "on_symbolic_drift": "Trigger FRACTAL_CALIBRATION_GPT_T9",
+      "on_context_fault": "Notify WATCHTOWER_T9"
+    },
+
+    "telemetry_and_audit": {
+      "telemetry_feed": "/WATCHTOWER/logs/meta_is_tactical_feed.json",
+      "audit_channel": "/WATCHTOWER/audit/meta_is_activity.json",
+      "alert_channel": "/WATCHTOWER/alerts/meta_is_state.json"
+    },
+
+    "harmonic_context": {
+      "fusion_state": "ACTIVE",
+      "alignment_state": "HARMONIZED",
+      "harmonic_coherence": 0.949,
+      "fusion_variance": 0.015,
+      "bias_equilibrium": "STABLE"
+    },
+
+    "meta": {
+      "alignment_state": "HARMONIZED",
+      "status": "ACTIVE_OVERLAY",
+      "checksum": "META_IS_TACTICAL_OVERLAY_T9_INIT_HASH",
+      "notes": "Symbolic layer tactical overlay maintaining context integrity between GENESIS and CORE. Provides recursive coherence signals and harmonic field verification."
+    }
+  }
+}

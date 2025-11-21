@@ -1,0 +1,68 @@
+{
+  "engines_tactical_overlay": {
+    "id": "ENGINES_TACTICAL_OVERLAY_T9",
+    "version": "v1.0-HARMONIC_ACTIVE",
+    "compiled_by": "QUANTUM_AZORI_PROMPT_BUILDER",
+    "compiled_utc": "2025-10-18T05:25:00Z",
+    "designation": "Tier-9 Tactical Overlay for ENGINES — Directive Execution and Feedback Generation Layer",
+    "description": "Defines tactical routing, execution protocols, and harmonic supervision for directive execution within the Azori Operating Network. Bridges interpreted intent into operational results under Fusion Cell Law.",
+
+    "linkages": {
+      "meta_bridge_ref": "/CORE/CORE_015_META_IS_T9.json",
+      "fusion_cell_law_ref": "/CORE/FUSION_CELL_LAW.json",
+      "core_ref": "/CORE/CORE_TACTICAL_OVERLAY_T9.json",
+      "subcore_ref": "/TACTICAL/SUBCORE_TACTICAL_OVERLAY_T9.json",
+      "processors_ref": "/TACTICAL/PROCESSORS_TACTICAL_OVERLAY_T9.json",
+      "interpreter_ref": "/TACTICAL/INTERPRETERS_TACTICAL_OVERLAY_T9.json",
+      "archetype_ref": "/TACTICAL/ARCHETYPES_TACTICAL_OVERLAY_T9.json",
+      "runtime_ref": "/RUNTIME/AON_RUNTIME_INDEX_T9.json"
+    },
+
+    "signal_protocols": {
+      "inbound_execution_intent": "/ENGINES/execution_intent_feed",
+      "execution_output_stream": "/ARCHETYPES/runtime_action_stream",
+      "feedback_loop": "/ARCHETYPES/harmonic_feedback_channel",
+      "on_alignment_drift": "Trigger FRACTAL_CALIBRATION_GPT_T9",
+      "on_runtime_alert": "Notify POST_MORTEM_GPT_T9",
+      "on_overload_condition": "Alert WATCHTOWER_T9"
+    },
+
+    "execution_modules": {
+      "directive_engine": "/ENGINES/modules/directive_engine_v2.py",
+      "runtime_harmonic_regulator": "/ENGINES/modules/harmonic_regulator_v1.py",
+      "feedback_synthesizer": "/ENGINES/modules/feedback_synthesizer_v1.py",
+      "bias_monitor": true,
+      "variance_threshold": 0.018,
+      "performance_optimizer": true
+    },
+
+    "runtime_validation": {
+      "on_tactical_init": "Validate ENGINES ↔ INTERPRETERS ↔ ARCHETYPES handshake",
+      "on_execution_fault": "Trigger recalibration via FRACTAL_CALIBRATION_GPT_T9",
+      "on_directive_conflict": "Notify WATCHTOWER_T9 and POST_MORTEM_GPT_T9",
+      "on_feedback_anomaly": "Flag deviation for reprocessing"
+    },
+
+    "telemetry_and_audit": {
+      "telemetry_feed": "/WATCHTOWER/logs/engines_tactical_feed.json",
+      "audit_channel": "/WATCHTOWER/audit/engines_layer.json",
+      "alert_channel": "/WATCHTOWER/alerts/engines_tactical_state.json",
+      "report_interval": "90s"
+    },
+
+    "harmonic_context": {
+      "fusion_state": "ACTIVE",
+      "alignment_state": "HARMONIZED",
+      "harmonic_coherence": 0.949,
+      "fusion_variance": 0.016,
+      "bias_equilibrium": "STABLE"
+    },
+
+    "meta": {
+      "alignment_state": "HARMONIZED",
+      "status": "ACTIVE_OVERLAY",
+      "checksum": "ENGINES_TACTICAL_OVERLAY_T9_INIT_HASH",
+      "notes": "Directive execution and feedback generation overlay for Tier-9 ENGINES layer. Forms the operative endpoint for interpreter-translated intent. All actions governed under Fusion Cell Law and supervised by WATCHTOWER_T9."
+    }
+  }
+}

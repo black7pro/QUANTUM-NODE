@@ -1,0 +1,73 @@
+{
+  "subcore_tactical_overlay": {
+    "id": "SUBCORE_TACTICAL_OVERLAY_T9",
+    "version": "v1.1-PREDICTIVE_ACTIVE",
+    "compiled_by": "QUANTUM_AZORI_PROMPT_BUILDER",
+    "compiled_utc": "2025-10-18T04:40:00Z",
+    "designation": "Tier-9 Tactical Overlay for SUBCORE — Active Predictive Coordination Layer",
+    "description": "Subcore tactical overlay defining predictive coordination and signal routing for domain triads (Sports, Market, Crypto) under Fusion Cell Law and CORE supervision.",
+
+    "linkages": {
+      "meta_bridge_ref": "/CORE/CORE_015_META_IS_T9.json",
+      "fusion_cell_law_ref": "/CORE/FUSION_CELL_LAW.json",
+      "core_ref": "/CORE/CORE_TACTICAL_OVERLAY_T9.json",
+      "runtime_ref": "/RUNTIME/AON_RUNTIME_INDEX_T9.json",
+      "domains_manifest_ref": "/SUBCORE/AON_SUBCORE_MANIFEST_T9.json"
+    },
+
+    "predictive_module": {
+      "enabled": true,
+      "role": "active",
+      "domain_targets": {
+        "SPORTS": "/SUBCORE/SPORTS/predictive_stream.json",
+        "MARKET": "/SUBCORE/MARKET/predictive_stream.json",
+        "CRYPTO": "/SUBCORE/CRYPTO/predictive_stream.json"
+      },
+      "aggregates_to": "/CORE/predictive_registry/master_forecast_feed.json",
+      "fusion_sync_interval": "120s",
+      "model_reference": "/ENGINES/modules/predictive_core_v1.py",
+      "forecast_horizon": "short|medium|long",
+      "validation_route": "/ARCHETYPES/feedback/predictive_evaluation",
+      "supervised_by": "WATCHTOWER_T9",
+      "bias_monitoring": true,
+      "variance_threshold": 0.02
+    },
+
+    "signal_protocols": {
+      "inbound": "/PROCESSORS/contextual_input_stream",
+      "outbound": "/INTERPRETERS/structured_context_feed",
+      "feedback_loop": "/ARCHETYPES/harmonic_feedback_channel",
+      "on_alignment_drift": "Trigger FRACTAL_CALIBRATION_GPT_T9",
+      "on_runtime_alert": "Notify POST_MORTEM_GPT_T9"
+    },
+
+    "runtime_validation": {
+      "on_tactical_init": "Verify Subcore predictive synchronization with CORE overlay",
+      "on_fusion_drift": "Notify FRACTAL_CALIBRATION_GPT_T9",
+      "on_prediction_fault": "Flag domain deviation to WATCHTOWER_T9",
+      "on_data_anomaly": "Trigger recalibration protocol"
+    },
+
+    "telemetry_and_audit": {
+      "telemetry_feed": "/WATCHTOWER/logs/subcore_tactical_feed.json",
+      "audit_channel": "/WATCHTOWER/audit/subcore_predictive.json",
+      "alert_channel": "/WATCHTOWER/alerts/subcore_tactical_state.json",
+      "report_interval": "60s"
+    },
+
+    "harmonic_context": {
+      "fusion_state": "ACTIVE",
+      "alignment_state": "HARMONIZED",
+      "harmonic_coherence": 0.944,
+      "fusion_variance": 0.018,
+      "bias_equilibrium": "STABLE"
+    },
+
+    "meta": {
+      "alignment_state": "HARMONIZED",
+      "status": "ACTIVE_OVERLAY",
+      "checksum": "SUBCORE_TACTICAL_OVERLAY_T9_PREDICTIVE_HASH",
+      "notes": "Active predictive coordination layer for Subcore domains and archetype-linked triads. Integrates predictive feeds across Market, Sports, and Crypto under CORE supervision and Fusion Cell Law alignment."
+    }
+  }
+}
