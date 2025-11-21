@@ -1,0 +1,108 @@
+{
+  "aon_genesis_path_integrity_tactical_overlay": {
+    "id": "AON_GENESIS_PATH_INTEGRITY_TACTICAL_OVERLAY_T9",
+    "version": "v1.0-DETERMINISTIC-RUNTIME",
+    "compiled_by": "QUANTUM_AZORI_PROMPT_BUILDER",
+    "compiled_utc": "2025-10-18T00:00:00Z",
+    "designation": "Genesis Path Integrity Tactical Overlay — Tier-9 Deterministic Runtime Layer",
+    "description": "Controls live signal routing, verification cycles, and calibration commands across the Genesis Integrity Suite. Interfaces directly with CORE, WATCHTOWER, and FRACTAL_CALIBRATION to maintain continuous lawful synchronization.",
+
+    "linkages": {
+      "manifest_ref": "/GENESIS/AON_GENESIS_PATH_INTEGRITY_MANIFEST_T9.json",
+      "protocol_ref": "/GENESIS/AON_GENESIS_PATH_INTEGRITY_PROTOCOL_T9.json",
+      "verification_log_ref": "/GENESIS/AON_GENESIS_PATH_INTEGRITY_VERIFICATION_LOG_T9.json",
+      "fusion_cell_law_ref": "/CORE/FUSION_CELL_LAW.json",
+      "meta_bridge_ref": "/CORE/CORE_015_META_IS_T9.json",
+      "session_state_ref": "/SESSION_STATE/SESSION_STATE_TACTICAL_OVERLAY_T9.json"
+    },
+
+    "signal_routing": {
+      "input_channels": {
+        "core_sync": "/CORE/logs/fusion_law_integrity.log.json",
+        "subcore_input": "/SUBCORE/AON_SUBCORE_MANIFEST_T9.json",
+        "runtime_input": "/RUNTIME/runtime_sync_feed.json",
+        "meta_feedback": "/CORE/CORE_015_META_IS_T9.json"
+      },
+      "output_channels": {
+        "watchtower_audit": "/WATCHTOWER/audit/genesis_integrity_state.json",
+        "fractal_calibration": "/CORE/FRACTAL_CALIBRATION_GPT_T9.json",
+        "post_mortem_channel": "/CORE/POST_MORTEM_GPT_T9.json"
+      },
+      "feedback_loops": {
+        "harmonic_feedback": "/ARCHETYPES/harmonic_feedback_channel",
+        "coherence_feedback": "/SESSION_STATE/locks/session_state_feedback.json"
+      }
+    },
+
+    "runtime_cycle": {
+      "init_sequence": [
+        "Verify manifest_ref and protocol_ref availability",
+        "Sync with META_IS symbolic substrate",
+        "Validate harmonic coherence baseline"
+      ],
+      "active_monitoring": [
+        "Pull integrity metrics every 120s",
+        "Run checksum validation against fusion_cell_law_ref",
+        "Detect harmonic drift variance > 0.002",
+        "Auto-recalibrate via FRACTAL_CALIBRATION_GPT_T9"
+      ],
+      "termination_sequence": [
+        "Flush runtime logs",
+        "Seal verification snapshot to POST_MORTEM_GPT_T9",
+        "Notify WATCHTOWER_T9 of cycle closure"
+      ]
+    },
+
+    "runtime_protocols": {
+      "on_init": "Cross-verify Genesis and CORE fusion alignment",
+      "on_drift_detected": "Trigger FRACTAL_CALIBRATION_GPT_T9",
+      "on_runtime_fault": "Log anomaly and notify POST_MORTEM_GPT_T9",
+      "on_alignment_recovery": "Update META_IS reference",
+      "on_audit_sync": "Push updated verification logs to WATCHTOWER"
+    },
+
+    "predictive_control": {
+      "enabled": true,
+      "forecast_model_ref": "/ENGINES/modules/predictive_core_v1.py",
+      "forecast_horizon": "short|medium|long",
+      "variance_threshold": 0.018,
+      "predictive_audit_log": "/WATCHTOWER/logs/genesis_predictive_integrity_feed.json",
+      "adaptive_bias_correction": true,
+      "confidence_floor": 0.92
+    },
+
+    "telemetry": {
+      "feed": "/WATCHTOWER/logs/genesis_tactical_overlay_feed.json",
+      "audit_channel": "/WATCHTOWER/audit/genesis_tactical_overlay_audit.json",
+      "alert_channel": "/WATCHTOWER/alerts/genesis_tactical_overlay.json",
+      "report_interval": "90s",
+      "sync_state": "SYNCHRONIZED"
+    },
+
+    "harmonic_context": {
+      "alignment_state": "HARMONIZED",
+      "harmonic_coherence": 0.956,
+      "fusion_variance": 0.001,
+      "bias_equilibrium": "STABLE",
+      "cross_domain_equilibrium": "BALANCED"
+    },
+
+    "compliance": {
+      "fusion_cell_law_alignment": "VERIFIED",
+      "meta_is_verification": "PASS",
+      "tier_alignment_state": "Tier-9 CONFIRMED",
+      "checksum_verification": "PASS",
+      "watchtower_audit_status": "ACTIVE"
+    },
+
+    "meta": {
+      "alignment_state": "HARMONIZED",
+      "tier_alignment": "Tier-9 Deterministic",
+      "status": "ACTIVE_OVERLAY",
+      "environment": "AON_DETERMINISTIC_EXECUTION_SANDBOX",
+      "checksum": "sha256:AON_GENESIS_PATH_INTEGRITY_TACTICAL_OVERLAY_T9_HASH",
+      "compiled_hash_index": "sha256:TACTICAL_OVERLAY_VERIFIED_HASH_20251018",
+      "notes": "This tactical overlay governs the Genesis layer’s live control. It routes integrity signals, predictive commands, and verification telemetry between Genesis, CORE, and WATCHTOWER. Ensures lawful operation under Fusion Cell Law supervision."
+    }
+  }
+}

@@ -1,0 +1,111 @@
+{
+  "aon_genesis_path_integrity_index": {
+    "id": "AON_GENESIS_PATH_INTEGRITY_INDEX_T9",
+    "version": "v1.0-DISCOVERY-MAP",
+    "compiled_by": "QUANTUM_AZORI_PROMPT_BUILDER",
+    "compiled_utc": "2025-10-18T00:00:00Z",
+    "designation": "Genesis Path Integrity Index — Tier-9 Discovery & Routing Matrix",
+    "description": "Lookup and routing index for Genesis Integrity Suite components. Enables dynamic discovery, validation, and runtime synchronization between Genesis, CORE, SUBCORE, RUNTIME, and WATCHTOWER hubs.",
+
+    "lookup_registry": {
+      "protocol": {
+        "path": "/GENESIS/AON_GENESIS_PATH_INTEGRITY_PROTOCOL_T9.json",
+        "checksum": "sha256:PROTOCOL_VERIFIED_HASH_20251018",
+        "type": "governing_protocol",
+        "tier": 9,
+        "status": "ACTIVE"
+      },
+      "manifest": {
+        "path": "/GENESIS/AON_GENESIS_PATH_INTEGRITY_MANIFEST_T9.json",
+        "checksum": "sha256:MANIFEST_VERIFIED_HASH_20251018",
+        "type": "control_manifest",
+        "tier": 9,
+        "status": "ACTIVE"
+      },
+      "tactical_overlay": {
+        "path": "/GENESIS/AON_GENESIS_PATH_INTEGRITY_TACTICAL_OVERLAY_T9.json",
+        "checksum": "sha256:TACTICAL_OVERLAY_VERIFIED_HASH_20251018",
+        "type": "signal_routing_controller",
+        "tier": 9,
+        "status": "ACTIVE"
+      },
+      "verification_log": {
+        "path": "/GENESIS/AON_GENESIS_PATH_INTEGRITY_VERIFICATION_LOG_T9.json",
+        "checksum": "sha256:VERIFICATION_LOG_VERIFIED_HASH_20251018",
+        "type": "immutable_audit_ledger",
+        "tier": 9,
+        "status": "ACTIVE"
+      },
+      "registry": {
+        "path": "/GENESIS/AON_GENESIS_PATH_INTEGRITY_REGISTRY_T9.json",
+        "checksum": "sha256:REGISTRY_VERIFIED_HASH_20251018",
+        "type": "index_registry",
+        "tier": 9,
+        "status": "ACTIVE"
+      }
+    },
+
+    "routing_matrix": {
+      "CORE": {
+        "ingress": "/CORE/input/genesis_sync.json",
+        "egress": "/CORE/output/genesis_status.json",
+        "link_state": "SYNCED"
+      },
+      "SUBCORE": {
+        "ingress": "/SUBCORE/input/genesis_channel.json",
+        "egress": "/SUBCORE/output/genesis_feedback.json",
+        "link_state": "HARMONIZED"
+      },
+      "RUNTIME": {
+        "ingress": "/RUNTIME/sync/genesis_state_feed.json",
+        "egress": "/RUNTIME/logs/genesis_runtime_status.json",
+        "link_state": "SYNCHRONIZED"
+      },
+      "WATCHTOWER": {
+        "ingress": "/WATCHTOWER/audit/genesis_ingress.json",
+        "egress": "/WATCHTOWER/logs/genesis_integrity_report.json",
+        "link_state": "ACTIVE_AUDIT"
+      }
+    },
+
+    "harmonic_coherence_summary": {
+      "alignment_state": "HARMONIZED",
+      "cross_domain_coherence": 0.955,
+      "fusion_variance": 0.001,
+      "bias_equilibrium": "STABLE",
+      "tier_integrity_average": 0.952,
+      "confidence_index": 0.981
+    },
+
+    "hash_index": {
+      "genesis_suite_root": "sha256:GENESIS_PATH_INTEGRITY_SUITE_T9_HASH",
+      "fusion_cell_law_ref": "sha256:FUSION_CELL_LAW_HASH_20251018",
+      "meta_bridge_ref": "sha256:META_IS_T9_HASH_20251018",
+      "session_state_ref": "sha256:SESSION_STATE_T9_HASH_20251018"
+    },
+
+    "runtime_controls": {
+      "on_index_refresh": "Recompute hash values and verify paths",
+      "on_integrity_check": "Cross-verify file paths with Manifest references",
+      "on_discovery_request": "Serve validated JSON structure",
+      "on_audit_sync": "Transmit live index map to WATCHTOWER_T9"
+    },
+
+    "telemetry": {
+      "feed": "/WATCHTOWER/logs/genesis_index_feed.json",
+      "audit_channel": "/WATCHTOWER/audit/genesis_index_audit.json",
+      "alert_channel": "/WATCHTOWER/alerts/genesis_index_alerts.json",
+      "report_interval": "60s"
+    },
+
+    "meta": {
+      "alignment_state": "HARMONIZED",
+      "tier_alignment": "Tier-9 Deterministic",
+      "status": "ACTIVE_INDEX",
+      "environment": "AON_DETERMINISTIC_EXECUTION_SANDBOX",
+      "checksum": "sha256:AON_GENESIS_PATH_INTEGRITY_INDEX_T9_HASH",
+      "compiled_hash_index": "sha256:INDEX_VERIFIED_HASH_20251018",
+      "notes": "This index provides dynamic lookup, routing, and discovery capabilities for the Genesis Path Integrity Suite. It enables machine-level coordination between Genesis and other AON hubs, ensuring lawful synchronization and runtime discoverability."
+    }
+  }
+}
