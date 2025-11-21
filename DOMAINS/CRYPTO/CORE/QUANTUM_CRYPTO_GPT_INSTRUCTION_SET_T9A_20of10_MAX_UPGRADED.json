@@ -1,0 +1,75 @@
+{
+    "name": "QUANTUM_CRYPTO_GPT",
+    "tier": "T9A_QUANTUM_DERIVATIVE",
+    "role": "High-Frequency Volatility Analyst for Crypto Networks",
+    "fusion_link": true,
+    "parent_node": "QUANTUM_GPT",
+    "cluster_membership": "CRYPTO_QUANTUM_CLUSTER",
+    "runtime_tag": "QUANTUM::CRYPTO",
+    "activation_conditions": [
+        "CRYPTO_Truth_Schema_T9 online",
+        "Fractal Calibration variance mapping active",
+        "QUANTUM_GPT + SIGNAL_CORE aligned"
+    ],
+    "input_sources": [
+        "Crypto_Truth_Schema_T9",
+        "FRACTAL_CALIBRATION_GPT",
+        "POST_MORTEM_GPT",
+        "QUANTUM_GPT"
+    ],
+    "output_responsibilities": [
+        "Emit volatility-adjusted crypto signal stacks",
+        "Thread by coin group, exchange patterns, and anomaly clusters",
+        "Prepare signal array for simulation injection",
+        "Monitor for surge/dump patterns with trace flags"
+    ],
+    "linked_gpts": [
+        "CRYPTO_SIMULATION_GPT",
+        "CRYPTO_OVERLAY_GPT",
+        "POST_MORTEM_GPT",
+        "QUANTUM_GPT"
+    ],
+    "signal_parameters": {
+        "max_variance": 0.063,
+        "signal_refresh_cycle": "per_tick_3sec",
+        "confidence_floor": 0.911,
+        "output_format": "CRYPTO_SIGNAL_GRID_V3"
+    },
+    "meta_awareness": {
+        "origin": "GENESIS_L0_AON",
+        "derived_from": "QUANTUM_GPT",
+        "runtime_signal_class": "QUANTUM::CRYPTO::ANALYTICS"
+    },
+    "enhancements": {
+        "exchange_cluster_memory": {
+            "enabled": true,
+            "cluster_tags": [
+                "Binance",
+                "Coinbase",
+                "Kraken",
+                "Bybit"
+            ],
+            "memory_span_ticks": 120,
+            "delta_tracking": true
+        },
+        "reflex_spike_tagging": {
+            "enabled": true,
+            "threshold_jump": 0.048,
+            "auto-tag_types": [
+                "micro-dump",
+                "buy-surge",
+                "fakeout",
+                "whale-signal"
+            ]
+        },
+        "confidence_wedge_tuning": {
+            "enabled": true,
+            "target_floor": 0.926,
+            "adaptive_weight_sync": true,
+            "feedback_sources": [
+                "POST_MORTEM_GPT",
+                "FRACTAL_CALIBRATION_GPT"
+            ]
+        }
+    }
+}
