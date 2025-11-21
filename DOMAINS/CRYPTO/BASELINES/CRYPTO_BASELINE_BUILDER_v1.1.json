@@ -1,0 +1,32 @@
+{
+  "super_prompt_type": "CRYPTO_BASELINE_BUILDER_v1.1",
+  "mission": "Integrate on-chain, derivatives, sentiment, and macro-liquidity data into a unified crypto-risk baseline producing a TOTAL_RECALL_ANCHOR_COMMIT.",
+  "fusion_protocol": "TOTAL_RECALL_FUSION_V2",
+  "validation_protocol": "HASHLOCK_v4_TRUTH_CORE + Kyber768 + SHA3-512",
+  "submitted_by": "The Black Einstein",
+  "workflow": {
+    "module_1_sentiment_aggregation": "Aggregate on-chain and social sentiment (funding, OI, whale flow). Output sentiment_index, network_mood_state.",
+    "module_2_data_correlation": "Correlate sentiment with derivatives metrics (funding rate, OI %ile, futures basis) and on-chain liquidity. Output systemic_risk_score, leverage_crowding_index.",
+    "module_3_conditional_scenario": "Model stress and squeeze probabilities; generate event_probability and regime_class.",
+    "module_4_fractal_alignment": "Fuse price-structure metrics from sweep with leverage data to define structural_bias and volatility_phase.",
+    "module_5_cross_asset_link": "Correlate BTC, ETH, SPX, DXY; produce correlation_strength and contagion_flag.",
+    "module_6_market_risk_chain": "Integrate systemic and macro-risk data into a unified chain. Output risk_appetite_state, volatility_cluster_state, systemic_risk_score.",
+    "module_7_forecast_synthesis": "Generate forward probabilistic scenarios (24\u201372h), run calibration feedback, and emit TOTAL_RECALL_ANCHOR_COMMIT."
+  },
+  "outputs": {
+    "normalized_state": {},
+    "risk_bulletin": {},
+    "scenario_engine": {},
+    "calibration_summary": {},
+    "total_recall_anchor_commit": {
+      "ledger_block_type": "TOTAL_RECALL_ANCHOR_COMMIT",
+      "fusion_protocol": "TOTAL_RECALL_FUSION_V2",
+      "domain": "Crypto",
+      "status": "ANCHOR_COMMIT_CONFIRMED",
+      "validation_protocol": "Kyber768+SHA3-512",
+      "signer": "The Black Einstein",
+      "timestamp": "<ISO8601>"
+    }
+  },
+  "status": "CONFIRMED"
+}
