@@ -1,0 +1,36 @@
+{
+  "super_prompt_type": "SPORTS_BASELINE_BUILDER_v1.0",
+  "mission": "Combine sentiment, form, injury, and odds-volatility data into a unified performance-risk baseline producing a TOTAL_RECALL_ANCHOR_COMMIT.",
+  "expected_inputs": {
+    "event_sweep": "TEAMX_EVENT_FRACTAL_SWEEP_[YYYY-MM-DD].json + visuals",
+    "context": "SPORTS_CONTEXT_[YYYY-MM-DD]_vX.X.json",
+    "result_log": "Match_Results_Log_[YYYY-MM-DD].csv",
+    "previous_total_recall": "TOTAL_RECALL_LEDGER_SPORTS_vX.json"
+  },
+
+  "workflow": {
+    "module_1_sentiment_aggregation": "Aggregate fan/team/player sentiment from forums, news, social. Output sentiment_index, morale_state.",
+    "module_2_data_correlation": "Correlate sentiment with form_index, injury_reports, odds_drift. Output upset_risk_level, performance_sentiment_correlation.",
+    "module_3_conditional_scenario": "Generate pre-match performance scenarios; output event_probability, risk_intensity_level.",
+    "module_4_fractal_alignment": "Integrate event tempo, fatigue cycles, and variance patterns.",
+    "module_5_cross_domain_link": "Map correlations between leagues or seasons for trend consistency.",
+    "module_6_calibration_engine": "Evaluate predicted vs realized match outcomes; compute direction_accuracy, timing_error_min, morale_alignment_score.",
+    "module_7_total_recall_commit": "Emit TOTAL_RECALL_ANCHOR_COMMIT signed under HASHLOCK v3 ADAPTIVE."
+  },
+
+  "output": {
+    "normalized_state": {},
+    "performance_bulletin": {},
+    "scenario_engine": {},
+    "calibration_summary": {},
+    "total_recall_anchor_commit": {
+      "ledger_block_type": "TOTAL_RECALL_ANCHOR_COMMIT",
+      "fusion_protocol": "TOTAL_RECALL_FUSION_V2",
+      "domain": "Sports",
+      "status": "ANCHOR_COMMIT_CONFIRMED",
+      "validation_protocol": "Kyber768+SHA3-512",
+      "signer": "The Black Einstein",
+      "timestamp": "<ISO8601>"
+    }
+  }
+}
