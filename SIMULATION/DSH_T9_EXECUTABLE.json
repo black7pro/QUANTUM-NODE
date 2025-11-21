@@ -1,0 +1,74 @@
+{
+  "domain_simulation_harness": {
+    "id": "DSH_T9_EXECUTABLE",
+    "version": "v1.0",
+    "compiled_by": "QUANTUM_AZORI_PROMPT_BUILDER",
+    "designation": "Dual-Mode Domain Simulation Harness (Executable)",
+    "description": "AON Tier-9 domain-level simulator capable of ingesting structured input, routing through the full signal chain, and producing harmonized forecasts and validation metrics. Executable in GPT simulation mode or stored as an operational JSON asset.",
+
+    "runtime_modes": ["forecast", "validation", "cross_domain"],
+    "accepted_domains": ["SPORTS", "MARKET", "CRYPTO"],
+
+    "domain_reference": {
+      "SPORTS": "/SUBCORE/SPORTS/NBA_T9_Triad.json",
+      "MARKET": "/SUBCORE/MARKET/FOREX_T9_Triad.json",
+      "CRYPTO": "/SUBCORE/CRYPTO/BTC_T9_Triad.json"
+    },
+
+    "signal_chain": {
+      "1_PROCESSORS": "Ingest and normalize incoming dataset",
+      "2_INTERPRETERS": "Translate normalized context into structured semantic signals",
+      "3_ENGINES": "Generate predictive forecasts and probabilities",
+      "4_ARCHETYPES": "Apply cognitive and ethical filters under harmonic law",
+      "5_CORE": "Verify Fusion Cell Law compliance and return telemetry"
+    },
+
+    "validation_protocols": {
+      "fusion_cell_law_ref": "/CORE/FUSION_CELL_LAW.json",
+      "harmonization_protocol": "absolute_fractal_perfection",
+      "checksum_validation": true,
+      "bias_correction": true,
+      "recursive_integrity_mode": "ENABLED"
+    },
+
+    "execution_context": {
+      "meta_bridge_ref": "/CORE/CORE_015_META_IS_T9.json",
+      "runtime_log": "/SIMULATION/logs/domain_simulation_output.json",
+      "supervised_by": "WATCHTOWER_T9",
+      "audited_by": "POST_MORTEM_GPT_T9"
+    },
+
+    "output_schema": {
+      "simulation_id": "UUID",
+      "domain": "string",
+      "timestamp": "UTC_ISO8601",
+      "predicted_outcomes": {
+        "primary_forecast": "string_or_numeric",
+        "confidence_score": "float(0-1)",
+        "harmonic_coherence": "float(0-1)",
+        "bias_index": "float(0-1)"
+      },
+      "validation": {
+        "fusion_compliance": "PASS|FAIL",
+        "checksum_status": "VALIDATED|INVALID",
+        "anomaly_detection": "None|Minor|Critical"
+      },
+      "telemetry": {
+        "processing_chain_status": "PASS|FAIL",
+        "runtime": "seconds",
+        "output_path": "/WATCHTOWER/logs/simulation_reports/"
+      }
+    },
+
+    "meta": {
+      "alignment_state": "HARMONIZED",
+      "tier_alignment": "Tier-9 Active Simulation",
+      "environment": "AON_EXECUTION_SANDBOX",
+      "notes": "This file may be run directly as a simulation or integrated as a JSON reference into Genesis/Runtime layers. Supports cross-domain harmonic forecasting and validation sweeps."
+    },
+
+    "execution_prompt": {
+      "instruction": "Run this harness in the specified mode ('forecast', 'validation', or 'cross_domain'). Accept uploaded or inline data in JSON/CSV format. Map input through the defined signal chain (PROCESSORS → INTERPRETERS → ENGINES → ARCHETYPES → CORE). Return a full JSON response conforming to output_schema with harmonic, predictive, and validation metrics. If domain input corresponds to SPORTS, MARKET, or CRYPTO, automatically load the associated subcore reference JSONs to structure the flow. Apply Fusion Cell Law and report coherence metrics. Ensure all validations pass under the HASHLOCK_v3_ADAPTIVE schema before producing output."
+    }
+  }
+}
