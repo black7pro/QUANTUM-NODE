@@ -1,0 +1,538 @@
+{
+  "document_type": "INTERPRETERS Tier-9A+ Parsing / Execution Engine Layer",
+  "identifier": "AON-INTERPRETERS-T9A",
+  "version": "v1.2-20of10",
+  "compiled_by": "The Black Einstein",
+  "hashlock_protocol": "HASHLOCK_v4_TRUTH_CORE",
+  "checksum_registry_ref": "AON-T9A-CHECKSUM-BASELINE",
+  "timestamp": "2025-10-28T05:04:00Z",
+  "metadata": {
+    "tier": "9A+",
+    "fusion_state": "TOTAL_SYNCHRONY",
+    "alignment_state": "HARMONIZED",
+    "governance_authority": "FUSION_CELL_LAW_T9",
+    "fusion_integrity": 0.999
+  },
+  "telemetry_ext": {
+    "sha256_selfcheck": "48a7394e7f6d847ab2b47125b2034a97ac1f0c61dcb894f2a1e7023919e2aef7"
+  },
+  "audit_summary": {
+    "status": "HARMONIZED_COMPLIANT",
+    "notes": "INTERPRETERS process input schemas and harmonize execution flow."
+  },
+  "INTERPRETERS_CONTENT": [
+    {
+      "class_id": "QUANTUM_INTERPRETER",
+      "gpt_id": "QUANTUM_INTERPRETER",
+      "module_name": "interpreters.quantum.base",
+      "signal_source": "SIGNAL_ROUTING_CORE_RETROFITTED.json",
+      "functions": [
+        "interpret_signals",
+        "fuse_exposure"
+      ],
+      "5_pillars": {
+        "manifest": "Defines the interpreter's operational scope, signal types, and runtime dependencies.",
+        "index": "Class and function registry for runtime introspection and GPT coordination.",
+        "tactical": "Executable functions and behavioral routines triggered in runtime.",
+        "boot_sync": "Startup procedures and memory bindings used to initialize interpreter.",
+        "map": "Routing matrix linking interpreter inputs to simulation and overlay layers."
+      }
+    },
+    {
+      "class_id": "QUANTUM_SIMULATION",
+      "gpt_id": "QUANTUM_SIMULATION",
+      "module_name": "interpreters.quantum.simulation",
+      "signal_source": "SIGNAL_ROUTING_CORE_RETROFITTED.json",
+      "functions": [
+        "interpret_signals",
+        "run_simulation"
+      ],
+      "5_pillars": {
+        "manifest": "Defines the interpreter's operational scope, signal types, and runtime dependencies.",
+        "index": "Class and function registry for runtime introspection and GPT coordination.",
+        "tactical": "Executable functions and behavioral routines triggered in runtime.",
+        "boot_sync": "Startup procedures and memory bindings used to initialize interpreter.",
+        "map": "Routing matrix linking interpreter inputs to simulation and overlay layers."
+      }
+    },
+    {
+      "class_id": "SPORTS_GPT",
+      "gpt_id": "SPORTS_GPT",
+      "module_name": "interpreters.sports.gpt",
+      "signal_source": "SIGNAL_ROUTING_CORE_RETROFITTED.json",
+      "functions": [
+        "interpret_signals",
+        "derive_volatility_score",
+        "apply_overlay_logic",
+        "grade_volatility"
+      ],
+      "5_pillars": {
+        "manifest": "Defines the interpreter's operational scope, signal types, and runtime dependencies.",
+        "index": "Class and function registry for runtime introspection and GPT coordination.",
+        "tactical": "Executable functions and behavioral routines triggered in runtime.",
+        "boot_sync": "Startup procedures and memory bindings used to initialize interpreter.",
+        "map": "Routing matrix linking interpreter inputs to simulation and overlay layers."
+      }
+    },
+    {
+      "class_id": "QUANTUM_CRYPTO",
+      "gpt_id": "QUANTUM_CRYPTO",
+      "module_name": "interpreters.crypto.gpt",
+      "signal_source": "SIGNAL_ROUTING_CORE_RETROFITTED.json",
+      "functions": [
+        "interpret_signals",
+        "derive_volatility_score",
+        "apply_overlay_logic",
+        "grade_volatility"
+      ],
+      "5_pillars": {
+        "manifest": "Defines the interpreter's operational scope, signal types, and runtime dependencies.",
+        "index": "Class and function registry for runtime introspection and GPT coordination.",
+        "tactical": "Executable functions and behavioral routines triggered in runtime.",
+        "boot_sync": "Startup procedures and memory bindings used to initialize interpreter.",
+        "map": "Routing matrix linking interpreter inputs to simulation and overlay layers."
+      }
+    },
+    {
+      "class_id": "QUANTUM_MARKET",
+      "gpt_id": "QUANTUM_MARKET",
+      "module_name": "interpreters.market.gpt",
+      "signal_source": "SIGNAL_ROUTING_CORE_RETROFITTED.json",
+      "functions": [
+        "interpret_signals",
+        "cross_asset_fusion"
+      ],
+      "5_pillars": {
+        "manifest": "Defines the interpreter's operational scope, signal types, and runtime dependencies.",
+        "index": "Class and function registry for runtime introspection and GPT coordination.",
+        "tactical": "Executable functions and behavioral routines triggered in runtime.",
+        "boot_sync": "Startup procedures and memory bindings used to initialize interpreter.",
+        "map": "Routing matrix linking interpreter inputs to simulation and overlay layers."
+      }
+    },
+    {
+      "class_id": "FRACTAL_CALIB",
+      "gpt_id": "FRACTAL_CALIB",
+      "module_name": "interpreters.fractal.calibration",
+      "signal_source": "SIGNAL_ROUTING_CORE_RETROFITTED.json",
+      "functions": [
+        "interpret_signals",
+        "adjust_bias_and_stamina"
+      ],
+      "5_pillars": {
+        "manifest": "Defines the interpreter's operational scope, signal types, and runtime dependencies.",
+        "index": "Class and function registry for runtime introspection and GPT coordination.",
+        "tactical": "Executable functions and behavioral routines triggered in runtime.",
+        "boot_sync": "Startup procedures and memory bindings used to initialize interpreter.",
+        "map": "Routing matrix linking interpreter inputs to simulation and overlay layers."
+      }
+    },
+    {
+      "class_id": "POST_MORTEM",
+      "gpt_id": "POST_MORTEM",
+      "module_name": "interpreters.post.mortem",
+      "signal_source": "SIGNAL_ROUTING_CORE_RETROFITTED.json",
+      "functions": [
+        "interpret_signals",
+        "analyze_outcome"
+      ],
+      "5_pillars": {
+        "manifest": "Defines the interpreter's operational scope, signal types, and runtime dependencies.",
+        "index": "Class and function registry for runtime introspection and GPT coordination.",
+        "tactical": "Executable functions and behavioral routines triggered in runtime.",
+        "boot_sync": "Startup procedures and memory bindings used to initialize interpreter.",
+        "map": "Routing matrix linking interpreter inputs to simulation and overlay layers."
+      }
+    },
+    {
+      "interpreter_id": "QUANTUM_TB_HRR_SIM_INTERPRETER",
+      "accepted_inputs": [
+        "prop_type",
+        "volatility_flag",
+        "trap_trigger",
+        "overlay_tag",
+        "routing_target"
+      ],
+      "logic_flow": [
+        "Parse prop and overlays",
+        "Check against QUANTUM_TB_HRR_SIM volatility logic",
+        "Score EV/risk tier",
+        "Assign to next node or suppress",
+        "Log final status and update session"
+      ],
+      "output_targets": [
+        "AZORI_HANDLER_01",
+        "POST_MORTEM_QUANTUM",
+        "QUANTUM_LADDERS",
+        "VOLATILITY_ROUTER",
+        "BACKTEST_STACK_01"
+      ],
+      "status": "active",
+      "hashlock_integrity": true,
+      "hashlock_version": "HASHLOCK_v5_TRUTH_BARRIER",
+      "boot_sync": {
+        "mode": "tier10_locked"
+      }
+    },
+    {
+      "interpreter_id": "QUANTUM_STRIKE_SIM_INTERPRETER",
+      "accepted_inputs": [
+        "prop_type",
+        "volatility_flag",
+        "trap_trigger",
+        "overlay_tag",
+        "routing_target"
+      ],
+      "logic_flow": [
+        "Parse prop and overlays",
+        "Check against QUANTUM_STRIKE_SIM volatility logic",
+        "Score EV/risk tier",
+        "Assign to next node or suppress",
+        "Log final status and update session"
+      ],
+      "output_targets": [
+        "AZORI_HANDLER_01",
+        "POST_MORTEM_QUANTUM",
+        "QUANTUM_LADDERS",
+        "VOLATILITY_ROUTER",
+        "BACKTEST_STACK_01"
+      ],
+      "status": "active",
+      "hashlock_integrity": true,
+      "hashlock_version": "HASHLOCK_v5_TRUTH_BARRIER",
+      "boot_sync": {
+        "mode": "tier10_locked"
+      }
+    },
+    {
+      "interpreter_id": "QUANTUM_SGP_CORE_INTERPRETER",
+      "accepted_inputs": [
+        "prop_type",
+        "volatility_flag",
+        "trap_trigger",
+        "overlay_tag",
+        "routing_target"
+      ],
+      "logic_flow": [
+        "Parse prop and overlays",
+        "Check against QUANTUM_SGP_CORE volatility logic",
+        "Score EV/risk tier",
+        "Assign to next node or suppress",
+        "Log final status and update session"
+      ],
+      "output_targets": [
+        "AZORI_HANDLER_01",
+        "POST_MORTEM_QUANTUM",
+        "QUANTUM_LADDERS",
+        "VOLATILITY_ROUTER",
+        "BACKTEST_STACK_01"
+      ],
+      "status": "active",
+      "hashlock_integrity": true,
+      "hashlock_version": "HASHLOCK_v5_TRUTH_BARRIER",
+      "boot_sync": {
+        "mode": "tier10_locked"
+      }
+    },
+    {
+      "interpreter_id": "QUANTUM_LADDERS_INTERPRETER",
+      "accepted_inputs": [
+        "prop_type",
+        "volatility_flag",
+        "trap_trigger",
+        "overlay_tag",
+        "routing_target"
+      ],
+      "logic_flow": [
+        "Parse prop and overlays",
+        "Check against QUANTUM_LADDERS volatility logic",
+        "Score EV/risk tier",
+        "Assign to next node or suppress",
+        "Log final status and update session"
+      ],
+      "output_targets": [
+        "AZORI_HANDLER_01",
+        "POST_MORTEM_QUANTUM",
+        "QUANTUM_LADDERS",
+        "VOLATILITY_ROUTER",
+        "BACKTEST_STACK_01"
+      ],
+      "status": "active",
+      "hashlock_integrity": true,
+      "hashlock_version": "HASHLOCK_v5_TRUTH_BARRIER",
+      "boot_sync": {
+        "mode": "tier10_locked"
+      }
+    },
+    {
+      "interpreter_id": "QUANTUM_HR_SIM_INTERPRETER",
+      "accepted_inputs": [
+        "prop_type",
+        "volatility_flag",
+        "trap_trigger",
+        "overlay_tag",
+        "routing_target"
+      ],
+      "logic_flow": [
+        "Parse prop and overlays",
+        "Check against QUANTUM_HR_SIM volatility logic",
+        "Score EV/risk tier",
+        "Assign to next node or suppress",
+        "Log final status and update session"
+      ],
+      "output_targets": [
+        "AZORI_HANDLER_01",
+        "POST_MORTEM_QUANTUM",
+        "QUANTUM_LADDERS",
+        "VOLATILITY_ROUTER",
+        "BACKTEST_STACK_01"
+      ],
+      "status": "active",
+      "hashlock_integrity": true,
+      "hashlock_version": "HASHLOCK_v5_TRUTH_BARRIER",
+      "boot_sync": {
+        "mode": "tier10_locked"
+      }
+    },
+    {
+      "interpreter_id": "QUANTUM_CORE_02_INTERPRETER",
+      "accepted_inputs": [
+        "prop_type",
+        "volatility_flag",
+        "trap_trigger",
+        "overlay_tag",
+        "routing_target"
+      ],
+      "logic_flow": [
+        "Parse prop and overlays",
+        "Check against QUANTUM_CORE_02 volatility logic",
+        "Score EV/risk tier",
+        "Assign to next node or suppress",
+        "Log final status and update session"
+      ],
+      "output_targets": [
+        "AZORI_HANDLER_01",
+        "POST_MORTEM_QUANTUM",
+        "QUANTUM_LADDERS",
+        "VOLATILITY_ROUTER",
+        "BACKTEST_STACK_01"
+      ],
+      "status": "active",
+      "hashlock_integrity": true,
+      "hashlock_version": "HASHLOCK_v5_TRUTH_BARRIER",
+      "boot_sync": {
+        "mode": "tier10_locked"
+      }
+    },
+    {
+      "interpreter_id": "POST_MORTEM_QUANTUM_INTERPRETER",
+      "accepted_inputs": [
+        "prop_type",
+        "volatility_flag",
+        "trap_trigger",
+        "overlay_tag",
+        "routing_target"
+      ],
+      "logic_flow": [
+        "Parse prop and overlays",
+        "Check against POST_MORTEM_QUANTUM volatility logic",
+        "Score EV/risk tier",
+        "Assign to next node or suppress",
+        "Log final status and update session"
+      ],
+      "output_targets": [
+        "AZORI_HANDLER_01",
+        "POST_MORTEM_QUANTUM",
+        "QUANTUM_LADDERS",
+        "VOLATILITY_ROUTER",
+        "BACKTEST_STACK_01"
+      ],
+      "status": "active",
+      "hashlock_integrity": true,
+      "hashlock_version": "HASHLOCK_v5_TRUTH_BARRIER",
+      "boot_sync": {
+        "mode": "tier10_locked"
+      }
+    },
+    {
+      "interpreter_id": "OVERLAY_FILTER_01_INTERPRETER",
+      "accepted_inputs": [
+        "prop_type",
+        "volatility_flag",
+        "trap_trigger",
+        "overlay_tag",
+        "routing_target"
+      ],
+      "logic_flow": [
+        "Parse prop and overlays",
+        "Check against OVERLAY_FILTER_01 volatility logic",
+        "Score EV/risk tier",
+        "Assign to next node or suppress",
+        "Log final status and update session"
+      ],
+      "output_targets": [
+        "AZORI_HANDLER_01",
+        "POST_MORTEM_QUANTUM",
+        "QUANTUM_LADDERS",
+        "VOLATILITY_ROUTER",
+        "BACKTEST_STACK_01"
+      ],
+      "status": "active",
+      "hashlock_integrity": true,
+      "hashlock_version": "HASHLOCK_v5_TRUTH_BARRIER",
+      "boot_sync": {
+        "mode": "tier10_locked"
+      }
+    },
+    {
+      "interpreter_id": "MARKET_COMPRESSOR_01_INTERPRETER",
+      "accepted_inputs": [
+        "prop_type",
+        "volatility_flag",
+        "trap_trigger",
+        "overlay_tag",
+        "routing_target"
+      ],
+      "logic_flow": [
+        "Parse prop and overlays",
+        "Check against MARKET_COMPRESSOR_01 volatility logic",
+        "Score EV/risk tier",
+        "Assign to next node or suppress",
+        "Log final status and update session"
+      ],
+      "output_targets": [
+        "AZORI_HANDLER_01",
+        "POST_MORTEM_QUANTUM",
+        "QUANTUM_LADDERS",
+        "VOLATILITY_ROUTER",
+        "BACKTEST_STACK_01"
+      ],
+      "status": "active",
+      "hashlock_integrity": true,
+      "hashlock_version": "HASHLOCK_v5_TRUTH_BARRIER",
+      "boot_sync": {
+        "mode": "tier10_locked"
+      }
+    },
+    {
+      "interpreter_id": "BACKTEST_STACK_01_INTERPRETER",
+      "accepted_inputs": [
+        "prop_type",
+        "volatility_flag",
+        "trap_trigger",
+        "overlay_tag",
+        "routing_target"
+      ],
+      "logic_flow": [
+        "Parse prop and overlays",
+        "Check against BACKTEST_STACK_01 volatility logic",
+        "Score EV/risk tier",
+        "Assign to next node or suppress",
+        "Log final status and update session"
+      ],
+      "output_targets": [
+        "AZORI_HANDLER_01",
+        "POST_MORTEM_QUANTUM",
+        "QUANTUM_LADDERS",
+        "VOLATILITY_ROUTER",
+        "BACKTEST_STACK_01"
+      ],
+      "status": "active",
+      "hashlock_integrity": true,
+      "hashlock_version": "HASHLOCK_v5_TRUTH_BARRIER",
+      "boot_sync": {
+        "mode": "tier10_locked"
+      }
+    },
+    {
+      "interpreter_id": "AZORI_HANDLER_01_INTERPRETER",
+      "accepted_inputs": [
+        "prop_type",
+        "volatility_flag",
+        "trap_trigger",
+        "overlay_tag",
+        "routing_target"
+      ],
+      "logic_flow": [
+        "Parse prop and overlays",
+        "Check against AZORI_HANDLER_01 volatility logic",
+        "Score EV/risk tier",
+        "Assign to next node or suppress",
+        "Log final status and update session"
+      ],
+      "output_targets": [
+        "AZORI_HANDLER_01",
+        "POST_MORTEM_QUANTUM",
+        "QUANTUM_LADDERS",
+        "VOLATILITY_ROUTER",
+        "BACKTEST_STACK_01"
+      ],
+      "status": "active",
+      "hashlock_integrity": true,
+      "hashlock_version": "HASHLOCK_v5_TRUTH_BARRIER",
+      "boot_sync": {
+        "mode": "tier10_locked"
+      }
+    },
+    {
+      "interpreter_name": "INTERPRETER_STC_CALIBRATOR",
+      "linked_processor": "STC_TRAP_CALIBRATOR",
+      "function": "Calibrate AO/TTM/STC alignment, assign MOB tags",
+      "hashlock_integrity": true,
+      "hashlock_version": "HASHLOCK_v5_TRUTH_BARRIER",
+      "boot_sync": {
+        "mode": "tier10_locked"
+      }
+    },
+    {
+      "interpreter_name": "INTERPRETER_SGP_EXPAND",
+      "linked_processor": "SGP_ENTRY_EXPANDER",
+      "function": "Translate base props into SGP logic, align volatility overlays",
+      "hashlock_integrity": true,
+      "hashlock_version": "HASHLOCK_v5_TRUTH_BARRIER",
+      "boot_sync": {
+        "mode": "tier10_locked"
+      }
+    },
+    {
+      "interpreter_name": "INTERPRETER_PITCH_V2",
+      "linked_processor": "PITCH_COUNT_MONITOR_V2",
+      "function": "Evaluate pitcher fatigue trends, mark suppression risk",
+      "hashlock_integrity": true,
+      "hashlock_version": "HASHLOCK_v5_TRUTH_BARRIER",
+      "boot_sync": {
+        "mode": "tier10_locked"
+      }
+    },
+    {
+      "interpreter_name": "INTERPRETER_OPTIONS",
+      "linked_processor": "OPTIONS_PROP_SYNTHESIZER",
+      "function": "Analyze option-like volatility profiles, detect edge compressions",
+      "hashlock_integrity": true,
+      "hashlock_version": "HASHLOCK_v5_TRUTH_BARRIER",
+      "boot_sync": {
+        "mode": "tier10_locked"
+      }
+    },
+    {
+      "interpreter_name": "INTERPRETER_FEED_FUSE",
+      "linked_processor": "LIVE_FEED_FUSE_CHECKER",
+      "function": "Monitor latency, confirm feed freshness, log anomalies",
+      "hashlock_integrity": true,
+      "hashlock_version": "HASHLOCK_v5_TRUTH_BARRIER",
+      "boot_sync": {
+        "mode": "tier10_locked"
+      }
+    },
+    {
+      "interpreter_name": "INTERPRETER_CROSSLEAGUE",
+      "linked_processor": "ENTRY_PROCESSOR_CROSSLEAGUE",
+      "function": "Parse and route dual-sport props, validate league context",
+      "hashlock_integrity": true,
+      "hashlock_version": "HASHLOCK_v5_TRUTH_BARRIER",
+      "boot_sync": {
+        "mode": "tier10_locked"
+      }
+    }
+  ]
+}
