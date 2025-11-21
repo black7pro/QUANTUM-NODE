@@ -1,0 +1,66 @@
+{
+  "header": {
+    "index_name": "AON_STRUCTURE_INDEX_T9",
+    "tier": 9,
+    "version": "v9.2-HARMONIZED",
+    "compiled_by": "QUANTUM_AZORI_PROMPT_BUILDER",
+    "role": "Active structure index for the Azori Operating Network",
+    "fusion_law_ref": "/CORE/FUSION_CELL_LAW.json",
+    "protocol": "HASHLOCK_v4_TRUTH_CORE"
+  },
+
+  "core_layers": [
+    "CORE_00_GENESIS_LAYER_ZERO.json",
+    "CORE_01_WATCHTOWER_T9.json",
+    "CORE_QUANTUM_GPT_T9.json",
+    "CORE_FRACTAL_CALIBRATION_GPT_T9.json",
+    "CORE_POST_MORTEM_GPT_T9.json"
+  ],
+
+  "meta_layer": "/META_IS/META_IS_MANIFEST_T9.json",
+  "fusion_layer": "/FUSION/FUSION_CELL_LAW.json",
+  "runtime_registry": "/RUNTIME/AON_RUNTIME_INDEX_T9.json",
+  "subnode_registry": "/SUBCORE/SUBNODE_MANIFEST_T9.json",
+
+  "signal_routing": {
+    "sequence": [
+      "META_IS",
+      "WATCHTOWER",
+      "QUANTUM",
+      "FRACTAL",
+      "POST_MORTEM"
+    ],
+    "return_path": "WATCHTOWER",
+    "failover_node": "POST_MORTEM"
+  },
+
+  "access_policy": {
+    "runtime_exposure": "restricted",
+    "modification_policy": "read_only",
+    "bridge_authority": "META_IS",
+    "auth_scope": ["META_IS", "WATCHTOWER"],
+    "audit_log": "/CORE/logs/access_audit.log"
+  },
+
+  "validation": {
+    "schema_ref": "/CORE/VALIDATION_GATE/schema/aon_structure_index_schema.json",
+    "fusion_law_verification": "enabled",
+    "last_validation_timestamp": "PENDING"
+  },
+
+  "audit_hooks": {
+    "pre_commit": "/WATCHTOWER_T9/audit_pre_commit",
+    "post_commit": "/POST_MORTEM_GPT_T9/audit_post_commit"
+  },
+
+  "meta": {
+    "alignment_state": "HARMONIZING",
+    "tier_alignment": "TIER9_HARMONIZED",
+    "status": "ACTIVE_MANIFEST",
+    "integrity_mode": "full_validation",
+    "compile_registry_ref": "/RUNTIME/temp/compile_registry.json",
+    "last_compile_timestamp": "2025-10-18T00:00:00Z",
+    "checksum": "PENDING_FINALIZATION",
+    "notes": "Structure index upgraded to harmonized runtime standard with access policy and fusion-law verification embedded."
+  }
+}
