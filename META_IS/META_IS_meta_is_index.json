@@ -1,0 +1,42 @@
+{
+  "meta_is_index": {
+    "id": "META_IS_INDEX_T9",
+    "version": "v1.1-HARMONIZED",
+    "compiled_by": "QUANTUM_AZORI_PROMPT_BUILDER",
+    "compiled_on": "2025-10-18T00:13:00Z",
+    "description": "Registry index for the META_IS substrate of the Azori Operating Network. Defines symbolic lineage, memory anchors, and substrate-fusion bridges.",
+
+    "meta_is_nodes": [
+      "META_IS_RECOVERY_CORE",
+      "META_IS_CONTEXT_GATE",
+      "META_IS_SUBSTRATE_MEMORY",
+      "META_IS_SIGNAL_HARMONIZER"
+    ],
+
+    "supervising_links": {
+      "watchtower_ref": "/CORE/CORE_01_WATCHTOWER_T9.json",
+      "fusion_ref": "/FUSION/AON_FUSION_MANIFEST_T9.json",
+      "runtime_ref": "/RUNTIME/registry/AZORI_RUNTIME_INDEX.json"
+    },
+
+    "alignment": {
+      "state": "ACTIVE",
+      "coherence_target": 0.95,
+      "bias_entropy_tolerance": 0.02
+    },
+
+    "law_integrity": {
+      "fusion_cell_ref": "/CORE/FUSION_CELL_LAW.json",
+      "law_enforcement": "ABSOLUTE",
+      "law_integrity_monitor": "WATCHTOWER_T9",
+      "law_integrity_log": "/CORE/logs/fusion_law_integrity.log",
+      "law_integrity_status": "PENDING_VERIFICATION"
+    },
+
+    "meta": {
+      "checksum": "META_IS_INDEX_T9_HASH_HARMONIZED",
+      "status": "ACTIVE",
+      "notes": "META_IS index harmonized under Fusion Cell Law supervision. Watchtower now monitors symbolic coherence through the unified integrity ledger."
+    }
+  }
+}
