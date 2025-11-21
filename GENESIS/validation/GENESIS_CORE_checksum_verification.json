@@ -1,0 +1,8 @@
+"checksum_verification": {
+  "algorithm": "SHA-256",
+  "artifact": "AZORI_T9_DEPLOYMENT_PACKAGE.zip",
+  "computed_hash": "d2ef94f76a1b6d0c6e8c39b6e7a4cf88a1e1c5b2a7f61cc4c34b91cb07bcb5ac",
+  "verification_time_utc": "2025-10-17T10:20:00Z",
+  "verified_by": "QUANTUM_AZORI_PROMPT_BUILDER",
+  "result": "PASS"
+}
