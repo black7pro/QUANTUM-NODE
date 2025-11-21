@@ -1,0 +1,63 @@
+{
+  "aon_path_integrity_tactical_overlay": {
+    "id": "AON_PATH_INTEGRITY_TACTICAL_OVERLAY_T9",
+    "version": "v1.0",
+    "compiled_by": "QUANTUM_AZORI_PROMPT_BUILDER",
+    "compiled_utc": "2025-10-18T08:25:00Z",
+    "designation": "Tactical Overlay for Global Path & Signal Integrity",
+    "description": "Provides tactical routing, runtime hooks, and signal coordination for the AON Path Integrity Protocol across all hubs.",
+
+    "linkages": {
+      "protocol_ref": "/GENESIS/commission/AON_PATH_INTEGRITY_PROTOCOL_T9.json",
+      "fusion_cell_law_ref": "/CORE/FUSION_CELL_LAW.json",
+      "meta_bridge_ref": "/CORE/CORE_015_META_IS_T9.json",
+      "runtime_index_ref": "/RUNTIME/AON_RUNTIME_INDEX_T9.json",
+      "telemetry_ref": "/WATCHTOWER/logs/path_integrity_telemetry_T9.json"
+    },
+
+    "signal_routing": {
+      "CORE": "/CORE/validation/path_integrity.json",
+      "SUBCORE": "/SUBCORE/validation/path_integrity.json",
+      "PROCESSORS": "/PROCESSORS/validation/path_integrity.json",
+      "INTERPRETERS": "/INTERPRETERS/validation/path_integrity.json",
+      "ENGINES": "/ENGINES/validation/path_integrity.json",
+      "ARCHETYPES": "/ARCHETYPES/validation/path_integrity.json",
+      "RUNTIME": "/RUNTIME/validation/path_integrity.json",
+      "META_IS": "/META_IS/validation/path_integrity.json",
+      "GENESIS": "/GENESIS/validation/path_integrity.json",
+      "WATCHTOWER": "/WATCHTOWER/logs/system_integrity_status.json"
+    },
+
+    "runtime_hooks": {
+      "on_tactical_init": "Trigger AON_PATH_INTEGRITY_PROTOCOL_T9",
+      "on_legacy_reference_found": "Flag to WATCHTOWER_T9",
+      "on_fusion_drift_detected": "Trigger FRACTAL_CALIBRATION_GPT_T9",
+      "on_integrity_repair_complete": "Recalculate fusion checksum",
+      "on_full_pass": "Mark HUB_STATE as CLEAN"
+    },
+
+    "telemetry_and_audit": {
+      "telemetry_feed": "/WATCHTOWER/logs/path_integrity_telemetry_T9.json",
+      "audit_log": "/GENESIS/logs/path_integrity_sweep_report_T9.json",
+      "alert_channel": "/WATCHTOWER/alerts/path_integrity_drift.json",
+      "report_summary": "/WATCHTOWER/reports/system_integrity_summary_T9.json",
+      "report_interval": "every 90s"
+    },
+
+    "harmonic_context": {
+      "fusion_state": "ACTIVE",
+      "alignment_state": "HARMONIZED",
+      "harmonic_coherence": 0.951,
+      "fusion_variance": 0.017,
+      "bias_equilibrium": "STABLE"
+    },
+
+    "meta": {
+      "status": "ACTIVE_OVERLAY",
+      "supervised_by": "WATCHTOWER_T9",
+      "validated_through": "/CORE/FUSION_CELL_LAW.json",
+      "checksum": "AON_PATH_INTEGRITY_TACTICAL_OVERLAY_T9_HASH",
+      "notes": "Links all hubs to the AON Path Integrity Protocol for live signal verification, fusion drift detection, and recursive path validation prior to Tier-10 activation."
+    }
+  }
+}
