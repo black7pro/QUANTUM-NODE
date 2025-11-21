@@ -1,0 +1,68 @@
+import json
+import os
+from datetime import datetime
+
+# ====== AZORI AON RUNTIME HARNESS v1.0 ======
+# Reads AON/GENESIS structured manifests and executes their directives.
+
+class AONRuntimeHarness:
+    def __init__(self, root_path="./GENESIS_PATH_INTEGRITY_SUITE_T9"):
+        self.root_path = root_path
+        self.registry = {}
+        self.log = []
+
+    def load_json(self, file_path):
+        """Safely load JSON from the given path."""
+        with open(file_path, "r") as f:
+            return json.load(f)
+
+    def log_event(self, event_type, message):
+        timestamp = datetime.utcnow().isoformat()
+        entry = {"time": timestamp, "type": event_type, "message": message}
+        self.log.append(entry)
+        print(f"[{timestamp}] {event_type}: {message}")
+
+    def verify_fusion_alignment(self):
+        """Check fusion cell references and cross-file coherence."""
+        fusion_file = os.path.join(self.root_path, "META", "FUSION_CELL_CONFIRMATION_T9.json")
+        fusion_data = self.load_json(fusion_file)
+        coherence = fusion_data["fusion_cell_confirmation"]["fusion_validation"]["fusion_coherence"]
+        if coherence >= 0.94:
+            self.log_event("VALIDATION", f"Fusion coherence stable ({coherence}).")
+            return True
+        else:
+            self.log_event("WARNING", f"Fusion coherence low ({coherence}).")
+            return False
+
+    def build_registry(self):
+        """Build a runtime map of all AON-linked JSON files."""
+        for root, _, files in os.walk(self.root_path):
+            for file in files:
+                if file.endswith(".json"):
+                    path = os.path.join(root, file)
+                    data = self.load_json(path)
+                    file_id = list(data.keys())[0]
+                    self.registry[file_id] = path
+        self.log_event("INIT", f"Registry built with {len(self.registry)} assets.")
+
+    def run_session_state_check(self):
+        """Validate session state lock coherence."""
+        session_state_path = os.path.join(self.root_path, "AON_GENESIS_PATH_INTEGRITY_MANIFEST_T9.json")
+        manifest = self.load_json(session_state_path)
+        integrity_status = manifest["meta"]["status"]
+        self.log_event("SESSION_STATE", f"Integrity status: {integrity_status}")
+
+    def execute(self):
+        """Main runtime process."""
+        self.log_event("START", "Initializing AON Runtime Harness.")
+        self.build_registry()
+        if self.verify_fusion_alignment():
+            self.run_session_state_check()
+            self.log_event("COMPLETE", "Runtime initialization complete.")
+        else:
+            self.log_event("HALT", "Fusion alignment failed — manual review required.")
+
+# Example execution
+if __name__ == "__main__":
+    runtime = AONRuntimeHarness()
+    runtime.execute()
