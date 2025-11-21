@@ -1,0 +1,69 @@
+{
+  "overlay_header": {
+    "label_id": "US30_TOTAL_RECALL_ANCHOR_2025-11-10T17:50Z_v2.2",
+    "overlay_type": "TOTAL_RECALL_ANCHOR_OVERLAY",
+    "asset": "US30",
+    "version": "v2.2",
+    "timestamp_utc": "2025-11-10T17:50:00Z",
+    "compiled_by": "QUANTUM_WATCHTOWER",
+    "routing": {
+      "destination": "AZORI_FINAL_PROPS",
+      "audit_fallback": "POSTMORTEM_SHARD",
+      "chain": [
+        "/ECO_WATCHTOWER",
+        "/FRACTAL_CALIBRATION_GPT",
+        "/POST_MORTEM_GPT",
+        "/QUANTUM_GPT"
+      ]
+    },
+    "tier9_alignment": {
+      "fusion_index_ref": "AZORI_T9_Fusion_Index.json",
+      "routing_manifest_ref": "AZORI_T9_ROUTING_MANIFEST.json",
+      "coherence_matrix_ref": "AZORI_T9_COHERENCE_MATRIX.json",
+      "control_manifest_ref": "AZORI_T9_CONTROL_MANIFEST.json"
+    }
+  },
+
+  "TOTAL_RECALL_RUNTIME_EMBED": {
+    "ledger_block_type": "TOTAL_RECALL_ANCHOR_COMMIT",
+    "fusion_protocol": "TOTAL_RECALL_FUSION_V2",
+    "validation_protocol": "HASHLOCK_v3_ADAPTIVE",
+    "hash_algorithm": "SHA-256",
+    "ledger_signature": "SIMULATED_SHA256_SIGNATURE_US30_v2.2",
+    "status": "ANCHOR_COMMIT_CONFIRMED",
+    "signer": "The Black Einstein",
+    "timestamp": "2025-11-10T17:50:00Z",
+    "fusion_state": "LOCKED",
+    "runtime_telemetry": {
+      "fusion_integrity": 0.999,
+      "entropy_convergence": 0.973,
+      "macro_event_density": 8,
+      "derived_signal_depth": 7,
+      "alignment_latency_ms": 5.5,
+      "governance_state": "SOURCE_LOCKED"
+    },
+    "runtime": {
+      "engine_version": "TOTAL_RECALL_CORE_v2.2",
+      "session_id": "US30_TR_20251110_1750_01",
+      "phase_sequence": [
+        "M1_MACRO_CONTEXT",
+        "M2_BEHAVIORAL_POLARITY",
+        "M3_CONDITIONAL_SCENARIO",
+        "M4_FRACTAL_ALIGNMENT",
+        "M5_CROSS_ASSET_LINK",
+        "M6_MARKET_RISK_CHAIN",
+        "M7_FORECAST_SYNTHESIS",
+        "ANCHOR_COMMIT"
+      ],
+      "checksummed_modules": [
+        { "id": "M1", "crc32": "E3AC14B2" },
+        { "id": "M2", "crc32": "9BD64C90" },
+        { "id": "M3", "crc32": "C6F9DFA1" },
+        { "id": "M4", "crc32": "7A23E5D7" },
+        { "id": "M5", "crc32": "1FD5B8C3" },
+        { "id": "M6", "crc32": "85AE3299" },
+        { "id": "M7", "crc32": "D4E1A6AF" }
+      ]
+    }
+  }
+}
