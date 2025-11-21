@@ -1,0 +1,41 @@
+{
+  "id": "MODULE_6_FORECAST_SYNTHESIS_MARKET",
+  "domain": "Market",
+  "version": "v1.0",
+  "role": "Generate probabilistic forward scenarios using macro and fractal context",
+  "inputs": [
+    "risk_chain.outputs",
+    "mtf_fractal_sweep.metrics",
+    "macro_context.regime",
+    "total_recall.calibration",
+    "alert_log.recent_outcomes"
+  ],
+  "prompt": "Act as a quantitative macro-forecast analyst. Using multi-timeframe momentum data, macro tone, systemic risk metrics and calibration history, generate forward scenario probabilities for the next 24–72h window. Estimate directional bias (bullish/neutral/bearish), expected volatility range (%), and probability weights for {continuation | pullback | reversal}. Provide rationale referencing cross-asset signals (e.g., DXY, GOLD, VIX).",
+  "outputs": {
+    "forecast_window": "24–72h",
+    "directional_bias": "Bullish",
+    "expected_volatility_pct": 2.1,
+    "scenario_probabilities": {
+      "continuation": 0.58,
+      "pullback": 0.29,
+      "reversal": 0.13
+    },
+    "confidence_score": 0.86,
+    "macro_drivers": [
+      "Phase sync > 0.8 across 4H–1H frames",
+      "Systemic risk score stable below 0.65",
+      "Macro tone: Neutral–Bullish"
+    ],
+    "validation_reference": "TOTAL_RECALL_LEDGER_MARKET_v5"
+  },
+  "integration": {
+    "feed_target": "TOTAL_RECALL_UPDATE",
+    "update_frequency": "12h",
+    "risk_chain_reference": "AI_MARKET_RISK_CHAIN_v2.0"
+  },
+  "governance": {
+    "validation_protocol": "HASHLOCK_v3_ADAPTIVE",
+    "supervisor": "The Black Einstein",
+    "truth_enforcement": true
+  }
+}
