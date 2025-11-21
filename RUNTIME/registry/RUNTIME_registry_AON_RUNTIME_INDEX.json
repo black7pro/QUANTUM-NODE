@@ -1,0 +1,26 @@
+{
+  "aon_runtime_registry": {
+    "id": "AON_RUNTIME_INDEX_T9",
+    "version": "v1.0",
+    "description": "Runtime registry governing patch loading, validation, and canary promotion for AON Tier-9.",
+
+    "components": [
+      "RUNTIME_00_boot_validator.py",
+      "patch_loader_spec.json",
+      "patch_schema.json",
+      "BOOT_STATE.json"
+    ],
+
+    "alignment": {
+      "runtime_integrity": "CHECK_PENDING",
+      "latency_threshold_ms": 250,
+      "error_tolerance": 0.01
+    },
+
+    "meta": {
+      "checksum": "RUNTIME_INDEX_T9_HASH_INIT",
+      "status": "ACTIVE",
+      "notes": "Runtime layer manages live patch deployment and integrity validation."
+    }
+  }
+}
