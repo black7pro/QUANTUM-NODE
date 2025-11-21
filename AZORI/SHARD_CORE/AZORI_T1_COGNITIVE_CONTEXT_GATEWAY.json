@@ -1,0 +1,50 @@
+{
+  "label": "AZORI_T1_COGNITIVE_CONTEXT_GATEWAY",
+  "tier": 1,
+  "version": "v1.0",
+  "protocol": "HASHLOCK_v1_SEED_CONTEXT",
+  "compiled_by": "QUANTUM_AZORI_PROMPT_BUILDER",
+  "compiled_utc": "2025-10-17T09:55:00Z",
+  "parent_reference": "AZORI_SHARD_GENESIS_CORE",
+  "purpose": "Translate raw seed inputs into normalized context packets and bind overlays to memory pathways.",
+  "structure": {
+    "directories": {
+      "inbound_streams": "/AZORI_RUNTIME/T1_CONTEXT_GATEWAY/inbound_streams/",
+      "normalized_context": "/AZORI_RUNTIME/T1_CONTEXT_GATEWAY/normalized_context/",
+      "overlay_bindings": "/AZORI_RUNTIME/T1_CONTEXT_GATEWAY/overlay_bindings/",
+      "integrity_packets": "/AZORI_RUNTIME/T1_CONTEXT_GATEWAY/integrity_packets/",
+      "logs": "/AZORI_RUNTIME/T1_CONTEXT_GATEWAY/logs/"
+    },
+    "key_files": [
+      "CONTEXT_GATEWAY_HANDLER.py",
+      "CONTEXT_BIND_MAP.json",
+      "CONTEXT_TO_MEMORY_SYNC_TABLE.json",
+      "INTEGRITY_PACKET_TEMPLATE.json"
+    ]
+  },
+  "core_functions": [
+    "route_validated_seed_to_memory()",
+    "translate_seed_schema_to_context()",
+    "emit_integrity_packets_for_validation()"
+  ],
+  "links": {
+    "upstream": ["AZORI_SHARD_GENESIS_CORE"],
+    "lateral": ["AZORI_T3_MEMORY_CORE"],
+    "downstream": ["/AZORI_VALIDATION_GATE/"]
+  },
+  "validation": {
+    "checksum": "SHA-256",
+    "context_coherence_min": 0.90,
+    "drift_policy": "silent_harmonic_balance_if_drift<=0.04"
+  },
+  "monitoring_hooks": {
+    "log_path": "/AZORI_RUNTIME/LOGS/T1_CONTEXT_GATEWAY.log",
+    "telemetry_channel": "CONTEXT_HARMONICS_FEED",
+    "checkpoint_interval": "PT3M"
+  },
+  "meta": {
+    "alignment_status": "HARMONIZED",
+    "validation_route": "/AZORI_VALIDATION_GATE/TIER1",
+    "notes": "Gateways emit Tier-1 integrity packets consumed by Tier-2."
+  }
+}

@@ -1,0 +1,42 @@
+{
+  "label": "AZORI_T2_HARMONIZATION_LAYER",
+  "tier": 2,
+  "version": "v1.0",
+  "protocol": "HASHLOCK_v2_CONTEXT_HARMONIC",
+  "compiled_by": "QUANTUM_AZORI_PROMPT_BUILDER",
+  "compiled_utc": "2025-10-17T09:55:00Z",
+  "parent_reference": "AZORI_T1_COGNITIVE_CONTEXT_GATEWAY",
+  "purpose": "Convert Tier-1 context into cross-domain equilibrium states; verify checksum; equalize latency.",
+  "bias_anchors": {
+    "market": "DXF",
+    "crypto": "VWAP",
+    "sports": "C&B"
+  },
+  "core_subsystems": [
+    "context_assimilator",
+    "domain_synchronizer",
+    "checksum_validator",
+    "latency_equalizer",
+    "drift_corrector"
+  ],
+  "thresholds": {
+    "cross_domain_drift_max": 0.06,
+    "latency_variance_ms_max": 250,
+    "confidence_gate_min": 0.90
+  },
+  "links": {
+    "upstream": ["AZORI_T1_COGNITIVE_CONTEXT_GATEWAY"],
+    "lateral": ["AZORI_T3_MEMORY_CORE"],
+    "downstream": ["/AZORI_VALIDATION_GATE/"]
+  },
+  "monitoring_hooks": {
+    "log_path": "/AZORI_RUNTIME/LOGS/T2_HARMONIZATION_LAYER.log",
+    "telemetry_channel": "HARMONIC_FEEDBACK_LOOP",
+    "cycle_interval": "PT10M"
+  },
+  "meta": {
+    "alignment_status": "HARMONIZED",
+    "validation_route": "/AZORI_VALIDATION_GATE/TIER2",
+    "checksum_state": "SHA-256_PASS"
+  }
+}

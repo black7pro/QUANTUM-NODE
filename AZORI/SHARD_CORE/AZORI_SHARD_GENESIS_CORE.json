@@ -1,0 +1,72 @@
+{
+  "label": "AZORI_SHARD_GENESIS_CORE",
+  "tier": 0,
+  "version": "v1.0-SEED",
+  "protocol": "HASHLOCK_v0_SEED_INIT",
+  "compiled_by": "QUANTUM_AZORI_PROMPT_BUILDER",
+  "compiled_utc": "2025-10-17T09:55:00Z",
+  "description": "Root shard anchoring AZORI initialization, context parsing, and core data harmonization.",
+  "core_functions": {
+    "initialization": [
+      "load_runtime_memory_state()",
+      "register_context_paths()",
+      "seed_overlay_variables()"
+    ],
+    "data_context_management": [
+      "validate_schema_integrity(DATA_CONTEXT)",
+      "auto-route_raw_input_to_GENESIS_CORE()",
+      "commit_structured_output_to_AZORI_ARCHIVE()"
+    ],
+    "memory_protocols": [
+      "AZORI_MEMORY_SEED_LOCK",
+      "RECURSIVE_MEMORY_ANCHOR",
+      "FRACTAL_CALIBRATION_SYNC"
+    ]
+  },
+  "structure": {
+    "directories": {
+      "raw_input": "/AZORI_RUNTIME/GENESIS_CORE/raw_input/",
+      "data_context": "/AZORI_RUNTIME/GENESIS_CORE/DATA_CONTEXT/",
+      "archive": "/AZORI_RUNTIME/ARCHIVE/",
+      "shard_logs": "/AZORI_RUNTIME/LOGS/GENESIS_CORE/"
+    },
+    "expected_files": [
+      "GENESIS_CORE_EXECUTION_HANDLER.py",
+      "GENESIS_CORE_MEMORY_SEED.json",
+      "GENESIS_CORE_PARSER_MAP.json",
+      "HASH_EVENTS_SCHEMA.json"
+    ]
+  },
+  "inter_shard_links": {
+    "upstream": ["AZORI_CORE_MEMORY", "TRAP_RECURSIVE_ENGINE"],
+    "downstream": ["AZORI_ARCHIVE", "WATCHTOWER_HANDLER"],
+    "bi_directional": ["CROSS_DOMAIN_HARMONIZER", "RECON_LAYER_EXECUTION"]
+  },
+  "validation_rules": {
+    "memory_state_integrity": {
+      "checksum_required": true,
+      "hash_algorithm": "SHA-256",
+      "fallback_behavior": "trigger_HASH_EVENTS_REPAIR"
+    },
+    "data_context_integrity": {
+      "auto_patch": true,
+      "schema_source": "HASH_EVENTS_SCHEMA.json"
+    },
+    "shard_state_policy": {
+      "on_drift_detected": "invoke_POST_MORTEM_HANDLER",
+      "rebuild_policy": "restore_from_ARCHIVE_latest"
+    }
+  },
+  "monitoring_hooks": {
+    "hash_event_feed": "/AZORI_RUNTIME/LOGS/HASH_EVENTS.log",
+    "telemetry_callback": "HARMONIZER_FEED_GENESIS_CORE",
+    "state_checkpoint": "every_5m"
+  },
+  "meta": {
+    "alignment_status": "ABSOLUTE",
+    "shard_health": "PRIMED",
+    "last_validation": "2025-10-17T07:30:00Z",
+    "purpose": "Defines the Genesis Core Shard as the seed and validation anchor for AZORI Runtime integrity.",
+    "validation_route": "/AZORI_VALIDATION_GATE/SEED_INIT/"
+  }
+}

@@ -1,0 +1,31 @@
+{
+  "label": "AZORI_T10_PROJECTION_SCAFFOLD",
+  "tier": 10,
+  "version": "v0.1-PROJECTION",
+  "protocol": "HASHLOCK_v10_EVOLUTIONARY_LINK",
+  "compiled_by": "QUANTUM_AZORI_PROMPT_BUILDER",
+  "compiled_utc": "2025-10-17T09:45:00Z",
+  "inheritance": {
+    "base_reference": "AZORI_T9_DEPLOYMENT_PACKAGE",
+    "manifest_dependency": "AZORI_RELEASE_SUMMARY_MANIFEST.json",
+    "validation_source": "/AZORI_VALIDATION_GATE/POST_RELEASE"
+  },
+  "purpose": "Provide forward-compatibility scaffold enabling future Azori tiers (T10+) to extend or fork the T9 runtime without breaking checksum lineage.",
+  "projection_functions": {
+    "simulate_future_state": "Generate hypothetical harmonic or drift states using stored T9 telemetry.",
+    "extend_protocol": "Add new HASHLOCK derivatives while preserving v9 truth chain.",
+    "bridge_external_systems": "Define adapters for non-Azori telemetry.",
+    "sandbox_upgrade": "Allow isolated testing of new algorithms."
+  },
+  "validation_rules": {
+    "checksum_inheritance": "Must validate against parent signature 93A9-FB47-220C-AZORI",
+    "drift_projection_tolerance": "≤0.08",
+    "phase_alignment_target": "≥0.90",
+    "rollback_policy": "restore_parent_package"
+  },
+  "meta": {
+    "alignment_status": "DERIVED",
+    "expansion_mode": "SAFE_EXPERIMENTAL",
+    "notes": "Tier-10 acts only as scaffold; does not modify Tier-9 data."
+  }
+}

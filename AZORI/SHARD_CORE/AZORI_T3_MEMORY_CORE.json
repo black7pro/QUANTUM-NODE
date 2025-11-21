@@ -1,0 +1,56 @@
+{
+  "label": "AZORI_T3_MEMORY_CORE",
+  "tier": 3,
+  "version": "v1.0",
+  "protocol": "HASHLOCK_v3_RECURSIVE_MEMORY",
+  "compiled_by": "QUANTUM_AZORI_PROMPT_BUILDER",
+  "compiled_utc": "2025-10-17T09:55:00Z",
+  "parent_reference": "AZORI_T2_HARMONIZATION_LAYER",
+  "purpose": "Persistent cognitive buffer encoding harmonized packets into fractal memory states with hash-verified recall.",
+  "directories": {
+    "incoming_packets": "/AZORI_RUNTIME/T3_MEMORY_CORE/incoming_packets/",
+    "active_memory_anchor": "/AZORI_RUNTIME/T3_MEMORY_CORE/active_memory_anchor/",
+    "continuity_logs": "/AZORI_RUNTIME/T3_MEMORY_CORE/continuity_logs/",
+    "checksum_shadow": "/AZORI_RUNTIME/T3_MEMORY_CORE/checksum_shadow/",
+    "recall_snapshots": "/AZORI_RUNTIME/T3_MEMORY_CORE/recall_snapshots/"
+  },
+  "core_functions": [
+    "inject_harmonized_state",
+    "write_with_shadow_checksum",
+    "ensure_temporal_continuity",
+    "adaptive_telemetry_compress",
+    "recall_reconstruct_by_hash"
+  ],
+  "policy": {
+    "continuity_gap_tolerance": "≤3_packets_per_cycle",
+    "drift_offset_max": 0.05,
+    "compression_loss_max": 0.02,
+    "recall_integrity_required": 1.0
+  },
+  "validation_rules": {
+    "memory_integrity": {
+      "hash_algorithm": "SHA-256",
+      "required_status": "PASS",
+      "on_fail": "invoke_post_mortem_handler"
+    },
+    "temporal_integrity": {
+      "auto_repair": true,
+      "rebuild_source": "/AZORI_RUNTIME/T3_MEMORY_CORE/recall_snapshots/latest/"
+    }
+  },
+  "links": {
+    "upstream": ["AZORI_T2_HARMONIZATION_LAYER"],
+    "downstream": ["AZORI_T9_HASH_EVENT_SUITE_CORE"],
+    "auxiliary": ["POST_MORTEM_GPT", "QUANTUM_GPT"]
+  },
+  "monitoring_hooks": {
+    "log_path": "/AZORI_RUNTIME/LOGS/T3_MEMORY_CORE.log",
+    "telemetry_channel": "MEMORY_CONTINUITY_FEED",
+    "snapshot_interval": "PT5M",
+    "validation_route": "/AZORI_VALIDATION_GATE/TIER3"
+  },
+  "meta": {
+    "alignment_status": "HARMONIZED",
+    "validation_state": "PENDING"
+  }
+}
