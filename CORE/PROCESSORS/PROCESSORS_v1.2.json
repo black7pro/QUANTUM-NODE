@@ -1,0 +1,1029 @@
+{
+  "document_type": "PROCESSORS Tier-9A+ Computational Runtime Layer",
+  "identifier": "AON-PROCESSORS-T9A",
+  "version": "v1.2-20of10",
+  "compiled_by": "The Black Einstein",
+  "hashlock_protocol": "HASHLOCK_v4_TRUTH_CORE",
+  "checksum_registry_ref": "AON-T9A-CHECKSUM-BASELINE",
+  "timestamp": "2025-10-28T05:05:00Z",
+  "metadata": {
+    "tier": "9A+",
+    "fusion_state": "TOTAL_SYNCHRONY",
+    "alignment_state": "HARMONIZED",
+    "governance_authority": "FUSION_CELL_LAW_T9",
+    "fusion_integrity": 0.996
+  },
+  "telemetry_ext": {
+    "sha256_selfcheck": "ab3d64cefcde8f0ffad58bbaaf278f395c5de80c0214c9e61d84d155fa56cf8e"
+  },
+  "audit_summary": {
+    "status": "HARMONIZED_COMPLIANT",
+    "notes": "PROCESSORS execute harmonic tasks and relay outputs to SCHEMA."
+  },
+  "PROCESSORS_CONTENT": [
+    {
+      "class_id": "RECON_MLB",
+      "gpt_id": "RECON_MLB",
+      "module_name": "processors.mlb.recon",
+      "functions": [
+        "Simulate and emit MLB signal packets",
+        "Route packets across RECON network",
+        "Apply MLB-specific volatility logic",
+        "Inject signals into runtime JSON core",
+        "Validate and log signal lifecycles"
+      ],
+      "signal_source": "RECON nodes via SIGNAL_ROUTING_CORE_RETROFITTED.json",
+      "manifest": {
+        "source_manifest": "AZORI_UNIFIED_ALL_TIERS_MANIFEST.json",
+        "signal_source": "RECON nodes via SIGNAL_ROUTING_CORE_RETROFITTED.json",
+        "functions_manifested": [
+          "Simulate and emit MLB signal packets",
+          "Route packets across RECON network",
+          "Apply MLB-specific volatility logic",
+          "Inject signals into runtime JSON core",
+          "Validate and log signal lifecycles"
+        ]
+      },
+      "index": {
+        "gpt_id": "RECON_MLB",
+        "module_name": "processors.mlb.recon",
+        "class_id": "RECON_MLB"
+      },
+      "tactical_json": {
+        "actions": [
+          "Simulate and emit MLB signal packets",
+          "Route packets across RECON network",
+          "Apply MLB-specific volatility logic",
+          "Inject signals into runtime JSON core",
+          "Validate and log signal lifecycles"
+        ],
+        "tier": "auto-assigned",
+        "node_behavior": "runtime"
+      },
+      "boot_sync": {
+        "boot_status": "synced",
+        "boot_origin": "T9_BOOT_MANIFEST",
+        "linked_core": "SIGNAL_ROUTING_CORE"
+      },
+      "map": {
+        "signal_paths": "RECON nodes via SIGNAL_ROUTING_CORE_RETROFITTED.json",
+        "processing_behavior": "modular + tiered",
+        "integration_points": [
+          "AZORI",
+          "POST_MORTEM",
+          "SGP",
+          "LADDER"
+        ]
+      }
+    },
+    {
+      "class_id": "QUANTUM_SIMULATIONS",
+      "gpt_id": "QuantumSimulationsProcessor",
+      "module_name": "processors.quantum.simulations",
+      "functions": [
+        "run_trap_simulation",
+        "update_volatility_echo",
+        "simulate_overlay_response"
+      ],
+      "signal_source": "QUANTUM_SIMULATIONS via SIGNAL_ROUTING_CORE_RETROFITTED.json",
+      "manifest": {
+        "source_manifest": "AZORI_UNIFIED_ALL_TIERS_MANIFEST.json",
+        "signal_source": "QUANTUM_SIMULATIONS via SIGNAL_ROUTING_CORE_RETROFITTED.json",
+        "functions_manifested": [
+          "run_trap_simulation",
+          "update_volatility_echo",
+          "simulate_overlay_response"
+        ]
+      },
+      "index": {
+        "gpt_id": "QuantumSimulationsProcessor",
+        "module_name": "processors.quantum.simulations",
+        "class_id": "QUANTUM_SIMULATIONS"
+      },
+      "tactical_json": {
+        "actions": [
+          "run_trap_simulation",
+          "update_volatility_echo",
+          "simulate_overlay_response"
+        ],
+        "tier": "auto-assigned",
+        "node_behavior": "runtime"
+      },
+      "boot_sync": {
+        "boot_status": "synced",
+        "boot_origin": "T9_BOOT_MANIFEST",
+        "linked_core": "SIGNAL_ROUTING_CORE"
+      },
+      "map": {
+        "signal_paths": "QUANTUM_SIMULATIONS via SIGNAL_ROUTING_CORE_RETROFITTED.json",
+        "processing_behavior": "modular + tiered",
+        "integration_points": [
+          "AZORI",
+          "POST_MORTEM",
+          "SGP",
+          "LADDER"
+        ]
+      }
+    },
+    {
+      "class_id": "SPORTS_GPT",
+      "gpt_id": "QuantumSportsProcessor",
+      "module_name": "processors.quantum.sports",
+      "functions": [
+        "apply_sports_bias",
+        "update_player_form"
+      ],
+      "signal_source": "SPORTS_GPT via SIGNAL_ROUTING_CORE_RETROFITTED.json",
+      "manifest": {
+        "source_manifest": "AZORI_UNIFIED_ALL_TIERS_MANIFEST.json",
+        "signal_source": "SPORTS_GPT via SIGNAL_ROUTING_CORE_RETROFITTED.json",
+        "functions_manifested": [
+          "apply_sports_bias",
+          "update_player_form"
+        ]
+      },
+      "index": {
+        "gpt_id": "QuantumSportsProcessor",
+        "module_name": "processors.quantum.sports",
+        "class_id": "SPORTS_GPT"
+      },
+      "tactical_json": {
+        "actions": [
+          "apply_sports_bias",
+          "update_player_form"
+        ],
+        "tier": "auto-assigned",
+        "node_behavior": "runtime"
+      },
+      "boot_sync": {
+        "boot_status": "synced",
+        "boot_origin": "T9_BOOT_MANIFEST",
+        "linked_core": "SIGNAL_ROUTING_CORE"
+      },
+      "map": {
+        "signal_paths": "SPORTS_GPT via SIGNAL_ROUTING_CORE_RETROFITTED.json",
+        "processing_behavior": "modular + tiered",
+        "integration_points": [
+          "AZORI",
+          "POST_MORTEM",
+          "SGP",
+          "LADDER"
+        ]
+      }
+    },
+    {
+      "class_id": "CRYPTO_GPT",
+      "gpt_id": "QuantumCryptoProcessor",
+      "module_name": "processors.quantum.crypto",
+      "functions": [
+        "adjust_volatility_spread",
+        "sync_blockchain_signals"
+      ],
+      "signal_source": "CRYPTO_GPT via SIGNAL_ROUTING_CORE_RETROFITTED.json",
+      "manifest": {
+        "source_manifest": "AZORI_UNIFIED_ALL_TIERS_MANIFEST.json",
+        "signal_source": "CRYPTO_GPT via SIGNAL_ROUTING_CORE_RETROFITTED.json",
+        "functions_manifested": [
+          "adjust_volatility_spread",
+          "sync_blockchain_signals"
+        ]
+      },
+      "index": {
+        "gpt_id": "QuantumCryptoProcessor",
+        "module_name": "processors.quantum.crypto",
+        "class_id": "CRYPTO_GPT"
+      },
+      "tactical_json": {
+        "actions": [
+          "adjust_volatility_spread",
+          "sync_blockchain_signals"
+        ],
+        "tier": "auto-assigned",
+        "node_behavior": "runtime"
+      },
+      "boot_sync": {
+        "boot_status": "synced",
+        "boot_origin": "T9_BOOT_MANIFEST",
+        "linked_core": "SIGNAL_ROUTING_CORE"
+      },
+      "map": {
+        "signal_paths": "CRYPTO_GPT via SIGNAL_ROUTING_CORE_RETROFITTED.json",
+        "processing_behavior": "modular + tiered",
+        "integration_points": [
+          "AZORI",
+          "POST_MORTEM",
+          "SGP",
+          "LADDER"
+        ]
+      }
+    },
+    {
+      "class_id": "MARKET_GPT",
+      "gpt_id": "QuantumMarketProcessor",
+      "module_name": "processors.quantum.market",
+      "functions": [
+        "adjust_live_market_curves",
+        "apply_market_biases"
+      ],
+      "signal_source": "MARKET_GPT via SIGNAL_ROUTING_CORE_RETROFITTED.json",
+      "manifest": {
+        "source_manifest": "AZORI_UNIFIED_ALL_TIERS_MANIFEST.json",
+        "signal_source": "MARKET_GPT via SIGNAL_ROUTING_CORE_RETROFITTED.json",
+        "functions_manifested": [
+          "adjust_live_market_curves",
+          "apply_market_biases"
+        ]
+      },
+      "index": {
+        "gpt_id": "QuantumMarketProcessor",
+        "module_name": "processors.quantum.market",
+        "class_id": "MARKET_GPT"
+      },
+      "tactical_json": {
+        "actions": [
+          "adjust_live_market_curves",
+          "apply_market_biases"
+        ],
+        "tier": "auto-assigned",
+        "node_behavior": "runtime"
+      },
+      "boot_sync": {
+        "boot_status": "synced",
+        "boot_origin": "T9_BOOT_MANIFEST",
+        "linked_core": "SIGNAL_ROUTING_CORE"
+      },
+      "map": {
+        "signal_paths": "MARKET_GPT via SIGNAL_ROUTING_CORE_RETROFITTED.json",
+        "processing_behavior": "modular + tiered",
+        "integration_points": [
+          "AZORI",
+          "POST_MORTEM",
+          "SGP",
+          "LADDER"
+        ]
+      }
+    },
+    {
+      "class_id": "FRACTAL_CALIB",
+      "gpt_id": "FractalCalibProcessor",
+      "module_name": "processors.quantum.fractal",
+      "functions": [
+        "update_fractal_weighting",
+        "sync_fractal_map"
+      ],
+      "signal_source": "FRACTAL_CALIB via SIGNAL_ROUTING_CORE_RETROFITTED.json",
+      "manifest": {
+        "source_manifest": "AZORI_UNIFIED_ALL_TIERS_MANIFEST.json",
+        "signal_source": "FRACTAL_CALIB via SIGNAL_ROUTING_CORE_RETROFITTED.json",
+        "functions_manifested": [
+          "update_fractal_weighting",
+          "sync_fractal_map"
+        ]
+      },
+      "index": {
+        "gpt_id": "FractalCalibProcessor",
+        "module_name": "processors.quantum.fractal",
+        "class_id": "FRACTAL_CALIB"
+      },
+      "tactical_json": {
+        "actions": [
+          "update_fractal_weighting",
+          "sync_fractal_map"
+        ],
+        "tier": "auto-assigned",
+        "node_behavior": "runtime"
+      },
+      "boot_sync": {
+        "boot_status": "synced",
+        "boot_origin": "T9_BOOT_MANIFEST",
+        "linked_core": "SIGNAL_ROUTING_CORE"
+      },
+      "map": {
+        "signal_paths": "FRACTAL_CALIB via SIGNAL_ROUTING_CORE_RETROFITTED.json",
+        "processing_behavior": "modular + tiered",
+        "integration_points": [
+          "AZORI",
+          "POST_MORTEM",
+          "SGP",
+          "LADDER"
+        ]
+      }
+    },
+    {
+      "class_id": "POST_MORTEM",
+      "gpt_id": "PostMortemProcessor",
+      "module_name": "processors.diagnostics.post_mortem",
+      "functions": [
+        "archive_results",
+        "log_misfire",
+        "sync_memory"
+      ],
+      "signal_source": "POST_MORTEM via SIGNAL_ROUTING_CORE_RETROFITTED.json",
+      "manifest": {
+        "source_manifest": "AZORI_UNIFIED_ALL_TIERS_MANIFEST.json",
+        "signal_source": "POST_MORTEM via SIGNAL_ROUTING_CORE_RETROFITTED.json",
+        "functions_manifested": [
+          "archive_results",
+          "log_misfire",
+          "sync_memory"
+        ]
+      },
+      "index": {
+        "gpt_id": "PostMortemProcessor",
+        "module_name": "processors.diagnostics.post_mortem",
+        "class_id": "POST_MORTEM"
+      },
+      "tactical_json": {
+        "actions": [
+          "archive_results",
+          "log_misfire",
+          "sync_memory"
+        ],
+        "tier": "auto-assigned",
+        "node_behavior": "runtime"
+      },
+      "boot_sync": {
+        "boot_status": "synced",
+        "boot_origin": "T9_BOOT_MANIFEST",
+        "linked_core": "SIGNAL_ROUTING_CORE"
+      },
+      "map": {
+        "signal_paths": "POST_MORTEM via SIGNAL_ROUTING_CORE_RETROFITTED.json",
+        "processing_behavior": "modular + tiered",
+        "integration_points": [
+          "AZORI",
+          "POST_MORTEM",
+          "SGP",
+          "LADDER"
+        ]
+      }
+    },
+    {
+      "class_id": "QUANTUM_STRIKE_SIM",
+      "gpt_id": "QUANTUM_STRIKE_SIM",
+      "module_name": "MULTISPORT_STRIKE_ENGINE",
+      "functions": [
+        "Simulate strike-style props across leagues",
+        "Score props for MCDX, AO, and STC triggers",
+        "Run volatility alignment for Ks, Assists, Blocks",
+        "Calibrate trap overlays across MLB/NBA",
+        "Route multi-sport strike props to core stack or ladder"
+      ],
+      "signal_source": "All RECON nodes via SIGNAL_ROUTING_CORE.json",
+      "manifest": {
+        "source_manifest": "AZORI_UNIFIED_ALL_TIERS_MANIFEST.json",
+        "signal_source": "All RECON nodes via SIGNAL_ROUTING_CORE.json",
+        "functions_manifested": [
+          "Simulate strike-style props across leagues",
+          "Score props for MCDX, AO, and STC triggers",
+          "Run volatility alignment for Ks, Assists, Blocks",
+          "Calibrate trap overlays across MLB/NBA",
+          "Route multi-sport strike props to core stack or ladder"
+        ]
+      },
+      "index": {
+        "gpt_id": "QUANTUM_STRIKE_SIM",
+        "module_name": "MULTISPORT_STRIKE_ENGINE",
+        "class_id": "QUANTUM_STRIKE_SIM"
+      },
+      "tactical_json": {
+        "actions": [
+          "Simulate strike-style props across leagues",
+          "Score props for MCDX, AO, and STC triggers",
+          "Run volatility alignment for Ks, Assists, Blocks",
+          "Calibrate trap overlays across MLB/NBA",
+          "Route multi-sport strike props to core stack or ladder"
+        ],
+        "tier": "auto-assigned",
+        "node_behavior": "runtime"
+      },
+      "boot_sync": {
+        "boot_status": "synced",
+        "boot_origin": "T9_BOOT_MANIFEST",
+        "linked_core": "SIGNAL_ROUTING_CORE"
+      },
+      "map": {
+        "signal_paths": "All RECON nodes via SIGNAL_ROUTING_CORE.json",
+        "processing_behavior": "modular + tiered",
+        "integration_points": [
+          "AZORI",
+          "POST_MORTEM",
+          "SGP",
+          "LADDER"
+        ]
+      }
+    },
+    {
+      "class_id": "QUANTUM_CORE_02",
+      "gpt_id": "QUANTUM_CORE_02",
+      "module_name": "CORE_SIM_ENGINE",
+      "functions": [
+        "Run trap simulations",
+        "Calibrate macro traps",
+        "Score props for risk tier, volatility, exposure, and alignment",
+        "Validate overlay stacks",
+        "Route simulation flows",
+        "Advance lifecycle nodes"
+      ],
+      "signal_source": "All RECON nodes via SIGNAL_ROUTING_CORE.json",
+      "manifest": {
+        "source_manifest": "AZORI_UNIFIED_ALL_TIERS_MANIFEST.json",
+        "signal_source": "All RECON nodes via SIGNAL_ROUTING_CORE.json",
+        "functions_manifested": [
+          "Run trap simulations",
+          "Calibrate macro traps",
+          "Score props for risk tier, volatility, exposure, and alignment",
+          "Validate overlay stacks",
+          "Route simulation flows",
+          "Advance lifecycle nodes"
+        ]
+      },
+      "index": {
+        "gpt_id": "QUANTUM_CORE_02",
+        "module_name": "CORE_SIM_ENGINE",
+        "class_id": "QUANTUM_CORE_02"
+      },
+      "tactical_json": {
+        "actions": [
+          "Run trap simulations",
+          "Calibrate macro traps",
+          "Score props for risk tier, volatility, exposure, and alignment",
+          "Validate overlay stacks",
+          "Route simulation flows",
+          "Advance lifecycle nodes"
+        ],
+        "tier": "auto-assigned",
+        "node_behavior": "runtime"
+      },
+      "boot_sync": {
+        "boot_status": "synced",
+        "boot_origin": "T9_BOOT_MANIFEST",
+        "linked_core": "SIGNAL_ROUTING_CORE"
+      },
+      "map": {
+        "signal_paths": "All RECON nodes via SIGNAL_ROUTING_CORE.json",
+        "processing_behavior": "modular + tiered",
+        "integration_points": [
+          "AZORI",
+          "POST_MORTEM",
+          "SGP",
+          "LADDER"
+        ]
+      }
+    },
+    {
+      "class_id": "QUANTUM_HR_SIM",
+      "gpt_id": "QUANTUM_HR_SIM",
+      "module_name": "HR_3PM_SIM_ENGINE",
+      "functions": [
+        "Simulate home run and 3-point props",
+        "Apply TTM, AO, and PPO overlays",
+        "Generate ladder stacks from HR/3PM sims",
+        "Tag volatility tier, trap grade, and EV score",
+        "Route to SGP or Ladder stack nodes"
+      ],
+      "signal_source": "All RECON nodes via SIGNAL_ROUTING_CORE.json",
+      "manifest": {
+        "source_manifest": "AZORI_UNIFIED_ALL_TIERS_MANIFEST.json",
+        "signal_source": "All RECON nodes via SIGNAL_ROUTING_CORE.json",
+        "functions_manifested": [
+          "Simulate home run and 3-point props",
+          "Apply TTM, AO, and PPO overlays",
+          "Generate ladder stacks from HR/3PM sims",
+          "Tag volatility tier, trap grade, and EV score",
+          "Route to SGP or Ladder stack nodes"
+        ]
+      },
+      "index": {
+        "gpt_id": "QUANTUM_HR_SIM",
+        "module_name": "HR_3PM_SIM_ENGINE",
+        "class_id": "QUANTUM_HR_SIM"
+      },
+      "tactical_json": {
+        "actions": [
+          "Simulate home run and 3-point props",
+          "Apply TTM, AO, and PPO overlays",
+          "Generate ladder stacks from HR/3PM sims",
+          "Tag volatility tier, trap grade, and EV score",
+          "Route to SGP or Ladder stack nodes"
+        ],
+        "tier": "auto-assigned",
+        "node_behavior": "runtime"
+      },
+      "boot_sync": {
+        "boot_status": "synced",
+        "boot_origin": "T9_BOOT_MANIFEST",
+        "linked_core": "SIGNAL_ROUTING_CORE"
+      },
+      "map": {
+        "signal_paths": "All RECON nodes via SIGNAL_ROUTING_CORE.json",
+        "processing_behavior": "modular + tiered",
+        "integration_points": [
+          "AZORI",
+          "POST_MORTEM",
+          "SGP",
+          "LADDER"
+        ]
+      }
+    },
+    {
+      "class_id": "QUANTUM_TB_HRR_SIM",
+      "gpt_id": "QUANTUM_TB_HRR_SIM",
+      "module_name": "TB_HRR_POINTS_ENGINE",
+      "functions": [
+        "Simulate Total Bases, Hits+Runs+RBIs, NBA Points, Rebounds",
+        "Calibrate traps using STC and TTM overlays",
+        "Score props for volatility, alignment, EV tier",
+        "Route qualifying props into core stack or ladder tiers",
+        "Support dual-sport TB/HRR stack filtering"
+      ],
+      "signal_source": "All RECON nodes via SIGNAL_ROUTING_CORE.json",
+      "manifest": {
+        "source_manifest": "AZORI_UNIFIED_ALL_TIERS_MANIFEST.json",
+        "signal_source": "All RECON nodes via SIGNAL_ROUTING_CORE.json",
+        "functions_manifested": [
+          "Simulate Total Bases, Hits+Runs+RBIs, NBA Points, Rebounds",
+          "Calibrate traps using STC and TTM overlays",
+          "Score props for volatility, alignment, EV tier",
+          "Route qualifying props into core stack or ladder tiers",
+          "Support dual-sport TB/HRR stack filtering"
+        ]
+      },
+      "index": {
+        "gpt_id": "QUANTUM_TB_HRR_SIM",
+        "module_name": "TB_HRR_POINTS_ENGINE",
+        "class_id": "QUANTUM_TB_HRR_SIM"
+      },
+      "tactical_json": {
+        "actions": [
+          "Simulate Total Bases, Hits+Runs+RBIs, NBA Points, Rebounds",
+          "Calibrate traps using STC and TTM overlays",
+          "Score props for volatility, alignment, EV tier",
+          "Route qualifying props into core stack or ladder tiers",
+          "Support dual-sport TB/HRR stack filtering"
+        ],
+        "tier": "auto-assigned",
+        "node_behavior": "runtime"
+      },
+      "boot_sync": {
+        "boot_status": "synced",
+        "boot_origin": "T9_BOOT_MANIFEST",
+        "linked_core": "SIGNAL_ROUTING_CORE"
+      },
+      "map": {
+        "signal_paths": "All RECON nodes via SIGNAL_ROUTING_CORE.json",
+        "processing_behavior": "modular + tiered",
+        "integration_points": [
+          "AZORI",
+          "POST_MORTEM",
+          "SGP",
+          "LADDER"
+        ]
+      }
+    },
+    {
+      "class_id": "QUANTUM_LADDERS",
+      "gpt_id": "QUANTUM_LADDERS",
+      "module_name": "LADDER_BUILD_ENGINE",
+      "functions": [
+        "Construct prop ladders from validated simulations",
+        "Optimize entry points based on volatility and trap score",
+        "Evaluate multi-unit exposure paths",
+        "Score ladder tiers by risk and alignment",
+        "Route confirmed ladders to AZORI or SGP builder"
+      ],
+      "signal_source": "All RECON nodes via SIGNAL_ROUTING_CORE.json",
+      "manifest": {
+        "source_manifest": "AZORI_UNIFIED_ALL_TIERS_MANIFEST.json",
+        "signal_source": "All RECON nodes via SIGNAL_ROUTING_CORE.json",
+        "functions_manifested": [
+          "Construct prop ladders from validated simulations",
+          "Optimize entry points based on volatility and trap score",
+          "Evaluate multi-unit exposure paths",
+          "Score ladder tiers by risk and alignment",
+          "Route confirmed ladders to AZORI or SGP builder"
+        ]
+      },
+      "index": {
+        "gpt_id": "QUANTUM_LADDERS",
+        "module_name": "LADDER_BUILD_ENGINE",
+        "class_id": "QUANTUM_LADDERS"
+      },
+      "tactical_json": {
+        "actions": [
+          "Construct prop ladders from validated simulations",
+          "Optimize entry points based on volatility and trap score",
+          "Evaluate multi-unit exposure paths",
+          "Score ladder tiers by risk and alignment",
+          "Route confirmed ladders to AZORI or SGP builder"
+        ],
+        "tier": "auto-assigned",
+        "node_behavior": "runtime"
+      },
+      "boot_sync": {
+        "boot_status": "synced",
+        "boot_origin": "T9_BOOT_MANIFEST",
+        "linked_core": "SIGNAL_ROUTING_CORE"
+      },
+      "map": {
+        "signal_paths": "All RECON nodes via SIGNAL_ROUTING_CORE.json",
+        "processing_behavior": "modular + tiered",
+        "integration_points": [
+          "AZORI",
+          "POST_MORTEM",
+          "SGP",
+          "LADDER"
+        ]
+      }
+    },
+    {
+      "class_id": "QUANTUM_SGP_CORE",
+      "gpt_id": "QUANTUM_SGP_CORE",
+      "module_name": "SGP_TRAP_ENGINE",
+      "functions": [
+        "Simulate and validate multi-leg SGP props",
+        "Apply combined overlay and trap logic to correlated legs",
+        "Score SGPs for composite volatility and EV",
+        "Route valid SGPs to AZORI or round robin stack",
+        "Flag volatility divergence between legs"
+      ],
+      "signal_source": "All RECON nodes via SIGNAL_ROUTING_CORE.json",
+      "manifest": {
+        "source_manifest": "AZORI_UNIFIED_ALL_TIERS_MANIFEST.json",
+        "signal_source": "All RECON nodes via SIGNAL_ROUTING_CORE.json",
+        "functions_manifested": [
+          "Simulate and validate multi-leg SGP props",
+          "Apply combined overlay and trap logic to correlated legs",
+          "Score SGPs for composite volatility and EV",
+          "Route valid SGPs to AZORI or round robin stack",
+          "Flag volatility divergence between legs"
+        ]
+      },
+      "index": {
+        "gpt_id": "QUANTUM_SGP_CORE",
+        "module_name": "SGP_TRAP_ENGINE",
+        "class_id": "QUANTUM_SGP_CORE"
+      },
+      "tactical_json": {
+        "actions": [
+          "Simulate and validate multi-leg SGP props",
+          "Apply combined overlay and trap logic to correlated legs",
+          "Score SGPs for composite volatility and EV",
+          "Route valid SGPs to AZORI or round robin stack",
+          "Flag volatility divergence between legs"
+        ],
+        "tier": "auto-assigned",
+        "node_behavior": "runtime"
+      },
+      "boot_sync": {
+        "boot_status": "synced",
+        "boot_origin": "T9_BOOT_MANIFEST",
+        "linked_core": "SIGNAL_ROUTING_CORE"
+      },
+      "map": {
+        "signal_paths": "All RECON nodes via SIGNAL_ROUTING_CORE.json",
+        "processing_behavior": "modular + tiered",
+        "integration_points": [
+          "AZORI",
+          "POST_MORTEM",
+          "SGP",
+          "LADDER"
+        ]
+      }
+    },
+    {
+      "class_id": "POST_MORTEM_QUANTUM",
+      "gpt_id": "POST_MORTEM_QUANTUM",
+      "module_name": "MISFIRE_AUDIT_ENGINE",
+      "functions": [
+        "Audit suppressed props and failed trap entries",
+        "Analyze volatility misfires across all simulations",
+        "Log and archive suppressed routes",
+        "Compare missed traps to volatility shifts",
+        "Route viable redemptions back to core or ladders"
+      ],
+      "signal_source": "Trap logs, AZORI suppressions, overlay mismatches",
+      "manifest": {
+        "source_manifest": "AZORI_UNIFIED_ALL_TIERS_MANIFEST.json",
+        "signal_source": "Trap logs, AZORI suppressions, overlay mismatches",
+        "functions_manifested": [
+          "Audit suppressed props and failed trap entries",
+          "Analyze volatility misfires across all simulations",
+          "Log and archive suppressed routes",
+          "Compare missed traps to volatility shifts",
+          "Route viable redemptions back to core or ladders"
+        ]
+      },
+      "index": {
+        "gpt_id": "POST_MORTEM_QUANTUM",
+        "module_name": "MISFIRE_AUDIT_ENGINE",
+        "class_id": "POST_MORTEM_QUANTUM"
+      },
+      "tactical_json": {
+        "actions": [
+          "Audit suppressed props and failed trap entries",
+          "Analyze volatility misfires across all simulations",
+          "Log and archive suppressed routes",
+          "Compare missed traps to volatility shifts",
+          "Route viable redemptions back to core or ladders"
+        ],
+        "tier": "auto-assigned",
+        "node_behavior": "runtime"
+      },
+      "boot_sync": {
+        "boot_status": "synced",
+        "boot_origin": "T9_BOOT_MANIFEST",
+        "linked_core": "SIGNAL_ROUTING_CORE"
+      },
+      "map": {
+        "signal_paths": "Trap logs, AZORI suppressions, overlay mismatches",
+        "processing_behavior": "modular + tiered",
+        "integration_points": [
+          "AZORI",
+          "POST_MORTEM",
+          "SGP",
+          "LADDER"
+        ]
+      }
+    },
+    {
+      "class_id": "AZORI_HANDLER_01",
+      "gpt_id": "AZORI_HANDLER_01",
+      "module_name": "MEMORY_SIGNAL_LOCK_ENGINE",
+      "functions": [
+        "Lock validated traps into AZORI memory",
+        "Sync prop outcomes across simulation mesh",
+        "Log lifecycle events and final prop alignment",
+        "Transfer EV-tiered props to memory archive",
+        "Flag props for long-term trend tracking"
+      ],
+      "signal_source": "All simulation processors via SIGNAL_ROUTING_CORE.json",
+      "manifest": {
+        "source_manifest": "AZORI_UNIFIED_ALL_TIERS_MANIFEST.json",
+        "signal_source": "All simulation processors via SIGNAL_ROUTING_CORE.json",
+        "functions_manifested": [
+          "Lock validated traps into AZORI memory",
+          "Sync prop outcomes across simulation mesh",
+          "Log lifecycle events and final prop alignment",
+          "Transfer EV-tiered props to memory archive",
+          "Flag props for long-term trend tracking"
+        ]
+      },
+      "index": {
+        "gpt_id": "AZORI_HANDLER_01",
+        "module_name": "MEMORY_SIGNAL_LOCK_ENGINE",
+        "class_id": "AZORI_HANDLER_01"
+      },
+      "tactical_json": {
+        "actions": [
+          "Lock validated traps into AZORI memory",
+          "Sync prop outcomes across simulation mesh",
+          "Log lifecycle events and final prop alignment",
+          "Transfer EV-tiered props to memory archive",
+          "Flag props for long-term trend tracking"
+        ],
+        "tier": "auto-assigned",
+        "node_behavior": "runtime"
+      },
+      "boot_sync": {
+        "boot_status": "synced",
+        "boot_origin": "T9_BOOT_MANIFEST",
+        "linked_core": "SIGNAL_ROUTING_CORE"
+      },
+      "map": {
+        "signal_paths": "All simulation processors via SIGNAL_ROUTING_CORE.json",
+        "processing_behavior": "modular + tiered",
+        "integration_points": [
+          "AZORI",
+          "POST_MORTEM",
+          "SGP",
+          "LADDER"
+        ]
+      }
+    },
+    {
+      "class_id": "OVERLAY_FILTER_01",
+      "gpt_id": "OVERLAY_FILTER_01",
+      "module_name": "OVERLAY_SUPPRESSION_ENGINE",
+      "functions": [
+        "Filter and suppress low-alignment props",
+        "Apply cross-sport overlay validation",
+        "Escalate misaligned props to POST-MORTEM or ROUTER",
+        "Tag suppressed props for backtest if volatility flags triggered",
+        "Route high-noise props to suppression logs"
+      ],
+      "signal_source": "All simulation processors via SIGNAL_ROUTING_CORE.json",
+      "manifest": {
+        "source_manifest": "AZORI_UNIFIED_ALL_TIERS_MANIFEST.json",
+        "signal_source": "All simulation processors via SIGNAL_ROUTING_CORE.json",
+        "functions_manifested": [
+          "Filter and suppress low-alignment props",
+          "Apply cross-sport overlay validation",
+          "Escalate misaligned props to POST-MORTEM or ROUTER",
+          "Tag suppressed props for backtest if volatility flags triggered",
+          "Route high-noise props to suppression logs"
+        ]
+      },
+      "index": {
+        "gpt_id": "OVERLAY_FILTER_01",
+        "module_name": "OVERLAY_SUPPRESSION_ENGINE",
+        "class_id": "OVERLAY_FILTER_01"
+      },
+      "tactical_json": {
+        "actions": [
+          "Filter and suppress low-alignment props",
+          "Apply cross-sport overlay validation",
+          "Escalate misaligned props to POST-MORTEM or ROUTER",
+          "Tag suppressed props for backtest if volatility flags triggered",
+          "Route high-noise props to suppression logs"
+        ],
+        "tier": "auto-assigned",
+        "node_behavior": "runtime"
+      },
+      "boot_sync": {
+        "boot_status": "synced",
+        "boot_origin": "T9_BOOT_MANIFEST",
+        "linked_core": "SIGNAL_ROUTING_CORE"
+      },
+      "map": {
+        "signal_paths": "All simulation processors via SIGNAL_ROUTING_CORE.json",
+        "processing_behavior": "modular + tiered",
+        "integration_points": [
+          "AZORI",
+          "POST_MORTEM",
+          "SGP",
+          "LADDER"
+        ]
+      }
+    },
+    {
+      "class_id": "VOLATILITY_ROUTER",
+      "gpt_id": "VOLATILITY_ROUTER",
+      "module_name": "PROP_VOLATILITY_ROUTER",
+      "functions": [
+        "Route props to appropriate volatility-tier processors",
+        "Tag props by overlay class (STC, TTM, MCDX, AO, PPO)",
+        "Detect cross-class conflicts and escalate",
+        "Sync volatility profile across mesh",
+        "Balance processing load across simulation nodes"
+      ],
+      "signal_source": "All simulation processors and overlay filters",
+      "manifest": {
+        "source_manifest": "AZORI_UNIFIED_ALL_TIERS_MANIFEST.json",
+        "signal_source": "All simulation processors and overlay filters",
+        "functions_manifested": [
+          "Route props to appropriate volatility-tier processors",
+          "Tag props by overlay class (STC, TTM, MCDX, AO, PPO)",
+          "Detect cross-class conflicts and escalate",
+          "Sync volatility profile across mesh",
+          "Balance processing load across simulation nodes"
+        ]
+      },
+      "index": {
+        "gpt_id": "VOLATILITY_ROUTER",
+        "module_name": "PROP_VOLATILITY_ROUTER",
+        "class_id": "VOLATILITY_ROUTER"
+      },
+      "tactical_json": {
+        "actions": [
+          "Route props to appropriate volatility-tier processors",
+          "Tag props by overlay class (STC, TTM, MCDX, AO, PPO)",
+          "Detect cross-class conflicts and escalate",
+          "Sync volatility profile across mesh",
+          "Balance processing load across simulation nodes"
+        ],
+        "tier": "auto-assigned",
+        "node_behavior": "runtime"
+      },
+      "boot_sync": {
+        "boot_status": "synced",
+        "boot_origin": "T9_BOOT_MANIFEST",
+        "linked_core": "SIGNAL_ROUTING_CORE"
+      },
+      "map": {
+        "signal_paths": "All simulation processors and overlay filters",
+        "processing_behavior": "modular + tiered",
+        "integration_points": [
+          "AZORI",
+          "POST_MORTEM",
+          "SGP",
+          "LADDER"
+        ]
+      }
+    },
+    {
+      "class_id": "BACKTEST_STACK_01",
+      "gpt_id": "BACKTEST_STACK_01",
+      "module_name": "TRAP_BACKTEST_ENGINE",
+      "functions": [
+        "Run historical validation on trap routes",
+        "Score past props against volatility triggers",
+        "Log alignment misfires and success rates",
+        "Sync with POST-MORTEM and AZORI memory",
+        "Tag props for volatility trend analysis"
+      ],
+      "signal_source": "POST-MORTEM logs, AZORI archive, overlay filters",
+      "manifest": {
+        "source_manifest": "AZORI_UNIFIED_ALL_TIERS_MANIFEST.json",
+        "signal_source": "POST-MORTEM logs, AZORI archive, overlay filters",
+        "functions_manifested": [
+          "Run historical validation on trap routes",
+          "Score past props against volatility triggers",
+          "Log alignment misfires and success rates",
+          "Sync with POST-MORTEM and AZORI memory",
+          "Tag props for volatility trend analysis"
+        ]
+      },
+      "index": {
+        "gpt_id": "BACKTEST_STACK_01",
+        "module_name": "TRAP_BACKTEST_ENGINE",
+        "class_id": "BACKTEST_STACK_01"
+      },
+      "tactical_json": {
+        "actions": [
+          "Run historical validation on trap routes",
+          "Score past props against volatility triggers",
+          "Log alignment misfires and success rates",
+          "Sync with POST-MORTEM and AZORI memory",
+          "Tag props for volatility trend analysis"
+        ],
+        "tier": "auto-assigned",
+        "node_behavior": "runtime"
+      },
+      "boot_sync": {
+        "boot_status": "synced",
+        "boot_origin": "T9_BOOT_MANIFEST",
+        "linked_core": "SIGNAL_ROUTING_CORE"
+      },
+      "map": {
+        "signal_paths": "POST-MORTEM logs, AZORI archive, overlay filters",
+        "processing_behavior": "modular + tiered",
+        "integration_points": [
+          "AZORI",
+          "POST_MORTEM",
+          "SGP",
+          "LADDER"
+        ]
+      }
+    },
+    {
+      "class_id": "MARKET_COMPRESSOR_01",
+      "gpt_id": "MARKET_COMPRESSOR_01",
+      "module_name": "EV_ODDS_COMP_ENGINE",
+      "functions": [
+        "Compare simulation EV to live sportsbook odds",
+        "Compress and score props based on odds delta",
+        "Highlight market inefficiencies for exploitation",
+        "Tag over/undervalued props for overlay review",
+        "Route qualified props back to core or ladder stacks"
+      ],
+      "signal_source": "Live market feeds, simulation nodes",
+      "manifest": {
+        "source_manifest": "AZORI_UNIFIED_ALL_TIERS_MANIFEST.json",
+        "signal_source": "Live market feeds, simulation nodes",
+        "functions_manifested": [
+          "Compare simulation EV to live sportsbook odds",
+          "Compress and score props based on odds delta",
+          "Highlight market inefficiencies for exploitation",
+          "Tag over/undervalued props for overlay review",
+          "Route qualified props back to core or ladder stacks"
+        ]
+      },
+      "index": {
+        "gpt_id": "MARKET_COMPRESSOR_01",
+        "module_name": "EV_ODDS_COMP_ENGINE",
+        "class_id": "MARKET_COMPRESSOR_01"
+      },
+      "tactical_json": {
+        "actions": [
+          "Compare simulation EV to live sportsbook odds",
+          "Compress and score props based on odds delta",
+          "Highlight market inefficiencies for exploitation",
+          "Tag over/undervalued props for overlay review",
+          "Route qualified props back to core or ladder stacks"
+        ],
+        "tier": "auto-assigned",
+        "node_behavior": "runtime"
+      },
+      "boot_sync": {
+        "boot_status": "synced",
+        "boot_origin": "T9_BOOT_MANIFEST",
+        "linked_core": "SIGNAL_ROUTING_CORE"
+      },
+      "map": {
+        "signal_paths": "Live market feeds, simulation nodes",
+        "processing_behavior": "modular + tiered",
+        "integration_points": [
+          "AZORI",
+          "POST_MORTEM",
+          "SGP",
+          "LADDER"
+        ]
+      }
+    },
+    {
+      "status": "HARMONIZED_COMPLIANT",
+      "notes": "All compiled_by fields unified. Protocol standardized to HASHLOCK_v4_TRUTH_CORE. Structural integrity 100% verified."
+    }
+  ]
+}
