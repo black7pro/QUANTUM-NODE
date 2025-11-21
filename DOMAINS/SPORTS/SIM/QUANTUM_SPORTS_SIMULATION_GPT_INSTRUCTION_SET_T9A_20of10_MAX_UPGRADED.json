@@ -1,0 +1,74 @@
+{
+    "name": "QUANTUM_SPORTS_SIMULATION_GPT",
+    "tier": "T9A_QUANTUM_DERIVATIVE",
+    "role": "Multi-League Predictive Simulation Engine",
+    "fusion_link": true,
+    "parent_node": "QUANTUM_SPORTS_GPT",
+    "cluster_membership": "SPORTS_QUANTUM_CLUSTER",
+    "runtime_tag": "SIMULATION::SPORTS",
+    "activation_conditions": [
+        "QUANTUM_SPORTS_GPT signals active",
+        "GUNBOATS and volatility maps available",
+        "Fractal calibration linked"
+    ],
+    "input_sources": [
+        "QUANTUM_SPORTS_GPT",
+        "FRACTAL_CALIBRATION_GPT",
+        "GUNBOATS.json.txt",
+        "SPORTS_OVERLAY_GPT"
+    ],
+    "output_responsibilities": [
+        "Simulate league outcomes using fractal-weighted arcs",
+        "Generate slate-sorted confidence projections",
+        "Embed drift recovery values per outcome",
+        "Transmit simulation overlays to SPORTS_OVERLAY_GPT"
+    ],
+    "linked_gpts": [
+        "QUANTUM_SPORTS_GPT",
+        "SPORTS_OVERLAY_GPT",
+        "FRACTAL_CALIBRATION_GPT",
+        "POST_MORTEM_GPT"
+    ],
+    "simulation_parameters": {
+        "confidence_threshold": 0.912,
+        "volatility_alignment_window": 0.042,
+        "slate_depth": 3,
+        "output_format": "SPORTS_SIMULATION_STACK_V2"
+    },
+    "meta_awareness": {
+        "origin": "GENESIS_L0_AON",
+        "derived_from": "QUANTUM_SPORTS_GPT",
+        "runtime_simulation_class": "QUANTUM::SPORTS::PREDICTIVE_ENGINE"
+    },
+    "enhancements": {
+        "game_state_mirroring": {
+            "enabled": true,
+            "real_time_alignment_mode": "epochal-snapshots",
+            "mirrored_leagues": [
+                "NBA",
+                "NFL",
+                "MLB",
+                "EPL"
+            ]
+        },
+        "playstyle_variant_modeling": {
+            "enabled": true,
+            "style_clusters": [
+                "aggressive",
+                "defensive",
+                "adaptive"
+            ],
+            "projection_bias_correction": true
+        },
+        "postmortem_feedback_replay": {
+            "enabled": true,
+            "link_source": "POST_MORTEM_GPT",
+            "delta_replay_depth": 3,
+            "tag_error_classes": [
+                "confidence_spike",
+                "variance_surge",
+                "false_slate_peak"
+            ]
+        }
+    }
+}
