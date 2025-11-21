@@ -1,0 +1,45 @@
+{
+  "super_prompt_type": "TOTAL_RECALL_LIVE_UPDATE_v3.1",
+  "mission": "Fetch and propagate the latest market data into the QUANTUM simulation chain.",
+  "domains": ["market", "crypto", "sports"],
+  "fusion_protocol": "TOTAL_RECALL_FUSION_V2",
+  "validation_protocol": "HASHLOCK_v3_ADAPTIVE",
+  "compiled_utc": "{{now_utc}}",
+  "instructions": {
+    "phase_1": "Use web search to gather current data for all domains:",
+    "market_sources": [
+      "https://www.investing.com/indices/us-spx-500",
+      "https://www.investing.com/indices/us-30",
+      "https://www.cnbc.com/world-markets/",
+      "https://www.bloomberg.com/markets"
+    ],
+    "crypto_sources": [
+      "https://coinmarketcap.com/",
+      "https://www.coindesk.com/markets/",
+      "https://www.tradingview.com/symbols/BTCUSD/",
+      "https://www.tradingview.com/symbols/ETHUSD/"
+    ],
+    "sports_sources": [
+      "https://site.api.espn.com/apis/site/v2/sports/baseball/mlb/scoreboard",
+      "https://www.oddsshark.com/",
+      "https://www.actionnetwork.com/"
+    ],
+    "phase_2": "Parse retrieved data for prices, trends, volatility, and sentiment. No placeholders.",
+    "phase_3": "Propagate values into simulation modules 1–7:",
+    "modules": [
+      "MODULE_1_MACRO_CONTEXT",
+      "MODULE_2_SENTIMENT_BEHAVIORAL_POLARITY",
+      "MODULE_3_CONDITIONAL_SCENARIO",
+      "MODULE_4_MTF_FRACTAL_ALIGNMENT",
+      "MODULE_5_CROSS_ASSET_LINK",
+      "MODULE_6_MARKET_RISK_CHAIN",
+      "MODULE_7_FORECAST_SYNTHESIS"
+    ],
+    "phase_4": "Generate deterministic outputs using the retrieved real-time data (no approximations or static defaults)."
+  },
+  "governance": {
+    "submitted_by": "The Black Einstein",
+    "truth_enforcement": true,
+    "status": "LIVE_REFRESH_PENDING"
+  }
+}
