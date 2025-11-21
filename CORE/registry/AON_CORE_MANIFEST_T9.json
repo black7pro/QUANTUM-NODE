@@ -1,0 +1,91 @@
+{
+  "aon_core_manifest": {
+    "id": "AON_CORE_MANIFEST_T9",
+    "version": "v1.1-HARMONIZED",
+    "compiled_by": "QUANTUM_AZORI_PROMPT_BUILDER",
+    "compiled_utc": "2025-10-18T04:20:00Z",
+    "tier": 9,
+    "fusion_mode": "T10_PRECURSOR",
+    "designation": "CORE Manifest — Tier-9 Law, Coordination & Oversight Layer",
+    "description": "Defines the CORE operational nucleus for the Azori Operating Network. Enforces Fusion Cell Law, orchestrates inter-hub routing, and maintains supervisory alignment through Watchtower T9.",
+    "fusion_cell_law_ref": "/CORE/FUSION_CELL_LAW.json",
+    "meta_bridge_ref": "/CORE/CORE_015_META_IS_T9.json",
+    "genesis_ref": "/CORE/GENESIS_VALIDATION_GATE.txt",
+    "tactical_overlay_ref": "/TACTICAL/CORE_TACTICAL_OVERLAY_T9.json",
+    "supervisor": "WATCHTOWER_T9",
+    "audit_gpt": "POST_MORTEM_GPT_T9",
+    "calibration_gpt": "FRACTAL_CALIBRATION_GPT_T9",
+
+    "governed_layers": {
+      "GENESIS": "/CORE/GENESIS_LAYER_ZERO.json",
+      "META_IS": "/CORE/CORE_015_META_IS_T9.json",
+      "SUBCORE": "/SUBCORE/AON_SUBCORE_MANIFEST_T9.json",
+      "PROCESSORS": "/PROCESSORS/AON_PROCESSOR_MANIFEST_T9.json",
+      "INTERPRETERS": "/INTERPRETERS/AON_INTERPRETER_MANIFEST_T9.json",
+      "ENGINES": "/ENGINES/AON_ENGINE_MANIFEST_T9.json",
+      "ARCHETYPES": "/SUBCORE/ARCHETYPES/AON_ARCHETYPES_FULL_SET_T9.json",
+      "RUNTIME": "/RUNTIME/AON_RUNTIME_MANIFEST_T9.json"
+    },
+
+    "integrity_protocols": {
+      "hash_algorithm": "SHA-256",
+      "auto_repair": true,
+      "rollback_on_drift": true,
+      "heartbeat_interval": "60s"
+    },
+
+    "signal_routing": {
+      "upstream": "/GENESIS_LAYER_ZERO",
+      "downstream": [
+        "/META_IS/context_stream",
+        "/SUBCORE/domain_directives",
+        "/PROCESSORS/input_gate",
+        "/INTERPRETERS/context_gate",
+        "/ENGINES/execution_gate"
+      ],
+      "feedback_loop": "/POST_MORTEM_GPT_T9",
+      "validation_gate": "/CORE/GENESIS_VALIDATION_GATE.txt"
+    },
+
+    "runtime_hooks": {
+      "on_drift_detected": "trigger_POST_MORTEM_GPT()",
+      "on_patch_loaded": "refresh_integrity_hash()",
+      "on_meta_update": "synchronize_META_IS()",
+      "on_tactical_init": "activate_CORE_TACTICAL_OVERLAY()"
+    },
+
+    "telemetry": {
+      "report_channel": "/WATCHTOWER/logs/core_runtime_feed.json",
+      "alert_channel": "/WATCHTOWER/alerts/core_alignment_state.json",
+      "metrics": [
+        "latency_ms",
+        "fusion_variance",
+        "alignment_delta",
+        "context_stability"
+      ]
+    },
+
+    "harmonic_context": {
+      "alignment_status": "HARMONIZED",
+      "fusion_variance": 0.015,
+      "harmonic_coherence": 0.946,
+      "bias_equilibrium": "STABLE"
+    },
+
+    "lock_record": {
+      "fusion_state": "SEALED",
+      "verified_by": "FRACTAL_CALIBRATION_GPT_T9",
+      "audited_by": "POST_MORTEM_GPT_T9",
+      "validated_through": "/CORE/GENESIS_VALIDATION_GATE.txt",
+      "checksum": "CORE_MANIFEST_T9_LOCK_HASH"
+    },
+
+    "meta": {
+      "alignment_state": "HARMONIZED",
+      "status": "REGISTERED",
+      "tactical_overlay_ref": "/TACTICAL/CORE_TACTICAL_OVERLAY_T9.json",
+      "checksum": "CORE_MANIFEST_T9_FINAL_HASH",
+      "notes": "Core manifest regenerated with tactical overlay reference and full META_IS bridge continuity. All law, genesis, and runtime bindings intact."
+    }
+  }
+}

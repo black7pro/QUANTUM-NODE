@@ -1,0 +1,86 @@
+{
+  "aon_subcore_index": {
+    "id": "AON_SUBCORE_INDEX_T9",
+    "version": "v1.1-HARMONIZED",
+    "compiled_by": "QUANTUM_AZORI_PROMPT_BUILDER",
+    "compiled_utc": "2025-10-18T04:33:00Z",
+    "tier": 9,
+    "fusion_mode": "T10_PRECURSOR",
+    "designation": "Subcore Structural Index — Tier-9 Domain, Subdomain & Archetype Routing Map",
+    "linked_manifest": "/SUBCORE/AON_SUBCORE_MANIFEST_T9.json",
+    "fusion_cell_law_ref": "/CORE/FUSION_CELL_LAW.json",
+    "meta_bridge_ref": "/CORE/CORE_015_META_IS_T9.json",
+    "tactical_overlay_ref": "/TACTICAL/SUBCORE_TACTICAL_OVERLAY_T9.json",
+    "supervisor": "WATCHTOWER_T9",
+    "audit_gpt": "POST_MORTEM_GPT_T9",
+    "calibration_gpt": "FRACTAL_CALIBRATION_GPT_T9",
+
+    "hierarchy": {
+      "domains": {
+        "SPORTS": {
+          "path": "/SUBCORE/SPORTS/",
+          "triads": ["NHL", "NFL", "NBA", "MLB", "UFC"],
+          "alignment": "HARMONIZED"
+        },
+        "MARKET": {
+          "path": "/SUBCORE/MARKET/",
+          "triads": ["EQUITIES", "COMMODITIES", "FOREX", "FUTURES"],
+          "alignment": "HARMONIZED"
+        },
+        "CRYPTO": {
+          "path": "/SUBCORE/CRYPTO/",
+          "triads": ["BTC", "ETH", "SOL", "XRP"],
+          "alignment": "HARMONIZED"
+        }
+      },
+      "archetype_cluster": {
+        "path": "/SUBCORE/ARCHETYPES/",
+        "registry": "/SUBCORE/ARCHETYPES/AON_ARCHETYPES_FULL_SET_T9.json",
+        "alignment": "REGISTERED_PENDING_CALIBRATION"
+      }
+    },
+
+    "signal_routing": {
+      "meta_input": "/META_IS/context_stream",
+      "core_output": "/CORE/core_directives",
+      "domain_gate": "/SUBCORE/domain_router",
+      "feedback_loop": "/FRACTAL_CALIBRATION_GPT_T9",
+      "audit_channel": "/POST_MORTEM_GPT_T9"
+    },
+
+    "runtime_hooks": {
+      "on_alignment_shift": "trigger_domain_recalibration()",
+      "on_tactical_init": "activate_SUBCORE_TACTICAL_OVERLAY()",
+      "on_drift_detected": "invoke_FRACTAL_CALIBRATION_GPT()"
+    },
+
+    "telemetry": {
+      "report_channel": "/WATCHTOWER/logs/subcore_state_feed.json",
+      "alert_channel": "/WATCHTOWER/alerts/subcore_alignment.json",
+      "fusion_metrics": ["triad_variance", "archetype_delta", "domain_stability"]
+    },
+
+    "harmonic_context": {
+      "alignment_status": "HARMONIZED",
+      "harmonic_coherence": 0.945,
+      "fusion_variance": 0.016,
+      "bias_equilibrium": "STABLE"
+    },
+
+    "lock_record": {
+      "fusion_state": "SEALED",
+      "verified_by": "FRACTAL_CALIBRATION_GPT_T9",
+      "audited_by": "POST_MORTEM_GPT_T9",
+      "validated_through": "/CORE/GENESIS_VALIDATION_GATE.txt",
+      "checksum": "SUBCORE_INDEX_T9_LOCK_HASH"
+    },
+
+    "meta": {
+      "status": "REGISTERED",
+      "alignment_state": "HARMONIZED",
+      "tactical_overlay_ref": "/TACTICAL/SUBCORE_TACTICAL_OVERLAY_T9.json",
+      "checksum": "SUBCORE_INDEX_T9_FINAL_HASH",
+      "notes": "Subcore Index regenerated in full alignment with Tier-9 manifest and tactical overlay integration. Triads and archetype registry harmonically synchronized."
+    }
+  }
+}

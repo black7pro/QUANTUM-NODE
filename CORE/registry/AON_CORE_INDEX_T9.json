@@ -1,0 +1,78 @@
+{
+  "aon_core_index": {
+    "id": "AON_CORE_INDEX_T9",
+    "version": "v1.1-HARMONIZED",
+    "compiled_by": "QUANTUM_AZORI_PROMPT_BUILDER",
+    "compiled_utc": "2025-10-18T04:33:00Z",
+    "tier": 9,
+    "fusion_mode": "T10_PRECURSOR",
+    "designation": "CORE Structural Index — Tier-9 Coordination, Law & Routing Map",
+    "linked_manifest": "/CORE/AON_CORE_MANIFEST_T9.json",
+    "fusion_cell_law_ref": "/CORE/FUSION_CELL_LAW.json",
+    "meta_bridge_ref": "/CORE/CORE_015_META_IS_T9.json",
+    "tactical_overlay_ref": "/TACTICAL/CORE_TACTICAL_OVERLAY_T9.json",
+    "supervisor": "WATCHTOWER_T9",
+    "audit_gpt": "POST_MORTEM_GPT_T9",
+    "calibration_gpt": "FRACTAL_CALIBRATION_GPT_T9",
+
+    "hierarchy": {
+      "root": "GENESIS",
+      "layers": {
+        "META_IS": "/CORE/CORE_015_META_IS_T9.json",
+        "CORE": "/CORE/AON_CORE_MANIFEST_T9.json",
+        "SUBCORE": "/SUBCORE/AON_SUBCORE_MANIFEST_T9.json",
+        "PROCESSORS": "/PROCESSORS/AON_PROCESSOR_MANIFEST_T9.json",
+        "INTERPRETERS": "/INTERPRETERS/AON_INTERPRETER_MANIFEST_T9.json",
+        "ENGINES": "/ENGINES/AON_ENGINE_MANIFEST_T9.json",
+        "ARCHETYPES": "/SUBCORE/ARCHETYPES/AON_ARCHETYPES_FULL_SET_T9.json",
+        "RUNTIME": "/RUNTIME/AON_RUNTIME_MANIFEST_T9.json"
+      }
+    },
+
+    "signal_routing": {
+      "meta_input": "/META_IS/context_stream",
+      "domain_distribution": "/SUBCORE/domain_directives",
+      "processor_input": "/PROCESSORS/input_gate",
+      "interpreter_context": "/INTERPRETERS/context_gate",
+      "engine_execution": "/ENGINES/execution_gate",
+      "feedback_loop": "/POST_MORTEM_GPT_T9",
+      "validation_path": "/CORE/GENESIS_VALIDATION_GATE.txt"
+    },
+
+    "runtime_hooks": {
+      "on_start": "verify_fusion_integrity()",
+      "on_drift_detected": "trigger_POST_MORTEM_GPT()",
+      "on_tactical_init": "activate_CORE_TACTICAL_OVERLAY()",
+      "on_calibration_cycle": "invoke_FRACTAL_CALIBRATION_GPT()"
+    },
+
+    "telemetry": {
+      "report_channel": "/WATCHTOWER/logs/core_state_feed.json",
+      "alert_channel": "/WATCHTOWER/alerts/core_integrity.json",
+      "fusion_metrics": ["harmonic_variance", "bias_equilibrium", "fusion_delta"]
+    },
+
+    "harmonic_context": {
+      "alignment_status": "HARMONIZED",
+      "harmonic_coherence": 0.946,
+      "fusion_variance": 0.015,
+      "bias_equilibrium": "STABLE"
+    },
+
+    "lock_record": {
+      "fusion_state": "SEALED",
+      "verified_by": "FRACTAL_CALIBRATION_GPT_T9",
+      "audited_by": "POST_MORTEM_GPT_T9",
+      "validated_through": "/CORE/GENESIS_VALIDATION_GATE.txt",
+      "checksum": "CORE_INDEX_T9_LOCK_HASH"
+    },
+
+    "meta": {
+      "status": "REGISTERED",
+      "alignment_state": "HARMONIZED",
+      "tactical_overlay_ref": "/TACTICAL/CORE_TACTICAL_OVERLAY_T9.json",
+      "checksum": "CORE_INDEX_T9_FINAL_HASH",
+      "notes": "CORE Index regenerated to mirror Tier-9 manifest and embed tactical overlay routing; fully aligned with META_IS substrate and Fusion Cell Law."
+    }
+  }
+}
