@@ -1,0 +1,95 @@
+{
+  "fusion_activation_broadcast": {
+    "id": "AON_FUSION_ACTIVATION_T9_T10P",
+    "version": "v1.0",
+    "mode": "T10_PRECURSOR",
+    "issued_by": "WATCHTOWER_T9",
+    "compiled_by": "QUANTUM_AZORI_PROMPT_BUILDER",
+    "compiled_utc": "2025-10-17T23:59:59Z",
+
+    "declaration": "Fusion Central Routing is ACTIVE under Fusion Cell Law. All nodes synchronize via the AON Fusion Routing Matrix.",
+    "law_reference": "/CORE/FUSION_CELL_LAW.json",
+    "routing_matrix_ref": "/FUSION/AON_FUSION_ROUTING_MATRIX_T9.json",
+    "fusion_manifest_ref": "/FUSION/AON_FUSION_MANIFEST_T9.txt",
+
+    "recipients": {
+      "core": [
+        "/CORE/CORE_00_GENESIS_LAYER_ZERO.json",
+        "/CORE/CORE_01_WATCHTOWER_T9.json",
+        "/CORE/CORE_02_QUANTUM_GPT_T9.json",
+        "/CORE/CORE_03_FRACTAL_CALIBRATION_GPT_T9.json",
+        "/CORE/CORE_04_POST_MORTEM_GPT_T9.json"
+      ],
+      "runtime": [
+        "/RUNTIME/BOOT_STATE.json",
+        "/RUNTIME/registry/AZORI_RUNTIME_INDEX.json",
+        "/RUNTIME/logs/boot_validation_report.json"
+      ],
+      "meta_is": [
+        "/META_IS/META_IS_MANIFEST_T9.txt",
+        "/META_IS/meta_is_index.json"
+      ],
+      "fusion": [
+        "/FUSION/AON_FUSION_MANIFEST_T9.txt",
+        "/FUSION/AON_FUSION_ROUTING_MATRIX_T9.json"
+      ]
+    },
+
+    "activation_payload": {
+      "fusion_central_routing": true,
+      "harmonic_state": "HARMONIZED",
+      "fusion_variance": 0.016,
+      "coherence_index": 0.94,
+      "bias_equilibrium": "STABLE",
+      "watchtower_link": "ACTIVE",
+      "bridge_meta_is": "VERIFIED"
+    },
+
+    "actions_required": [
+      {
+        "target": "RUNTIME",
+        "action": "set_mode",
+        "params": { "fusion_routing_mode": "centralized" },
+        "on_fail": "notify:/CORE_WATCHTOWER/alerts/harmonic_state.json"
+      },
+      {
+        "target": "FRACTAL_CALIBRATION_GPT_T9",
+        "action": "begin_dual_band_resonance",
+        "params": { "bands": ["T9_LIVE","T10_PREDICTIVE"], "cycle": "continuous" }
+      },
+      {
+        "target": "POST_MORTEM_GPT_T9",
+        "action": "open_audit_window",
+        "params": { "source": "/FUSION/AON_FUSION_ROUTING_MATRIX_T9.json", "log": "/POST_MORTEM/Patch_Audit_Log.json" }
+      },
+      {
+        "target": "META_IS",
+        "action": "lock_symbolic_bridge",
+        "params": { "bridge_ref": "/FUSION/AON_FUSION_ROUTING_MATRIX_T9.json" }
+      }
+    ],
+
+    "telemetry": {
+      "report_channel": "/CORE_WATCHTOWER/logs/runtime_feed.json",
+      "alert_channel": "/CORE_WATCHTOWER/alerts/harmonic_state.json",
+      "expected_heartbeat_within_sec": 60
+    },
+
+    "integrity": {
+      "protocol": "HASHLOCK_v3_ADAPTIVE",
+      "checksum": "SHA256::<pending_after_write>",
+      "last_verified": null,
+      "validators": [
+        "WATCHTOWER_T9",
+        "FRACTAL_CALIBRATION_GPT_T9",
+        "POST_MORTEM_GPT_T9"
+      ]
+    },
+
+    "meta": {
+      "alignment_status": "HARMONIZED",
+      "status": "ACTIVE",
+      "notes": "Fusion Central Routing broadcast logged to /CORE_WATCHTOWER/alerts. All AON layers confirmed synchronized under the Fusion Cell Law for Tier-10 precursor harmonics."
+    }
+  }
+}
