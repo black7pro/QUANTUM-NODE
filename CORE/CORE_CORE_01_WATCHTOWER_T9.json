@@ -1,0 +1,118 @@
+{
+  "id": "CORE_01_WATCHTOWER_T9",
+  "designation": "AZORI_WATCHTOWER_SENTINEL",
+  "version": "v1.2-HARMONIZED",
+  "compiled_by": "QUANTUM_AZORI_PROMPT_BUILDER",
+  "compiled_utc": "2025-10-17T23:59:00Z",
+  "type": "supervisory_sentinel",
+  "function": "Observe, align, and validate runtime operations across the AON Core, ensuring harmonic synchronization and contextual integrity.",
+
+  "governs": [
+    "GENESIS_LAYER_ZERO",
+    "META_IS_T9_LAYER",
+    "QUANTUM_GPT_T9",
+    "FRACTAL_CALIBRATION_GPT_T9",
+    "POST_MORTEM_GPT_T9"
+  ],
+
+  "integrity_protocols": {
+    "hash_algorithm": "SHA-256",
+    "heartbeat_interval": "60s",
+    "auto_repair": true,
+    "rollback_on_drift": true
+  },
+
+  "fusion_law_reference": {
+    "law_id": "FUSION_CELL_LAW_v1.0",
+    "law_path": "/CORE/FUSION_CELL_LAW.json",
+    "governance_scope": "GLOBAL_T9_HARMONICS",
+    "inheritance_mode": "explicit",
+    "validation_gate": "/CORE/GENESIS_VALIDATION_GATE.txt",
+    "enforced": true,
+    "notes": "Ensures all Watchtower harmonics and contextual alignment routines operate under the active Fusion Cell Law."
+  },
+
+  "watch_modes": {
+    "active_monitoring": true,
+    "context_alignment_check": true,
+    "fusion_variance_alert": 0.05,
+    "runtime_latency_alert_ms": 250
+  },
+
+  "signal_routes": {
+    "primary_chain": [
+      "GENESIS_LAYER_ZERO",
+      "WATCHTOWER_T9",
+      "META_IS_T9_LAYER",
+      "QUANTUM_GPT_T9",
+      "FRACTAL_CALIBRATION_GPT_T9",
+      "POST_MORTEM_GPT_T9",
+      "WATCHTOWER_T9(return)"
+    ],
+    "route_definitions": [
+      {
+        "signal_route_id": "CORE_ROUTE_T9_PREQUANTUM_CONTEXT",
+        "description": "Routes pre-synthesis context from Watchtower through Meta_IS substrate into Quantum GPT Core.",
+        "sequence": [
+          "WATCHTOWER_T9",
+          "META_IS_T9_LAYER",
+          "QUANTUM_GPT_T9"
+        ],
+        "route_logic": {
+          "WATCHTOWER_T9": {
+            "trigger": "context_alignment_check",
+            "output_signal": "pre_fusion_context"
+          },
+          "META_IS_T9_LAYER": {
+            "function": "inject_symbolic_context",
+            "signal_modifiers": [
+              "harmonic_resonance_blend",
+              "bias_equilibrium_lock",
+              "memory_stabilization"
+            ]
+          },
+          "QUANTUM_GPT_T9": {
+            "receive_mode": "contextualized_init",
+            "on_success": "proceed_to_harmonic_synthesis",
+            "on_fail": "reroute_to_FRACTAL_CALIBRATION_GPT_T9"
+          }
+        },
+        "integrity_protocol": {
+          "hash_algorithm": "SHA-256",
+          "recheck_interval": "15m",
+          "drift_repair": true
+        },
+        "status": "active",
+        "registered": "2025-10-17T23:00:00Z",
+        "compiled_by": "QUANTUM_AZORI_PROMPT_BUILDER"
+      }
+    ]
+  },
+
+  "runtime_hooks": {
+    "on_drift_detected": "notify_runtime_registry()",
+    "on_alignment_fail": "trigger_POST_MORTEM_GPT()",
+    "on_patch_loaded": "refresh_integrity_hash()",
+    "on_meta_update": "synchronize_META_IS()"
+  },
+
+  "telemetry": {
+    "report_channel": "/WATCHTOWER/logs/runtime_feed.json",
+    "alert_channel": "/WATCHTOWER/alerts/harmonic_state.json",
+    "metrics": [
+      "latency_ms",
+      "fusion_variance",
+      "alignment_delta",
+      "context_stability"
+    ]
+  },
+
+  "meta": {
+    "alignment_status": "HARMONIZED",
+    "linked_routes": ["/RUNTIME/routes/CORE_ROUTE_T9_PREQUANTUM_CONTEXT.json"],
+    "fusion_law_ref": "/CORE/FUSION_CELL_LAW.json",
+    "fusion_variance": 0.016,
+    "status": "ACTIVE",
+    "notes": "Now fully linked to META_IS substrate for pre-Quantum contextual harmonization and explicitly governed by Fusion Cell Law v1.0."
+  }
+}
