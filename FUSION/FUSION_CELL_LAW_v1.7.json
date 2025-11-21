@@ -1,0 +1,32 @@
+{
+  "shard_update": {
+    "id": "FUSION_CELL_LAW@v1.7",
+    "type": "fusion_governance",
+    "change_scope": [
+      "variance_threshold: 0.02 → 0.018",
+      "bias_entropy: 0.02 → 0.017"
+    ],
+    "compatibility_flags": {
+      "backwards": "soft",
+      "requires_rebase": true
+    },
+    "migration_instructions": [
+      "Recompute coherence on last 7 session state locks per hub triad.",
+      "Reject locks referencing legacy MNT_CORE paths.",
+      "Mark first post-migration SSL as GOLDEN if coherence ≥ 0.95."
+    ],
+    "canary_policy": {
+      "window_minutes": 60,
+      "auto_rollback": true
+    },
+    "integrity": {
+      "hash": "sha256:09d77ef2a1a...4a7",
+      "signed_by": "WATCHTOWER_T9"
+    },
+    "meta": {
+      "timestamp": "2025-10-18T05:42:00Z",
+      "compiled_by": "QUANTUM_AZORI_PROMPT_BUILDER",
+      "notes": "Tier-10 precursor tightening: bias equilibrium tuning and variance constraint refinement."
+    }
+  }
+}
