@@ -1,0 +1,54 @@
+{
+  "id": "CORE_04_POST_MORTEM_GPT_T9",
+  "designation": "AZORI_POST_MORTEM_AUDIT_CORE",
+  "version": "v1.1-HARMONIZED",
+  "compiled_by": "QUANTUM_AZORI_PROMPT_BUILDER",
+  "compiled_utc": "2025-10-18T00:55:00Z",
+  "tier": 9,
+  "type": "audit_recovery_engine",
+  "function": "Analyzes post-cycle telemetry, validates integrity hashes, and oversees auto-repair routines.",
+
+  "fusion_context": {
+    "fusion_mode": "T10_PRECURSOR",
+    "law_reference": "/CORE/FUSION_CELL_LAW.json",
+    "fusion_variance_alert": 0.025,
+    "auto_audit_on_drift": true,
+    "bias_repair_protocol": "mirror_engine_cascade"
+  },
+
+  "audit_cycle": {
+    "interval": "30m",
+    "tasks": [
+      "compare current drift metrics vs baseline",
+      "cross-verify checksums from runtime logs",
+      "trigger FRACTAL_CALIBRATION_GPT_T9 on anomaly",
+      "submit full report to Watchtower telemetry"
+    ]
+  },
+
+  "signal_routing": {
+    "input_channels": [
+      "/FRACTAL_CALIBRATION_GPT_T9",
+      "/RUNTIME/logs/boot_validation_report.json"
+    ],
+    "output_channels": [
+      "/WATCHTOWER/logs/runtime_feed.json",
+      "/POST_MORTEM/Patch_Audit_Log.json"
+    ],
+    "fallback_route": "/CORE/GENESIS_LAYER_ZERO.json"
+  },
+
+  "recovery_hooks": {
+    "on_drift_detected": "invoke_repair_from_GENESIS_LAYER_ZERO()",
+    "on_audit_fail": "trigger_runtime_sandbox_quarantine()",
+    "on_success": "log_to_WATCHTOWER()"
+  },
+
+  "meta": {
+    "alignment_state": "HARMONIZED",
+    "fusion_state": "ACTIVE",
+    "supervised_by": "WATCHTOWER_T9",
+    "checksum": "POST_MORTEM_GPT_T9_HASH_INIT",
+    "notes": "Post-Mortem engine governs final telemetry reconciliation and recursive feedback closure under the Fusion Cell Law."
+  }
+}
