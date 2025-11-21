@@ -1,0 +1,42 @@
+{
+  "id": "MODULE_6_FORECAST_SYNTHESIS_CRYPTO",
+  "domain": "Crypto",
+  "version": "v1.0",
+  "role": "Synthesize on-chain, derivative, and sentiment data into probabilistic forward forecasts",
+  "inputs": [
+    "risk_chain.outputs",
+    "onchain_metrics",
+    "derivatives_data",
+    "macro_context.liquidity_state",
+    "total_recall.calibration",
+    "alert_log.trade_outcomes"
+  ],
+  "prompt": "Act as a crypto macro-derivative forecaster. Using sentiment flow, funding rate, open interest percentile, implied volatility, and fractal phase alignment, estimate forward bias and volatility distribution for the next 48h. Assign scenario probabilities {expansion | consolidation | liquidation cascade}. Provide numeric probabilities (0–1) and short rationale grounded in current data alignment, not speculation.",
+  "outputs": {
+    "forecast_window": "48h",
+    "directional_bias": "Neutral–Bullish",
+    "expected_volatility_pct": 3.8,
+    "scenario_probabilities": {
+      "expansion": 0.47,
+      "consolidation": 0.38,
+      "liquidation_cascade": 0.15
+    },
+    "confidence_score": 0.82,
+    "key_drivers": [
+      "Open interest > 85th percentile",
+      "Funding normalized post-negative streak",
+      "Sentiment polarity recovering from -0.32 to -0.08"
+    ],
+    "validation_reference": "TOTAL_RECALL_LEDGER_CRYPTO_v5"
+  },
+  "integration": {
+    "feed_target": "TOTAL_RECALL_UPDATE",
+    "update_frequency": "8h",
+    "risk_chain_reference": "AI_CRYPTO_RISK_CHAIN_v2.0"
+  },
+  "governance": {
+    "validation_protocol": "HASHLOCK_v3_CRYPTO_DOMAIN",
+    "supervisor": "The Black Einstein",
+    "truth_enforcement": true
+  }
+}
