@@ -1,0 +1,42 @@
+{
+  "id": "MODULE_6_FORECAST_SYNTHESIS_SPORTS",
+  "domain": "Sports",
+  "version": "v1.0",
+  "role": "Project outcome probabilities and performance stress clusters based on form, morale, and narrative metrics",
+  "inputs": [
+    "risk_chain.outputs",
+    "performance_metrics",
+    "morale_index",
+    "media_sentiment_data",
+    "macro_context.schedule_intensity",
+    "total_recall.calibration"
+  ],
+  "prompt": "Act as a performance forecasting analyst. Using team form trends, morale alignment, narrative sentiment, and historical calibration outcomes, generate forward scenario probabilities for the next match cycle. Assign probabilities {dominant_performance | neutral_result | upset_risk}. Provide quantified metrics such as morale drift index, injury fragility score, and calibration confidence.",
+  "outputs": {
+    "forecast_window": "Next match / 72h",
+    "performance_bias": "Slightly Positive",
+    "expected_performance_variance_pct": 1.6,
+    "scenario_probabilities": {
+      "dominant_performance": 0.31,
+      "neutral_result": 0.47,
+      "upset_risk": 0.22
+    },
+    "confidence_score": 0.79,
+    "key_drivers": [
+      "Morale drift = +0.18",
+      "Injury fragility z-score = 0.92",
+      "Public sentiment +0.64 vs performance decay 0.32"
+    ],
+    "validation_reference": "TOTAL_RECALL_LEDGER_SPORTS_v5"
+  },
+  "integration": {
+    "feed_target": "TOTAL_RECALL_UPDATE",
+    "update_frequency": "every match / 24h",
+    "risk_chain_reference": "AI_SPORTS_RISK_CHAIN_v1.0"
+  },
+  "governance": {
+    "validation_protocol": "HASHLOCK_v3_SPORTS_DOMAIN",
+    "supervisor": "The Black Einstein",
+    "truth_enforcement": true
+  }
+}
