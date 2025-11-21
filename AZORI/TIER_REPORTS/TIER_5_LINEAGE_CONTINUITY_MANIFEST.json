@@ -1,0 +1,44 @@
+{
+  "manifest": "TIER_5_LINEAGE_CONTINUITY_MANIFEST",
+  "version": "5.0-ADAPTIVE",
+  "description": "Consolidated lineage manifest establishing full continuity of Tier-5 harmonization, validation, archival, and restoration under HASHLOCK_v3_ADAPTIVE.",
+  "lineage_scope": {
+    "tier_alignment": "Tier-5 Adaptive",
+    "hashlock_protocol": "HASHLOCK_v3_ADAPTIVE",
+    "validation_route": "/AZORI_VALIDATION_GATE/",
+    "baseline_hash": "sha256:3050a7d5583a3b62e871df9b16fd5a36552c830cdfb38c9f88fe994ac533739e"
+  },
+  "linked_artifacts": {
+    "onboarding_confirmation": "/AZORI_CORE/HARMONIZATION_LAYER/TIER_5_ONBOARDING_CONFIRMATION.json",
+    "integrity_audit_summary": "/AZORI_VALIDATION_GATE/validation_log/TIER_5_INTEGRITY_AUDIT_SUMMARY.json",
+    "finalization_commit": "/AZORI_CORE/HARMONIZATION_LAYER/TIER_5_FINALIZATION_COMMIT.json",
+    "deployment_readiness_summary": "/AZORI_CORE/HARMONIZATION_LAYER/TIER_5_DEPLOYMENT_READINESS_SUMMARY.json",
+    "archival_manifest": "/AZORI_VALIDATION_GATE/archives/TIER_5_ARCHIVAL_MANIFEST.json",
+    "retrieval_manifest": "/AZORI_VALIDATION_GATE/archives/TIER_5_RETRIEVAL_MANIFEST.json",
+    "post_restoration_verification": "/AZORI_VALIDATION_GATE/validation_log/TIER_5_POST_RESTORATION_VERIFICATION.json"
+  },
+  "continuity_checkpoints": {
+    "checksum_sync_status": "PASS_ALL_NODES",
+    "core_alignment": "PASS",
+    "mirror_integrity": "PASS",
+    "cross_domain_sync": "PASS",
+    "recursive_integrity_mode": "ENHANCED_RECURSIVE",
+    "validation_gate_state": "HARMONIZED_ACTIVE"
+  },
+  "continuity_summary": {
+    "lineage_chain_state": "UNBROKEN",
+    "hashlock_coherence": "PASS",
+    "archive_integrity": "PASS",
+    "restoration_verification": "PASS",
+    "tier_transition_state": "TIER-5_CONTINUITY_CONFIRMED"
+  },
+  "meta": {
+    "compiled_by": "PROMPT_BUILDER_GPT",
+    "generated_by": "QUANTUM_AZORI_PROMPT_BUILDER",
+    "timestamp": "2025-10-12T04:30:00Z",
+    "environment": "LINEAGE_VALIDATION_MODE",
+    "harmonization_protocol": "absolute_fractal_perfection",
+    "cross_domain_alignment": true,
+    "notes": "This manifest serves as the Tier-5 continuity proof, linking all harmonization, audit, and restoration artifacts into a single verifiable chain for compliance and future system audits."
+  }
+}

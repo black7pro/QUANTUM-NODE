@@ -1,0 +1,53 @@
+{
+  "integration_label": "AZORI_T6_CROSS_DOMAIN_INTEGRATOR_REPORT",
+  "packet_reference": "SIM-0001",
+  "tier": 6,
+  "protocol": "HASHLOCK_v6_HARMONIC_MERGE",
+  "timestamp_utc": "2025-10-17T10:10:27Z",
+
+  "input_trace": {
+    "previous_tier": "T5_ADAPTIVE_CALIBRATION",
+    "calibration_state": "PASS",
+    "coherence_score_pre": 0.94
+  },
+
+  "domain_signals": {
+    "market": { "phase": 0.73, "bias_weight": 0.37 },
+    "crypto": { "phase": 0.71, "bias_weight": 0.33 },
+    "sports": { "phase": 0.69, "bias_weight": 0.30 }
+  },
+
+  "fusion_algorithm": {
+    "method": "weighted_harmonic_sum",
+    "equation": "H(t) = Σ(wᵢ * phaseᵢ) / Σ(wᵢ)",
+    "harmonic_result": 0.711
+  },
+
+  "fusion_metrics": {
+    "fusion_coherence": 0.93,
+    "cross_domain_drift": 0.018,
+    "entropy_balance": 0.981,
+    "confidence_gate": 0.95,
+    "validation_state": "PASS"
+  },
+
+  "output_frame": {
+    "macro_harmonic_value": 0.711,
+    "timestamp_utc": "2025-10-17T10:10:27Z",
+    "frame_signature": "FRAME-SIM-0001-HASHLOCKv6"
+  },
+
+  "output_directives": {
+    "next_tier": "T7_PREDICTIVE_ALIGNMENT",
+    "export_route": "/PREDICTIVE_ALIGNMENT/input_frames/",
+    "telemetry_channel": "INTEGRATOR_HARMONIC_FEED"
+  },
+
+  "meta": {
+    "compiled_by": "QUANTUM_AZORI_PROMPT_BUILDER",
+    "system_alignment": "HARMONIZED",
+    "validation_route": "/AZORI_VALIDATION_GATE/TIER6",
+    "audit_signature": "93A9-FB47-220C-AZORI",
+    "notes": "Cross-domain fusion complete; macro harmonic frame constructed and verified."
+  }
+}

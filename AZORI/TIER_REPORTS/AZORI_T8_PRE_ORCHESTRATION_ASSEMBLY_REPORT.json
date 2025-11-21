@@ -1,0 +1,50 @@
+{
+  "assembly_label": "AZORI_T8_PRE_ORCHESTRATION_ASSEMBLY_REPORT",
+  "packet_reference": "SIM-0001",
+  "tier": 8,
+  "protocol": "HASHLOCK_v8_QUEUE_SYNTHESIS",
+  "timestamp_utc": "2025-10-17T10:10:39Z",
+
+  "input_trace": {
+    "previous_tier": "T7_PREDICTIVE_ALIGNMENT",
+    "predictive_signature": "FRAME-SIM-0001-HASHLOCKv6→T7-0.724",
+    "forecast_window": "PT30M",
+    "confidence_gate": 0.95
+  },
+
+  "queue_assignment": {
+    "queue_id": "T8-Q-20251017-101039",
+    "time_slot_utc": "2025-10-17T10:10:45Z",
+    "ordering_index": 12874,
+    "priority": "normal",
+    "domain_scope": ["market", "crypto", "sports"]
+  },
+
+  "alignment_checks": {
+    "timestamp_alignment": true,
+    "sequence_continuity": "INTACT",
+    "dedupe_status": "UNIQUE",
+    "cross_queue_conflict": "NONE"
+  },
+
+  "integrity_controls": {
+    "queue_integrity": "PASS",
+    "latency_budget_ms": 250,
+    "measured_enqueue_latency_ms": 141,
+    "handoff_signature": "T8-HANDOFF-SIM-0001-v8"
+  },
+
+  "handoff_directives": {
+    "next_tier": "T9_HASH_EVENT_SUITE_CORE",
+    "ingest_route": "/AZORI_RUNTIME/T9_HASH_EVENT_SUITE/ingest/",
+    "validation_route": "/AZORI_VALIDATION_GATE/TIER8",
+    "telemetry_channel": "PRE_ORCHESTRATION_FEED"
+  },
+
+  "meta": {
+    "compiled_by": "QUANTUM_AZORI_PROMPT_BUILDER",
+    "system_alignment": "HARMONIZED",
+    "audit_signature": "93A9-FB47-220C-AZORI",
+    "notes": "Packet queued with synchronized timestamp; no conflicts or duplicates detected."
+  }
+}

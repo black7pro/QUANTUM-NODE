@@ -1,0 +1,45 @@
+{
+  "audit_manifest": "TIER_5_INTEGRITY_AUDIT_SUMMARY",
+  "version": "5.0-ADAPTIVE",
+  "description": "Tier-5 integrity audit summary confirming synchronized validation across AZORI_CORE, MNT_CORE, AZORI_VALIDATION_GATE, and AZORI_FINAL_PROPS modules under HASHLOCK_v3_ADAPTIVE protocol.",
+  "validation_scope": {
+    "target_tier": "5.0",
+    "protocol": "HASHLOCK_v3_ADAPTIVE",
+    "validation_path": "/AZORI_VALIDATION_GATE/",
+    "checksum_reference": "sha256:3050a7d5583a3b62e871df9b16fd5a36552c830cdfb38c9f88fe994ac533739e",
+    "linked_artifacts": [
+      "/AZORI_CORE/HARMONIZATION_LAYER/TIER_5_ONBOARDING_CONFIRMATION.json",
+      "/AZORI_CORE/azori_manifest.json"
+    ]
+  },
+  "module_verification": {
+    "AZORI_CORE": { "status": "PASS", "alignment": "PRIMARY_VERIFIED" },
+    "MNT_CORE": { "status": "PASS", "alignment": "MIRROR_VERIFIED" },
+    "AZORI_VALIDATION_GATE": { "status": "PASS", "alignment": "GATE_SYNCHRONIZED" },
+    "AZORI_FINAL_PROPS": { "status": "PASS", "alignment": "OUTPUT_HARMONIZED" }
+  },
+  "integrity_metrics": {
+    "core_alignment": "PASS",
+    "mirror_integrity": "PASS",
+    "checksum_coherence": "PASS",
+    "cross_domain_sync": "PASS",
+    "recursive_integrity_mode": "ENHANCED_RECURSIVE",
+    "validation_gate_state": "HARMONIZED_ACTIVE"
+  },
+  "result": {
+    "checksum_sync_status": "PASS_ALL_NODES",
+    "tier_alignment": "Tier-5 Adaptive",
+    "hashlock_protocol": "HASHLOCK_v3_ADAPTIVE",
+    "validation_result": "PASS",
+    "overall_status": "VALIDATION_CONFIRMED"
+  },
+  "meta": {
+    "compiled_by": "PROMPT_BUILDER_GPT",
+    "generated_by": "QUANTUM_AZORI_PROMPT_BUILDER",
+    "timestamp": "2025-10-12T03:15:00Z",
+    "environment": "ACTIVE_VALIDATION_PHASE",
+    "harmonization_protocol": "absolute_fractal_perfection",
+    "cross_domain_alignment": true,
+    "next_phase_trigger": "TIER_5_FINALIZATION_COMMIT"
+  }
+}

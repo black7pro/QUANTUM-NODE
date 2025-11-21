@@ -1,0 +1,47 @@
+{
+  "calibration_label": "AZORI_T5_ADAPTIVE_CALIBRATION_REPORT",
+  "packet_reference": "SIM-0001",
+  "tier": 5,
+  "protocol": "HASHLOCK_v5_FRACTAL_ADAPTIVE",
+  "timestamp_utc": "2025-10-17T10:10:20Z",
+
+  "input_trace": {
+    "previous_tier": "T4_VALIDATION_GATE",
+    "validation_state": "PASS",
+    "checksum_value": "b0d58c77c9a4e2d9f7d0a6f6a9c3ee6b42de8e78a14ab99378a62ef19db4099a"
+  },
+
+  "adaptive_bias_weights": {
+    "market_domain_weight": 0.37,
+    "crypto_domain_weight": 0.33,
+    "sports_domain_weight": 0.30,
+    "cross_frame_harmonic_balance": 0.92
+  },
+
+  "fractal_feedback_adjustments": {
+    "phase_shift_correction": 0.004,
+    "entropy_normalization_factor": 0.973,
+    "latency_rebalance_ms": 17
+  },
+
+  "harmonic_metrics": {
+    "coherence_score_pre": 0.93,
+    "coherence_score_post": 0.94,
+    "confidence_gate": 0.95,
+    "drift_delta": 0.009
+  },
+
+  "output_directives": {
+    "next_tier": "T6_CROSS_DOMAIN_INTEGRATOR",
+    "export_route": "/CROSS_DOMAIN_HARMONIZER/calibrated_stream/",
+    "telemetry_channel": "ADAPTIVE_CALIBRATION_FEED"
+  },
+
+  "meta": {
+    "compiled_by": "QUANTUM_AZORI_PROMPT_BUILDER",
+    "system_alignment": "HARMONIZED",
+    "validation_route": "/AZORI_VALIDATION_GATE/TIER5",
+    "audit_signature": "93A9-FB47-220C-AZORI",
+    "notes": "Bias vectors recalibrated; coherence gain +0.01. Packet ready for cross-domain fusion."
+  }
+}
