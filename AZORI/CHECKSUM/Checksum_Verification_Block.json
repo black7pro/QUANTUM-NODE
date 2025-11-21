@@ -1,0 +1,15 @@
+{
+  "packet_id": "SIM-0001",
+  "timestamp_utc": "2025-10-17T10:10:00Z",
+  "source_domain": "market",
+  "raw_context": {
+    "price_tick": 4278.4,
+    "liquidity_flow": 0.72,
+    "volume_delta": -0.15
+  },
+  "meta_tags": {
+    "session": "simulation_test",
+    "operator": "system_test_engine",
+    "purpose": "Validate end-to-end flow through Azori stack"
+  }
+}

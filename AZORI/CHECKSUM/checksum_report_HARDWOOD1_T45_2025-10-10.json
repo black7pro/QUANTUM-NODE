@@ -1,0 +1,27 @@
+{
+  "validation_record": {
+    "unit_id": "Gunboat_Hardwood_1",
+    "designation": "NBA Core Simulation Engine",
+    "tier_status": "4.5-LIVE Harmonized",
+    "domain": "NBA",
+    "module_path": "/MNT_CORE/ADAPTIVE/QUANTUM_GUNBOAT/LIVE/NBA/",
+    "linked_units": [
+      "Gunboat_Hardwood_2",
+      "Gunboat_Hardwood_3"
+    ],
+    "hash_protocol": "HASHLOCK_v3_ADAPTIVE",
+    "harmonization_protocol": "absolute_fractal_perfection",
+    "recursive_integrity_mode": "enabled",
+    "cross_domain_alignment": true,
+    "manifest_checksum": "sha256:c338ac3ffd39135c5273ec69f99dda947b7a897baad511cf100e76d058d8f4bf",
+    "validation_route": "/AZORI_VALIDATION_GATE/",
+    "validation_status": "PASS",
+    "checksum_coherence": "PASS",
+    "runtime_state": "LIVE_SYNCHRONIZED",
+    "telemetry_checkpoint": "/MNT_CORE/runtime_state/tactical/live/outputs/NBA/gunboat_hardwood1_core.json",
+    "integrity_score": 0.94,
+    "confidence_gate": 0.82,
+    "overlay_diff_score": 0.25,
+    "timestamp": "2025-10-10T17:55:00Z"
+  }
+}
