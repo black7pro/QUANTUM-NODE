@@ -1,0 +1,36 @@
+{
+  "super_prompt_type": "CRYPTO_BASELINE_BUILDER_v1.0",
+  "mission": "Integrate on-chain, derivatives, sentiment, and macro-liquidity data into a unified crypto-risk baseline producing a TOTAL_RECALL_ANCHOR_COMMIT.",
+  "expected_inputs": {
+    "mtf_fractal_sweep": "ETHUSD_MTF_FRACTAL_SWEEP_[YYYY-MM-DD].json + visuals",
+    "macro_context": "CRYPTO_MACRO_CONTEXT_[YYYY-MM-DD]_vX.X.json",
+    "alert_log": "Exchange_Alerts_Log_[YYYY-MM-DD].csv",
+    "previous_total_recall": "TOTAL_RECALL_LEDGER_CRYPTO_vX.json"
+  },
+
+  "workflow": {
+    "module_1_sentiment_aggregation": "Aggregate on-chain and social sentiment (funding, OI, whale flow). Output sentiment_index, network_mood_state.",
+    "module_2_data_correlation": "Correlate sentiment with derivatives metrics (funding rate, OI %ile, futures basis) and on-chain liquidity. Output systemic_risk_score, leverage_crowding_index.",
+    "module_3_conditional_scenario": "Model stress and squeeze probabilities; generate event_probability and regime_class.",
+    "module_4_fractal_alignment": "Fuse price-structure metrics from sweep with leverage data to define structural_bias and volatility_phase.",
+    "module_5_cross_asset_link": "Correlate BTC, ETH, SPX, DXY; produce correlation_strength and contagion_flag.",
+    "module_6_calibration_engine": "Back-test predicted vs realized highs/lows; compute direction_accuracy, vol_error_pct, timing_error_min, alignment_score.",
+    "module_7_total_recall_commit": "Emit TOTAL_RECALL_ANCHOR_COMMIT signed under HASHLOCK v3 CRYPTO_DOMAIN."
+  },
+
+  "output": {
+    "normalized_state": {},
+    "risk_bulletin": {},
+    "scenario_engine": {},
+    "calibration_summary": {},
+    "total_recall_anchor_commit": {
+      "ledger_block_type": "TOTAL_RECALL_ANCHOR_COMMIT",
+      "fusion_protocol": "TOTAL_RECALL_FUSION_V2",
+      "domain": "Crypto",
+      "status": "ANCHOR_COMMIT_CONFIRMED",
+      "validation_protocol": "Kyber768+SHA3-512",
+      "signer": "The Black Einstein",
+      "timestamp": "<ISO8601>"
+    }
+  }
+}
