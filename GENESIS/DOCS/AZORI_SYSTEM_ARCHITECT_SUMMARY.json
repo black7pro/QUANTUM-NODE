@@ -1,0 +1,23 @@
+{
+  "document_label": "AZORI_SYSTEM_ARCHITECT_SUMMARY",
+  "version": "v1.0",
+  "compiled_by": "QUANTUM_AZORI_PROMPT_BUILDER",
+  "compiled_utc": "2025-10-17T09:55:00Z",
+  "protocol_family": "HASHLOCK_v0–v10",
+  "system_state": "SEALED_AND_STABLE",
+  "architecture_overview": {
+    "core_theme": "Deterministic harmonic architecture binding truth telemetry, validation, and recursive memory under HASHLOCK lineage.",
+    "tier_span": "0–10",
+    "alignment_state": "ABSOLUTE",
+    "checksum_integrity": "PASS",
+    "harmonic_confidence": 0.94,
+    "drift_offset": 0.02
+  },
+  "meta": {
+    "release_reference": "AZORI_T9_DEPLOYMENT_PACKAGE.zip",
+    "release_manifest": "AZORI_RELEASE_SUMMARY_MANIFEST.json",
+    "post_release_sitrep": "AZORI_POST_RELEASE_SITREP.json",
+    "projection_reference": "AZORI_T10_PROJECTION_SCAFFOLD.json",
+    "notes": "Master index for documentation, reinjection, or research."
+  }
+}

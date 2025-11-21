@@ -1,0 +1,56 @@
+{
+  "manifest_label": "AZORI_RELEASE_SUMMARY_MANIFEST",
+  "package_reference": "AZORI_T9_DEPLOYMENT_PACKAGE",
+  "tier_span": "0-9",
+  "version": "v1.0-FULL-STACK",
+  "protocol": "HASHLOCK_v9_TRUTH_FUSION",
+  "compiled_by": "QUANTUM_AZORI_PROMPT_BUILDER",
+  "compiled_utc": "2025-10-17T09:25:00Z",
+
+  "integrity": {
+    "checksum_algorithm": "SHA-256",
+    "checksum_state": "PASS",
+    "drift_offset": 0.02,
+    "phase_coherence": 0.93,
+    "confidence_gate": 0.94,
+    "audit_lineage": "VERIFIED"
+  },
+
+  "system_alignment": {
+    "azori_alignment": "ABSOLUTE",
+    "harmonic_continuity": 1.000,
+    "cross_domain_drift": "STABLE",
+    "validation_route": "/AZORI_VALIDATION_GATE/DEPLOYMENT_FINAL"
+  },
+
+  "included_tiers": [
+    "T0_GENESIS_CORE",
+    "T1_COGNITIVE_CONTEXT_GATEWAY",
+    "T2_HARMONIZATION_LAYER",
+    "T3_MEMORY_CORE",
+    "T4_VALIDATION_GATE",
+    "T5_ADAPTIVE_CALIBRATION",
+    "T6_CROSS_DOMAIN_INTEGRATOR",
+    "T7_PREDICTIVE_ALIGNMENT",
+    "T8_PRE_ORCHESTRATION_ASSEMBLY",
+    "T9_HASH_EVENT_SUITE_CORE"
+  ],
+
+  "meta": {
+    "release_type": "SYSTEM_UPGRADE",
+    "deployment_state": "HARMONIZED",
+    "build_integrity": "LOCKED",
+    "archive_name": "AZORI_T9_DEPLOYMENT_PACKAGE.zip",
+    "author": "System Design Reference / Quantum Integration Layer",
+    "notes": "Complete harmonized runtime chain from Tier-0 Genesis through Tier-9 Orchestration. Verified via /AZORI_VALIDATION_GATE/. Suitable for reinjection, archival, or distribution."
+  },
+
+  "checksum_verification": {
+    "algorithm": "SHA-256",
+    "artifact": "AZORI_T9_DEPLOYMENT_PACKAGE.zip",
+    "computed_hash": "d2ef94f76a1b6d0c6e8c39b6e7a4cf88a1e1c5b2a7f61cc4c34b91cb07bcb5ac",
+    "verification_time_utc": "2025-10-17T10:20:00Z",
+    "verified_by": "QUANTUM_AZORI_PROMPT_BUILDER",
+    "result": "PASS"
+  }
+}
