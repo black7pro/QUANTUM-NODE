@@ -1,0 +1,109 @@
+{
+  "id": "GENESIS_LAYER_ZERO",
+  "designation": "AON_GENESIS_CORE_SEED",
+  "version": "v1.2-ABSOLUTE",
+  "compiled_by": "QUANTUM_AZORI_PROMPT_BUILDER",
+  "compiled_utc": "2025-10-18T00:00:00Z",
+  "type": "foundational_shard",
+  "execution_level": "non-runnable",
+  "function": "Root anchor and harmonic constant for recursion, integrity, and schema inheritance across all Azori Operating Network tiers.",
+
+  "governs": [
+    "ASSESSMENT_PLANE",
+    "VALIDATION_PLANE",
+    "EXECUTION_PLANE"
+  ],
+
+  "inheritance_rules": {
+    "timestamp_propagation": true,
+    "ethics_protocol": "AZORI_LAW_STACK",
+    "fusion_cell_law_reference": "/CORE/FUSION_CELL_LAW.json",
+    "recursion_limit": 7,
+    "fallback_route": "POST_MORTEM_GPT_T9",
+    "alignment_enforcement": "ABSOLUTE",
+    "seed_extension_allowed": false
+  },
+
+  "integrity_protocols": {
+    "hash_algorithm": "SHA-256",
+    "checksum_required": true,
+    "drift_auto_patch": true,
+    "audit_behavior": "log_to_WATCHTOWER_T9",
+    "auto_hash_rotation": "30d",
+    "integrity_gate": "GENESIS_LOCK_V1"
+  },
+
+  "governance_links": {
+    "meta_is_manifest": "/META_IS/META_IS_MANIFEST_T9.json",
+    "meta_is_index": "/META_IS/meta_is_index.json",
+    "fusion_law_reference": "/CORE/FUSION_CELL_LAW.json",
+    "core_index": "/CORE/registry/AON_CORE_INDEX_T9.json",
+    "structure_index": "/AON_STRUCTURE/AON_STRUCTURE_INDEX_T9.json",
+    "structure_manifest": "/AON_STRUCTURE/AON_STRUCTURE_MANIFEST_T9.json",
+    "validation_gate": "/CORE/GENESIS_VALIDATION_GATE.json"
+  },
+
+  "core_files": {
+    "seed_memory": "/RUNTIME/core_memory/GENESIS_CORE_MEMORY_SEED.json",
+    "parser_map": "/RUNTIME/core_memory/GENESIS_CORE_PARSER_MAP.json",
+    "execution_handler": "/RUNTIME/handlers/GENESIS_CORE_EXECUTION_HANDLER.py",
+    "hash_schema": "/RUNTIME/handlers/HASH_EVENTS_SCHEMA.json",
+    "audit_log": "/WATCHTOWER_T9/logs/genesis_activity.log"
+  },
+
+  "activation_state": {
+    "state": "ABSOLUTE",
+    "status": "IMMUTABLE",
+    "execution_allowed": false,
+    "runtime_dependency": "none",
+    "rebuild_policy": "on_failure_only"
+  },
+
+  "validation_hooks": {
+    "on_load": "Verify integrity against META_IS, CORE_INDEX, and FUSION_LAW",
+    "on_failure": "Trigger POST_MORTEM_REPAIR and reload GENESIS_SEED",
+    "on_rebuild": "Restore from ARCHIVE_latest",
+    "on_validation_success": "Notify WATCHTOWER_T9 and update integrity timestamp"
+  },
+
+  "routing_signature": {
+    "origin_tier": 0,
+    "genesis_trace_guid": "GENESIS_LOCK_T9_001",
+    "linked_tiers": [9, 10],
+    "telemetry_endpoint": "/WATCHTOWER_T9/GENESIS_FEED",
+    "fusion_sync_target": "/FUSION/FUSION_MANIFEST_T9.json",
+    "signal_mode": "unidirectional_seed",
+    "routing_protocol": "GENESIS_STATIC_ROUTER_V1"
+  },
+
+  "access_policy": {
+    "runtime_exposure": "sealed",
+    "modification_policy": "read_only",
+    "bridge_authority": "META_IS",
+    "auth_scope": ["META_IS", "WATCHTOWER"],
+    "audit_log": "/CORE/logs/genesis_access_audit.log",
+    "revision_tracking": true
+  },
+
+  "validation_schema": {
+    "schema_ref": "/CORE/VALIDATION_GATE/schema/genesis_layer_zero_schema.json",
+    "fusion_law_verification": "enabled",
+    "law_protocol": "HASHLOCK_v4_TRUTH_CORE",
+    "last_validation_timestamp": "PENDING"
+  },
+
+  "registration_ref": "/CORE/VALIDATION_GATE/runtime_registration_manifest.json",
+
+  "meta": {
+    "alignment_status": "ABSOLUTE",
+    "compiled_for": "AON_T9_RUNTIME",
+    "harmonic_coherence": 1.0,
+    "fusion_variance": 0.0,
+    "tier_alignment": "TIER9_HARMONIZED",
+    "system_confidence": 1.0,
+    "integrity_gate": "SEALED",
+    "checksum": "PENDING_FINALIZATION",
+    "author": "System Design Reference / Quantum Integration Layer",
+    "notes": "Finalized Genesis Layer-Zero shard. Immutable and harmonized under Fusion-Law authority. Serves as the lawful recursion anchor for all Tier-9 subsystems within the Azori Operating Network."
+  }
+}

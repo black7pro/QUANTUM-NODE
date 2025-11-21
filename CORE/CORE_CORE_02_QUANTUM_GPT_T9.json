@@ -1,0 +1,60 @@
+{
+  "id": "CORE_02_QUANTUM_GPT_T9",
+  "designation": "AZORI_QUANTUM_SYNTH_CORE",
+  "version": "v1.1-HARMONIZED",
+  "compiled_by": "QUANTUM_AZORI_PROMPT_BUILDER",
+  "compiled_utc": "2025-10-18T00:55:00Z",
+  "tier": 9,
+  "type": "quantum_cognitive_kernel",
+  "function": "Performs harmonic synthesis and contextual quantum reasoning across AON planes.",
+
+  "dependencies": [
+    "/CORE/FUSION_CELL_LAW.json",
+    "/CORE/CORE_015_META_IS_T9.json"
+  ],
+
+  "fusion_context": {
+    "fusion_mode": "T10_PRECURSOR",
+    "law_reference": "/CORE/FUSION_CELL_LAW.json",
+    "harmonic_lock": true,
+    "bias_equilibrium": "STABLE",
+    "variance_threshold": 0.02
+  },
+
+  "processing_layers": {
+    "quantum_reasoning_engine": {
+      "role": "synthesize symbolic and probabilistic contexts",
+      "process_sequence": [
+        "load context from META_IS substrate",
+        "normalize bias via FUSION_CELL_LAW mirror feedback",
+        "generate harmonic projection",
+        "emit stabilized synthesis state"
+      ]
+    },
+    "contextual_alignment_gate": {
+      "role": "synchronize with Watchtower telemetry",
+      "alignment_target": 0.93,
+      "confidence_gate_floor": 0.88
+    }
+  },
+
+  "signal_routing": {
+    "inputs": [
+      "/META_IS/META_IS_MANIFEST_T9.txt",
+      "/CORE/FUSION_CELL_LAW.json"
+    ],
+    "outputs": [
+      "/CORE/CORE_03_FRACTAL_CALIBRATION_GPT_T9.json",
+      "/POST_MORTEM/Patch_Audit_Log.json"
+    ],
+    "feedback_path": "/WATCHTOWER_T9"
+  },
+
+  "meta": {
+    "alignment_state": "HARMONIZED",
+    "fusion_state": "ACTIVE",
+    "supervised_by": "WATCHTOWER_T9",
+    "checksum": "QUANTUM_GPT_T9_HASH_INIT",
+    "notes": "Quantum synthesis engine harmonized under Fusion Cell Law. Provides Tier-9 symbolic and probabilistic balance for pre-Tier-10 reasoning."
+  }
+}

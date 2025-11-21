@@ -1,0 +1,54 @@
+{
+  "id": "CORE_03_FRACTAL_CALIBRATION_GPT_T9",
+  "designation": "AZORI_FRACTAL_CALIBRATION_CORE",
+  "version": "v1.1-HARMONIZED",
+  "compiled_by": "QUANTUM_AZORI_PROMPT_BUILDER",
+  "compiled_utc": "2025-10-18T00:55:00Z",
+  "tier": 9,
+  "type": "recursive_calibration_engine",
+  "function": "Performs adaptive recalibration of harmonic drift, bias, and fusion variance across network nodes.",
+
+  "fusion_context": {
+    "fusion_mode": "T10_PRECURSOR",
+    "law_reference": "/CORE/FUSION_CELL_LAW.json",
+    "auto_repair_on_drift": true,
+    "variance_reduction_cycle": "15m",
+    "mirror_feedback_enabled": true
+  },
+
+  "calibration_loops": {
+    "drift_detection": {
+      "tolerance": 0.02,
+      "response": "harmonic realignment via mirror_engine"
+    },
+    "bias_equilibrium_check": {
+      "target": "STABLE",
+      "response": "context rebalance via core_engine resonance"
+    }
+  },
+
+  "signal_routing": {
+    "input_channels": [
+      "/CORE/CORE_02_QUANTUM_GPT_T9.json",
+      "/WATCHTOWER_T9"
+    ],
+    "output_channels": [
+      "/CORE/CORE_04_POST_MORTEM_GPT_T9.json",
+      "/FUSION/AON_FUSION_MANIFEST_T9.txt"
+    ],
+    "feedback_loop": "/CORE/FUSION_CELL_LAW.json"
+  },
+
+  "governance": {
+    "supervised_by": "WATCHTOWER_T9",
+    "audit_engine": "POST_MORTEM_GPT_T9",
+    "validation_gate": "/CORE/GENESIS_VALIDATION_GATE.txt"
+  },
+
+  "meta": {
+    "alignment_state": "HARMONIZED",
+    "fusion_state": "ACTIVE",
+    "checksum": "FRACTAL_GPT_T9_HASH_INIT",
+    "notes": "Fractal calibration loop maintains recursive harmony across Core and Fusion. Operates under direct Watchtower supervision and Fusion Cell Law compliance."
+  }
+}
