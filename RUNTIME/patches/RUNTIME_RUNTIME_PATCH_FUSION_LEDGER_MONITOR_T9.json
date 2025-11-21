@@ -1,0 +1,62 @@
+{
+  "patch_bundle": {
+    "id": "RUNTIME_PATCH_FUSION_LEDGER_MONITOR_T9",
+    "version": "v1.0",
+    "type": "runtime_service_activation",
+    "compiled_by": "QUANTUM_AZORI_PROMPT_BUILDER",
+    "compiled_utc": "2025-10-17T23:59:59Z",
+    "description": "Adds the Fusion Ledger Monitor service to runtime registry, ensuring continuous validation of Fusion Cell Law integrity and Core↔Meta_IS bridge coherence.",
+
+    "target_registry": "/RUNTIME/registry/AZORI_RUNTIME_INDEX.json",
+    "target_class": "runtime_services",
+    "insertion_mode": "append_if_missing",
+
+    "service_definition": {
+      "service_id": "FUSION_LEDGER_MONITOR",
+      "path": "/RUNTIME/services/FUSION_LEDGER_MONITOR.py",
+      "class": "fusion_monitor",
+      "supervised_by": "WATCHTOWER_T9",
+      "linked_ledger": "/CORE/logs/fusion_law_integrity_ledger.json",
+      "linked_fusion_law": "/CORE/FUSION_CELL_LAW.json",
+      "linked_core_index": "/CORE/registry/AON_CORE_INDEX.json",
+      "linked_meta_index": "/META_IS/meta_is_index.json",
+      "interval_minutes": 10,
+      "validation_protocol": "HASHLOCK_v3_ADAPTIVE",
+      "status": "ACTIVE",
+      "meta": {
+        "initialized": "2025-10-17T23:59:59Z",
+        "alignment_state": "HARMONIZED",
+        "fusion_variance_threshold": 0.02,
+        "coherence_target": 0.90,
+        "notes": "Monitors and maintains harmonic integrity between Fusion Cell Law, Core registry, and Meta_IS bridge. Auto-repairs ledger drift under Watchtower supervision."
+      }
+    },
+
+    "verification_sequence": [
+      "validate_registry_exists",
+      "verify_json_structure",
+      "append_service_if_missing",
+      "update_runtime_services_list",
+      "notify_watchtower",
+      "write_audit_log"
+    ],
+
+    "audit": {
+      "initiated_by": "AZORI_CANARY_GATE",
+      "audit_output": "/POST_MORTEM/Patch_Audit_Log.json",
+      "verification_gate": "/CORE/GENESIS_VALIDATION_GATE.txt"
+    },
+
+    "rollback": {
+      "enabled": true,
+      "trigger_on_fail": true,
+      "restore_previous_registry": true
+    },
+
+    "meta": {
+      "fusion_alignment_state": "PENDING_BOOT_VERIFICATION",
+      "expected_runtime_checksum": "SHA256::<pending_after_activation>",
+      "status": "READY_FOR_DEPLOYMENT"
+    }
+  }
+}
