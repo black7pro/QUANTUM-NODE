@@ -1,0 +1,16 @@
+{
+  "module": "SGP_ENTRY_EXPANDER",
+  "role": "sgp_expansion_and_volatility_tagging",
+  "compatible_leagues": [
+    "MLB",
+    "NBA",
+    "NFL"
+  ],
+  "sync_targets": [
+    "AZORI"
+  ],
+  "tasks": [
+    "expand_props_to_sgp",
+    "volatility_tag_per_combination"
+  ]
+}
