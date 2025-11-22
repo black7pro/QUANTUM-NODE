@@ -1,0 +1,31 @@
+{
+  "schema_name": "Sports_Truth_Schema_T9",
+  "tier_binding": "9",
+  "truth_definition": {
+    "macro_truth": "Truth = coherence between expected probability and observed team performance variance.",
+    "micro_truth": "Individual performance (rolling stats + form drift) governs short-frame coherence.",
+    "temporal_truth": "Truth stabilizes when variance equilibrium is achieved over rolling 14/30 windows."
+  },
+  "core_fields": {
+    "probability_lattice": "primary truth metric",
+    "variance_equilibrium": "truth stabilizer",
+    "form_drift": "entropy injector",
+    "momentum_context": "transient bias enhancer",
+    "team_synergy": "cross-entity stabilizer"
+  },
+  "harmonic_alignment": {
+    "validation_stack": ["RWO", "TSI", "trend_overlays", "statcast_weights"],
+    "cross_frame_weighting": {
+      "game": 0.45,
+      "series": 0.35,
+      "season": 0.20
+    },
+    "harmonic_gate": "HASHLOCK_v4_TRUTH_CORE"
+  },
+  "stability_parameters": {
+    "variance_equilibrium_target": 0.90,
+    "entropy_tolerance": 0.10,
+    "coherence_floor": 0.85
+  },
+  "expected_behavior": "Sports triads validate projections only when variance drift stays below entropy tolerance and lattice coherence holds."
+}
