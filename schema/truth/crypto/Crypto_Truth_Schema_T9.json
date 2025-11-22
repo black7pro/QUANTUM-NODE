@@ -1,0 +1,31 @@
+{
+  "schema_name": "Crypto_Truth_Schema_T9",
+  "tier_binding": "9",
+  "truth_definition": {
+    "macro_truth": "Truth = coherence of long-cycle phase propagation across liquidity cycles.",
+    "micro_truth": "Local truth emerges when on-chain sentiment, funding, and order flow reach phase resonance.",
+    "temporal_truth": "Cross-frame phase stability implies integrity of underlying propagation field."
+  },
+  "core_fields": {
+    "phase_propagation": "primary truth metric",
+    "onchain_sentiment": "feedback driver",
+    "liquidity_pressure": "momentum catalyst",
+    "funding_rate_bias": "phase distortion variable",
+    "cross_chain_entropy": "truth entropy gate"
+  },
+  "harmonic_alignment": {
+    "validation_stack": ["cycle_harmonics", "entropy_field", "liquidity_webs"],
+    "cross_frame_weighting": {
+      "intraday": 0.30,
+      "swing": 0.35,
+      "macro": 0.35
+    },
+    "harmonic_gate": "HASHLOCK_v4_TRUTH_CORE"
+  },
+  "stability_parameters": {
+    "phase_coherence_target": 0.91,
+    "entropy_tolerance": 0.08,
+    "coherence_floor": 0.87
+  },
+  "expected_behavior": "Crypto triads validate coherence through phase-propagation mapping and entropy-controlled harmonics."
+}
