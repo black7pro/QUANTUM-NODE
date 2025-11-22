@@ -1,0 +1,30 @@
+{
+  "schema_name": "Market_Truth_Schema_T9",
+  "tier_binding": "9",
+  "truth_definition": {
+    "macro_truth": "Institutional liquidity drives directional bias. Truth = convergence of flow + structure.",
+    "micro_truth": "Smart money footprints (FVG, order blocks, liquidity sweeps) are truth-bearing at local scale.",
+    "temporal_truth": "Fractal harmonics retain coherence across intraday, swing, and macro frames."
+  },
+  "core_fields": {
+    "institutional_liquidity_flow": "primary truth metric",
+    "dark_pool_activity": "structural amplifier",
+    "smart_money_concepts": "directional truth vector",
+    "exhaustion_reversal_signal": "truth inverter (counterphase trigger)"
+  },
+  "harmonic_alignment": {
+    "validation_stack": ["AO", "TTM", "BIFF", "MIDAS", "MOB"],
+    "cross_frame_weighting": {
+      "intraday": 0.35,
+      "swing": 0.40,
+      "macro": 0.25
+    },
+    "harmonic_gate": "HASHLOCK_v4_TRUTH_CORE"
+  },
+  "stability_parameters": {
+    "harmonic_index_target": 0.92,
+    "volatility_tolerance": 0.06,
+    "coherence_floor": 0.88
+  },
+  "expected_behavior": "Market triads will validate only structures with verified flow alignment and coherent liquidity bias across frames."
+}
