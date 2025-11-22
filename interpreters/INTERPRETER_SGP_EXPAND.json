@@ -1,5 +1,0 @@
-{
-  "interpreter_name": "INTERPRETER_SGP_EXPAND",
-  "linked_processor": "SGP_ENTRY_EXPANDER",
-  "function": "Translate base props into SGP logic, align volatility overlays"
-}

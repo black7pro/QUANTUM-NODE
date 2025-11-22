@@ -1,5 +1,0 @@
-{
-  "interpreter_name": "INTERPRETER_PITCH_V2",
-  "linked_processor": "PITCH_COUNT_MONITOR_V2",
-  "function": "Evaluate pitcher fatigue trends, mark suppression risk"
-}

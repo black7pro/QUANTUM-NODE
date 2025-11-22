@@ -1,5 +1,0 @@
-{
-  "interpreter_name": "INTERPRETER_STC_CALIBRATOR",
-  "linked_processor": "STC_TRAP_CALIBRATOR",
-  "function": "Calibrate AO/TTM/STC alignment, assign MOB tags"
-}
