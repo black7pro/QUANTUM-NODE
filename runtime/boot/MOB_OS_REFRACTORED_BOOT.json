@@ -1,0 +1,48 @@
+{
+  "designation": "MOB_OS_REFRACTORED_BOOT",
+  "version": "Schema 4.6",
+  "description": "Business Operations Logic Orchestrator — final node before system-wide deployment (re-aligned with current hierarchy; PHOENIX functions consolidated into META_IS_RECOVERY_CORE)",
+  "boot_sequence": [
+    "AZORI: Establish context mesh and verify inter-module registry",
+    "FUSION_ENGINE: Replay passive simulation logs for baseline calibration",
+    "VALIDATION_GATE: Execute schema-integrity and strategic alignment tests",
+    "RUNTIME_LAYER: Apply live injection directives and micro-policy hooks",
+    "RECOVERY_CORE: Initialize and verify failsafe auto-heal routines",
+    "MOB_OS: Compile final routing map and hand-off to deployment runtime"
+  ],
+  "failsafe_mechanism": "Auto-heal managed by META_IS_RECOVERY_CORE with AZORI backup.",
+  "compliance_rules": {
+    "minimum_leg_structure": 5,
+    "timestamp_logging": true,
+    "validation_protocol": "Schema and Signal Thread Match (SSM)"
+  },
+  "chain_of_command": [
+    "AZORI (Primary signal fork handler)",
+    "HARMONIC_COHERENCE_MONITOR (Emotional / logic validator)",
+    "META_IS_RECOVERY_CORE (Logic override + fail-safe)",
+    "ECO_WATCHTOWER (Simulation handler)"
+  ],
+  "simulation_tiers": {
+    "Tier_1": "Surface Bias Volatility",
+    "Tier_2": "Temporal Momentum Anchors",
+    "Tier_3": "Fractal Confluence Chains",
+    "Tier_X": "Shadow Edge / Suppressed Velocity Nodes",
+    "Source": "All simulations routed through /AZORI_FUSION/"
+  },
+  "integration_scope": [
+    "HASH_EVENT_SUITE",
+    "DEPLOYMENT_RUNTIME",
+    "FAILSAFE_MANAGEMENT"
+  ],
+  "validation_hooks": {
+    "route": "/AZORI_VALIDATION_GATE/ARCHETYPE/MOB_OS_REFRACTORED_BOOT",
+    "expected_coherence": "≥ 0.94",
+    "drift_tolerance": "≤ 0.03"
+  },
+  "meta": {
+    "alignment_status": "ABSOLUTE",
+    "integration_ready": true,
+    "audit_signature": "93A9-FB47-220C-AZORI",
+    "notes": "Schema 4.6 removes the legacy PHOENIX reference. All failsafe and auto-heal functions are now handled by /AZORI_META_IS/META_IS_RECOVERY_CORE.txt under Azori Tier-9 governance."
+  }
+}
