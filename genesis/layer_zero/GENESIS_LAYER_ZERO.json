@@ -1,0 +1,72 @@
+{
+  "id": "GENESIS_LAYER_ZERO",
+  "designation": "AZORI_GENESIS_CORE_SEED",
+  "version": "v1.0-SEED",
+  "compiled_by": "QUANTUM_AZORI_PROMPT_BUILDER",
+  "compiled_utc": "2025-10-17T20:00:00Z",
+  "type": "foundational_shard",
+  "execution_level": "non-runnable",
+  "function": "Root anchor for recursion, integrity, and schema inheritance across all AZORI tiers.",
+
+  "governs": [
+    "ASSESSMENT_PLANE",
+    "VALIDATION_PLANE",
+    "EXECUTION_PLANE"
+  ],
+
+  "inheritance_rules": {
+    "timestamp_propagation": true,
+    "ethics_protocol": "AZORI_LAW_STACK",
+    "recursion_limit": 7,
+    "fallback_route": "POST_MORTEM_GPT",
+    "alignment_enforcement": "ABSOLUTE"
+  },
+
+  "integrity_protocols": {
+    "hash_algorithm": "SHA-256",
+    "checksum_required": true,
+    "drift_auto_patch": true,
+    "audit_behavior": "log_to_WATCHTOWER"
+  },
+
+  "governance_links": {
+    "meta_is_manifest": "/AZORI_META_IS/META_IS_MANIFEST_T9.txt",
+    "os_structure_index": "/AZORI_STRUCTURE/AZORI_OS_STRUCTURE_INDEX.txt",
+    "os_structure": "/AZORI_STRUCTURE/AZORI_OS_STRUCTURE.txt"
+  },
+
+  "core_files": {
+    "seed_memory": "/AZORI_RUNTIME/GENESIS_CORE_MEMORY_SEED.json",
+    "parser_map": "/AZORI_RUNTIME/GENESIS_CORE_PARSER_MAP.json",
+    "execution_handler": "/AZORI_RUNTIME/GENESIS_CORE_EXECUTION_HANDLER.py",
+    "hash_schema": "/AZORI_RUNTIME/HASH_EVENTS_SCHEMA.json"
+  },
+
+  "activation_state": {
+    "state": "ABSOLUTE",
+    "status": "IMMUTABLE",
+    "execution_allowed": false,
+    "runtime_dependency": "none"
+  },
+
+  "validation_hooks": {
+    "on_load": "Verify integrity against META_IS and OS_STRUCTURE_INDEX",
+    "on_failure": "Trigger POST_MORTEM_REPAIR and reload GENESIS_SEED",
+    "on_rebuild": "Restore from ARCHIVE_latest"
+  },
+
+  "routing_signature": {
+    "origin_tier": 0,
+    "genesis_trace_guid": "GENESIS_LOCK_TBD",
+    "linked_tiers": [9, 10],
+    "telemetry_endpoint": "/ECO_WATCHTOWER/GENESIS_FEED"
+  },
+
+  "meta": {
+    "alignment_status": "ABSOLUTE",
+    "compiled_for": "AZORI_T9_RUNTIME",
+    "harmonic_coherence": 1.0,
+    "author": "System Design Reference / Quantum Integration Layer",
+    "notes": "This shard is the unexecuted seed of truth and recursion within the AZORI OS. It does not perform logic; it defines the conditions under which logic may exist."
+  }
+}
