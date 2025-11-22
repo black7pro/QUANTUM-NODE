@@ -1,0 +1,15 @@
+{
+  "module": "PITCH_COUNT_MONITOR_V2",
+  "role": "pitch_monitoring_fatigue_detection",
+  "compatible_leagues": [
+    "MLB"
+  ],
+  "sync_targets": [
+    "RECON",
+    "POST_MORTEM"
+  ],
+  "tasks": [
+    "detect_fatigue_trends",
+    "inject_suppression_ladder_tags"
+  ]
+}
