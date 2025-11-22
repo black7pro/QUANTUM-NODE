@@ -1,0 +1,5 @@
+{
+  "interpreter_name": "INTERPRETER_FEED_FUSE",
+  "linked_processor": "LIVE_FEED_FUSE_CHECKER",
+  "function": "Monitor latency, confirm feed freshness, log anomalies"
+}
