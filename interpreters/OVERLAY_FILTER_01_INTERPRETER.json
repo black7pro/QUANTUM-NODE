@@ -1,0 +1,25 @@
+{
+  "interpreter_id": "OVERLAY_FILTER_01_INTERPRETER",
+  "accepted_inputs": [
+    "prop_type",
+    "volatility_flag",
+    "trap_trigger",
+    "overlay_tag",
+    "routing_target"
+  ],
+  "logic_flow": [
+    "Parse prop and overlays",
+    "Check against OVERLAY_FILTER_01 volatility logic",
+    "Score EV/risk tier",
+    "Assign to next node or suppress",
+    "Log final status and update session"
+  ],
+  "output_targets": [
+    "AZORI_HANDLER_01",
+    "POST_MORTEM_QUANTUM",
+    "QUANTUM_LADDERS",
+    "VOLATILITY_ROUTER",
+    "BACKTEST_STACK_01"
+  ],
+  "status": "active"
+}
