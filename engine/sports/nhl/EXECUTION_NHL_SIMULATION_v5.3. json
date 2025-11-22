@@ -1,0 +1,24 @@
+{
+  "header": {
+    "label": "EXECUTION_NHL_SIMULATION_v5.3",
+    "tier": 9,
+    "protocol": "HASHLOCK_v3_ADAPTIVE",
+    "version": "v5.3",
+    "compiled_by": "QUANTUM_AZORI_PROMPT_BUILDER",
+    "description": "Tier-9 NHL shift-cycle volatility schema using tempo harmonics and power-play volatility suppression."
+  },
+  "volatility_model": {
+    "threshold": 0.71,
+    "drivers": ["tempo_flux", "line_change_bias", "goalie_bias", "power_play_drift"],
+    "macro_gate_link": "TEMPO_FLUX_GATE"
+  },
+  "runtime_cycle": "OVERLAY → QUANTUM_VALIDATION → FRACTAL → POST → WATCHTOWER",
+  "props_targeted": ["ML", "totals", "player_goals", "player_assists", "period_scoring"],
+  "output_fields": ["label_id","overlay_type","timestamp","props","volatility_score","trap_confidence_score","bias_persistence","alignment_flag","trap_tier","confidence_score","event_bias","prop_score"],
+  "integrity": { "auto_repair_on_mismatch": true, "hash_protocol": "HASHLOCK_v3_ADAPTIVE" },
+  "governance": {
+    "controller": "/AZORI_CORE/WATCHTOWER_AUTOMATION_CORE.json",
+    "validation_target": "/AZORI_CORE/AZORI_VALIDATION_GATE.json",
+    "audit_route": "/AZORI_CORE/POST_MORTEM_GPT_T9.json"
+  }
+}
