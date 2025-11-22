@@ -1,0 +1,17 @@
+{
+  "module": "OPTIONS_PROP_SYNTHESIZER",
+  "role": "options_alignment_injector",
+  "compatible_leagues": [
+    "ALL"
+  ],
+  "sync_targets": [
+    "QUANTUM_GPT",
+    "MARKET_GPT"
+  ],
+  "tasks": [
+    "compare_prop_volatility_to_market_vega",
+    "inject_options_tags: straddle, skew, delta_edge",
+    "detect_edge_compression_zones",
+    "escalate_suppression_signals_to_POST_MORTEM"
+  ]
+}
