@@ -1,0 +1,25 @@
+{
+  "header": {
+    "label": "EXECUTION_NBA_SIMULATION_v5.3",
+    "tier": 9,
+    "protocol": "HASHLOCK_v3_ADAPTIVE",
+    "version": "v5.3",
+    "compiled_by": "QUANTUM_AZORI_PROMPT_BUILDER",
+    "created_utc": "2025-10-17T00:00:00Z",
+    "description": "Tier-9 NBA possession-based volatility simulation model integrating AO–TTM harmonics and tempo bias drift correction."
+  },
+  "volatility_model": {
+    "threshold": 0.73,
+    "drivers": ["possession_momentum", "tempo_bias", "AO_TTM_alignment", "turnover_chain"],
+    "macro_gate_link": "TTM_HARMONIC_BALANCE_CORE"
+  },
+  "runtime_cycle": "OVERLAY → QUANTUM_VALIDATION → FRACTAL → POST → WATCHTOWER",
+  "props_targeted": ["player_points", "rebounds", "assists", "total", "spread"],
+  "output_fields": ["label_id","overlay_type","timestamp","props","volatility_score","trap_confidence_score","bias_persistence","alignment_flag","trap_tier","confidence_score","event_bias","prop_score"],
+  "integrity": { "auto_repair_on_mismatch": true, "hash_protocol": "HASHLOCK_v3_ADAPTIVE" },
+  "governance": {
+    "controller": "/AZORI_CORE/WATCHTOWER_AUTOMATION_CORE.json",
+    "validation_target": "/AZORI_CORE/AZORI_VALIDATION_GATE.json",
+    "audit_route": "/AZORI_CORE/POST_MORTEM_GPT_T9.json"
+  }
+}
