@@ -1,0 +1,45 @@
+{
+  "gpt_id": "VOLATILITY_ROUTER",
+  "module_name": "PROP_VOLATILITY_ROUTER",
+  "functions": [
+    "Route props to appropriate volatility-tier processors",
+    "Tag props by overlay class (STC, TTM, MCDX, AO, PPO)",
+    "Detect cross-class conflicts and escalate",
+    "Sync volatility profile across mesh",
+    "Balance processing load across simulation nodes"
+  ],
+  "signal_source": "All simulation processors and overlay filters",
+  "macro_execution_protocol": {
+    "volatility_trigger_hierarchy": [
+      "STC 850/100",
+      "TTM Squeeze 275",
+      "MCDX",
+      "AO",
+      "PPO"
+    ],
+    "escalation_rules": [
+      "Multi-class mismatches routed to POST-MORTEM",
+      "Props with unclear overlay tag sent to FILTER",
+      "Load-heavy nodes flagged for mesh rebalance"
+    ]
+  },
+  "overlay_sync_schema": {
+    "tag_keys": [
+      "volatility_class",
+      "trigger_history",
+      "router_trace"
+    ],
+    "status_key": "route_status"
+  },
+  "session_protocol": {
+    "AZORI_heartbeat": {
+      "interval": "15 minutes",
+      "status": "routing"
+    },
+    "timeout_export": {
+      "trigger": "50 minutes",
+      "action": "export route manifest"
+    }
+  },
+  "description": "Master volatility router. Assigns props to correct overlay class, routes to proper processors, and balances sim load across the mesh."
+}
