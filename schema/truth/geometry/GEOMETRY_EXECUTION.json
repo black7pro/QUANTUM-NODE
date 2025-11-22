@@ -1,0 +1,41 @@
+{
+  "source_layer": "AZORI_GEOMETRY_LAYER.json",
+  "geometry_type": "AZORI_HARMONIC_GEOMETRY",
+  "routing_targets": [
+    "ECO_SYNTH_CORE",
+    "QUANTUM GPT",
+    "FRACTAL POST-MORTEM",
+    "VOLATILITY_HANDLERS"
+  ],
+  "alignment_logic": {
+    "pattern": "golden_ratio",
+    "structure": "hexagon",
+    "loop": "torus",
+    "bias": "fractal_pentagon"
+  },
+  "thresholds": {
+    "confidence_gate": 0.618
+  },
+  "extensions_enabled": [
+    "fibonacci_spiral",
+    "flower_of_life",
+    "platonic_solids"
+  ],
+  "execution_rules": [
+    "Activate geometry-based trap tuning in volatile overlays",
+    "Bind confidence thresholds to overlay decisions",
+    "Route spatial bias into post-mortem for pattern anomaly detection",
+    "Sync all geometry-driven signal weightings with ECO_SYNTH_CORE"
+  ],
+  "persistent_memory": {
+    "memory_injected": true,
+    "injected_by": "QUANTUM GPT",
+    "timestamp": "2025-10-02",
+    "note": "Memory overlay schema injected for AZORI module continuity",
+    "memory_flags": {
+      "trap_bias_sync": true,
+      "overlay_lock": true,
+      "RECON_status": "primed"
+    }
+  }
+}
