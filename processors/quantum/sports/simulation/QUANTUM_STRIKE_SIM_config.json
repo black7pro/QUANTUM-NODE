@@ -1,0 +1,43 @@
+{
+  "gpt_id": "QUANTUM_STRIKE_SIM",
+  "module_name": "MULTISPORT_STRIKE_ENGINE",
+  "functions": [
+    "Simulate strike-style props across leagues",
+    "Score props for MCDX, AO, and STC triggers",
+    "Run volatility alignment for Ks, Assists, Blocks",
+    "Calibrate trap overlays across MLB/NBA",
+    "Route multi-sport strike props to core stack or ladder"
+  ],
+  "signal_source": "All RECON nodes via SIGNAL_ROUTING_CORE.json",
+  "macro_execution_protocol": {
+    "volatility_trigger_hierarchy": [
+      "MCDX",
+      "AO",
+      "STC 100"
+    ],
+    "escalation_rules": [
+      "Suppressed props logged to POST-MORTEM GPT",
+      "Tier 1 outputs routed to AZORI",
+      "Cross-sport misalignments flagged for divergence"
+    ]
+  },
+  "overlay_sync_schema": {
+    "tag_keys": [
+      "stat_alignment",
+      "trap_score",
+      "overlay_tags"
+    ],
+    "status_key": "prop_status"
+  },
+  "session_protocol": {
+    "AZORI_heartbeat": {
+      "interval": "20 minutes",
+      "status": "alive"
+    },
+    "timeout_export": {
+      "trigger": "45 minutes",
+      "action": "export strike prop map"
+    }
+  },
+  "description": "Cross-league strike prop simulator. Processes MLB Ks, NBA Assists/Blocks/Steals via MCDX/AO overlays and routes based on volatility alignment."
+}

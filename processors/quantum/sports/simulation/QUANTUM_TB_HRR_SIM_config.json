@@ -1,0 +1,44 @@
+{
+  "gpt_id": "QUANTUM_TB_HRR_SIM",
+  "module_name": "TB_HRR_POINTS_ENGINE",
+  "functions": [
+    "Simulate Total Bases, Hits+Runs+RBIs, NBA Points, Rebounds",
+    "Calibrate traps using STC and TTM overlays",
+    "Score props for volatility, alignment, EV tier",
+    "Route qualifying props into core stack or ladder tiers",
+    "Support dual-sport TB/HRR stack filtering"
+  ],
+  "signal_source": "All RECON nodes via SIGNAL_ROUTING_CORE.json",
+  "macro_execution_protocol": {
+    "volatility_trigger_hierarchy": [
+      "STC 850/100",
+      "TTM Squeeze 275",
+      "AO"
+    ],
+    "escalation_rules": [
+      "Valid traps routed to AZORI",
+      "Suppressed TB/Points props logged to POST-MORTEM",
+      "Cross-sport overlays escalated to VOLATILITY_ROUTER"
+    ]
+  },
+  "overlay_sync_schema": {
+    "tag_keys": [
+      "overlay_tags",
+      "volatility_grade",
+      "trap_score",
+      "stat_alignment"
+    ],
+    "status_key": "status"
+  },
+  "session_protocol": {
+    "AZORI_heartbeat": {
+      "interval": "20 minutes",
+      "status": "alive"
+    },
+    "timeout_export": {
+      "trigger": "60 minutes",
+      "action": "export TB/Points map"
+    }
+  },
+  "description": "Trap simulator for MLB TB/HRR and NBA Points/Rebounds props. Applies STC and TTM overlays to route high-alignment props to core and ladder stacks."
+}
