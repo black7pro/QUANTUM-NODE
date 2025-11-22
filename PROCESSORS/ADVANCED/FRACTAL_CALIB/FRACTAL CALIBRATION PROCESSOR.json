@@ -1,0 +1,64 @@
+FRACTAL CALIBRATION PROCESOR
+
+import json
+
+class FractalCalibProcessor:
+    def __init__(self, routing_core_path="/mnt/data/SIGNAL_ROUTING_CORE_RETROFITTED.json"):
+        self.routing_core_path = routing_core_path
+
+    def load_signals(self):
+        with open(self.routing_core_path, "r") as f:
+            return json.load(f)
+
+    def save_signals(self, data):
+        with open(self.routing_core_path, "w") as f:
+            json.dump(data, f, indent=2)
+
+    def process(self):
+        data = self.load_signals()
+        updated = False
+
+        for node, node_data in data.items():
+            signals = node_data.get("signals", {})
+            for signal_name, packet in signals.items():
+                lifecycle = packet.get("lifecycle", {})
+                if lifecycle.get("status") != "ACTIVE":
+                    continue
+                if lifecycle.get("current_node") != "FRACTAL_CALIB":
+                    continue
+
+                print(f"[FRACTAL_CALIB] Processing signal: {signal_name}")
+
+                for action in packet.get("actions", []):
+                    self.execute_action(action, packet)
+
+                flow_index = lifecycle.get("flow_index", 0)
+                route = packet.get("route", [])
+                if flow_index + 1 < len(route):
+                    lifecycle["flow_index"] = flow_index + 1
+                    lifecycle["current_node"] = route[flow_index + 1]
+                    print(f"[FRACTAL_CALIB] Routed to next node: {route[flow_index + 1]}")
+                else:
+                    lifecycle["status"] = "COMPLETE"
+                    print(f"[FRACTAL_CALIB] Signal completed lifecycle.")
+
+                data[node]["signals"][signal_name]["lifecycle"] = lifecycle
+                updated = True
+
+        if updated:
+            self.save_signals(data)
+
+    def execute_action(self, action_name, packet):
+        print(f"[FRACTAL_CALIB] Executing action: {action_name}")
+        # TODO: Add fractal calibration-specific action logic here
+        # e.g.,
+        # if action_name == "update_fractal_weighting":
+        #     pass
+        # elif action_name == "sync_fractal_map":
+        #     pass
+
+
+# === Example usage ===
+if __name__ == "__main__":
+    processor = FractalCalibProcessor()
+    processor.process()
