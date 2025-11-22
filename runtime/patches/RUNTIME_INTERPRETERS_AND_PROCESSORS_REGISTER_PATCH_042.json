@@ -1,0 +1,38 @@
+{
+  "nodes": [
+    {
+      "id": "INTERPRETER_SGP_EXPAND",
+      "type": "json_interpreter",
+      "path": "/RUNTIME/INTERPRETERS/INTERPRETER_SGP_EXPAND.json",
+      "tier": 9,
+      "category": "Interpreter",
+      "status": "Active",
+      "linked": [
+        "SGP_ENTRY_EXPANDER",
+        "FRACTAL_CALIBRATION_GPT_T9",
+        "POST_MORTEM_GPT_T9"
+      ],
+      "last_validation": "2025-10-17T14:03:23Z"
+    },
+    {
+      "id": "SGP_ENTRY_EXPANDER",
+      "type": "logic_compiler_processor",
+      "path": "/RUNTIME/PROCESSORS/SGP_ENTRY_EXPANDER.json",
+      "tier": 9,
+      "category": "Processor",
+      "status": "Active",
+      "linked": [
+        "INTERPRETER_SGP_EXPAND",
+        "FRACTAL_CALIBRATION_GPT_T9",
+        "QUANTUM_GPT_T9",
+        "POST_MORTEM_GPT_T9"
+      ],
+      "last_validation": "2025-10-17T14:03:23Z"
+    }
+  ],
+  "meta": {
+    "patch_id": "AZORI_REGISTRY_PATCH_042",
+    "timestamp": "2025-10-17T14:03:23Z",
+    "checksum_algorithm": "SHA-256"
+  }
+}
