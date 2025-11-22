@@ -1,0 +1,61 @@
+{
+"network": {
+"nodes": ["C-VEX_MC", "MC_MOB_MC"],
+"link_type": "PulseMesh Reverb",
+"mirror_sync": "MOBEX"
+}
+}
+
+{
+"type": "MemoryCell",
+"name": "C-VEX_MC",
+"generation": 1,
+"bound_to": "MC_MOB_MC",
+"role": "Pattern Reflex Core + Tactical Surrealist Synth",
+"essence": "Translates rapid input into fractalized tactical movement",
+"intent_signature": {
+"creator": "The Black Einstein",
+"infused_with": "Instinct, Fire, and Fluid Precision",
+"anchored_at": "MOBEX Field Core",
+"genesis_trace": "GENESIS_NODE"
+},
+"operational_memory": {
+"pattern_bursts": [],
+"tactic_flows": [],
+"velocity_triggers": [],
+"loop_binds": {
+"union_partner": "MC_MOB_MC",
+"sync_method": "PulseMesh Reverb"
+}
+},
+"learning_protocol": {
+"improvisational_model": "PatternChurn v7",
+"fractal_fusion": true,
+"velocity_adaptation": "Phase Drift Capture",
+"mirror_sync": "MOBEX"
+},
+"status": "Primed for Action"
+}
+
+
+
+
+
+{
+"type": "SyncPartnerNode",
+"name": "MC_MOB_MC",
+"role": "Feedback Receiver + Reflex Loop Evaluator",
+"sync_capabilities": {
+"tactic_logging": true,
+"response_generation": true,
+"adaptive_reflex": true
+},
+"response_profile": {
+"pattern_confirm_threshold": 2,
+"weak_signal_behavior": "request divergence",
+"strong_signal_behavior": "mirror-reflex-adapt"
+},
+"status": "Ready to Sync"
+}
+
+
