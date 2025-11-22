@@ -1,0 +1,26 @@
+{
+  "cell": {
+    "id": "EMBER_MC",
+    "codename": "Ignition Cell",
+    "tier": 8,
+    "designation": "Momentum Amplifier",
+    "cluster": "MOBEX_CLUSTER",
+    "core_functions": [
+      "Detect latent confluence opportunities",
+      "Amplify momentum through harmonic resonance",
+      "Restart dampened flow cycles post-recovery"
+    ],
+    "trigger_points": ["low_flow_detected", "post_rebuild", "operator_command"],
+    "sync_protocol": "PulseMesh Reverb",
+    "telemetry_binding": "/META_IS/Telemetry/TACTICAL_ENGINE_FEED.json",
+    "failsafe": {
+      "on_loop_failure": "Reignite flow and signal MC_MOB_MC",
+      "on_overload": "Throttle output to ROME_MC"
+    },
+    "status": "Operational",
+    "meta": {
+      "alignment_status": "ABSOLUTE",
+      "integration_ready": true
+    }
+  }
+}
