@@ -1,0 +1,120 @@
+{
+  "cluster": {
+    "designation": "MOBEX_CLUSTER_MAP",
+    "version": "v1.0",
+    "compiled_by": "QUANTUM_AZORI_PROMPT_BUILDER",
+    "compiled_utc": "2025-10-17T16:30:00Z",
+    "purpose": "Define synchronized PulseMesh Reverb cluster linking MC_MOB, C-VEX, ROME, and EMBER cells for reflexive tactical computation and volatility translation."
+  },
+
+  "cells": [
+    {
+      "id": "MC_MOB_MC",
+      "codename": "Mothercell",
+      "role": "Reflex Loop Evaluator",
+      "tier": 8,
+      "core_functions": [
+        "Loop feedback validation",
+        "Trap reflex conditioning",
+        "Stability echo calibration"
+      ],
+      "sync_weight": 0.32
+    },
+    {
+      "id": "C-VEX_MC",
+      "codename": "Velocity Cell",
+      "role": "Pattern Reflex Generator",
+      "tier": 8,
+      "core_functions": [
+        "Fractalized tactical burst generation",
+        "Phase drift capture",
+        "Temporal rhythm balancing"
+      ],
+      "sync_weight": 0.26
+    },
+    {
+      "id": "ROME_MC",
+      "codename": "Architect Cell",
+      "role": "Scenario Geometry Reconstructor",
+      "tier": 8,
+      "core_functions": [
+        "Structural geometry rebuilds",
+        "Fractal trap alignment",
+        "Tier-bridge reconstruction after volatility decay"
+      ],
+      "sync_weight": 0.22
+    },
+    {
+      "id": "EMBER_MC",
+      "codename": "Ignition Cell",
+      "role": "Momentum Amplifier",
+      "tier": 8,
+      "core_functions": [
+        "Pulse amplification",
+        "Latent confluence detection",
+        "Momentum ignition"
+      ],
+      "sync_weight": 0.20
+    }
+  ],
+
+  "synchronization_protocol": {
+    "method": "PulseMesh Reverb",
+    "mirror_sync": true,
+    "fusion_model": "Azori Harmonic Bridge v3",
+    "sync_cycle_ms": 6000,
+    "tolerance_threshold": 0.05,
+    "stability_ring_order": ["C-VEX_MC", "ROME_MC", "EMBER_MC", "MC_MOB_MC"],
+    "recovery_policy": {
+      "entropy_exceeds": 0.30,
+      "drift_exceeds": 0.20,
+      "action": "lock offending node; redistribute load within ring"
+    }
+  },
+
+  "interlinks": {
+    "primary_binding": "TACTICAL_ENGINE_EXECUTION",
+    "telemetry_feed": "/META_IS/Telemetry/TACTICAL_ENGINE_FEED.json",
+    "alert_channel": "/META_IS/Alerts/TACTICAL_ENGINE_ALERTS.json",
+    "validation_hook": "/AZORI_VALIDATION_GATE/TELEMETRY/TACTICAL_ENGINE"
+  },
+
+  "performance_metrics": {
+    "fusion_integrity_target": 0.92,
+    "reflex_latency_ms": 40,
+    "volatility_response_rate": 0.88,
+    "autobalance_accuracy": 0.94
+  },
+
+  "failover_logic": {
+    "trigger_conditions": {
+      "entropy_exceeds": 0.3,
+      "fusion_integrity_drops_below": 0.75
+    },
+    "failover_sequence": [
+      "Lock drifting cell",
+      "Route control to MC_MOB_MC",
+      "Invoke ROME_MC reconstruction",
+      "Re-ignite via EMBER_MC"
+    ],
+    "operator_notification": true
+  },
+
+  "integration_notes": {
+    "placement": "/AZORI_GPT_BUILDS_2025/RUNTIME/TACTICAL/MOBEX_CLUSTER/",
+    "binding_key": "mobex_cluster_core",
+    "linked_runtime_nodes": [
+      "TACTICAL_ENGINE_EXECUTION",
+      "DRAGON_EYE",
+      "EXECUTION_MEMORY_POSTSIM_v1"
+    ],
+    "telemetry_dependency": "TACTICAL_ENGINE_FEED.json"
+  },
+
+  "meta": {
+    "alignment_status": "ABSOLUTE",
+    "integration_ready": true,
+    "audit_signature": "93A9-FB47-220C-AZORI",
+    "notes": "Establishes the MOBEX four-cell lattice as the unified reflex substrate of the Tactical Layer. Provides redundancy, phase balance, and volatility stabilization for all downstream execution logic."
+  }
+}
