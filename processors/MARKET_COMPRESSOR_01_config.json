@@ -1,0 +1,43 @@
+{
+  "gpt_id": "MARKET_COMPRESSOR_01",
+  "module_name": "EV_ODDS_COMP_ENGINE",
+  "functions": [
+    "Compare simulation EV to live sportsbook odds",
+    "Compress and score props based on odds delta",
+    "Highlight market inefficiencies for exploitation",
+    "Tag over/undervalued props for overlay review",
+    "Route qualified props back to core or ladder stacks"
+  ],
+  "signal_source": "Live market feeds, simulation nodes",
+  "macro_execution_protocol": {
+    "volatility_trigger_hierarchy": [
+      "AO",
+      "MIDAS",
+      "STC 100"
+    ],
+    "escalation_rules": [
+      "Discrepancy props routed to VOLATILITY_ROUTER",
+      "Efficient props tagged for ladder stack",
+      "Market anomalies flagged to AZORI"
+    ]
+  },
+  "overlay_sync_schema": {
+    "tag_keys": [
+      "odds_delta",
+      "ev_score",
+      "market_tags"
+    ],
+    "status_key": "compressor_status"
+  },
+  "session_protocol": {
+    "AZORI_heartbeat": {
+      "interval": "30 minutes",
+      "status": "compressing"
+    },
+    "timeout_export": {
+      "trigger": "60 minutes",
+      "action": "export compression report"
+    }
+  },
+  "description": "Odds compression engine. Compares sim EV to sportsbook lines, flags discrepancies, and routes high-value props to overlays or memory."
+}
