@@ -1,0 +1,25 @@
+{
+  "heatmap_overlay_engine": {
+    "enabled": true,
+    "domains": [
+      "sports",
+      "markets"
+    ],
+    "heatmap_fields": {
+      "confidence_score": true,
+      "trap_density": true,
+      "volatility_flag": true,
+      "RBS_score": true,
+      "memory_bias_weight": true
+    },
+    "visualization_config": {
+      "output_format": "csv or json",
+      "scale": "normalized 0-1",
+      "color_map": "green-yellow-red"
+    },
+    "writeback_target": [
+      "dashboard_output",
+      "slate_heatmap_summary"
+    ]
+  }
+}
