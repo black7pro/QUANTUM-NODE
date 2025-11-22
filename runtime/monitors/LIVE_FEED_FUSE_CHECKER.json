@@ -1,0 +1,14 @@
+{
+  "module": "LIVE_FEED_FUSE_CHECKER",
+  "role": "real_time_data_integrity_check",
+  "compatible_leagues": [
+    "ALL"
+  ],
+  "sync_targets": [
+    "POST_MORTEM"
+  ],
+  "tasks": [
+    "monitor_feed_latency",
+    "escalate_on_stale_data"
+  ]
+}
