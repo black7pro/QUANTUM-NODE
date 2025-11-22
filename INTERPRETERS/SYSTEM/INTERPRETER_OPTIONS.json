@@ -1,0 +1,5 @@
+{
+  "interpreter_name": "INTERPRETER_OPTIONS",
+  "linked_processor": "OPTIONS_PROP_SYNTHESIZER",
+  "function": "Analyze option-like volatility profiles, detect edge compressions"
+}
