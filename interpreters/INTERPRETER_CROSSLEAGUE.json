@@ -1,0 +1,5 @@
+{
+  "interpreter_name": "INTERPRETER_CROSSLEAGUE",
+  "linked_processor": "ENTRY_PROCESSOR_CROSSLEAGUE",
+  "function": "Parse and route dual-sport props, validate league context"
+}
