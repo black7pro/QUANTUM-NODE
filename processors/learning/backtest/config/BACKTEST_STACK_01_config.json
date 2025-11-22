@@ -1,0 +1,44 @@
+{
+  "gpt_id": "BACKTEST_STACK_01",
+  "module_name": "TRAP_BACKTEST_ENGINE",
+  "functions": [
+    "Run historical validation on trap routes",
+    "Score past props against volatility triggers",
+    "Log alignment misfires and success rates",
+    "Sync with POST-MORTEM and AZORI memory",
+    "Tag props for volatility trend analysis"
+  ],
+  "signal_source": "POST-MORTEM logs, AZORI archive, overlay filters",
+  "macro_execution_protocol": {
+    "volatility_trigger_hierarchy": [
+      "STC 850/100",
+      "TTM Squeeze 275",
+      "AO",
+      "MCDX"
+    ],
+    "escalation_rules": [
+      "Outlier backtests routed to VOLATILITY_ROUTER",
+      "Recurring misfires sent to POST-MORTEM",
+      "Valid trends locked to AZORI"
+    ]
+  },
+  "overlay_sync_schema": {
+    "tag_keys": [
+      "backtest_tag",
+      "alignment_shift",
+      "misfire_count"
+    ],
+    "status_key": "trend_status"
+  },
+  "session_protocol": {
+    "AZORI_heartbeat": {
+      "interval": "45 minutes",
+      "status": "backtest"
+    },
+    "timeout_export": {
+      "trigger": "120 minutes",
+      "action": "export trap trend log"
+    }
+  },
+  "description": "Historical trap validation node. Compares past props to trap/volatility history, audits alignment patterns, and syncs trend logs to memory."
+}
