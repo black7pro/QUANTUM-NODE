@@ -1,0 +1,17 @@
+{
+  "module": "ENTRY_PROCESSOR_CROSSLEAGUE",
+  "role": "cross_league_entry_router",
+  "compatible_leagues": [
+    "MLB",
+    "NBA",
+    "NHL"
+  ],
+  "sync_targets": [
+    "RECON",
+    "AZORI"
+  ],
+  "tasks": [
+    "tag_dual_sport_props",
+    "tier_by_league_signal"
+  ]
+}
