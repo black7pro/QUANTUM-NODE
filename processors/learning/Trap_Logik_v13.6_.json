@@ -1,0 +1,238 @@
+{
+  "Trap_Logik_v13.6": {
+    "Bias_Arming": {
+      "Primary_Bias_Source": "12h CB",
+      "Swing_Confirmation": "235m CB",
+      "STC_Trigger_Levels": {
+        "OB": 99,
+        "OS": 1
+      },
+      "Bias_Conditions": {
+        "CB_OB": true,
+        "CB_OS": true,
+        "STC_OB": true,
+        "STC_OS": true,
+        "12h_CB_OB": true,
+        "12h_CB_OS": true,
+        "48m_CB_OB": true,
+        "48m_CB_OS": true
+      },
+      "Bias_Validation_Stack": {
+        "Anchor_Bias": "48m CB",
+        "Swing_Confirmation": "235m CB"
+      }
+    },
+    "Trigger_Sequence": {
+      "Order": [
+        "Bias Shift (12h/48m/235m CB + STC OB/OS)",
+        "Divergence Confirmation",
+        "CHOCH on Execution Frame",
+        "HL/LH Formation",
+        "Call/Put Signal Match"
+      ],
+      "Frame": "2m for execution"
+    },
+    "Execution_Frame": {
+      "Default": "2m",
+      "Required_Elements": [
+        "2m CHOCH",
+        "2m Call/Put",
+        "2m HL/LH Structure"
+      ]
+    },
+    "STC_CB_Thresholds": {
+      "Bearish_Divergence_Alert": {
+        "STC_min": 99,
+        "CB_min": 0.5
+      },
+      "Bullish_Divergence_Alert": {
+        "STC_max": 1,
+        "CB_max": -0.5
+      }
+    },
+    "Alert_Flow_Logic": {
+      "DV_Cascade_Mode": true,
+      "Once_Only_Alerts": true,
+      "Silence_Counter_Bias": true,
+      "Noise_Filtering": "STC+CB gate"
+    },
+    "Macro_Trend_Governance": {
+      "Trend_Frame": "12h CB",
+      "Use_For": [
+        "Trend Alignment",
+        "Bias Invalidation",
+        "Hedge Planning"
+      ]
+    },
+    "Fractal_Ratios": {
+      "Daily": {
+        "C&B": "480m DXF \u00b10.5",
+        "STC": "240s (4m)"
+      },
+      "Swing": {
+        "C&B": "235m \u00b10.4",
+        "STC": "120s (2m)"
+      },
+      "Session": {
+        "C&B": "30m \u00b10.4",
+        "STC": "15s"
+      },
+      "Micro": {
+        "C&B": "15m \u00b10.4",
+        "STC": "7.5s (approx)"
+      }
+    },
+    "Trading_Windows_EST": {
+      "Forex": {
+        "Active_Hours": "5:00 AM \u2013 5:00 PM",
+        "High_Liquidity": "8:00 AM \u2013 12:00 PM",
+        "Avoid": "After 5:00 PM or before 2:00 AM",
+        "Comment": "Best volatility during the overlap; avoid low-participation zones."
+      },
+      "Futures": {
+        "Active_Hours": "6:00 PM (prev) \u2013 5:00 PM",
+        "High_Liquidity": "8:30 AM \u2013 11:30 AM",
+        "Avoid": "6:00 PM \u2013 8:00 PM and 12:00 AM \u2013 6:00 AM",
+        "Comment": "Overnight sessions can be thin and choppy; core RTH hours are most actionable."
+      },
+      "Commodities": {
+        "Active_Hours": "6:00 PM (prev) \u2013 5:00 PM",
+        "High_Liquidity": "8:00 AM \u2013 12:00 PM",
+        "Avoid": "After 1:00 PM or pre-open",
+        "Comment": "Focus on the active opening sequence for energy and metals."
+      },
+      "Equities": {
+        "Active_Hours": "9:30 AM \u2013 4:00 PM",
+        "High_Liquidity": "9:30\u201310:30 AM and 3:00\u20134:00 PM",
+        "Avoid": "11:30 AM \u2013 1:30 PM",
+        "Comment": "Opening/closing power hours are ideal for execution setups."
+      },
+      "Crypto": {
+        "Active_Hours": "24/7",
+        "High_Liquidity": "7:00 AM \u2013 11:00 AM and 6:00 PM \u2013 10:00 PM",
+        "Avoid": "2:00 AM \u2013 5:00 AM",
+        "Comment": "Volatility syncs with forex/equity cycles. Weekends are choppier; volume is often thinner."
+      }
+    },
+    "EQH_EQL_Trap_Protocol": {
+      "Trigger_Conditions": {
+        "STC_OB": 99,
+        "STC_OS": 1,
+        "CB_OB": 0.5,
+        "CB_OS": -0.5
+      },
+      "Execution_Logic": [
+        "Scan 2m chart for EQH/EQL",
+        "Wait for sweep above/below EQH/EQL",
+        "Confirm CHOCH post-sweep",
+        "Identify HL/LH",
+        "Look for Call/Put signal",
+        "Execute if aligned with bias"
+      ],
+      "Notes": [
+        "Ignore EQH/EQL without OB/OS context",
+        "Treat sweeps as liquidity magnets not breaks"
+      ]
+    },
+    "Indicator_Stack": {
+      "MCDX": {
+        "Use": "Liquidity and divergence confirmation",
+        "Integrated": true,
+        "Colors": {
+          "Banker": "#8B0000",
+          "Retailer": "#0000FF",
+          "Hot Money": "#808000",
+          "MA": "#FFFFFF"
+        },
+        "Notes": "Banker MA delta detection and 15m divergence logic applied"
+      },
+      "Liquidity_Levels_MTF_Sonarlab": {
+        "Use": "Multi-timeframe liquidity mapping",
+        "Integrated": true,
+        "Colors": null,
+        "Notes": "Draws MTF sweep and resting liquidity zones; used for EQH/EQL context"
+      },
+      "HH_LL_LIVE": {
+        "Use": "Live swing structure updates",
+        "Integrated": true,
+        "Colors": null,
+        "Notes": "Dynamic HL/LH rendering; referenced during trap CHOCH validations"
+      },
+      "G_TREND": {
+        "Use": "Directional bias on HTF",
+        "Integrated": true,
+        "Colors": null,
+        "Notes": "Used to confirm primary bias direction ahead of 2m execution"
+      },
+      "Institutional_FVG_&_Liquidity_Range_Candle": {
+        "Use": "Fair value gaps and institutional sweep candles",
+        "Integrated": true,
+        "Colors": null,
+        "Notes": "FVG zones used to support HL/LH bias path or post-sweep confirmation"
+      },
+      "EW_IMPULSE": {
+        "Use": "Wave structure and momentum impulse detection",
+        "Integrated": true,
+        "Colors": null,
+        "Notes": "Wave divergence logic applied; confirms trap alignment on swing/session"
+      },
+      "RED_K_VOLUME_WEIGHTED_DIRECTIONAL_EFFECIENCY_INDEX_DXF": {
+        "Use": "Volume-weighted trend efficiency",
+        "Integrated": true,
+        "Colors": {
+          "Bull Zone": "#00FF00",
+          "Bear Zone": "#FF0000",
+          "Neutral": "#C0C0C0"
+        },
+        "Notes": "Divergence detection applied based on trend efficiency shifts"
+      },
+      "RedK_Chop_&_Breakout_Scout": {
+        "Use": "Breakout detection with chop filtering",
+        "Integrated": true,
+        "Colors": {
+          "Breakout Long": "#00FF00",
+          "Breakout Short": "#FF0000",
+          "Neutral": "#FFA500"
+        },
+        "Notes": "Filters fakeouts; aligns with HL/LH breakout filter logic"
+      },
+      "CURVED_SMC": {
+        "Use": "Adaptive SMC trap visualization and pattern mapping",
+        "Integrated": true,
+        "Colors": null,
+        "Notes": "Used to validate ChoCH + probability zones for SMS/BMS"
+      },
+      "HAZE_MA": {
+        "Use": "MA-based bias and reversal alignment for scalping logic",
+        "Integrated": true,
+        "Colors": {
+          "HA Green": "#00FF00",
+          "HA Red": "#FF0000",
+          "MACD Green": "#00FF00",
+          "MACD Red": "#FF0000",
+          "Dot Blue": "#0000FF",
+          "Dot Red": "#FF0000"
+        },
+        "Notes": "Used in 2m HL/LH signal confirmation or mid-frame reversals"
+      },
+      "LuxAlgo_AI_SuperTrend": {
+        "Use": "HTF trend filter with volatility break alignment",
+        "Integrated": true,
+        "Colors": {
+          "Trend Bull": "#00FF00",
+          "Trend Bear": "#FF0000"
+        },
+        "Notes": "Must align with HL/LH or ChoCH to validate execution zone"
+      },
+      "Williams_Fractal_Equals_Fixed": {
+        "Use": "Fractal-based EQH/EQL tag and trap validation",
+        "Integrated": true,
+        "Colors": {
+          "Top Fractal": "#FF0000",
+          "Bottom Fractal": "#0000FF"
+        },
+        "Notes": "Aids in EQL/EQH confirmations, particularly post-sweep"
+      }
+    }
+  }
+}

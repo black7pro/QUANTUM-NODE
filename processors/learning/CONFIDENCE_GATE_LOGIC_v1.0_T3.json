@@ -1,0 +1,43 @@
+{
+  "manifest_identifier": "CONFIDENCE_GATE_LOGIC_v1.0_T3",
+  "confidence_gate_logic": {
+    "version": "1.0",
+    "tier": "T3_ADAPTIVE_CORE",
+    "description": "Dynamic confidence gate control module governing volatility-scaled thresholds and adaptive modulation across Market, Crypto, and Sports domains.",
+    "mode": "dynamic",
+    "base_threshold": 0.72,
+    "volatility_scaling": {
+      "low": 0.68,
+      "medium": 0.72,
+      "high": 0.76,
+      "trap_dense": 0.74,
+      "extreme": 0.78
+    },
+    "adaptive": true,
+    "confidence_feedback_loop": {
+      "recursive_source": "TRAP_RECURSIVE_ENGINE_v2",
+      "macro_bias_dependency": "TRAP_LOGIK_MACRO_GATE_v1.0_T2",
+      "harmonizer_link": "CROSS_DOMAIN_HARMONIZER_CORE_v1.1_T2",
+      "update_interval_minutes": 30,
+      "stability_decay_factor": 0.94
+    },
+    "integration_links": {
+      "linked_modules": [
+        "TRAP_LOGIK_v14.1_EARLY_WARNING_EXPANSION_v1.0_T3",
+        "TRAP_RECURSIVE_ENGINE_v2.0_T3",
+        "TRAP_LOGIK_MACRO_GATE_v1.0_T2",
+        "CROSS_DOMAIN_HARMONIZER_CORE_v1.1_T2"
+      ],
+      "harmonization_path": "/AZORI_VALIDATION_GATE/"
+    },
+    "status": "active"
+  },
+  "meta": {
+    "compiled_by": "QUANTUM_GPT",
+    "created_utc": "2025-10-09T00:00:00Z",
+    "integrity_protocol": "HASHLOCK_v3_ADAPTIVE",
+    "harmonization_tier": "Tier-3 Adaptive Core",
+    "validation_state": "pending",
+    "checksum": "SHA-256_PENDING"
+  }
+}

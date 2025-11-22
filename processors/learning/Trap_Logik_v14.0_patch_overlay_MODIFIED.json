@@ -1,0 +1,69 @@
+{
+  "trap_logik_version": "14.0",
+  "early_warning_module": {
+    "enabled": true,
+    "components": [
+      "stc_drift_monitor",
+      "cbs_slope_tracker",
+      "fg_roc_detector",
+      "pre_choch_volume_trigger",
+      "liquidity_divergence_scan",
+      "FG_VOL_SKEW_MONITOR",
+      "LIQUIDITY_DELTA_COMPRESSOR",
+      "CBS_SLOPE_HISTOGRAM"
+    ],
+    "trigger_conditions": {
+      "stc_drift_threshold": 1.5,
+      "cbs_slope_max_flat": 0.15,
+      "fg_roc_vs_price_slope_min_ratio": 2.5,
+      "volume_spike_factor": 1.5,
+      "mcdx_delta_conflict": true
+    },
+    "alert_sequence": [
+      "Detect STC \u0394 < 1.5 over 3 bars",
+      "Validate CBS Slope < 0.15",
+      "Compare F&G ROC vs Price Slope",
+      "Confirm EQH/EQL pre-CHOCH with volume spike",
+      "Cross-check MCDX divergence (Banker \u2193, Hot Money \u2191)"
+    ],
+    "outputs": {
+      "trap_signal_timing": "proactive",
+      "early_warning_trigger": true,
+      "trap_alignment_check_priority": "elevated"
+    },
+    "writeback_targets": [
+      "AZORI_FINAL_PROPS",
+      "macro_bias_gate",
+      "trap_strength_projection"
+    ]
+  },
+  "trap_memory_chain": [
+    "initial_trap",
+    "pre_warning_trigger",
+    "overlay_outcome",
+    "scored_prop"
+  ],
+  "compliance_tags": [
+    "BIFF",
+    "TTM",
+    "AO",
+    "MOB",
+    "MIDAS",
+    "FG_ROC",
+    "STC_DRIFT",
+    "CBS_SLOPE"
+  ],
+  "confidence_gate": 0.72,
+  "status": "active",
+  "confidence_gate_logic": {
+    "mode": "dynamic",
+    "base_threshold": 0.72,
+    "volatility_scaling": {
+      "low": 0.68,
+      "medium": 0.72,
+      "high": 0.76,
+      "trap_dense": 0.74
+    },
+    "adaptive": true
+  }
+}

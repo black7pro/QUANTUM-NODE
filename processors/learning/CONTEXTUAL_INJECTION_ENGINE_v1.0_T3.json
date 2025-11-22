@@ -1,0 +1,60 @@
+{
+  "manifest_identifier": "CONTEXTUAL_INJECTION_ENGINE_v1.0_T3",
+  "contextual_injection": {
+    "version": "1.0",
+    "tier": "T3_ADAPTIVE",
+    "description": "Full adaptive context-injection engine providing situational weighting for prop-based learning and PBP overlay models across Market, Crypto, and Sports domains.",
+    "enabled": true,
+    "pbp_context_tags": [
+      "RISP",
+      "2-out",
+      "ahead_count",
+      "behind_count",
+      "leverage_inning",
+      "hot_streak_flag"
+    ],
+    "modifiers": {
+      "xBA": "context_weighted",
+      "whiff_rate": "context_adjusted",
+      "barrel%": "enhanced_by_situation",
+      "exit_velocity": "momentum_scaled",
+      "K-BB%": "pressure_sensitive"
+    },
+    "context_resolution": {
+      "aggregation_window_innings": 3,
+      "minimum_event_samples": 12,
+      "real_time_update": true,
+      "sync_interval_minutes": 10
+    },
+    "integration_links": {
+      "linked_modules": [
+        "PBP_CONTEXT_ENGINE.json",
+        "TRAP_LEARN_V1.json",
+        "sports_RBS_memory_chain.json",
+        "trap_learning_patch_multi_prop.json",
+        "heatmap_overlay_engine.json"
+      ],
+      "harmonization_path": "/AZORI_VALIDATION_GATE/",
+      "writeback_targets": [
+        "AZORI_FINAL_PROPS",
+        "player_bias_overlay",
+        "contextual_summary_log"
+      ]
+    },
+    "adaptive_logic": {
+      "volatility_adjustment": true,
+      "macro_bias_scaling": true,
+      "recursive_bias_feedback": true,
+      "linked_confidence_gate": "dynamic"
+    },
+    "status": "active"
+  },
+  "meta": {
+    "compiled_by": "QUANTUM_GPT",
+    "created_utc": "2025-10-09T00:00:00Z",
+    "integrity_protocol": "HASHLOCK_v3_ADAPTIVE",
+    "harmonization_tier": "Tier-3 Adaptive",
+    "validation_state": "pending",
+    "checksum": "SHA-256_PENDING"
+  }
+}

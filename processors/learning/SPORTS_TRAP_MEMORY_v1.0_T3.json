@@ -1,0 +1,53 @@
+{
+  "manifest_identifier": "SPORTS_TRAP_MEMORY_v1.0_T3",
+  "sports_trap_memory": {
+    "version": "1.0",
+    "tier": "T3_ADAPTIVE",
+    "description": "Adaptive per-player trap memory engine for the Sports domain. Retains multi-day trap performance data, weighted by recency, for context-aware prop learning and RBS recalibration.",
+    "enabled": true,
+    "per_player_memory": true,
+    "memory_horizon_days": 3,
+    "weights": {
+      "day_0": 0.6,
+      "day_1": 0.3,
+      "day_2": 0.1
+    },
+    "tracked_trap_types": [
+      "CHOCH",
+      "HL_LH",
+      "EQH_EQL",
+      "barrel_trap",
+      "whiff_trap",
+      "NRFI_gate"
+    ],
+    "bias_feedback": {
+      "linked_engine": "TRAP_RECURSIVE_ENGINE_v2.0_T3",
+      "use_rbs_feedback": true,
+      "apply_macro_context": true
+    },
+    "output": "player_RBS_score",
+    "writeback_targets": [
+      "sim_output",
+      "player_bias_overlay",
+      "AZORI_FINAL_PROPS"
+    ],
+    "integration_links": {
+      "linked_modules": [
+        "trap_learning_patch_multi_prop.json",
+        "TRAP_RECURSIVE_ENGINE_v2.0_T3.json",
+        "heatmap_overlay_engine.json",
+        "CONTEXTUAL_INJECTION_ENGINE_v1.0_T3.json"
+      ],
+      "harmonization_path": "/AZORI_VALIDATION_GATE/"
+    },
+    "status": "active"
+  },
+  "meta": {
+    "compiled_by": "QUANTUM_GPT",
+    "created_utc": "2025-10-09T00:00:00Z",
+    "integrity_protocol": "HASHLOCK_v3_ADAPTIVE",
+    "harmonization_tier": "Tier-3 Adaptive Memory Layer",
+    "validation_state": "pending",
+    "checksum": "SHA-256_PENDING"
+  }
+}

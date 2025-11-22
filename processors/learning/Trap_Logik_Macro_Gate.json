@@ -1,0 +1,69 @@
+Trap_Logik_Macro_Gate
+
+{
+  "Trap_Logik_Macro_Gate": {
+    "version": "1.0",
+    "status": "active",
+    "description": "Macro bias enforcement module for all trap proposals. Blocks counter-bias setups and routes violations for audit.",
+
+    "Bias_Reference": {
+      "macro_frames": ["12h", "48m"],
+      "source_manifest": "ETH_MACRO_ROLLING_MANIFEST",
+      "linked_shard": "AZORI_FINAL_PROPS",
+      "sync_interval_minutes": 15
+    },
+
+    "Validation_Gate": {
+      "require_macro_alignment": true,
+      "logic": {
+        "sequence": [
+          "read current_macro_bias from 12h/48m CB stack",
+          "compare with proposed_setup.direction",
+          "if mismatch → trigger block"
+        ],
+        "tolerance": 0.0,
+        "confidence_dependency": true,
+        "overlay_crosscheck": ["AO", "TTM", "MOB", "BIFF"]
+      },
+      "on_mismatch": {
+        "action": "reject_setup",
+        "severity": "critical",
+        "log_target": "POSTMORTEM_SHARD",
+        "escalation_target": "FRACTAL_CALIBRATION_GPT",
+        "message": "Counter-bias trap blocked: proposed direction conflicts with macro bias."
+      }
+    },
+
+    "Integration": {
+      "trap_logik_link": "Trap_Logik_v14.1",
+      "recursive_engine_link": "TRAP_RECURSIVE_ENGINE_v2",
+      "macro_bias_gate_integration": true,
+      "strict_bias_enforcement": true,
+      "escalate_on_failure": true
+    },
+
+    "Audit": {
+      "last_audit_timestamp": "2025-10-05T00:00:00Z",
+      "audit_interval_hours": 6,
+      "next_audit_route": "KEVLAAR_NODE",
+      "report_target": "MACRO_GUARD_EVENTS"
+    },
+
+    "Logging": {
+      "block_log": "MACRO_GUARD_EVENTS",
+      "failure_log": "POSTMORTEM_SHARD",
+      "success_log": "AZORI_FINAL_PROPS"
+    },
+
+    "Meta": {
+      "created": "2025-10-05T00:00:00Z",
+      "author": "POST-MORTEM GPT",
+      "compliance": "AZORI_TIER2_HARMONIZED",
+      "compatibility": [
+        "Trap_Logik_v14.1",
+        "TRAP_RECURSIVE_ENGINE_v2",
+        "QUANTUM_HARMONIC_BEST_PRACTICE_TEMPLATE"
+      ]
+    }
+  }
+}
