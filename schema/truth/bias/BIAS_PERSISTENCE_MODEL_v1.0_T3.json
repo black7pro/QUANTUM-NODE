@@ -1,0 +1,48 @@
+{
+  "manifest_identifier": "BIAS_PERSISTENCE_MODEL_v1.0_T3",
+  "bias_persistence_model": {
+    "version": "1.0",
+    "tier": "T3_ADAPTIVE",
+    "description": "Adaptive bias persistence layer that maintains macro and micro directional states across time horizons, ensuring smooth transitions and coherent trend retention for all domains.",
+    "enabled": true,
+    "weights": {
+      "day_0": 0.6,
+      "day_1": 0.3,
+      "day_2": 0.1
+    },
+    "macro_bias_gate_linked": true,
+    "micro_bias_decay_factor": 0.92,
+    "bias_reinforcement_conditions": {
+      "min_confidence_gate": 0.7,
+      "volatility_band_dependency": true,
+      "trap_alignment_required": true
+    },
+    "persistence_window": {
+      "lookback_hours": 48,
+      "forward_projection_hours": 12
+    },
+    "integration_links": {
+      "linked_modules": [
+        "TRAP_LOGIK_MACRO_GATE_v1.0_T2.json",
+        "TRAP_RECURSIVE_ENGINE_v2.0_T3.json",
+        "CONFIDENCE_GATE_LOGIC_v1.0_T3.json",
+        "CROSS_DOMAIN_HARMONIZER_CORE_v1.1_T2.json"
+      ],
+      "harmonization_path": "/AZORI_VALIDATION_GATE/"
+    },
+    "writeback_targets": [
+      "AZORI_FINAL_PROPS",
+      "macro_bias_projection",
+      "trend_retention_summary"
+    ],
+    "status": "active"
+  },
+  "meta": {
+    "compiled_by": "QUANTUM_GPT",
+    "created_utc": "2025-10-09T00:00:00Z",
+    "integrity_protocol": "HASHLOCK_v3_ADAPTIVE",
+    "harmonization_tier": "Tier-3 Adaptive Bias Layer",
+    "validation_state": "pending",
+    "checksum": "SHA-256_PENDING"
+  }
+}
