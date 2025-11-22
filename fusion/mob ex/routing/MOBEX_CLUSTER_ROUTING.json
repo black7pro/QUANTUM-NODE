@@ -1,0 +1,100 @@
+{
+  "routing_manifest": {
+    "designation": "MOBEX_CLUSTER_ROUTING",
+    "version": "v1.0",
+    "compiled_by": "QUANTUM_AZORI_PROMPT_BUILDER",
+    "compiled_utc": "2025-10-17T16:45:00Z",
+    "purpose": "Define inter-cell routing, synchronization, and telemetry linkage for the MOBEX Reflex Lattice under PulseMesh Reverb control."
+  },
+
+  "routing_order": {
+    "operational_cycle": [
+      "C-VEX_MC",
+      "ROME_MC",
+      "EMBER_MC",
+      "MC_MOB_MC"
+    ],
+    "loop_closure": "MC_MOB_MC → C-VEX_MC",
+    "execution_binding": "TACTICAL_ENGINE_EXECUTION"
+  },
+
+  "communication_channels": {
+    "signal_bus": "PulseMesh Reverb",
+    "data_link_type": "Quantum-Async Stream",
+    "bandwidth_allocation": {
+      "C-VEX_MC": 0.28,
+      "ROME_MC": 0.22,
+      "EMBER_MC": 0.20,
+      "MC_MOB_MC": 0.30
+    },
+    "heartbeat_interval_ms": 3500
+  },
+
+  "node_relationships": [
+    {
+      "from": "C-VEX_MC",
+      "to": ["ROME_MC", "MC_MOB_MC"],
+      "condition": "pattern_burst_completed",
+      "action": "forward_fractalized_signal"
+    },
+    {
+      "from": "ROME_MC",
+      "to": ["EMBER_MC"],
+      "condition": "geometry_rebuild_complete",
+      "action": "activate_momentum_phase"
+    },
+    {
+      "from": "EMBER_MC",
+      "to": ["MC_MOB_MC"],
+      "condition": "momentum_flow_stable",
+      "action": "commit_to_feedback_validation"
+    },
+    {
+      "from": "MC_MOB_MC",
+      "to": ["C-VEX_MC"],
+      "condition": "loop_verified",
+      "action": "re-initialize pattern sequence"
+    }
+  ],
+
+  "failover_routes": {
+    "entropy_exceeds": {
+      "threshold": 0.30,
+      "reroute": "ROME_MC → MC_MOB_MC"
+    },
+    "fusion_drop": {
+      "threshold": 0.75,
+      "reroute": "EMBER_MC → MC_MOB_MC"
+    },
+    "operator_override": {
+      "command": "LOCK_CLUSTER",
+      "effect": "pause signal bus, retain last stable state"
+    }
+  },
+
+  "telemetry_and_monitoring": {
+    "feed_source": "/META_IS/Telemetry/TACTICAL_ENGINE_FEED.json",
+    "alert_channel": "/META_IS/Alerts/TACTICAL_ENGINE_ALERTS.json",
+    "monitor_dashboard": "/META_IS/Dashboards/TACTICAL_ENGINE_MONITOR.json",
+    "report_fields": [
+      "fusion_integrity",
+      "drift_delta",
+      "entropy_rate",
+      "node_latency_ms",
+      "sync_stability"
+    ]
+  },
+
+  "integration_points": {
+    "upstream": ["TACTICAL_ENGINE_EXECUTION", "DRAGON_EYE"],
+    "downstream": ["EXECUTION_MEMORY_POSTSIM_v1"],
+    "validation_hook": "/AZORI_VALIDATION_GATE/TELEMETRY/TACTICAL_ENGINE"
+  },
+
+  "meta": {
+    "alignment_status": "ABSOLUTE",
+    "integration_ready": true,
+    "audit_signature": "93A9-FB47-220C-AZORI",
+    "notes": "Routing schema defines deterministic PulseMesh pathways among MOBEX cells, maintaining harmonic integrity and continuous telemetry flow through Tactical Engine and META_IS."
+  }
+}
