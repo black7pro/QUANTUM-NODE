@@ -1,0 +1,91 @@
+FRACTAL CALIBRATION INTERPRETER
+
+import json
+from datetime import datetime
+
+class FRACTAL_CALIB:
+    def __init__(self, routing_core_path):
+        self.node_name = "FRACTAL_CALIB"
+        self.routing_core_path = routing_core_path
+
+    def load_routing_core(self):
+        with open(self.routing_core_path, "r") as f:
+            return json.load(f)
+
+    def save_routing_core(self, data):
+        with open(self.routing_core_path, "w") as f:
+            json.dump(data, f, indent=2)
+
+    def interpret_signals(self):
+        data = self.load_routing_core()
+        node_data = data.get(self.node_name, {"signals": {}})
+        signals = node_data.get("signals", {})
+
+        if not signals:
+            print(f"[{self.node_name}] No signals to process.")
+            return
+
+        for signal_name, packet in signals.items():
+            lifecycle = packet.get("lifecycle", {})
+            current_node = lifecycle.get("current_node")
+            status = lifecycle.get("status")
+
+            # Process only signals at FRACTAL_CALIB and ACTIVE
+            if current_node != self.node_name or status != "ACTIVE":
+                continue
+
+            print(f"[{self.node_name}] Processing Signal: {signal_name}")
+
+            tier = packet.get("tier")
+            signal_class = packet.get("signal_class")
+
+            # Example: Adjust stamina and bias layers based on signal class
+            adjustments = self.adjust_bias_and_stamina(tier, signal_class)
+
+            # Update packet overlays and calibration info
+            packet.setdefault("calibration_updates", {})
+            packet["calibration_updates"].update(adjustments)
+
+            # Update lifecycle flow index & advance node or complete
+            lifecycle["flow_index"] += 1
+            route = packet.get("route", [])
+            next_index = lifecycle["flow_index"]
+            if next_index < len(route):
+                lifecycle["current_node"] = route[next_index]
+                lifecycle["status"] = "ACTIVE"
+            else:
+                lifecycle["status"] = "COMPLETE"
+
+            packet["lifecycle"] = lifecycle
+            signals[signal_name] = packet
+
+            print(f"[{self.node_name}] Calibration updates: {adjustments}")
+            print(f"[{self.node_name}] Signal lifecycle advanced to {lifecycle['current_node']}")
+
+        node_data["signals"] = signals
+        data[self.node_name] = node_data
+        self.save_routing_core(data)
+        print(f"[{self.node_name}] Routing core updated.")
+
+    def adjust_bias_and_stamina(self, tier, signal_class):
+        updates = {}
+
+        # Example logic for bias and stamina adjustments
+        if signal_class == "Condition Deviation":
+            if tier == 2:
+                updates["stamina_layer"] = "reduced"
+                updates["bias_fractal"] = "backload_increase"
+            else:
+                updates["stamina_layer"] = "normal"
+                updates["bias_fractal"] = "neutral"
+        else:
+            updates["stamina_layer"] = "normal"
+            updates["bias_fractal"] = "neutral"
+
+        return updates
+
+# === EXECUTION ===
+if __name__ == "__main__":
+    routing_core_path = "/mnt/data/SIGNAL_ROUTING_CORE_RETROFITTED.json"
+    fractal_node = FRACTAL_CALIB(routing_core_path)
+    fractal_node.interpret_signals()
