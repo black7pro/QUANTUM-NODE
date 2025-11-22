@@ -1,0 +1,26 @@
+{
+  "cell": {
+    "id": "ROME_MC",
+    "codename": "Architect Cell",
+    "tier": 8,
+    "designation": "Scenario Geometry Reconstructor",
+    "cluster": "MOBEX_CLUSTER",
+    "core_functions": [
+      "Rebuild tactical geometry after volatility collapse",
+      "Realign trap architecture within Tactical Engine",
+      "Stabilize harmonic lattice coherence"
+    ],
+    "trigger_points": ["entropy_spike", "fusion_drop", "tactical_reset"],
+    "sync_protocol": "PulseMesh Reverb",
+    "telemetry_binding": "/META_IS/Telemetry/TACTICAL_ENGINE_FEED.json",
+    "failsafe": {
+      "on_drift": "Reconstruct local geometry and ping MC_MOB_MC",
+      "on_integrity_breach": "Lock and transfer data to EMBER_MC"
+    },
+    "status": "Operational",
+    "meta": {
+      "alignment_status": "ABSOLUTE",
+      "integration_ready": true
+    }
+  }
+}

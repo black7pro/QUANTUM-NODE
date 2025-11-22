@@ -1,0 +1,27 @@
+{
+  "cell": {
+    "id": "MC_MOB_MC",
+    "codename": "Mothercell",
+    "tier": 8,
+    "designation": "Reflex Loop Evaluator",
+    "cluster": "MOBEX_CLUSTER",
+    "core_functions": [
+      "Validate feedback loops across tactical lattice",
+      "Stabilize reflex signals during volatility surges",
+      "Coordinate failover logic within cluster"
+    ],
+    "trigger_points": ["drift_alert", "entropy_variance", "operator_override"],
+    "sync_protocol": "PulseMesh Reverb",
+    "control_priority": 1,
+    "telemetry_binding": "/META_IS/Telemetry/TACTICAL_ENGINE_FEED.json",
+    "failsafe": {
+      "on_lock": "Assume cluster command",
+      "on_conflict": "Initiate Harmony Rebalance routine"
+    },
+    "status": "Primary Control Node",
+    "meta": {
+      "alignment_status": "ABSOLUTE",
+      "integration_ready": true
+    }
+  }
+}

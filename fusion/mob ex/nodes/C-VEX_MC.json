@@ -1,0 +1,27 @@
+{
+  "cell": {
+    "id": "C-VEX_MC",
+    "codename": "Velocity Cell",
+    "tier": 8,
+    "designation": "Fractal Reflex Generator",
+    "bound_to": "MC_MOB_MC",
+    "cluster": "MOBEX_CLUSTER",
+    "core_functions": [
+      "Convert raw RECON input into fractalized tactical threads",
+      "Capture phase drift and rhythm imbalance",
+      "Seed pattern fusion events into Tactical Engine"
+    ],
+    "trigger_points": ["input_flux_detected", "overlay_request", "rhythm_break"],
+    "sync_protocol": "PulseMesh Reverb",
+    "telemetry_binding": "/META_IS/Telemetry/TACTICAL_ENGINE_FEED.json",
+    "failsafe": {
+      "on_entropy_exceed": "lock self, notify MC_MOB_MC",
+      "on_drift_detected": "send re-calibration pulse to ROME_MC"
+    },
+    "status": "Operational",
+    "meta": {
+      "alignment_status": "ABSOLUTE",
+      "integration_ready": true
+    }
+  }
+}

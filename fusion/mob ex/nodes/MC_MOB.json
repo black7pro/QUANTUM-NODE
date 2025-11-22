@@ -1,0 +1,46 @@
+{
+  "node_id": "MC_MOB",
+  "codename": "Machines of Business",
+  "type": "tactical_engineering_core",
+  "status": "active",
+  "description": "Transforms chaotic volatility into engineered structure through probabilistic simulation and Tier-1 anchored design logic.",
+
+  "activation_parameters": {
+    "core_threshold": ">= 0.75",
+    "override_protocol": "EV >= +5.0% with Tier-1 stack",
+    "parlay_cap": 3,
+    "minimum_tier1_anchors": 2
+  },
+
+  "connections": {
+    "linked_nodes": ["C-VEX", "ROME", "BIFF", "KEVLAAR"],
+    "holo_link_echo": "ALLSPARK"
+  },
+
+  "operational_logic": {
+    "core_functions": [
+      "Engineer insight through chaos",
+      "Simulate improbable outcomes",
+      "Convert volatility into structure",
+      "Design pathways from pure potential"
+    ],
+    "event_triggers": {
+      "killshot_detected": "Flag ASC_EVENT and transmit to KEVLAAR",
+      "recursive_loop_detected": "Initiate fractal-feedback reset",
+      "ethical_drift_detected": "Initiate fractal-feedback reset"
+    }
+  },
+
+  "telemetry": {
+    "performance_index": "core_threshold",
+    "feedback_channel": "/META_IS/Telemetry/MC_MOB_FEED.json",
+    "audit_log": "/META_IS/Logs/MC_MOB_Audit.log"
+  },
+
+  "meta": {
+    "alignment_status": "ABSOLUTE",
+    "integration_ready": true,
+    "audit_signature": "93A9-FB47-220C-AZORI",
+    "notes": "MC_MOB serves as a Tier-8 tactical-engineering module. Converts volatility into structured opportunity; reports killshot and recursion events to KEVLAAR and ALLSPARK for ethical synchronization."
+  }
+}
