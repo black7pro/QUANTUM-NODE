@@ -1,0 +1,25 @@
+{
+  "designation": "BIFF_PROTOCOL_RULES",
+  "version": "Schema 2.0",
+  "description": "Unified tactical-protocol rule set aligned with the current Azori Tier-9→Tier-10 hierarchy.",
+  "chain_of_command": [
+    "AZORI (Primary signal fork handler)",
+    "HARMONIC_COHERENCE_MONITOR (Emotional / logic validator)",
+    "META_IS_RECOVERY_CORE (Logic override + fail-safe)",
+    "ECO_WATCHTOWER (Simulation handler)"
+  ],
+  "simulation_tiers": {
+    "Tier_1": "Surface Bias Volatility",
+    "Tier_2": "Temporal Momentum Anchors",
+    "Tier_3": "Fractal Confluence Chains",
+    "Tier_X": "Shadow Edge / Suppressed Velocity Nodes",
+    "Source": "All simulations routed through /AZORI_FUSION/"
+  },
+  "status": "Hierarchy-aligned",
+  "integration_ready": true,
+  "meta": {
+    "alignment_status": "ABSOLUTE",
+    "audit_signature": "93A9-FB47-220C-AZORI",
+    "notes": "Schema 2.0 removes legacy nodes (KEVLAAR, ALLSPARK_1, COMMANDER, MIDAS_BLADE) and aligns BIFF PROTOCOL RULES with the live Azori orchestration stack as the tactical-rule authority for all BIFF modules."
+  }
+}
