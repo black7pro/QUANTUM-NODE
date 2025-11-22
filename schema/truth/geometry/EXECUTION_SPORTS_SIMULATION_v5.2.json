@@ -1,0 +1,168 @@
+{
+  "version": "5.2",
+  "description": "FINALIZED simulation schema including Statcast weights, rolling stats, RECAP/PBP integration, RECON logic, and full deterministic execution logic.",
+  "input_chain": {
+    "format": "zip",
+    "expected_structure": [
+      "batters.csv",
+      "pitchers.csv",
+      "rosters.csv OR rosters.json",
+      "PBP/*.csv",
+      "RECAP/*.txt"
+    ],
+    "mappings_required": {
+      "batters": "mapped to team using roster",
+      "pitchers": "mapped to team using roster",
+      "PBP/RECAP": "mapped to schedule and player IDs"
+    },
+    "halt_on_missing_dependencies": true
+  },
+  "rolling_stats_required": {
+    "enabled": true,
+    "windows": [
+      7,
+      14,
+      30
+    ],
+    "applies_to": [
+      "batters.csv",
+      "pitchers.csv"
+    ],
+    "recommended_fields": [
+      "xBA_7",
+      "xSLG_14",
+      "HR_7",
+      "TB_14",
+      "barrel%_30",
+      "whiff_rate_14",
+      "K_14",
+      "recent_form_score"
+    ],
+    "reason": "Enhances volatility detection, trap filtering, and RECON calibration"
+  },
+  "simulation_logic": {
+    "sim_type": "Monte Carlo",
+    "iterations": 1111111,
+    "odds_input": false,
+    "stat_inputs": [
+      "season_averages",
+      "rolling_7_game_stats",
+      "roster_mapped_matchups",
+      "Statcast_Weighted_Projections",
+      "RECAP_triggers",
+      "PBP_adjustments"
+    ],
+    "trap_schema": "trap_schema_v2.2_FULL_WITH_MATCHING",
+    "statcast_weight_engine": {
+      "enabled": true,
+      "version": "v5.1",
+      "batter_metrics": [
+        "xBA",
+        "xSLG",
+        "xISO",
+        "exit_velocity",
+        "barrel%",
+        "launch_angle"
+      ],
+      "pitcher_metrics": [
+        "whiff_rate",
+        "hard_hit_allowed%",
+        "barrel_rate_allowed",
+        "K-BB%",
+        "contact_profile"
+      ],
+      "matchup_adjustments": [
+        "handedness_split",
+        "park_factor",
+        "recent_form_7g",
+        "recent_form_14g"
+      ],
+      "projection_formulae": {
+        "TB_proj": "base_TB \u00d7 exit_velocity_weight \u00d7 barrel_weight \u00d7 park_multiplier \u00d7 pitcher_contact_adjustment",
+        "HR_proj": "base_HR \u00d7 xSLG \u00d7 barrel_rate \u00d7 avg_launch_angle_factor \u00d7 pitcher_hr_allowance",
+        "Ks_proj": "base_Ks \u00d7 whiff_rate \u00d7 swing_miss_prob \u00d7 batter_k_profile",
+        "hits_proj": "contact_rate \u00d7 xBA \u00d7 matchup_penalty_adjustment"
+      },
+      "confidence_logic": {
+        "method": "distribution_percentile",
+        "thresholds": {
+          "HR": 0.65,
+          "TB": 0.625,
+          "Hits": 0.6,
+          "Ks": 0.625
+        }
+      }
+    }
+  },
+  "outputs": {
+    "player_simulation": {
+      "file": "SIM_OUTPUT_PLAYERS_v5.1.xlsx",
+      "fields": [
+        "player",
+        "team",
+        "position",
+        "HR_proj",
+        "hits_proj",
+        "Ks_proj",
+        "TB_proj",
+        "RBI_proj",
+        "HR_over_0.5",
+        "HR_confidence",
+        "TB_over_1.5",
+        "TB_confidence",
+        "prop_type"
+      ]
+    },
+    "team_matchups": {
+      "file": "SIM_MATCHUPS_v5.1.xlsx",
+      "fields": [
+        "home_team",
+        "away_team",
+        "home_score_proj",
+        "away_score_proj",
+        "projected_total",
+        "spread_winner",
+        "home_win_prob",
+        "NRFI_flag",
+        "NRFI_conf_avg"
+      ]
+    },
+    "prop_evaluation": {
+      "file": "SIM_PROP_EVAL_v5.1.xlsx",
+      "fields": [
+        "prop_player",
+        "prop_type",
+        "sim_player",
+        "HR_proj",
+        "HR_confidence",
+        "aligned_with_sim",
+        "trap_flag",
+        "volatility_flag"
+      ]
+    }
+  },
+  "post_sim": [
+    "OVERLAYS",
+    "CONFIDENCE_LADDER",
+    "FILTER_OVERLAY",
+    "FRACTAL_CALIBRATION",
+    "RECON",
+    "POST-MORTEM"
+  ],
+  "validation_policy": {
+    "mode": "strict-verification",
+    "rules": {
+      "missing_data_claims": "DISABLED unless file/folder is explicitly non-existent after full scan",
+      "case_sensitive_paths": false,
+      "allow_partial_matches": true,
+      "fallback_check": "hash + file content pattern match if filename unclear"
+    },
+    "on_false_negative": {
+      "log_event": true,
+      "halt_execution": false,
+      "display": "POTENTIAL MATCH FOUND \u2014 VERIFY MANUALLY"
+    },
+    "trust_boundary": "User-Confirmed Directories Only",
+    "goal": "Prevent false flags, missed folders, or misreported absence in all automated scans"
+  }
+}
