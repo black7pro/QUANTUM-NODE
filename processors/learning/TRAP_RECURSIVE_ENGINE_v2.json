@@ -1,0 +1,50 @@
+{
+  "trap_recursive_engine": {
+    "version": "2.0",
+    "enabled": true,
+    "trap_outcome_log": {
+      "track_fields": [
+        "trap_id",
+        "trap_type",
+        "confidence_applied",
+        "result",
+        "volatility_flag",
+        "prop_outcome"
+      ],
+      "storage_mode": "append",
+      "persistence_days": 3
+    },
+    "recursive_bias_score": {
+      "enabled": true,
+      "weighting_scheme": {
+        "day_0": 0.5,
+        "day_1": 0.3,
+        "day_2": 0.2
+      },
+      "output": "RBS_score",
+      "usage": [
+        "modulate_confidence_threshold",
+        "suppress_low_score_traps",
+        "prioritize_high_score_traps"
+      ]
+    },
+    "macro_bias_gate_integration": {
+      "enabled": true,
+      "influence_on": [
+        "confidence_gate",
+        "trap_ordering_priority",
+        "early_warning_sequence"
+      ],
+      "conflict_resolution": {
+        "method": "highest_RBS_wins",
+        "log_ignored_traps": true,
+        "suppress_threshold": 0.42
+      }
+    },
+    "writeback_targets": [
+      "trap_memory_chain",
+      "RBS_log",
+      "trap_type_bias_score"
+    ]
+  }
+}

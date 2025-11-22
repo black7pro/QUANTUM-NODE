@@ -1,0 +1,33 @@
+{
+  "trap_learning_multi_prop": {
+    "enabled": true,
+    "prop_types": {
+      "HR": [
+        "barrel_rate",
+        "xSLG",
+        "launch_angle"
+      ],
+      "TB": [
+        "exit_velocity",
+        "contact_profile",
+        "park_factor"
+      ],
+      "Ks": [
+        "whiff_rate",
+        "K-BB%",
+        "swing_miss_profile"
+      ],
+      "NRFI": [
+        "1st_inning_exit_velocity",
+        "pitcher_start_confidence",
+        "offensive_form"
+      ]
+    },
+    "trap_path_memory": true,
+    "bias_modulation_per_prop_type": true,
+    "prop_confidence_gate_adjustment": {
+      "volatility_filter": true,
+      "trap_bias_scaling": true
+    }
+  }
+}

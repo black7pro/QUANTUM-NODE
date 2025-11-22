@@ -1,0 +1,25 @@
+{
+  "sports_trap_memory": {
+    "enabled": true,
+    "per_player_memory": true,
+    "memory_horizon_days": 3,
+    "weights": {
+      "day_0": 0.6,
+      "day_1": 0.3,
+      "day_2": 0.1
+    },
+    "tracked_trap_types": [
+      "CHOCH",
+      "HL_LH",
+      "EQH_EQL",
+      "barrel_trap",
+      "whiff_trap",
+      "NRFI_gate"
+    ],
+    "output": "player_RBS_score",
+    "writeback_targets": [
+      "sim_output",
+      "player_bias_overlay"
+    ]
+  }
+}
