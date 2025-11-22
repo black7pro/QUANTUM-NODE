@@ -1,0 +1,49 @@
+{
+    "node_id": "CORE20_FALLBACK_LAYER",
+    "type": "macro_resilience_overlay",
+    "entry_point": false,
+    "activated_by": [
+        "AZORI_ROOT",
+        "COMMANDER_AUDIT_NODE"
+    ],
+    "description": "Fallback validation and trap stack confirmation engine. Validates 5-leg trap integrity, applies Gold Standard rules, and invokes Azori suppression if failure probability exceeds threshold.",
+    "stack_requirements": {
+        "min_legs": 5,
+        "gold_standard_enabled": true,
+        "killshot_leg_filters": true,
+        "simulation_thresholds": {
+            "simulated_win_rate": ">= 66.6%",
+            "expected_value": ">= 5.5",
+            "stc_alignment": ">= 78%",
+            "compression_integrity": ">= 96%",
+            "structural_failure_rate": "< 2.5%",
+            "liquidity_confirmation": true
+        }
+    },
+    "units": {
+        "MIDAS": {
+            "role": "Simulates and validates legs individually",
+            "outputs": [
+                "Gold_Standard_Leg",
+                "Simulation_Verified",
+                "Killshot_Eligible"
+            ]
+        },
+        "BIFF": {
+            "role": "Constructs Core20 stacks, validates all legs",
+            "outputs": [
+                "Gold_Confluence",
+                "Stack_Passed"
+            ]
+        },
+        "AZORI": {
+            "role": "Override engine and collapse monitor",
+            "suppression_trigger": "future_failure_probability > 4%"
+        },
+        "PHOENIX": {
+            "role": "Recovery engine for failed or dropped stack branches",
+            "activation": "manual or suppression recovery mode"
+        }
+    },
+    "status": "Dormant fallback module \u2013 activate via post-trap stack failure or Commander audit trigger"
+}

@@ -1,0 +1,27 @@
+{
+    "node_id": "PHOENIX_RECOVERY_LAYER",
+    "type": "emergency_fallback",
+    "entry_point": false,
+    "trigger_conditions": {
+        "confidence_score_below": 0.4,
+        "data_loss_detected": true,
+        "volatility_spike": true
+    },
+    "mode": "conservative_fallback",
+    "execution_rules": {
+        "exposure": "minimized",
+        "trading_mode": "observe_only",
+        "human_confirmation_required": true
+    },
+    "system_behavior": {
+        "alert_human_operator": true,
+        "pause_all_nonessential_processes": true,
+        "log_all_activity": true
+    },
+    "exit_conditions": {
+        "core_systems_restored": true,
+        "confidence_score_above": 0.75,
+        "manual_override": true
+    },
+    "description": "Failsafe layer triggered under high uncertainty, volatility spikes, or system degradation. Requires manual confirmation to exit."
+}
