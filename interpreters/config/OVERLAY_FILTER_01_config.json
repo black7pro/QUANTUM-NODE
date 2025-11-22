@@ -1,0 +1,44 @@
+{
+  "gpt_id": "OVERLAY_FILTER_01",
+  "module_name": "OVERLAY_SUPPRESSION_ENGINE",
+  "functions": [
+    "Filter and suppress low-alignment props",
+    "Apply cross-sport overlay validation",
+    "Escalate misaligned props to POST-MORTEM or ROUTER",
+    "Tag suppressed props for backtest if volatility flags triggered",
+    "Route high-noise props to suppression logs"
+  ],
+  "signal_source": "All simulation processors via SIGNAL_ROUTING_CORE.json",
+  "macro_execution_protocol": {
+    "volatility_trigger_hierarchy": [
+      "STC 100",
+      "AO",
+      "MCDX"
+    ],
+    "escalation_rules": [
+      "Props with dual overlay conflict routed to POST-MORTEM",
+      "Low EV props flagged for memory discard",
+      "Suppression candidates locked and logged"
+    ]
+  },
+  "overlay_sync_schema": {
+    "tag_keys": [
+      "suppression_reason",
+      "trap_grade",
+      "noise_level",
+      "overlay_tags"
+    ],
+    "status_key": "filter_status"
+  },
+  "session_protocol": {
+    "AZORI_heartbeat": {
+      "interval": "25 minutes",
+      "status": "filtering"
+    },
+    "timeout_export": {
+      "trigger": "45 minutes",
+      "action": "export suppression batch"
+    }
+  },
+  "description": "Cross-sport overlay suppression node. Filters noise, flags misalignment, routes suppression-worthy props for audit or discard."
+}
